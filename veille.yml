@@ -1,0 +1,62 @@
+name: Veille cyber quotidienne
+
+on:
+  schedule:
+    # GitHub Actions fonctionne en heure UTC.
+    # 05:00 UTC = 7h à Paris en été, 06:00 UTC = 7h à Paris en hiver.
+    # Les deux créneaux tournent ; l'étape "Vérifier l'heure" ne garde que celui de 7h.
+    - cron: "0 5 * * *"
+    - cron: "0 6 * * *"
+  workflow_dispatch: # bouton "Run workflow" pour lancer à la main
+
+permissions:
+  contents: write
+
+jobs:
+  veille:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Vérifier l'heure (7h Paris)
+        id: heure
+        run: |
+          H=$(TZ=Europe/Paris date +%H)
+          echo "Heure à Paris : $H"
+          # On saute uniquement le créneau de 6h (hiver, cron de 5h UTC).
+          # Si GitHub a du retard, le run de 7h passe quand même.
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "$H" = "06" ]; then
+            echo "lancer=non" >> "$GITHUB_OUTPUT"
+          else
+            echo "lancer=oui" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/checkout@v4
+        if: steps.heure.outputs.lancer == 'oui'
+
+      - uses: actions/setup-python@v5
+        if: steps.heure.outputs.lancer == 'oui'
+        with:
+          python-version: "3.12"
+
+      - name: Collecter la veille
+        if: steps.heure.outputs.lancer == 'oui'
+        run: python scripts/fetch_veille.py
+
+      - name: Publier les données
+        if: steps.heure.outputs.lancer == 'oui'
+        run: |
+          git config user.name "veille-bot"
+          git config user.email "veille-bot@users.noreply.github.com"
+          git add docs/data
+          git diff --cached --quiet || git commit -m "Veille du $(TZ=Europe/Paris date +%d/%m/%Y)"
+          git push
+
+      - name: Attendre la mise à jour du site
+        if: steps.heure.outputs.lancer == 'oui'
+        run: sleep 90 # laisse le temps à GitHub Pages de publier les nouvelles données
+
+      - name: Notifier le téléphone (ntfy)
+        if: steps.heure.outputs.lancer == 'oui'
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          SITE_URL: ${{ vars.SITE_URL }}
+        run: python scripts/notifier.py

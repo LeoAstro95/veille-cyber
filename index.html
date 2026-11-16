@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veille Cyber — Maxime Stephan</title>
+  <meta name="description" content="Veille quotidienne des vulnérabilités et cyberattaques, mise à jour automatiquement chaque matin.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="entete">
+    <div class="conteneur entete-ligne">
+      <div>
+        <p class="sur-titre">// veille quotidienne</p>
+        <h1>Veille <span class="accent">Cyber</span></h1>
+        <p class="maj" id="maj">Chargement…</p>
+      </div>
+      <div class="archive">
+        <label for="jour">Jour</label>
+        <select id="jour"><option value="">Aujourd'hui</option></select>
+      </div>
+    </div>
+  </header>
+
+  <main class="conteneur">
+    <section class="stats" id="stats"></section>
+
+    <div class="barre">
+      <nav class="onglets" role="tablist">
+        <button class="onglet actif" data-onglet="certfr">CERT-FR</button>
+        <button class="onglet" data-onglet="kev">Exploitées (KEV)</button>
+        <button class="onglet" data-onglet="nvd">CVE critiques</button>
+        <button class="onglet" data-onglet="presse">Attaques &amp; actu</button>
+      </nav>
+      <input type="search" id="recherche" placeholder="Filtrer (éditeur, CVE, mot-clé…)">
+    </div>
+
+    <section id="liste" class="liste" aria-live="polite"></section>
+    <p class="erreurs" id="erreurs"></p>
+  </main>
+
+  <footer class="conteneur pied">
+    Sources : <a href="https://www.cert.ssi.gouv.fr/">CERT-FR (ANSSI)</a> ·
+    <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog">CISA KEV</a> ·
+    <a href="https://nvd.nist.gov/">NVD (NIST)</a> · presse spécialisée.
+    Projet BTS SIO SISR — Maxime Stephan.
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
