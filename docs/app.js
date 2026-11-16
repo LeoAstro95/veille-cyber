@@ -1,4 +1,4 @@
-// Veille Cyber — affichage des données générées par scripts/fetch_veille.py
+²// Veille Cyber — affichage des données générées par scripts/fetch_veille.py
 
 const etat = { data: null, onglet: "certfr", filtre: "" };
 
