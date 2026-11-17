@@ -123,3 +123,12 @@ def envoyer_ntfy(d: dict, site: str):
         "priority": 4 if (s.get("alertes_certfr") or s.get("kev")) else 3,
         "tags": ["shield"],
     }
+def main():
+    d = json.loads(DONNEES.read_text(encoding="utf-8"))
+    site = os.environ.get("SITE_URL", "").strip()
+    envoyer_telegram(d, site)
+    envoyer_ntfy(d, site)
+
+
+if __name__ == "__main__":
+    main()
