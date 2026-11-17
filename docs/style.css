@@ -1,13 +1,29 @@
+/* ==========================================================================
+   Palette « Cyber Veille »
+   60 % fond bleu nuit · 30 % cartes ardoise · 10 % accents (cyan + rouge)
+   ========================================================================== */
 :root {
-  --fond: #0d1117;
-  --carte: #161b22;
-  --bord: #2a313c;
-  --texte: #e6edf3;
-  --doux: #8b949e;
-  --accent: #3fb950;
-  --critique: #f85149;
-  --eleve: #f0883e;
-  --info: #58a6ff;
+  /* Fonds */
+  --fond: #070B14;          /* fond principal, se fond avec la bannière */
+  --carte: #0F172A;         /* cartes, blocs, champs */
+  --carte-survol: #111827;  /* carte survolée */
+  --bord: #1E293B;          /* bordures et séparateurs */
+
+  /* Textes */
+  --titre: #F8FAFC;         /* titres */
+  --texte: #CBD5E1;         /* texte courant */
+  --doux: #94A3B8;          /* texte secondaire, métadonnées */
+
+  /* Accent (identité, interaction) */
+  --accent: #14B8A6;        /* liens, bouton actif */
+  --accent-survol: #0D9488; /* survol des boutons */
+
+  /* Couleurs sémantiques */
+  --critique: #EF4444;      /* critique / alerte, CVSS 9.0–10.0 */
+  --eleve: #F59E0B;         /* avertissement / score moyen */
+  --info: #38BDF8;          /* information / faible risque */
+  --ok: #10B981;            /* correctif disponible / sécurisé */
+
   --mono: ui-monospace, "SF Mono", "Cascadia Code", Consolas, monospace;
 }
 
@@ -17,10 +33,11 @@ body {
   margin: 0;
   background: var(--fond);
   color: var(--texte);
-  font: 15px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font: 15px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
 
-a { color: var(--info); }
+a { color: var(--accent); }
+a:hover { color: var(--accent-survol); }
 
 .conteneur { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
 
@@ -34,27 +51,30 @@ a { color: var(--info); }
   height: auto;
   border-radius: 12px;
   border: 1px solid var(--bord);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, .45);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, .5), 0 0 40px rgba(20, 184, 166, .06);
 }
 .sur-titre { font-family: var(--mono); color: var(--accent); margin: 0 0 4px; font-size: 13px; }
-h1 { margin: 4px 0; font-size: 34px; letter-spacing: -0.5px; }
+h1, h2, h3 { color: var(--titre); }
 .accent { color: var(--accent); }
 .maj { margin: 0; color: var(--doux); font-size: 14px; }
 .archive { display: flex; flex-direction: column; gap: 4px; font-size: 13px; color: var(--doux); }
 
 select, input[type="search"] {
   background: var(--carte);
-  color: var(--texte);
+  color: var(--titre);
   border: 1px solid var(--bord);
   border-radius: 6px;
   padding: 8px 10px;
   font: inherit;
+  transition: border-color .15s;
 }
+select:focus, input[type="search"]:focus { outline: none; border-color: var(--accent); }
+input[type="search"]::placeholder { color: var(--doux); }
 
 /* Statistiques */
 .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 24px; }
-.stat { background: var(--carte); border: 1px solid var(--bord); border-radius: 8px; padding: 14px 16px; }
-.stat .nombre { font-family: var(--mono); font-size: 28px; font-weight: 700; }
+.stat { background: var(--carte); border: 1px solid var(--bord); border-radius: 10px; padding: 14px 16px; }
+.stat .nombre { font-family: var(--mono); font-size: 28px; font-weight: 700; color: var(--titre); }
 .stat .libelle { color: var(--doux); font-size: 13px; }
 .stat.rouge .nombre { color: var(--critique); }
 .stat.orange .nombre { color: var(--eleve); }
@@ -65,28 +85,37 @@ select, input[type="search"] {
 .onglet {
   background: transparent; color: var(--doux); border: 1px solid var(--bord);
   border-radius: 6px; padding: 8px 14px; cursor: pointer; font: inherit;
+  transition: color .15s, border-color .15s, background .15s;
 }
-.onglet:hover { color: var(--texte); }
-.onglet.actif { background: var(--accent); color: #0d1117; border-color: var(--accent); font-weight: 600; }
+.onglet:hover { color: var(--titre); border-color: var(--accent); }
+.onglet.actif { background: var(--accent); color: var(--fond); border-color: var(--accent); font-weight: 600; }
+.onglet.actif:hover { background: var(--accent-survol); border-color: var(--accent-survol); }
 #recherche { min-width: 260px; flex: 1; max-width: 360px; }
 
 /* Cartes */
 .liste { display: flex; flex-direction: column; gap: 10px; }
-.carte { background: var(--carte); border: 1px solid var(--bord); border-left: 4px solid var(--bord); border-radius: 8px; padding: 14px 16px; }
+.carte {
+  background: var(--carte); border: 1px solid var(--bord); border-left: 4px solid var(--bord);
+  border-radius: 10px; padding: 14px 16px; transition: background .15s;
+}
+.carte:hover { background: var(--carte-survol); }
 .carte.critique { border-left-color: var(--critique); }
 .carte.eleve { border-left-color: var(--eleve); }
 .carte.info { border-left-color: var(--info); }
+.carte.ok { border-left-color: var(--ok); }
 .carte h3 { margin: 0 0 4px; font-size: 16px; }
-.carte h3 a { color: var(--texte); text-decoration: none; }
-.carte h3 a:hover { text-decoration: underline; }
+.carte h3 a { color: var(--titre); text-decoration: none; }
+.carte h3 a:hover { color: var(--accent); }
 .meta { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; font-size: 13px; color: var(--doux); margin-bottom: 6px; }
-.carte p { margin: 6px 0 0; color: #c9d1d9; font-size: 14px; }
+.carte p { margin: 6px 0 0; color: var(--texte); font-size: 14px; }
+.carte p strong { color: var(--ok); }
 
-.badge { font-family: var(--mono); font-size: 12px; padding: 2px 7px; border-radius: 4px; background: #21262d; color: var(--texte); }
-.badge.rouge { background: rgba(248, 81, 73, .15); color: var(--critique); }
-.badge.orange { background: rgba(240, 136, 62, .15); color: var(--eleve); }
-.badge.bleu { background: rgba(88, 166, 255, .15); color: var(--info); }
-.badge.vert { background: rgba(63, 185, 80, .15); color: var(--accent); }
+/* Badges (couleurs sémantiques légèrement désaturées par la transparence) */
+.badge { font-family: var(--mono); font-size: 12px; padding: 2px 7px; border-radius: 4px; background: var(--bord); color: var(--texte); }
+.badge.rouge { background: rgba(239, 68, 68, .14); color: #F87171; }
+.badge.orange { background: rgba(245, 158, 11, .14); color: var(--eleve); }
+.badge.bleu { background: rgba(56, 189, 248, .14); color: var(--info); }
+.badge.vert { background: rgba(16, 185, 129, .14); color: var(--ok); }
 
 .vide { color: var(--doux); text-align: center; padding: 40px 0; }
 .erreurs { color: var(--eleve); font-size: 13px; margin-top: 16px; }
