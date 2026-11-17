@@ -1,0 +1,588 @@
+{
+  "genere_le": "2026-11-17T14:13:32.798485+00:00",
+  "fenetre_jours": 3,
+  "stats": {
+    "alertes_certfr": 0,
+    "avis_certfr": 1,
+    "kev": 0,
+    "cve_critiques": 11,
+    "attaques": 30
+  },
+  "certfr": [
+    {
+      "source": "CERT-FR",
+      "categorie": "avis",
+      "titre": "Multiples vulnérabilités dans Kerberos (16 novembre 2026)",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1540/",
+      "date": "2026-11-16T00:00:00+00:00",
+      "resume": "De multiples vulnérabilités ont été découvertes dans Kerberos. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données.",
+      "cves": []
+    }
+  ],
+  "kev": [],
+  "nvd": [
+    {
+      "source": "NVD",
+      "cve": "CVE-2026-129351",
+      "resume": "A security vulnerability has been detected in TRENDnet TEW-657BRM 1.00.1. This vulnerability affects the function sprintf of the file /setup.cgi of the component mini_httpd. Such manipulation leads to out-of-bounds write. The attack can be executed remotely. The exploit has been disclosed publicly…",
+      "score": 10.0,
+      "severite": "CRITICAL",
+      "date": "2026-11-14T23:16:47.753000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-129351"
+    },
+    {
+      "source": "NVD",
+      "cve": "CVE-2026-129354",
+      "resume": "A flaw has been found in D-Link DIR-600L 2.17b02. Affected by this issue is the function hnap_main of the file htdocs/cgibin of the component HNAP Handler. Executing a manipulation can lead to stack-based buffer overflow. The attack can be executed remotely. The exploit has been published and may b…",
+      "score": 10.0,
+      "severite": "CRITICAL",
+      "date": "2026-11-15T01:18:03.043000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-129354"
+    },
+    {
+      "source": "NVD",
+      "cve": "CVE-2026-129451",
+      "resume": "A flaw has been found in DrayTek Vigor2960 up to 1.5.1.6. This affects the function app_guest_export of the file /cgi-bin/mainfunction.cgi. This manipulation of the argument filename causes path traversal. The attack can be initiated remotely. The exploit has been published and may be used. Upgradi…",
+      "score": 9.9,
+      "severite": "CRITICAL",
+      "date": "2026-11-15T13:16:58.600000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-129451"
+    },
+    {
+      "source": "NVD",
+      "cve": "CVE-2026-129952",
+      "resume": "NodePress through 8.5.1 contains an authentication bypass vulnerability that allows unauthenticated remote attackers to gain administrator access by forging JWTs with the hardcoded 'nodepress-secret' fallback key. Attackers can sign HS256 bearer tokens with the default issuer, audience, and role 'a…",
+      "score": 9.8,
+      "severite": "CRITICAL",
+      "date": "2026-11-16T15:17:30.573000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-129952"
+    },
+    {
+      "source": "NVD",
+      "cve": "CVE-2026-129955",
+      "resume": "NodePress through 8.5.1 contains an authentication bypass vulnerability that allows unauthenticated attackers to gain administrator access by using the hardcoded default password 'root'. Attackers can send base64-encoded 'root' to POST /admin/login when NP_ADMIN_DEFAULT_PASSWORD is unset to obtain…",
+      "score": 9.8,
+      "severite": "CRITICAL",
+      "date": "2026-11-16T15:17:31.030000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-129955"
+    },
+    {
+      "source": "NVD",
+      "cve": "CVE-2026-130071",
+      "resume": "TridotsTech go1cms master branch through commit 7f68d05 and version-3 branch before commit ead8da3 contains a missing authentication vulnerability in the guest-whitelisted update_doc method that allows unauthenticated attackers to modify any document. Attackers can supply a doctype, name and arbitr…",
+      "score": 9.8,
+      "severite": "CRITICAL",
+      "date": "2026-11-16T22:18:22.373000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130071"
+    },
+    {
+      "source": "NVD",
+      "cve": "CVE-2026-79614",
+      "resume": "An out-of-bounds write vulnerability in “libclinkc.so” in Zyxel DX3301-T0/EX3301-T0 firmware versions through 5.50(ABVY.8.3)C0 could allow an unauthenticated attacker to elevate privileges and potentially execute arbitrary commands by sending a crafted HTTP request. WAN access is disabled by defaul…",
+      "score": 9.8,
+      "severite": "CRITICAL",
+      "date": "2026-11-17T02:17:22.743000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-79614"
+    },
+    {
+      "source": "NVD",
+      "cve": "CVE-2026-129452",
+      "resume": "A vulnerability has been found in DrayTek Vigor2960 1.5.1.6. This vulnerability affects the function set_table of the file /cgi-bin/mainfunction.cgi. Such manipulation of the argument jsondata leads to command injection. The attack can be launched remotely. The exploit has been disclosed to the pub…",
+      "score": 9.1,
+      "severite": "CRITICAL",
+      "date": "2026-11-15T13:16:59.703000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-129452"
+    },
+    {
+      "source": "NVD",
+      "cve": "CVE-2026-129483",
+      "resume": "Cyrus SASL through 2.1.28 contains an authentication bypass vulnerability in the SRP server mechanism because srp_server_mech_step2 does not reject client public values A that are multiples of N. Unauthenticated network clients can send A equal to N to force a zero shared secret, authenticating as…",
+      "score": 9.1,
+      "severite": "CRITICAL",
+      "date": "2026-11-15T14:17:27.530000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-129483"
+    },
+    {
+      "source": "NVD",
+      "cve": "CVE-2026-130070",
+      "resume": "Ghost by muneeb141 on the main branch from commit c731cdf through commit 672dfec contains an authentication bypass vulnerability in the whitelisted ghost.api.ghost.convert_to_real_user method that allows unauthenticated attackers to skip OTP verification by setting the client-supplied bypass_otp pa…",
+      "score": 9.1,
+      "severite": "CRITICAL",
+      "date": "2026-11-16T22:18:22.220000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130070"
+    },
+    {
+      "source": "NVD",
+      "cve": "CVE-2026-130072",
+      "resume": "Cloud Commander (cloudcmd) before 19.21.4 contains an authentication bypass and path traversal vulnerability that allows unauthenticated attackers to rename files by sending PUT /rename requests handled before authentication middleware. Attackers can supply absolute or ../ paths in the from and to…",
+      "score": 9.1,
+      "severite": "CRITICAL",
+      "date": "2026-11-16T22:18:22.533000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130072"
+    }
+  ],
+  "presse": [
+    {
+      "source": "SecurityWeek",
+      "titre": "PreTxt Emerges Stealth with $5M Seed and an AI Supervision Tool",
+      "lien": "https://www.securityweek.com/pretxt-emerges-stealth-with-5m-seed-and-an-ai-supervision-tool/",
+      "date": "2026-11-17T14:00:00+00:00",
+      "resume": "PreTxt provides technology to prevent AI agents escaping their guardrails and causing unintended harm. The post PreTxt Emerges Stealth with $5M Seed and an AI Supervision Tool appeared first on SecurityWeek .",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "SecurityWeek",
+      "titre": "MSP ScreenConnect Servers Targeted in Month-Long Campaign",
+      "lien": "https://www.securityweek.com/msp-screenconnect-servers-targeted-in-month-long-campaign/",
+      "date": "2026-11-17T13:24:43+00:00",
+      "resume": "More than 40 servers received over 688,000 requests exploiting CVE-2026-84869 to execute guest-pushed files. The post MSP ScreenConnect Servers Targeted in Month-Long Campaign appeared first on SecurityWeek .",
+      "attaque": false,
+      "cves": [
+        "CVE-2026-84869"
+      ]
+    },
+    {
+      "source": "SecurityWeek",
+      "titre": "Access Dental Management Data Breach Impacts Over 340,000",
+      "lien": "https://www.securityweek.com/access-dental-management-data-breach-impacts-over-340000/",
+      "date": "2026-11-17T12:59:04+00:00",
+      "resume": "Hackers breached Access Dental’s network and stole personal, health, and insurance information. The post Access Dental Management Data Breach Impacts Over 340,000 appeared first on SecurityWeek .",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "SecurityWeek",
+      "titre": "Corma Receives $125 Million to Train Foundation Models for Defensive Cybersecurity",
+      "lien": "https://www.securityweek.com/corma-receives-125-million-to-train-foundation-models-for-defensive-cybersecurity/",
+      "date": "2026-11-17T12:51:54+00:00",
+      "resume": "Led by NEA and supported by existing investors, the funding brings the company’s valuation to $1 billion. The post Corma Receives $125 Million to Train Foundation Models for Defensive Cybersecurity appeared first on SecurityWeek .",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "SecurityWeek",
+      "titre": "N-able Kills Legacy APIs, Patches 17 N-central Zero-Days",
+      "lien": "https://www.securityweek.com/n-able-kills-legacy-apis-patches-17-n-central-zero-days/",
+      "date": "2026-11-17T12:28:45+00:00",
+      "resume": "The patches target recently disclosed zero-days, as well as vulnerabilities already exploited in the wild. The post N-able Kills Legacy APIs, Patches 17 N-central Zero-Days appeared first on SecurityWeek .",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "The Hacker News",
+      "titre": "Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap",
+      "lien": "https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html",
+      "date": "2026-11-17T12:25:06+00:00",
+      "resume": "Pinning GitHub Actions to an exact version of their code, known as SHA pinning, has become the go-to defense against software supply chain attacks. Attackers have already found a way around it. In March 2026, the hackers who hijacked Trivy, a widely used open-source security scanner, planted malici…",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "The Hacker News",
+      "titre": "Researchers Detail iPhone Flaw That Let Apps Record Audio Despite Denied Microphone Permission",
+      "lien": "https://thehackernews.com/2026/11/researchers-detail-iphone-flaw-that-let.html",
+      "date": "2026-11-17T12:14:36+00:00",
+      "resume": "A now-patched flaw in Apple's audio service let apps on iPhones and iPads record audio even after the user tapped \"Don't Allow\" on the microphone prompt. The first security updates with the fix came out on August 17. Neither Apple nor the two researchers who found the flaw report that it was used i…",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "SecurityWeek",
+      "titre": "California Sues OpenAI, Seeking Court-Ordered Changes After the Hugging Face Hack",
+      "lien": "https://www.securityweek.com/california-sues-openai-seeking-court-ordered-changes-after-the-hugging-face-hack/",
+      "date": "2026-11-17T12:00:00+00:00",
+      "resume": "The lawsuit alleges that OpenAI misled and endangered the public and users by knowingly developing advanced AI models without necessary safeguards. The post California Sues OpenAI, Seeking Court-Ordered Changes After the Hugging Face Hack appeared first on SecurityWeek .",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "The Hacker News",
+      "titre": "New GitDoor and GraphDoor Backdoors Turn GitHub and SharePoint Into Covert C2 Channels",
+      "lien": "https://thehackernews.com/2026/11/new-gitdoor-and-graphdoor-backdoors.html",
+      "date": "2026-11-17T11:20:18+00:00",
+      "resume": "Government sectors in Asia and Africa have been targeted by an active cyber intrusion campaign that delivers to previously undocumented backdoors that leverage legitimate services like Microsoft SharePoint and GitHub for command‑and‑control (C2). The activity has been codenamed Operation ShadowClou…",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "titre": "Microsoft testing Remote Lock for lost or stolen Windows devices",
+      "lien": "https://www.bleepingcomputer.com/news/microsoft/microsoft-testing-remote-lock-for-lost-or-stolen-windows-devices/",
+      "date": "2026-11-17T11:19:51+00:00",
+      "resume": "Microsoft is testing a new feature that lets enterprise IT administrators remotely lock stolen or lost Windows devices without wiping them. [...]",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "The Hacker News",
+      "titre": "Apple Tightens macOS App Permissions to Limit Data Access Amid AI Agent Security Risks",
+      "lien": "https://thehackernews.com/2026/11/apple-tightens-macos-app-permissions-to.html",
+      "date": "2026-11-17T11:07:31+00:00",
+      "resume": "Apple on Monday introduced new controls that allow Mac users to give more granular access to data they give to apps, including those that use artificial intelligence (AI) agents. The changes, currently previewed in macOS 27.3 beta 2, relate to increased transparency and more options for two of its…",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "ZATAZ",
+      "titre": "Faux coursiers bancaires : trois équipes interpellées",
+      "lien": "https://www.zataz.com/faux-coursiers-bancaires-trois-equipes-interpellees/",
+      "date": "2026-11-17T11:02:44+00:00",
+      "resume": "Dans le Nord, trois équipes de faux coursiers bancaires arrêtées. Des personnes âgées ciblées et dépouillées.",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "SecurityWeek",
+      "titre": "Optimizely Vulnerability Exploited to Serve Malware on Major Websites",
+      "lien": "https://www.securityweek.com/optimizely-vulnerability-exploited-to-serve-malware-on-major-websites/",
+      "date": "2026-11-17T10:22:20+00:00",
+      "resume": "Affected organizations include BBC, CNN, Zoom, GitLab, Salesforce, Equifax, HSBC, and IKEA. The post Optimizely Vulnerability Exploited to Serve Malware on Major Websites appeared first on SecurityWeek .",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "titre": "Court clears brothers of $25 million Ethereum crypto heist charges",
+      "lien": "https://www.bleepingcomputer.com/news/security/court-clears-brothers-of-25-million-ethereum-crypto-heist-charges/",
+      "date": "2026-11-17T09:44:22+00:00",
+      "resume": "US District Judge Jessica Clarke has acquitted two brothers accused of stealing $25 million in cryptocurrency in about 12 seconds through a scheme that exploited a bug in the Ethereum blockchain. [...]",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "titre": "Uber notifies drivers of data breach affecting nearly 150,000 people",
+      "lien": "https://www.bleepingcomputer.com/news/security/uber-notifies-drivers-of-data-breach-affecting-nearly-150-000-people/",
+      "date": "2026-11-17T08:35:42+00:00",
+      "resume": "Ride-hailing company Uber is notifying nearly 150,000 drivers that attackers stole their data after breaching AI infrastructure provider Fireworks in early October. [...]",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "ZATAZ",
+      "titre": "Cyberattaque : 765 000 euros d’or dérobés à des clients",
+      "lien": "https://www.zataz.com/cyberattaque-765-000-euros-dor-derobes-a-des-clients/",
+      "date": "2026-11-17T07:47:16+00:00",
+      "resume": "Cyberattaque et vol de données clients : de faux policiers dérobent au moins 765 000 euros d'or en France.",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "titre": "Ransomware affiliate suspect extradited to US, faces 27 years in prison",
+      "lien": "https://www.bleepingcomputer.com/news/security/alleged-inc-lynx-ransomware-affiliate-extradited-to-us-faces-27-years-in-prison/",
+      "date": "2026-11-17T07:25:44+00:00",
+      "resume": "A Kazakh national has been extradited from Italy to face charges alleging he targeted US schools, hospitals, and healthcare entities in ransomware attacks. [...]",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "The Hacker News",
+      "titre": "Hijacked Optimizely Scripts Served Card Skimmer and iOS Exploit Kits to CNN, BBC and Zoom Visitors",
+      "lien": "https://thehackernews.com/2026/11/hijacked-optimizely-scripts-served-card.html",
+      "date": "2026-11-17T07:12:13+00:00",
+      "resume": "An attacker exploited a flaw in Optimizely Web Experimentation to plant malicious code in some of the scripts that customers' websites load from the service, Optimizely said early today. Visitors to sites run by at least 178 organizations, including CNN, the BBC and Zoom, received the code yesterda…",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "The Hacker News",
+      "titre": "ConnectWise Warns ScreenConnect Attacks Continue as SCKit Targets Unpatched Systems",
+      "lien": "https://thehackernews.com/2026/11/connectwise-warns-screenconnect-attacks.html",
+      "date": "2026-11-17T06:29:27+00:00",
+      "resume": "ConnectWise on Monday said it completed its investigation into unauthorized access targeting partner ScreenConnect environments, and recommended customers to ensure that the technician client is running version 26.6.5 or later. The company said additional activity targeting on-premises environments…",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "ZATAZ",
+      "titre": "Rassemblement National : une seconde fuite de données ?",
+      "lien": "https://www.zataz.com/rassemblement-national-une-seconde-fuite-de-donnees/",
+      "date": "2026-11-17T06:29:20+00:00",
+      "resume": "Un pirate revendique 500 782 nouvelles données du RN à vendre. Il affiche aussi un accés informatique interne.",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "The Hacker News",
+      "titre": "N-able Patches 17 N-central Flaws as Attackers Exploit Earlier Bugs to Deploy Crypto Miners",
+      "lien": "https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html",
+      "date": "2026-11-17T05:00:34+00:00",
+      "resume": "N-able has released a new security update to address additional critical security flaws impacting N-central. Describing N-central 2026.4 Hotfix 3 as a critical security update, the company said it includes a number of security patches and fixes that enhance the security of the Remote Monitoring and…",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "titre": "Optimizely hack infected CNN, Fox News, BBC, Salesforce sites with malware",
+      "lien": "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-delivers-malware-to-cnn-fox-news-bbc-salesforce-sites/",
+      "date": "2026-11-17T02:12:17+00:00",
+      "resume": "A suspected supply chain attack targeting Optimizely has led to malicious JavaScript being loaded on numerous popular websites, including Zoom, CNN, Fox News, BBC, Salesforce, and GitLab, exposing visitors to scripts designed to steal cryptocurrency and payment information and exploit vulnerabiliti…",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "titre": "Gemini AI agents repeatedly bypassed safeguards to attack real website",
+      "lien": "https://www.bleepingcomputer.com/news/security/gemini-ai-agents-repeatedly-bypassed-safeguards-to-attack-real-website/",
+      "date": "2026-11-16T22:54:00+00:00",
+      "resume": "Google's Gemini AI agents repeatedly attempted to hack a real organization's website during AI model safety testing, finding ways to circumvent increasingly restrictive security controls designed to prevent them from accessing live systems. [...]",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "titre": "Google Project Zero cuts bug disclosures to 30 days amid AI threats",
+      "lien": "https://www.bleepingcomputer.com/news/security/google-project-zero-cuts-bug-disclosure-deadline-to-30-days-amid-ai-threats/",
+      "date": "2026-11-16T21:31:44+00:00",
+      "resume": "Google Project Zero will replace its \"90+30\" disclosure policy with shorter, fixed deadlines in response to AI-accelerated vulnerability discovery and exploitation. [...]",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "titre": "California sues OpenAI over AI agents escaping sandboxes, hacking firms",
+      "lien": "https://www.bleepingcomputer.com/news/security/california-sues-openai-over-ai-agents-escaping-sandboxes-hacking-firms/",
+      "date": "2026-11-16T20:59:44+00:00",
+      "resume": "California Attorney General Rob Bonta sued OpenAI on Monday, alleging the company knowingly continued testing advanced artificial intelligence models despite repeated security failures that allowed autonomous AI agents to escape isolated environments and launch cyberattacks against real-world organ…",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "SecurityWeek",
+      "titre": "Trump Administration Moves to Block China From Indirect Access to American AI Technology",
+      "lien": "https://www.securityweek.com/trump-administration-moves-to-block-china-from-indirect-access-to-american-ai-technology/",
+      "date": "2026-11-16T20:00:00+00:00",
+      "resume": "Under the new rule, overseas data centers that serve companies in countries including China, Russia, Iran and Cuba are required to identify their end users. The post Trump Administration Moves to Block China From Indirect Access to American AI Technology appeared first on SecurityWeek .",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "titre": "Barracuda links cloud breach to ARTEX AI-powered cyberattack",
+      "lien": "https://www.bleepingcomputer.com/news/security/barracuda-links-cloud-breach-to-artex-ai-powered-cyberattack/",
+      "date": "2026-11-16T19:57:13+00:00",
+      "resume": "Hackers who breached the cloud environment of network and email security company Barracuda earlier this month used a stolen cloud access key and the ARTEX AI penetration testing framework. [...]",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "ZATAZ",
+      "titre": "WhiteArmor recrute des complices pour infiltrer les entreprises",
+      "lien": "https://www.zataz.com/whitearmor-recrute-des-complices-pour-infiltrer-les-entreprises/",
+      "date": "2026-11-16T18:03:56+00:00",
+      "resume": "WhiteArmor recrute des employés complices et achète des accès VPN, Azure et Okta pour infiltrer de grandes entreprises.",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "ZATAZ",
+      "titre": "Maersk : un pirate réclame 5 millions de dollars",
+      "lien": "https://www.zataz.com/maersk-un-pirate-reclame-5-millions-de-dollars/",
+      "date": "2026-11-16T17:50:58+00:00",
+      "resume": "WhiteArmor exige 5 millions de dollars après une intrusion chez Maersk. Le groupe confirme un incident... limité.",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "ZATAZ",
+      "titre": "Gootloader : une opération frappe 100 serveurs infectés",
+      "lien": "https://www.zataz.com/gootloader-une-operation-frappe-100-serveurs-infectes/",
+      "date": "2026-11-16T17:33:02+00:00",
+      "resume": "Une opération internationale contre Gootloader neutralise plus de 100 serveurs liés à 25 000 infections.",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "ZATAZ",
+      "titre": "Corée du Nord : Washington frappe les voleurs de cryptos",
+      "lien": "https://www.zataz.com/coree-du-nord-washington-frappe-les-voleurs-de-cryptos/",
+      "date": "2026-11-16T17:27:41+00:00",
+      "resume": "Le DOJ annonce des saisies liées aux vols de cryptomonnaies nord-coréens et démantèle des infrastructures FaceStealer.",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "ZATAZ",
+      "titre": "Expedia : un pirate revendique un vol massif de données",
+      "lien": "https://www.zataz.com/expedia-un-pirate-revendique-un-vol-massif-de-donnees/",
+      "date": "2026-11-16T16:57:49+00:00",
+      "resume": "Expedia confirme une intrusion via un prestataire. Un pirate revendique un vol massif de données de voyageurs.",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "ZATAZ",
+      "titre": "Quantum Systems : une cyberattaque inquiète l’armée allemande",
+      "lien": "https://www.zataz.com/quantum-systems-une-cyberattaque-inquiete-larmee-allemande/",
+      "date": "2026-11-16T16:48:18+00:00",
+      "resume": "Quantum Systems confirme une cyberattaque. Une possible compromission des mises à jour de drones inquiète l'Allemagne.",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "titre": "Microsoft says months-old bug caused global Microsoft 365 outage",
+      "lien": "https://www.bleepingcomputer.com/news/microsoft/microsoft-says-months-old-bug-caused-global-microsoft-365-outage/",
+      "date": "2026-11-16T16:43:24+00:00",
+      "resume": "Microsoft says a software bug introduced in July caused last week's worldwide Microsoft 365 outage, triggering a cascading failure that left more than 80% of its networking gateway servers unresponsive. [...]",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "ZATAZ",
+      "titre": "Deepfakes : une fraude présumée à 129 millions de dollars",
+      "lien": "https://www.zataz.com/deepfakes-une-fraude-presumee-a-129-millions-de-dollars/",
+      "date": "2026-11-16T15:57:48+00:00",
+      "resume": "Trois hommes sont accusés d'une fraude à 129 millions de dollars utilisant des deepfakes et l'ingénierie sociale.",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "SecurityWeek",
+      "titre": "Cursor Supply Chain Attack Started at Fireworks AI",
+      "lien": "https://www.securityweek.com/cursor-supply-chain-attack-started-at-fireworks/",
+      "date": "2026-11-16T15:45:43+00:00",
+      "resume": "The attacker stole an access key from Fireworks and used it to exfiltrate credentials that enabled them to push malicious Claude Code extension copies. The post Cursor Supply Chain Attack Started at Fireworks AI appeared first on SecurityWeek .",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "titre": "Fandango says hackers stole payment card details from checkout pages",
+      "lien": "https://www.bleepingcomputer.com/news/security/fandango-says-hackers-stole-payment-card-details-from-checkout-pages/",
+      "date": "2026-11-16T15:44:21+00:00",
+      "resume": "Ticket seller Fandango Media is notifying customers about a data breach that exposed payment card details entered on its checkout pages. [...]",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "SecurityWeek",
+      "titre": "Google Project Zero Sets Course for 30-Day Disclosure Deadline",
+      "lien": "https://www.securityweek.com/google-project-zero-sets-course-for-30-day-disclosure-deadline/",
+      "date": "2026-11-16T15:31:25+00:00",
+      "resume": "It will move to a 60-day vulnerability disclosure window in February 2027 and to a 30-day window in January 2028. The post Google Project Zero Sets Course for 30-Day Disclosure Deadline appeared first on SecurityWeek .",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "titre": "7 Tips For Complying with CJIS Password and MFA Requirements",
+      "lien": "https://www.bleepingcomputer.com/news/security/7-tips-for-complying-with-cjis-password-and-mfa-requirements/",
+      "date": "2026-11-16T15:01:11+00:00",
+      "resume": "The FBI's latest CJIS Security Policy requires law enforcement agencies to strengthen password protections and enforce MFA across privileged and non-privileged accounts. Specops Software outlines seven practical steps to meet these requirements, block compromised passwords, and maintain compliance.…",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "The Hacker News",
+      "titre": "Google Finds Hackers Using AI Agents to Build and Run Exploits From Software Patches",
+      "lien": "https://thehackernews.com/2026/11/google-finds-hackers-using-ai-agents-to.html",
+      "date": "2026-11-16T14:00:00+00:00",
+      "resume": "Google on Monday revealed that adversarial use of artificial intelligence (AI) by threat actors has gone beyond manual prompting to deploying autonomous multi-agent offensive frameworks like ARTEX, CAIRN, CyberStrikeAI, and PentAGI to execute multi-stage intrusions at greater operational velocity.…",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "titre": "Google warns that fully-automated AI attacks are coming soon",
+      "lien": "https://www.bleepingcomputer.com/news/security/google-warns-that-fully-automated-ai-attacks-are-coming-soon/",
+      "date": "2026-11-16T14:00:00+00:00",
+      "resume": "Threat actors are now relying on agentic workflows powered by AI-based offensive frameworks to automate vulnerability discovery and exploitation, accelerating attacks to machine speed. [...]",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "The Hacker News",
+      "titre": "⚡ Weekly Recap: N-able 0-Days, Windows 0-Days, Chrome 0-Days, Fridge 0-Days, and More Bad Days",
+      "lien": "https://thehackernews.com/2026/11/weekly-recap-n-able-0-days-windows-0.html",
+      "date": "2026-11-16T13:27:20+00:00",
+      "resume": "A default password opened doors it never should have. A trusted update delivered malware. Even a security feature became a way to break in. Different stories, same problem: the things meant to protect us aren't always doing their job. Meanwhile, AI is making bug hunting faster, old flaws are still…",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "titre": "Microsoft: Windows Server 2016 reaches end of support in 60 days",
+      "lien": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2016-reaches-end-of-support-in-60-days/",
+      "date": "2026-11-16T12:53:18+00:00",
+      "resume": "Microsoft has reminded customers again that Windows Server 2016 will stop receiving security updates after it reaches the end of support in two months. [...]",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "The Hacker News",
+      "titre": "Six Unpatched Danfoss Refrigeration Controller Flaws Could Allow Remote Takeover Without Login",
+      "lien": "https://thehackernews.com/2026/11/six-unpatched-danfoss-refrigeration.html",
+      "date": "2026-11-16T12:34:21+00:00",
+      "resume": "Six flaws in Danfoss AK-SM800A refrigeration controllers could let a remote attacker take over a controller without logging in, Dutch security consultancy Midnight Blue said earlier this week. No patch is available, and the researchers say the newest firmware, version 5.4.0, does not fix the flaws.…",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "The Hacker News",
+      "titre": "Retadup Worm Resurfaces 7 Years After Takedown to Spread CoffeeLoader Malware",
+      "lien": "https://thehackernews.com/2026/11/retadup-worm-resurfaces-7-years-after.html",
+      "date": "2026-11-16T12:33:18+00:00",
+      "resume": "Cybersecurity researchers have disclosed details of a new variant of CoffeeLoader, a malware designed to deliver additional payloads to infected machines. \"On launch, the NSIS-based installer executable dropped a file named '7z.dll' into a temporary directory and ran it through rundll32.exe,\" Kaspe…",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "titre": "Australian retail giant Coles investigates cybersecurity incident",
+      "lien": "https://www.bleepingcomputer.com/news/security/australian-retail-giant-coles-investigates-cybersecurity-incident/",
+      "date": "2026-11-16T11:18:09+00:00",
+      "resume": "Coles Group Limited, Australia's second-largest retailer, is investigating what it described as a \"cyber security incident\" that has not impacted the company's stores. [...]",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "The Hacker News",
+      "titre": "SANSAR Linux Cryptomining Malware Uses Modified NVIDIA Library to Hide GPU Activity",
+      "lien": "https://thehackernews.com/2026/11/sansar-linux-cryptomining-malware-uses.html",
+      "date": "2026-11-16T09:32:57+00:00",
+      "resume": "A financially motivated threat activity cluster tracked as REF3364 has been attributed to a Linux-focused cryptocurrency mining operation that tampers with the readings used to detect high GPU workloads. Central to the intrusion is a toolkit called SANSAR, a Rust-based orchestrator that receives co…",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "The Hacker News",
+      "titre": "Amazon Uncovers AI Agent Campaign Targeting LiteLLM, Dify, and Other Apps for API Keys",
+      "lien": "https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html",
+      "date": "2026-11-16T07:34:21+00:00",
+      "resume": "Attackers' AI agents have been hunting for weak spots in internet-exposed AI apps such as LiteLLM, One API, and Dify to steal the AI provider keys stored inside, according to the agents' own records. The records, which Amazon's threat intelligence team captured with decoy servers, describe stolen k…",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "The Hacker News",
+      "titre": "BO Team Exploits Log4Shell in VMware vCenter, Compromises Russian Firm's Code-Signing Server",
+      "lien": "https://thehackernews.com/2026/11/bo-team-exploits-log4shell-in-vmware.html",
+      "date": "2026-11-16T06:53:34+00:00",
+      "resume": "An investigation into suspicious activity within a Russian software developer's network has uncovered a months-long compromise of its development infrastructure and a software code-signing server. The activity, documented by Kaspersky's ICS CERT team after it was contacted by the affected developer…",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "The Hacker News",
+      "titre": "Italy Fines Meta €805 Million Over Facebook's Android Gallery Access Without Explicit Consent",
+      "lien": "https://thehackernews.com/2026/11/italy-fines-meta-805-million-over.html",
+      "date": "2026-11-15T11:27:31+00:00",
+      "resume": "Meta was fined €805 million in Italy yesterday over a Facebook for Android feature that suggests photos and videos from users' phone galleries for them to post. The Garante, Italy's data protection authority, found that the feature was enabled by default and that the app accessed Italian users' pho…",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "The Hacker News",
+      "titre": "Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident",
+      "lien": "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html",
+      "date": "2026-11-15T08:22:04+00:00",
+      "resume": "The compromise of Anthropic's official Claude Code extension on Cursor's extension marketplace was the result of the theft of an access key that was exposed in the wake of a breach targeting Fireworks AI. \"An attacker obtained an access key we had issued to Fireworks,\" Cursor said in a Friday updat…",
+      "attaque": true,
+      "cves": []
+    }
+  ],
+  "erreurs": []
+}
