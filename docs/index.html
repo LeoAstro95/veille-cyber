@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cyber Veille — Maxime Stephan</title>
-  <meta name="description" content="Veille quotidienne des vulnérabilités et cyberattaques, mise à jour automatiquement chaque matin.">
+  <meta name="description" content="Veille des vulnérabilités et cyberattaques, mise à jour automatiquement à 7h, 12h et 18h.">
   <meta name="theme-color" content="#070B14">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +21,7 @@
 
       <div class="entete-ligne">
         <div class="entete-infos">
-          <p class="sur-titre">// veille quotidienne</p>
+          <p class="sur-titre">// veille quotidienne · 7h · 12h · 18h</p>
           <p class="maj" id="maj">Chargement…</p>
         </div>
         <div class="archive">
@@ -32,33 +32,74 @@
     </div>
   </header>
 
-  <main class="conteneur">
-    <section class="stats" id="stats" aria-label="Résumé du jour"></section>
+  <div class="conteneur mise-en-page">
 
-    <div class="barre" id="barre">
-      <nav class="onglets" role="tablist" aria-label="Catégories">
-        <button class="onglet actif" role="tab" data-onglet="certfr">CERT-FR</button>
-        <button class="onglet" role="tab" data-onglet="kev">Exploitées (KEV)</button>
-        <button class="onglet" role="tab" data-onglet="nvd">CVE critiques</button>
-        <button class="onglet" role="tab" data-onglet="presse">Attaques &amp; actu</button>
-      </nav>
-      <div class="recherche">
-        <input type="search" id="recherche" placeholder="Filtrer (éditeur, CVE, mot-clé…)" aria-label="Filtrer">
-        <kbd class="raccourci" id="raccourci" title="Raccourci : / ou Ctrl+K">/</kbd>
+    <!-- ================= Barre latérale : filtres ================= -->
+    <aside class="filtres" id="filtres" aria-label="Filtres">
+
+      <section class="bloc">
+        <h2 class="bloc-titre">⭐ Mes produits</h2>
+        <div class="mes-produits" id="mes-produits"></div>
+        <form class="ajout-produit" id="ajout-produit" autocomplete="off">
+          <input type="text" id="nouveau-produit" placeholder="Ajouter (ex. Fortinet)" aria-label="Ajouter un produit">
+          <button type="submit" aria-label="Ajouter">+</button>
+        </form>
+        <label class="option">
+          <input type="checkbox" id="seul-mes-produits">
+          <span>Seulement mes produits</span>
+          <span class="compte" id="compte-mes-produits"></span>
+        </label>
+      </section>
+
+      <section class="bloc">
+        <h2 class="bloc-titre">🌍 Origine</h2>
+        <div id="filtre-origine" role="radiogroup" aria-label="Origine des sources"></div>
+      </section>
+
+      <section class="bloc">
+        <h2 class="bloc-titre">💻 Technologies</h2>
+        <div id="filtre-techno"></div>
+      </section>
+
+      <button class="reinit" id="reinit" type="button">Réinitialiser les filtres</button>
+    </aside>
+
+    <!-- ================= Contenu principal ================= -->
+    <main class="principal">
+      <section class="stats" id="stats" aria-label="Résumé"></section>
+
+      <div class="barre" id="barre">
+        <nav class="onglets" role="tablist" aria-label="Catégories">
+          <button class="onglet actif" role="tab" data-onglet="priorites">🔥 Prioritaires</button>
+          <button class="onglet" role="tab" data-onglet="certfr">CERT-FR</button>
+          <button class="onglet" role="tab" data-onglet="kev">Exploitées</button>
+          <button class="onglet" role="tab" data-onglet="nvd">CVE critiques</button>
+          <button class="onglet" role="tab" data-onglet="presse">Actualités</button>
+        </nav>
+        <div class="outils">
+          <button class="bouton-filtres" id="bouton-filtres" type="button" aria-controls="filtres" aria-expanded="false">
+            ☰ Filtres <span id="nb-filtres"></span>
+          </button>
+          <div class="recherche">
+            <input type="search" id="recherche" placeholder="Rechercher (produit, CVE, mot-clé…)" aria-label="Rechercher">
+            <kbd class="raccourci" id="raccourci" title="Raccourci : / ou Ctrl+K">/</kbd>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <div class="sous-filtres" id="sous-filtres" role="group" aria-label="Sous-filtre"></div>
+      <p class="intro-onglet" id="intro-onglet"></p>
+      <div class="filtres-actifs" id="filtres-actifs"></div>
+      <div class="sous-filtres" id="sous-filtres" role="group" aria-label="Sous-filtre"></div>
 
-    <section id="liste" class="liste" aria-live="polite"></section>
-    <p class="erreurs" id="erreurs"></p>
-  </main>
+      <section id="liste" class="liste" aria-live="polite"></section>
+      <p class="erreurs" id="erreurs"></p>
+    </main>
+  </div>
 
   <footer class="conteneur pied">
-    Sources : <a href="https://www.cert.ssi.gouv.fr/">CERT-FR (ANSSI)</a> ·
-    <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog">CISA KEV</a> ·
-    <a href="https://nvd.nist.gov/">NVD (NIST)</a> · presse spécialisée.
-    Projet BTS SIO SISR — Maxime Stephan.
+    Sources : CERT-FR (ANSSI) · CISA KEV · NVD (NIST) · FIRST EPSS ·
+    IT-Connect · Le Monde Informatique · ZATAZ · The Hacker News · BleepingComputer · SecurityWeek · Krebs on Security.
+    <br>Projet BTS SIO SISR — Maxime Stephan.
   </footer>
 
   <script src="app.js"></script>

@@ -42,7 +42,7 @@ body {
 a { color: var(--accent); }
 a:hover { color: var(--accent-survol); }
 
-.conteneur { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+.conteneur { max-width: 1240px; margin: 0 auto; padding: 0 20px; }
 
 /* ==========================================================================
    En-tête
@@ -109,7 +109,7 @@ input[type="search"]::placeholder { color: var(--doux); }
 /* ==========================================================================
    Statistiques (cliquables)
    ========================================================================== */
-.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 22px; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin-bottom: 22px; }
 .stat {
   display: block; width: 100%; text-align: left; font: inherit; cursor: pointer;
   background: var(--carte); border: 1px solid var(--bord); border-radius: 10px; padding: 14px 16px;
@@ -221,8 +221,142 @@ input[type="search"]::placeholder { color: var(--doux); }
 .pied { color: var(--doux); font-size: 13px; padding: 30px 20px 40px; border-top: 1px solid var(--bord); margin-top: 40px; }
 
 /* ==========================================================================
-   Mobile
+   Mise en page : barre latérale + contenu
    ========================================================================== */
+.mise-en-page { display: grid; grid-template-columns: 272px minmax(0, 1fr); gap: 26px; align-items: start; }
+
+.filtres {
+  position: sticky; top: 16px;
+  max-height: calc(100vh - 32px); overflow-y: auto;
+  display: flex; flex-direction: column; gap: 14px;
+  scrollbar-width: thin; scrollbar-color: var(--bord) transparent;
+}
+.bloc { background: var(--carte); border: 1px solid var(--bord); border-radius: 12px; padding: 14px; }
+.bloc-titre {
+  margin: 0 0 10px; font-size: 12px; font-weight: 600; letter-spacing: .06em;
+  text-transform: uppercase; color: var(--doux);
+}
+
+/* Lignes d'option (radio / case à cocher) */
+.option {
+  display: flex; align-items: center; gap: 10px; cursor: pointer;
+  padding: 7px 8px; margin: 0 -8px; border-radius: 8px; font-size: 13.5px; line-height: 1.35; color: var(--texte);
+  transition: background .15s, color .15s;
+}
+.option:hover { background: var(--carte-survol); color: var(--titre); }
+.option input { accent-color: var(--accent); width: 15px; height: 15px; margin: 0; cursor: pointer; flex: none; }
+.option .icone { width: 18px; text-align: center; flex: none; }
+.option .compte {
+  margin-left: auto; font-family: var(--mono); font-size: 12px; color: var(--doux);
+  background: var(--fond); border: 1px solid var(--bord); border-radius: 999px; padding: 0 8px; min-width: 28px; text-align: center;
+}
+.option.vide { opacity: .45; }
+.option:has(input:checked) { color: var(--titre); }
+.option:has(input:checked) .compte { color: var(--accent); border-color: rgba(20, 184, 166, .5); }
+
+/* Mes produits */
+.mes-produits { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+.mes-produits:empty::before { content: "Aucun produit pour l'instant."; font-size: 13px; color: var(--doux); }
+.puce-produit {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 12px; font-weight: 600; color: var(--titre);
+  background: rgba(20, 184, 166, .12); border: 1px solid rgba(20, 184, 166, .4);
+  border-radius: 999px; padding: 2px 4px 2px 10px;
+}
+.puce-produit button {
+  border: 0; background: transparent; color: var(--doux); cursor: pointer; font: inherit;
+  width: 18px; height: 18px; border-radius: 50%; line-height: 1; padding: 0;
+}
+.puce-produit button:hover { background: var(--bord); color: var(--titre); }
+.ajout-produit { display: flex; gap: 6px; margin-bottom: 4px; }
+.ajout-produit input {
+  flex: 1; min-width: 0; background: var(--fond); color: var(--titre);
+  border: 1px solid var(--bord); border-radius: 8px; padding: 6px 10px; font: inherit; font-size: 13px;
+}
+.ajout-produit input:focus { outline: none; border-color: var(--accent); }
+.ajout-produit button {
+  flex: none; width: 32px; border-radius: 8px; border: 1px solid var(--accent);
+  background: transparent; color: var(--accent); font-size: 18px; cursor: pointer;
+}
+.ajout-produit button:hover { background: var(--accent); color: var(--fond); }
+
+.reinit {
+  font: inherit; font-size: 13px; color: var(--doux); background: transparent;
+  border: 1px dashed var(--bord); border-radius: 10px; padding: 8px; cursor: pointer;
+}
+.reinit:hover { color: var(--titre); border-color: var(--doux); }
+
+/* Outils à droite des onglets */
+.outils { display: flex; gap: 8px; flex: 1; justify-content: flex-end; min-width: 240px; }
+.bouton-filtres {
+  display: none; font: inherit; font-weight: 500; cursor: pointer;
+  background: var(--carte); color: var(--titre); border: 1px solid var(--bord); border-radius: 8px; padding: 8px 12px;
+}
+#nb-filtres:not(:empty) {
+  font-family: var(--mono); font-size: 12px; background: var(--accent); color: var(--fond);
+  border-radius: 999px; padding: 0 7px; margin-left: 4px;
+}
+
+.intro-onglet { margin: -2px 0 10px; font-size: 13px; color: var(--doux); }
+.intro-onglet:empty { display: none; }
+
+/* Filtres actifs */
+.filtres-actifs { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-bottom: 12px; }
+.filtres-actifs:empty { display: none; }
+.filtre-actif {
+  display: inline-flex; align-items: center; gap: 6px; font: inherit; font-size: 12px; cursor: pointer;
+  background: var(--bord); color: var(--titre); border: 1px solid #334155; border-radius: 999px; padding: 3px 10px;
+}
+.filtre-actif:hover { border-color: var(--critique); }
+.filtre-actif span { color: var(--doux); }
+.tout-effacer { font: inherit; font-size: 12px; color: var(--accent); background: none; border: 0; cursor: pointer; text-decoration: underline; }
+
+/* Étoile « mes produits » */
+.etoile { color: #FBBF24; font-size: 14px; line-height: 1; }
+
+/* ==========================================================================
+   Cartes « Prioritaires »
+   ========================================================================== */
+.carte.prio { display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 14px; padding: 16px 18px 18px 14px; overflow: hidden; }
+.rang {
+  font-family: var(--mono); font-weight: 600; font-size: 20px; color: var(--doux);
+  display: flex; flex-direction: column; align-items: center; gap: 6px; padding-top: 2px;
+}
+.score {
+  font-family: var(--mono); font-size: 12px; font-weight: 600;
+  width: 44px; height: 44px; border-radius: 50%;
+  display: grid; place-items: center; color: var(--titre);
+  background: conic-gradient(var(--couleur-score) calc(var(--score) * 1%), var(--bord) 0);
+  position: relative;
+}
+.score::before { content: ""; position: absolute; inset: 4px; border-radius: 50%; background: var(--carte); }
+.carte.prio:hover .score::before { background: var(--carte-survol); }
+.score span { position: relative; }
+.carte.prio.critique { --couleur-score: var(--critique); }
+.carte.prio.eleve { --couleur-score: var(--eleve); }
+.carte.prio.info { --couleur-score: var(--info); }
+
+.raisons { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.raison { font-size: 12px; font-weight: 500; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--bord); color: var(--texte); white-space: nowrap; }
+.raison.r-rouge { color: #F87171; border-color: rgba(239, 68, 68, .45); background: rgba(239, 68, 68, .08); }
+.raison.r-orange { color: var(--eleve); border-color: rgba(245, 158, 11, .45); background: rgba(245, 158, 11, .08); }
+.raison.r-bleu { color: var(--info); border-color: rgba(56, 189, 248, .4); background: rgba(56, 189, 248, .07); }
+
+.sources-carte { margin-top: 10px; font-size: 12px; color: var(--doux); position: relative; z-index: 1; }
+.sources-carte a { color: var(--doux); text-decoration: none; border-bottom: 1px dotted var(--bord); }
+.sources-carte a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+.drapeau { font-size: 11px; font-family: var(--mono); color: var(--doux); border: 1px solid var(--bord); border-radius: 4px; padding: 0 5px; }
+
+/* ==========================================================================
+   Tablette et mobile
+   ========================================================================== */
+@media (max-width: 900px) {
+  .mise-en-page { grid-template-columns: minmax(0, 1fr); }
+  .filtres { display: none; position: static; max-height: none; order: -1; }
+  .filtres.ouvert { display: flex; }
+  .bouton-filtres { display: inline-block; }
+}
+
 @media (max-width: 640px) {
   .banniere img { aspect-ratio: 1024 / 380; object-position: 22% 40%; }
   .meta { padding-right: 0; }
@@ -232,4 +366,8 @@ input[type="search"]::placeholder { color: var(--doux); }
   .entete-ligne { margin-top: 0; }
   .stats { grid-template-columns: 1fr 1fr; }
   .stat:last-child:nth-child(odd) { grid-column: span 2; }
+  .carte.prio { grid-template-columns: minmax(0, 1fr); }
+  .rang { flex-direction: row; justify-content: flex-start; }
+  .outils { min-width: 0; width: 100%; }
 }
+.option .compte:empty { display: none; }
