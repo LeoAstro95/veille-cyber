@@ -2,31 +2,56 @@ name: Veille cyber quotidienne
 
 on:
   schedule:
-    # GitHub Actions fonctionne en heure UTC.
-    # 05:00 UTC = 7h à Paris en été, 06:00 UTC = 7h à Paris en hiver.
-    # Les deux créneaux tournent ; l'étape "Vérifier l'heure" ne garde que celui de 7h.
-    - cron: "0 5 * * *"
-    - cron: "0 6 * * *"
+    # GitHub Actions fonctionne en heure UTC. Paris = UTC+1 en hiver, UTC+2 en été.
+    # Chaque créneau a donc deux horaires UTC ; l'étape « Choisir le créneau »
+    # ne garde que celui qui tombe à 7h, 12h ou 18h à Paris le jour du lancement.
+    - cron: "0 5 * * *"   # 7h été
+    - cron: "0 6 * * *"   # 7h hiver
+    - cron: "0 10 * * *"  # 12h été
+    - cron: "0 11 * * *"  # 12h hiver
+    - cron: "0 16 * * *"  # 18h été
+    - cron: "0 17 * * *"  # 18h hiver
   workflow_dispatch: # bouton "Run workflow" pour lancer à la main
 
 permissions:
   contents: write
 
+# Évite que deux lancements se chevauchent
+concurrency:
+  group: veille
+  cancel-in-progress: false
+
 jobs:
   veille:
     runs-on: ubuntu-latest
     steps:
-      - name: Vérifier l'heure (7h Paris)
+      - name: Choisir le créneau (7h, 12h, 18h Paris)
         id: heure
         run: |
-          H=$(TZ=Europe/Paris date +%H)
-          echo "Heure à Paris : $H"
-          # On saute uniquement le créneau de 6h (hiver, cron de 5h UTC).
-          # Si GitHub a du retard, le run de 7h passe quand même.
-          if [ "${{ github.event_name }}" = "schedule" ] && [ "$H" = "06" ]; then
-            echo "lancer=non" >> "$GITHUB_OUTPUT"
-          else
+          if [ "${{ github.event_name }}" != "schedule" ]; then
             echo "lancer=oui" >> "$GITHUB_OUTPUT"
+            echo "creneau=manuel" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          # On se base sur l'horaire PRÉVU (et non l'heure réelle),
+          # pour qu'un retard de GitHub ne fasse pas sauter une notification.
+          PREVU="${{ github.event.schedule }}"
+          MIN=$(echo "$PREVU" | awk '{print $1}')
+          H_UTC=$(echo "$PREVU" | awk '{print $2}')
+          H_PARIS=$(TZ=Europe/Paris date -d "$(date -u +%F) ${H_UTC}:${MIN} UTC" +%H)
+          echo "Créneau prévu : ${H_UTC}h UTC = ${H_PARIS}h à Paris"
+          case "$H_PARIS" in
+            07) C=matin ;;
+            12) C=midi ;;
+            18) C=soir ;;
+            *)  C="" ;;
+          esac
+          if [ -n "$C" ]; then
+            echo "lancer=oui" >> "$GITHUB_OUTPUT"
+            echo "creneau=$C" >> "$GITHUB_OUTPUT"
+          else
+            echo "Pas un créneau de notification : on saute."
+            echo "lancer=non" >> "$GITHUB_OUTPUT"
           fi
 
       - uses: actions/checkout@v4
@@ -36,6 +61,10 @@ jobs:
         if: steps.heure.outputs.lancer == 'oui'
         with:
           python-version: "3.12"
+
+      - name: Garder la veille précédente (pour repérer les nouveautés)
+        if: steps.heure.outputs.lancer == 'oui'
+        run: cp docs/data/veille.json /tmp/precedent.json || true
 
       - name: Collecter la veille
         if: steps.heure.outputs.lancer == 'oui'
@@ -47,7 +76,8 @@ jobs:
           git config user.name "veille-bot"
           git config user.email "veille-bot@users.noreply.github.com"
           git add docs/data
-          git diff --cached --quiet || git commit -m "Veille du $(TZ=Europe/Paris date +%d/%m/%Y)"
+          git diff --cached --quiet || git commit -m "Veille du $(TZ=Europe/Paris date '+%d/%m/%Y %Hh%M')"
+          git pull --rebase --quiet || true
           git push
 
       - name: Attendre la mise à jour du site
@@ -61,4 +91,6 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           SITE_URL: ${{ vars.SITE_URL }}
+          CRENEAU: ${{ steps.heure.outputs.creneau }}
+          PRECEDENT: /tmp/precedent.json
         run: python scripts/notifier.py
