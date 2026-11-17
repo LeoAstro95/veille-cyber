@@ -1,12 +1,12 @@
 {
-  "genere_le": "2026-11-17T17:40:29.201823+00:00",
+  "genere_le": "2026-11-17T19:56:06.897763+00:00",
   "fenetre_jours": 3,
   "stats": {
     "alertes_certfr": 0,
     "avis_certfr": 1,
-    "kev": 0,
-    "cve_critiques": 11,
-    "attaques": 31
+    "kev": 1,
+    "cve_critiques": 10,
+    "attaques": 30
   },
   "certfr": [
     {
@@ -19,7 +19,20 @@
       "cves": []
     }
   ],
-  "kev": [],
+  "kev": [
+    {
+      "source": "CISA KEV",
+      "cve": "CVE-2026-115731",
+      "titre": "Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability",
+      "editeur": "Perforce",
+      "produit": "Puppet Enterprise",
+      "resume": "Perforce Puppet Enterprise contains a deserialization of untrusted data vulnerability in Puppet’s report-processing code that allows a client with any CA-signed agent certificate to execute arbitrary code on the Puppet Server as the service user by submitting a report containing a crafted rich-data…",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triag…",
+      "date": "2026-11-17T00:00:00+00:00",
+      "ransomware": false,
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-115731"
+    }
+  ],
   "nvd": [
     {
       "source": "NVD",
@@ -77,15 +90,6 @@
     },
     {
       "source": "NVD",
-      "cve": "CVE-2026-79614",
-      "resume": "An out-of-bounds write vulnerability in “libclinkc.so” in Zyxel DX3301-T0/EX3301-T0 firmware versions through 5.50(ABVY.8.3)C0 could allow an unauthenticated attacker to elevate privileges and potentially execute arbitrary commands by sending a crafted HTTP request. WAN access is disabled by defaul…",
-      "score": 9.8,
-      "severite": "CRITICAL",
-      "date": "2026-11-17T02:17:22.743000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-79614"
-    },
-    {
-      "source": "NVD",
       "cve": "CVE-2026-130583",
       "resume": "Rootways Authorize.net CIM Pro extension for Magento 2 before 4.1.5 contains an unauthenticated server-side request forgery vulnerability in the Apple Pay merchant validation controller. Attackers can supply file://, gopher://, or dict:// URLs in the validationUrl parameter to read app/etc/env.php…",
       "score": 9.3,
@@ -124,10 +128,66 @@
   "presse": [
     {
       "source": "BleepingComputer",
+      "titre": "Apple reports outages affecting iCloud Mail, AppleCare and more",
+      "lien": "https://www.bleepingcomputer.com/news/apple/apple-reports-outages-affecting-icloud-mail-applecare-and-more/",
+      "date": "2026-11-17T19:24:07+00:00",
+      "resume": "Apple is reporting service disruptions affecting several of its services, including iCloud Mail, iCloud Account & Sign In, Apple School Manager, and Schoolwork. [...]",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "titre": "Researchers hijack Hugging Face account for popular Kokoro AI model",
+      "lien": "https://www.bleepingcomputer.com/news/security/researchers-hijack-hugging-face-account-for-popular-kokoro-ai-model/",
+      "date": "2026-11-17T18:21:24+00:00",
+      "resume": "A Lack of ownership verification on the Hugging Face platform allowed researchers to take control of Kokoro, a text-to-speech model used in projects from Google, NVIDIA, AMD, Intel, and Amazon Web Services. [...]",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "SecurityWeek",
+      "titre": "AI Framework Autonomously Weaponized Flaws in Real Attacks, Google Says",
+      "lien": "https://www.securityweek.com/ai-framework-autonomously-weaponized-flaws-in-real-attacks-google-says/",
+      "date": "2026-11-17T18:16:17+00:00",
+      "resume": "Threat actors are deploying multi-agent offensive frameworks to increase the velocity of multi-stage intrusions. The post AI Framework Autonomously Weaponized Flaws in Real Attacks, Google Says appeared first on SecurityWeek .",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "titre": "Tor releases emergency update amid ongoing DDoS attack",
+      "lien": "https://www.bleepingcomputer.com/news/security/tor-releases-emergency-update-amid-ongoing-ddos-attack/",
+      "date": "2026-11-17T18:04:15+00:00",
+      "resume": "[...]",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
       "titre": "Flipper Devices launches $399 ‘Flipper One’ Linux-based multi-tool",
       "lien": "https://www.bleepingcomputer.com/news/hardware/flipper-devices-launches-399-flipper-one-linux-based-multi-tool/",
       "date": "2026-11-17T16:00:00+00:00",
       "resume": "Flipper Devices, the company behind the popular Flipper Zero pentesting device, has launched a crowdfunding campaign for Flipper One, a portable Linux computer and networking multi-tool. [...]",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "The Hacker News",
+      "titre": "Oracle to Patch 11 Java Flaws Today as Critical OpenJDK RCE (CVE-2026-114938) Report Emerges",
+      "lien": "https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html",
+      "date": "2026-11-17T15:17:36+00:00",
+      "resume": "Oracle is preparing to release security patches for 11 vulnerabilities in Java SE on Tuesday, November 17, 2026, all of which may be exploited remotely without authentication, as separate reports warn of a potentially critical remote code execution (RCE) flaw affecting OpenJDK. The 11 vulnerabiliti…",
+      "attaque": false,
+      "cves": [
+        "CVE-2026-114938"
+      ]
+    },
+    {
+      "source": "The Hacker News",
+      "titre": "Trigram Campaign Impersonates About 50 AI and Blockchain Brands to Target Devs with Infostealers",
+      "lien": "https://thehackernews.com/2026/11/trigram-campaign-impersonates-about-50.html",
+      "date": "2026-11-17T15:17:28+00:00",
+      "resume": "Artificial intelligence (AI), blockchain, and logistics sectors across Europe and the U.S. have emerged as the target of a large-scale, industrialized campaign dubbed Trigram. \"Trigram is a large-scale campaign that impersonates about 50 brands in the blockchain and AI sectors, to trick developers…",
       "attaque": false,
       "cves": []
     },
@@ -386,15 +446,6 @@
       "cves": []
     },
     {
-      "source": "SecurityWeek",
-      "titre": "Trump Administration Moves to Block China From Indirect Access to American AI Technology",
-      "lien": "https://www.securityweek.com/trump-administration-moves-to-block-china-from-indirect-access-to-american-ai-technology/",
-      "date": "2026-11-16T20:00:00+00:00",
-      "resume": "Under the new rule, overseas data centers that serve companies in countries including China, Russia, Iran and Cuba are required to identify their end users. The post Trump Administration Moves to Block China From Indirect Access to American AI Technology appeared first on SecurityWeek .",
-      "attaque": false,
-      "cves": []
-    },
-    {
       "source": "BleepingComputer",
       "titre": "Barracuda links cloud breach to ARTEX AI-powered cyberattack",
       "lien": "https://www.bleepingcomputer.com/news/security/barracuda-links-cloud-breach-to-artex-ai-powered-cyberattack/",
@@ -476,38 +527,11 @@
       "cves": []
     },
     {
-      "source": "BleepingComputer",
-      "titre": "Fandango says hackers stole payment card details from checkout pages",
-      "lien": "https://www.bleepingcomputer.com/news/security/fandango-says-hackers-stole-payment-card-details-from-checkout-pages/",
-      "date": "2026-11-16T15:44:21+00:00",
-      "resume": "Ticket seller Fandango Media is notifying customers about a data breach that exposed payment card details entered on its checkout pages. [...]",
-      "attaque": true,
-      "cves": []
-    },
-    {
-      "source": "BleepingComputer",
-      "titre": "7 Tips For Complying with CJIS Password and MFA Requirements",
-      "lien": "https://www.bleepingcomputer.com/news/security/7-tips-for-complying-with-cjis-password-and-mfa-requirements/",
-      "date": "2026-11-16T15:01:11+00:00",
-      "resume": "The FBI's latest CJIS Security Policy requires law enforcement agencies to strengthen password protections and enforce MFA across privileged and non-privileged accounts. Specops Software outlines seven practical steps to meet these requirements, block compromised passwords, and maintain compliance.…",
-      "attaque": true,
-      "cves": []
-    },
-    {
       "source": "The Hacker News",
       "titre": "Google Finds Hackers Using AI Agents to Build and Run Exploits From Software Patches",
       "lien": "https://thehackernews.com/2026/11/google-finds-hackers-using-ai-agents-to.html",
       "date": "2026-11-16T14:00:00+00:00",
       "resume": "Google on Monday revealed that adversarial use of artificial intelligence (AI) by threat actors has gone beyond manual prompting to deploying autonomous multi-agent offensive frameworks like ARTEX, CAIRN, CyberStrikeAI, and PentAGI to execute multi-stage intrusions at greater operational velocity.…",
-      "attaque": true,
-      "cves": []
-    },
-    {
-      "source": "BleepingComputer",
-      "titre": "Google warns that fully-automated AI attacks are coming soon",
-      "lien": "https://www.bleepingcomputer.com/news/security/google-warns-that-fully-automated-ai-attacks-are-coming-soon/",
-      "date": "2026-11-16T14:00:00+00:00",
-      "resume": "Threat actors are now relying on agentic workflows powered by AI-based offensive frameworks to automate vulnerability discovery and exploitation, accelerating attacks to machine speed. [...]",
       "attaque": true,
       "cves": []
     },
