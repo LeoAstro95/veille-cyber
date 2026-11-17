@@ -6,7 +6,12 @@ Sources (gratuites, sans clé API) :
   - CERT-FR (ANSSI) : alertes, avis de sécurité, actualités (flux RSS)
   - CISA KEV : vulnérabilités activement exploitées (JSON)
   - NVD (NIST) : CVE critiques publiées récemment (API 2.0)
-  - Presse spécialisée : flux RSS d'actualités cyber (attaques, fuites, ransomwares)
+  - FIRST EPSS : probabilité qu'une CVE soit exploitée dans les 30 jours (API)
+  - Presse spécialisée française et internationale (flux RSS)
+
+Le script calcule aussi une liste de failles PRIORITAIRES : chaque CVE reçoit
+un score de 0 à 100 selon son exploitation, sa gravité, sa diffusion
+et le nombre de sources qui en parlent.
 
 Le script n'utilise que la bibliothèque standard Python : aucune installation requise.
 Résultat : docs/data/veille.json (+ une copie datée dans docs/data/archive/).
@@ -42,15 +47,33 @@ FLUX_CERTFR = {
     "actualite": "https://www.cert.ssi.gouv.fr/actualite/feed/",
 }
 
+# nom : (adresse du flux, origine)  —  origine : "fr" = France, "int" = international
 FLUX_PRESSE = {
-    "The Hacker News": "https://feeds.feedburner.com/TheHackersNews",
-    "BleepingComputer": "https://www.bleepingcomputer.com/feed/",
-    "ZATAZ": "https://www.zataz.com/feed/",
-    "SecurityWeek": "https://www.securityweek.com/feed/",
+    "IT-Connect": ("https://www.it-connect.fr/actualites/actu-securite/feed/", "fr"),
+    "Le Monde Informatique": ("https://www.lemondeinformatique.fr/flux-rss/thematique/securite/rss.xml", "fr"),
+    "ZATAZ": ("https://www.zataz.com/feed/", "fr"),
+    "The Hacker News": ("https://feeds.feedburner.com/TheHackersNews", "int"),
+    "BleepingComputer": ("https://www.bleepingcomputer.com/feed/", "int"),
+    "SecurityWeek": ("https://www.securityweek.com/feed/", "int"),
+    "Krebs on Security": ("https://krebsonsecurity.com/feed/", "int"),
 }
 
 URL_KEV = "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
 URL_NVD = "https://services.nvd.nist.gov/rest/json/cves/2.0"
+URL_EPSS = "https://api.first.org/data/v1/epss"
+
+MAX_PRIORITAIRES = 30  # nombre de failles gardées dans la vue « Prioritaires »
+
+# Produits présents sur un très grand nombre de machines dans le monde :
+# une faille qui les touche concerne potentiellement des millions d'utilisateurs.
+TRES_REPANDUS = re.compile(
+    r"\b(microsoft|windows|exchange|sharepoint|active directory|office|outlook|azure|"
+    r"apple|ios|macos|iphone|safari|google|chrome|android|chromium|mozilla|firefox|"
+    r"linux|kernel|openssl|openssh|apache|nginx|cisco|fortinet|fortios|fortigate|"
+    r"palo alto|pan-os|ivanti|citrix|netscaler|vmware|esxi|oracle|java|"
+    r"juniper|sonicwall|f5|big-ip|qualcomm|samsung|intel|amd)\b",
+    re.IGNORECASE,
+)
 
 # Mots-clés qui signalent une attaque (pour classer les articles de presse)
 MOTS_ATTAQUE = re.compile(
@@ -142,6 +165,7 @@ def collecter_certfr(depuis, erreurs):
                 texte = it["titre"] + " " + it["resume"]
                 resultats.append({
                     "source": "CERT-FR",
+                    "origine": "fr",
                     "categorie": categorie,
                     "titre": it["titre"],
                     "lien": it["lien"],
@@ -154,16 +178,22 @@ def collecter_certfr(depuis, erreurs):
     return resultats
 
 
-def collecter_kev(depuis, erreurs):
+def collecter_kev(depuis, erreurs, catalogue=None):
+    """Renvoie les failles ajoutées récemment au KEV.
+    Si `catalogue` (dict) est fourni, il est rempli avec TOUT le catalogue
+    {CVE: utilisée par des ransomwares ?} pour repérer les failles exploitées plus anciennes."""
     resultats = []
     try:
         data = json.loads(telecharger(URL_KEV))
         for v in data.get("vulnerabilities", []):
+            if catalogue is not None and v.get("cveID"):
+                catalogue[v["cveID"].upper()] = v.get("knownRansomwareCampaignUse") == "Known"
             ajout = parse_date(v.get("dateAdded", "") + "T00:00:00+00:00")
             if not ajout or ajout < depuis:
                 continue
             resultats.append({
                 "source": "CISA KEV",
+                "origine": "int",
                 "cve": v.get("cveID"),
                 "titre": v.get("vulnerabilityName"),
                 "editeur": v.get("vendorProject"),
@@ -201,6 +231,7 @@ def collecter_nvd(depuis, maintenant, erreurs):
                     break
             resultats.append({
                 "source": "NVD",
+                "origine": "int",
                 "cve": cve.get("id"),
                 "resume": nettoyer(desc),
                 "score": score,
@@ -216,7 +247,7 @@ def collecter_nvd(depuis, maintenant, erreurs):
 
 def collecter_presse(depuis, erreurs):
     resultats = []
-    for nom, url in FLUX_PRESSE.items():
+    for nom, (url, origine) in FLUX_PRESSE.items():
         try:
             for it in lire_rss(telecharger(url))[:MAX_PAR_SOURCE]:
                 if it["date"] and it["date"] < depuis:
@@ -224,6 +255,7 @@ def collecter_presse(depuis, erreurs):
                 texte = it["titre"] + " " + it["resume"]
                 resultats.append({
                     "source": nom,
+                    "origine": origine,
                     "titre": it["titre"],
                     "lien": it["lien"],
                     "date": iso(it["date"]),
@@ -238,6 +270,163 @@ def collecter_presse(depuis, erreurs):
 
 
 # --------------------------------------------------------------------------
+# Failles prioritaires
+# --------------------------------------------------------------------------
+
+LIEN_KEV = "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+
+
+def recuperer_epss(cves, erreurs):
+    """Score EPSS (probabilité d'exploitation sous 30 jours) pour une liste de CVE."""
+    scores = {}
+    cves = [c for c in cves if CVE_RE.fullmatch(c)]
+    for i in range(0, len(cves), 100):  # l'API accepte 100 CVE par requête
+        lot = ",".join(cves[i:i + 100])
+        try:
+            data = json.loads(telecharger(f"{URL_EPSS}?cve={lot}"))
+            for d in data.get("data", []):
+                scores[d["cve"].upper()] = (float(d.get("epss", 0)), float(d.get("percentile", 0)))
+        except Exception as e:
+            erreurs.append(f"EPSS : {e}")
+            break
+    return scores
+
+
+def calculer_priorites(certfr, kev, nvd, presse, catalogue_kev, erreurs):
+    """Regroupe les informations par CVE et calcule un score de priorité (0-100)."""
+    groupes = {}
+
+    def entree(cle):
+        return groupes.setdefault(cle, {
+            "cle": cle, "cve": cle if cle.startswith("CVE-") else None, "cves": [],
+            "titres": [], "resume": "", "editeur": None, "produit": None,
+            "sources": {}, "origines": set(), "dates": [],
+            "certfr": None, "kev": False, "ransomware": False, "cvss": None, "medias": set(),
+        })
+
+    def ajouter(e, x, nom, lien):
+        e["sources"].setdefault(nom, lien)
+        e["origines"].add(x.get("origine", "int"))
+        if x.get("date"):
+            e["dates"].append(x["date"])
+
+    # 1. Failles exploitées ajoutées récemment au catalogue KEV
+    for x in kev:
+        e = entree(x["cve"].upper())
+        e["kev"] = True
+        e["ransomware"] = e["ransomware"] or x.get("ransomware", False)
+        e["titres"].insert(0, x.get("titre") or "")
+        e["resume"] = e["resume"] or x.get("resume", "")
+        e["editeur"], e["produit"] = x.get("editeur"), x.get("produit")
+        ajouter(e, x, "CISA KEV", LIEN_KEV)
+
+    # 2. CVE critiques de la NVD
+    for x in nvd:
+        e = entree(x["cve"].upper())
+        e["cvss"] = x.get("score")
+        e["resume"] = e["resume"] or x.get("resume", "")
+        ajouter(e, x, "NVD", x.get("lien"))
+
+    # 3. Bulletins CERT-FR (alertes et avis)
+    for x in certfr:
+        if x.get("categorie") not in ("alerte", "avis"):
+            continue
+        cves = x.get("cves", [])
+        if x["categorie"] == "alerte" and (not cves or len(cves) > 5):
+            cibles = [entree(f"CERTFR:{x['lien']}")]          # une seule entrée pour le bulletin
+            cibles[0]["cves"] = cves[:10]
+        elif len(cves) <= 5:
+            cibles = [entree(c) for c in cves]
+        else:                                                   # gros avis : on enrichit seulement
+            cibles = [groupes[c] for c in cves if c in groupes]
+        for e in cibles:
+            if e["certfr"] != "alerte":
+                e["certfr"] = x["categorie"]
+            e["titres"].insert(0, x.get("titre", ""))   # titre français en priorité
+            e["resume"] = x.get("resume") or e["resume"]   # résumé français en priorité
+            ajouter(e, x, "CERT-FR", x.get("lien"))
+
+    # 4. Articles de presse qui citent une CVE
+    for x in presse:
+        cves = x.get("cves", [])
+        cibles = [entree(c) for c in cves] if len(cves) <= 3 else [groupes[c] for c in cves if c in groupes]
+        for e in cibles:
+            e["medias"].add(x["source"])
+            e["titres"].append(x.get("titre", ""))
+            ajouter(e, x, x["source"], x.get("lien"))
+
+    # Failles déjà connues comme exploitées (catalogue KEV complet)
+    for cle, e in groupes.items():
+        for c in [cle, *e["cves"]]:
+            if c in catalogue_kev:
+                e["kev"] = True
+                e["ransomware"] = e["ransomware"] or catalogue_kev[c]
+
+    # Score EPSS
+    cves = [c for c in groupes if c.startswith("CVE-")]
+    epss = recuperer_epss(cves[:300], erreurs)
+
+    resultats = []
+    for cle, e in groupes.items():
+        score, raisons = 0, []
+        if e["kev"]:
+            score += 35
+            raisons.append({"code": "kev", "label": "Exploitée activement"})
+        if e["ransomware"]:
+            score += 10
+            raisons.append({"code": "ransomware", "label": "Utilisée par des ransomwares"})
+        if e["certfr"] == "alerte":
+            score += 25
+            raisons.append({"code": "alerte", "label": "Alerte CERT-FR"})
+        elif e["certfr"] == "avis":
+            score += 8
+            raisons.append({"code": "avis", "label": "Avis CERT-FR"})
+        if e["cvss"] is not None:
+            score += 20 if e["cvss"] >= 9 else 12 if e["cvss"] >= 7 else 5
+            raisons.append({"code": "cvss", "label": f"CVSS {e['cvss']}"})
+        p_epss, pct = epss.get(cle, (None, None))
+        if p_epss is not None:
+            score += round(25 * p_epss)
+            if p_epss >= 0.05:
+                raisons.append({"code": "epss", "label": f"EPSS {round(p_epss * 100)} %"})
+        texte = " ".join([*e["titres"], e["resume"], e["editeur"] or "", e["produit"] or ""])
+        if TRES_REPANDUS.search(texte):
+            score += 10
+            raisons.append({"code": "repandu", "label": "Produit très répandu"})
+        if e["medias"]:
+            score += min(15, 5 * len(e["medias"]))
+            n = len(e["medias"])
+            raisons.append({"code": "medias", "label": f"Citée par {n} média{'s' if n > 1 else ''}"})
+
+        titre = next((t for t in e["titres"] if t), None) or (e["cve"] or "Faille")
+        lien = (e["sources"].get("CERT-FR") or e["sources"].get("NVD")
+                or (f"https://nvd.nist.gov/vuln/detail/{e['cve']}" if e["cve"] else None)
+                or next(iter(e["sources"].values()), ""))
+
+        resultats.append({
+            "cle": cle,
+            "cve": e["cve"],
+            "cves": e["cves"],
+            "titre": titre,
+            "resume": nettoyer(e["resume"]),
+            "editeur": e["editeur"],
+            "produit": e["produit"],
+            "score": min(100, score),
+            "raisons": raisons,
+            "cvss": e["cvss"],
+            "epss": round(p_epss, 4) if p_epss is not None else None,
+            "epss_percentile": round(pct, 4) if pct is not None else None,
+            "sources": [{"nom": n, "lien": l} for n, l in e["sources"].items()],
+            "lien": lien,
+            "date": max(e["dates"]) if e["dates"] else None,
+            "origines": sorted(e["origines"]),
+        })
+
+    resultats.sort(key=lambda x: (x["score"], x["date"] or ""), reverse=True)
+    return resultats[:MAX_PRIORITAIRES]
+
+
+# --------------------------------------------------------------------------
 # Programme principal
 # --------------------------------------------------------------------------
 
@@ -247,23 +436,28 @@ def main():
     erreurs = []
 
     certfr = collecter_certfr(depuis, erreurs)
-    kev = collecter_kev(depuis, erreurs)
+    catalogue_kev = {}
+    kev = collecter_kev(depuis, erreurs, catalogue_kev)
     nvd = collecter_nvd(depuis, maintenant, erreurs)
     presse = collecter_presse(depuis, erreurs)
 
     certfr.sort(key=lambda x: x["date"] or "", reverse=True)
     kev.sort(key=lambda x: x["date"] or "", reverse=True)
 
+    priorites = calculer_priorites(certfr, kev, nvd, presse, catalogue_kev, erreurs)
+
     resultat = {
         "genere_le": iso(maintenant),
         "fenetre_jours": JOURS,
         "stats": {
+            "urgentes": sum(1 for x in priorites if x["score"] >= 70),
             "alertes_certfr": sum(1 for x in certfr if x["categorie"] == "alerte"),
             "avis_certfr": sum(1 for x in certfr if x["categorie"] == "avis"),
             "kev": len(kev),
             "cve_critiques": len(nvd),
             "attaques": sum(1 for x in presse if x["attaque"]),
         },
+        "priorites": priorites,
         "certfr": certfr,
         "kev": kev,
         "nvd": nvd,
