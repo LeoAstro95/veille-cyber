@@ -116,4 +116,10 @@ def envoyer_ntfy(d: dict, site: str):
     if cles:
         lignes += ["", "À retenir :"] + [f"• {t[:110]}" for t, _ in cles]
 
-    corps = {
+        corps = {
+        "topic": topic,
+        "title": "Veille cyber du jour",
+        "message": "\n".join(lignes),
+        "priority": 4 if (s.get("alertes_certfr") or s.get("kev")) else 3,
+        "tags": ["shield"],
+    }
