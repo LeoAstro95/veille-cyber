@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Veille Cyber — Maxime Stephan</title>
+  <title>Cyber Veille — Maxime Stephan</title>
   <meta name="description" content="Veille quotidienne des vulnérabilités et cyberattaques, mise à jour automatiquement chaque matin.">
+  <meta name="theme-color" content="#070B14">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,31 +18,37 @@
         <img src="banniere.jpg" width="1024" height="434"
              alt="Cyber Veille — Votre bouclier quotidien contre les menaces">
       </h1>
-    </div>
-    <div class="conteneur entete-ligne">
-      <div>
-        <p class="sur-titre">// veille quotidienne</p>
-        <p class="maj" id="maj">Chargement…</p>
-      </div>
-      <div class="archive">
-        <label for="jour">Jour</label>
-        <select id="jour"><option value="">Aujourd'hui</option></select>
+
+      <div class="entete-ligne">
+        <div class="entete-infos">
+          <p class="sur-titre">// veille quotidienne</p>
+          <p class="maj" id="maj">Chargement…</p>
+        </div>
+        <div class="archive">
+          <label for="jour">Jour</label>
+          <select id="jour"><option value="">Aujourd'hui</option></select>
+        </div>
       </div>
     </div>
   </header>
 
   <main class="conteneur">
-    <section class="stats" id="stats"></section>
+    <section class="stats" id="stats" aria-label="Résumé du jour"></section>
 
-    <div class="barre">
-      <nav class="onglets" role="tablist">
-        <button class="onglet actif" data-onglet="certfr">CERT-FR</button>
-        <button class="onglet" data-onglet="kev">Exploitées (KEV)</button>
-        <button class="onglet" data-onglet="nvd">CVE critiques</button>
-        <button class="onglet" data-onglet="presse">Attaques &amp; actu</button>
+    <div class="barre" id="barre">
+      <nav class="onglets" role="tablist" aria-label="Catégories">
+        <button class="onglet actif" role="tab" data-onglet="certfr">CERT-FR</button>
+        <button class="onglet" role="tab" data-onglet="kev">Exploitées (KEV)</button>
+        <button class="onglet" role="tab" data-onglet="nvd">CVE critiques</button>
+        <button class="onglet" role="tab" data-onglet="presse">Attaques &amp; actu</button>
       </nav>
-      <input type="search" id="recherche" placeholder="Filtrer (éditeur, CVE, mot-clé…)">
+      <div class="recherche">
+        <input type="search" id="recherche" placeholder="Filtrer (éditeur, CVE, mot-clé…)" aria-label="Filtrer">
+        <kbd class="raccourci" id="raccourci" title="Raccourci : / ou Ctrl+K">/</kbd>
+      </div>
     </div>
+
+    <div class="sous-filtres" id="sous-filtres" role="group" aria-label="Sous-filtre"></div>
 
     <section id="liste" class="liste" aria-live="polite"></section>
     <p class="erreurs" id="erreurs"></p>
