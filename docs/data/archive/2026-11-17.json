@@ -1,12 +1,12 @@
 {
-  "genere_le": "2026-11-17T14:13:32.798485+00:00",
+  "genere_le": "2026-11-17T15:51:09.068994+00:00",
   "fenetre_jours": 3,
   "stats": {
     "alertes_certfr": 0,
     "avis_certfr": 1,
     "kev": 0,
-    "cve_critiques": 11,
-    "attaques": 30
+    "cve_critiques": 12,
+    "attaques": 31
   },
   "certfr": [
     {
@@ -50,6 +50,15 @@
     },
     {
       "source": "NVD",
+      "cve": "CVE-2026-130587",
+      "resume": "OpenFunction through 1.2.0 contains a privilege escalation vulnerability that allows namespace tenants to create privileged host-access pods by supplying unrestricted PodSpec templates in Function and Serving resources. Attackers with only Function or Serving create permissions can set privileged,…",
+      "score": 9.9,
+      "severite": "CRITICAL",
+      "date": "2026-11-17T14:17:45.317000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130587"
+    },
+    {
+      "source": "NVD",
       "cve": "CVE-2026-129952",
       "resume": "NodePress through 8.5.1 contains an authentication bypass vulnerability that allows unauthenticated remote attackers to gain administrator access by forging JWTs with the hardcoded 'nodepress-secret' fallback key. Attackers can sign HS256 bearer tokens with the default issuer, audience, and role 'a…",
       "score": 9.8,
@@ -86,6 +95,15 @@
     },
     {
       "source": "NVD",
+      "cve": "CVE-2026-130583",
+      "resume": "Rootways Authorize.net CIM Pro extension for Magento 2 before 4.1.5 contains an unauthenticated server-side request forgery vulnerability in the Apple Pay merchant validation controller. Attackers can supply file://, gopher://, or dict:// URLs in the validationUrl parameter to read app/etc/env.php…",
+      "score": 9.3,
+      "severite": "CRITICAL",
+      "date": "2026-11-17T14:17:44.847000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130583"
+    },
+    {
+      "source": "NVD",
       "cve": "CVE-2026-129452",
       "resume": "A vulnerability has been found in DrayTek Vigor2960 1.5.1.6. This vulnerability affects the function set_table of the file /cgi-bin/mainfunction.cgi. Such manipulation of the argument jsondata leads to command injection. The attack can be launched remotely. The exploit has been disclosed to the pub…",
       "score": 9.1,
@@ -104,15 +122,6 @@
     },
     {
       "source": "NVD",
-      "cve": "CVE-2026-130070",
-      "resume": "Ghost by muneeb141 on the main branch from commit c731cdf through commit 672dfec contains an authentication bypass vulnerability in the whitelisted ghost.api.ghost.convert_to_real_user method that allows unauthenticated attackers to skip OTP verification by setting the client-supplied bypass_otp pa…",
-      "score": 9.1,
-      "severite": "CRITICAL",
-      "date": "2026-11-16T22:18:22.220000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130070"
-    },
-    {
-      "source": "NVD",
       "cve": "CVE-2026-130072",
       "resume": "Cloud Commander (cloudcmd) before 19.21.4 contains an authentication bypass and path traversal vulnerability that allows unauthenticated attackers to rename files by sending PUT /rename requests handled before authentication middleware. Attackers can supply absolute or ../ paths in the from and to…",
       "score": 9.1,
@@ -123,11 +132,38 @@
   ],
   "presse": [
     {
+      "source": "BleepingComputer",
+      "titre": "Inside Modern Phishing Kits Built to Steal Microsoft 365 Sessions",
+      "lien": "https://www.bleepingcomputer.com/news/security/inside-modern-phishing-kits-built-to-steal-microsoft-365-sessions/",
+      "date": "2026-11-17T15:01:11+00:00",
+      "resume": "Huntress researchers break down how EvilTokens, Knight Office, and Kali365 capture and replay M365 tokens, plus how defenders can detect and contain them. [...]",
+      "attaque": true,
+      "cves": []
+    },
+    {
       "source": "SecurityWeek",
-      "titre": "PreTxt Emerges Stealth with $5M Seed and an AI Supervision Tool",
+      "titre": "Market Research Giant Ipsos Investigating Breach of Internal System",
+      "lien": "https://www.securityweek.com/market-research-giant-ipsos-investigating-breach-of-internal-system/",
+      "date": "2026-11-17T14:55:30+00:00",
+      "resume": "The company made the incident public on Monday, November 16, five days after filing a complaint with authorities. The post Market Research Giant Ipsos Investigating Breach of Internal System appeared first on SecurityWeek .",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "SecurityWeek",
+      "titre": "Fandango Warns Ticket Buyers of Payment Card Data Exposure",
+      "lien": "https://www.securityweek.com/fandango-warns-ticket-buyers-of-payment-card-data-exposure/",
+      "date": "2026-11-17T14:14:24+00:00",
+      "resume": "Card numbers, CVVs, expiration dates, and email addresses used at Fandango’s ticketing checkout over four days in October may have been exposed. The post Fandango Warns Ticket Buyers of Payment Card Data Exposure appeared first on SecurityWeek .",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "SecurityWeek",
+      "titre": "Pretxt Emerges Stealth With $5M Seed and an AI Supervision Tool",
       "lien": "https://www.securityweek.com/pretxt-emerges-stealth-with-5m-seed-and-an-ai-supervision-tool/",
       "date": "2026-11-17T14:00:00+00:00",
-      "resume": "PreTxt provides technology to prevent AI agents escaping their guardrails and causing unintended harm. The post PreTxt Emerges Stealth with $5M Seed and an AI Supervision Tool appeared first on SecurityWeek .",
+      "resume": "Pretxt provides technology to prevent AI agents escaping their guardrails and causing unintended harm. The post Pretxt Emerges Stealth With $5M Seed and an AI Supervision Tool appeared first on SecurityWeek .",
       "attaque": false,
       "cves": []
     },
@@ -440,30 +476,12 @@
       "cves": []
     },
     {
-      "source": "SecurityWeek",
-      "titre": "Cursor Supply Chain Attack Started at Fireworks AI",
-      "lien": "https://www.securityweek.com/cursor-supply-chain-attack-started-at-fireworks/",
-      "date": "2026-11-16T15:45:43+00:00",
-      "resume": "The attacker stole an access key from Fireworks and used it to exfiltrate credentials that enabled them to push malicious Claude Code extension copies. The post Cursor Supply Chain Attack Started at Fireworks AI appeared first on SecurityWeek .",
-      "attaque": true,
-      "cves": []
-    },
-    {
       "source": "BleepingComputer",
       "titre": "Fandango says hackers stole payment card details from checkout pages",
       "lien": "https://www.bleepingcomputer.com/news/security/fandango-says-hackers-stole-payment-card-details-from-checkout-pages/",
       "date": "2026-11-16T15:44:21+00:00",
       "resume": "Ticket seller Fandango Media is notifying customers about a data breach that exposed payment card details entered on its checkout pages. [...]",
       "attaque": true,
-      "cves": []
-    },
-    {
-      "source": "SecurityWeek",
-      "titre": "Google Project Zero Sets Course for 30-Day Disclosure Deadline",
-      "lien": "https://www.securityweek.com/google-project-zero-sets-course-for-30-day-disclosure-deadline/",
-      "date": "2026-11-16T15:31:25+00:00",
-      "resume": "It will move to a 60-day vulnerability disclosure window in February 2027 and to a 30-day window in January 2028. The post Google Project Zero Sets Course for 30-Day Disclosure Deadline appeared first on SecurityWeek .",
-      "attaque": false,
       "cves": []
     },
     {
@@ -527,15 +545,6 @@
       "date": "2026-11-16T12:33:18+00:00",
       "resume": "Cybersecurity researchers have disclosed details of a new variant of CoffeeLoader, a malware designed to deliver additional payloads to infected machines. \"On launch, the NSIS-based installer executable dropped a file named '7z.dll' into a temporary directory and ran it through rundll32.exe,\" Kaspe…",
       "attaque": true,
-      "cves": []
-    },
-    {
-      "source": "BleepingComputer",
-      "titre": "Australian retail giant Coles investigates cybersecurity incident",
-      "lien": "https://www.bleepingcomputer.com/news/security/australian-retail-giant-coles-investigates-cybersecurity-incident/",
-      "date": "2026-11-16T11:18:09+00:00",
-      "resume": "Coles Group Limited, Australia's second-largest retailer, is investigating what it described as a \"cyber security incident\" that has not impacted the company's stores. [...]",
-      "attaque": false,
       "cves": []
     },
     {
