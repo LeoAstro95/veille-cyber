@@ -1,5 +1,5 @@
 {
-  "genere_le": "2026-11-17T15:51:09.068994+00:00",
+  "genere_le": "2026-11-17T17:15:40.427788+00:00",
   "fenetre_jours": 3,
   "stats": {
     "alertes_certfr": 0,
@@ -131,6 +131,15 @@
     }
   ],
   "presse": [
+    {
+      "source": "BleepingComputer",
+      "titre": "Flipper Devices launches $399 ‘Flipper One’ Linux-based multi-tool",
+      "lien": "https://www.bleepingcomputer.com/news/hardware/flipper-devices-launches-399-flipper-one-linux-based-multi-tool/",
+      "date": "2026-11-17T16:00:00+00:00",
+      "resume": "Flipper Devices, the company behind the popular Flipper Zero pentesting device, has launched a crowdfunding campaign for Flipper One, a portable Linux computer and networking multi-tool. [...]",
+      "attaque": false,
+      "cves": []
+    },
     {
       "source": "BleepingComputer",
       "titre": "Inside Modern Phishing Kits Built to Steal Microsoft 365 Sessions",
@@ -518,15 +527,6 @@
       "date": "2026-11-16T13:27:20+00:00",
       "resume": "A default password opened doors it never should have. A trusted update delivered malware. Even a security feature became a way to break in. Different stories, same problem: the things meant to protect us aren't always doing their job. Meanwhile, AI is making bug hunting faster, old flaws are still…",
       "attaque": true,
-      "cves": []
-    },
-    {
-      "source": "BleepingComputer",
-      "titre": "Microsoft: Windows Server 2016 reaches end of support in 60 days",
-      "lien": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2016-reaches-end-of-support-in-60-days/",
-      "date": "2026-11-16T12:53:18+00:00",
-      "resume": "Microsoft has reminded customers again that Windows Server 2016 will stop receiving security updates after it reaches the end of support in two months. [...]",
-      "attaque": false,
       "cves": []
     },
     {
