@@ -1,13 +1,13 @@
 {
-  "genere_le": "2026-11-18T15:29:34.724621+00:00",
+  "genere_le": "2026-11-18T19:11:52.139989+00:00",
   "fenetre_jours": 3,
   "stats": {
     "urgentes": 0,
     "alertes_certfr": 0,
-    "avis_certfr": 12,
+    "avis_certfr": 13,
     "kev": 1,
-    "cve_critiques": 36,
-    "attaques": 43
+    "cve_critiques": 20,
+    "attaques": 44
   },
   "priorites": [
     {
@@ -82,40 +82,6 @@
       ],
       "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-110009",
       "date": "2026-11-18T14:17:25.860000+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-91569",
-      "cve": "CVE-2026-91569",
-      "cves": [],
-      "titre": "CVE-2026-91569",
-      "resume": "Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: TopLink Integration). Supported versions that are affected are 12.2.1.4.0, 14.1.1.0.0, 14.1.2.0.0 and 15.1.1.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP…",
-      "editeur": null,
-      "produit": null,
-      "score": 30,
-      "raisons": [
-        {
-          "code": "cvss",
-          "label": "CVSS 10.0"
-        },
-        {
-          "code": "repandu",
-          "label": "Produit très répandu"
-        }
-      ],
-      "cvss": 10.0,
-      "epss": 0.0052,
-      "epss_percentile": 0.45,
-      "sources": [
-        {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-91569"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-91569",
-      "date": "2026-11-17T22:19:24.980000+00:00",
       "origines": [
         "int"
       ]
@@ -223,40 +189,6 @@
       ]
     },
     {
-      "cle": "CVE-2026-91500",
-      "cve": "CVE-2026-91500",
-      "cves": [],
-      "titre": "CVE-2026-91500",
-      "resume": "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine). Supported versions that are affected are 12.2.1.4.0 and 14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle A…",
-      "editeur": null,
-      "produit": null,
-      "score": 30,
-      "raisons": [
-        {
-          "code": "cvss",
-          "label": "CVSS 10.0"
-        },
-        {
-          "code": "repandu",
-          "label": "Produit très répandu"
-        }
-      ],
-      "cvss": 10.0,
-      "epss": 0.0046,
-      "epss_percentile": 0.4025,
-      "sources": [
-        {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-91500"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-91500",
-      "date": "2026-11-17T22:19:22.467000+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
       "cle": "CVE-2026-91469",
       "cve": "CVE-2026-91469",
       "cves": [],
@@ -320,74 +252,6 @@
       ],
       "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-115139",
       "date": "2026-11-17T22:18:47.437000+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-114980",
-      "cve": "CVE-2026-114980",
-      "cves": [],
-      "titre": "CVE-2026-114980",
-      "resume": "Vulnerability in the Oracle AutoVue product of Oracle Supply Chain (component: Security Related Issues). The supported version that is affected is 21.1.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle AutoVue. While the vulnerabili…",
-      "editeur": null,
-      "produit": null,
-      "score": 30,
-      "raisons": [
-        {
-          "code": "cvss",
-          "label": "CVSS 9.9"
-        },
-        {
-          "code": "repandu",
-          "label": "Produit très répandu"
-        }
-      ],
-      "cvss": 9.9,
-      "epss": 0.0048,
-      "epss_percentile": 0.4206,
-      "sources": [
-        {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-114980"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-114980",
-      "date": "2026-11-17T22:18:28.903000+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-114978",
-      "cve": "CVE-2026-114978",
-      "cves": [],
-      "titre": "CVE-2026-114978",
-      "resume": "Vulnerability in the Oracle Hyperion Financial Management product of Oracle Hyperion (component: Security). The supported version that is affected is 11.2.26.0.000. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Hyperion Financial M…",
-      "editeur": null,
-      "produit": null,
-      "score": 30,
-      "raisons": [
-        {
-          "code": "cvss",
-          "label": "CVSS 9.9"
-        },
-        {
-          "code": "repandu",
-          "label": "Produit très répandu"
-        }
-      ],
-      "cvss": 9.9,
-      "epss": 0.0048,
-      "epss_percentile": 0.4205,
-      "sources": [
-        {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-114978"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-114978",
-      "date": "2026-11-17T22:18:28.660000+00:00",
       "origines": [
         "int"
       ]
@@ -495,210 +359,6 @@
       ]
     },
     {
-      "cle": "CVE-2026-114856",
-      "cve": "CVE-2026-114856",
-      "cves": [],
-      "titre": "CVE-2026-114856",
-      "resume": "Vulnerability in Oracle REST Data Services (component: General). Supported versions that are affected are 24.2.0-26.3.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTPS to compromise Oracle REST Data Services. Successful attacks require human interacti…",
-      "editeur": null,
-      "produit": null,
-      "score": 30,
-      "raisons": [
-        {
-          "code": "cvss",
-          "label": "CVSS 9.6"
-        },
-        {
-          "code": "repandu",
-          "label": "Produit très répandu"
-        }
-      ],
-      "cvss": 9.6,
-      "epss": 0.0043,
-      "epss_percentile": 0.3762,
-      "sources": [
-        {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-114856"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-114856",
-      "date": "2026-11-17T22:18:14.213000+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-114848",
-      "cve": "CVE-2026-114848",
-      "cves": [],
-      "titre": "CVE-2026-114848",
-      "resume": "Vulnerability in the Oracle Text component of Oracle Database Server. Supported versions that are affected are 19.3-19.33, 21.3-21.24 and 23.4.0-23.26.3. Easily exploitable vulnerability allows low privileged attacker having Create Session privilege with network access via Oracle Net to compromise…",
-      "editeur": null,
-      "produit": null,
-      "score": 30,
-      "raisons": [
-        {
-          "code": "cvss",
-          "label": "CVSS 9.9"
-        },
-        {
-          "code": "repandu",
-          "label": "Produit très répandu"
-        }
-      ],
-      "cvss": 9.9,
-      "epss": 0.0048,
-      "epss_percentile": 0.4206,
-      "sources": [
-        {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-114848"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-114848",
-      "date": "2026-11-17T22:18:13.277000+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-114835",
-      "cve": "CVE-2026-114835",
-      "cves": [],
-      "titre": "CVE-2026-114835",
-      "resume": "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Admin Console). Supported versions that are affected are 12.2.1.4.0 and 14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Access Ma…",
-      "editeur": null,
-      "produit": null,
-      "score": 30,
-      "raisons": [
-        {
-          "code": "cvss",
-          "label": "CVSS 10.0"
-        },
-        {
-          "code": "repandu",
-          "label": "Produit très répandu"
-        }
-      ],
-      "cvss": 10.0,
-      "epss": 0.0052,
-      "epss_percentile": 0.45,
-      "sources": [
-        {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-114835"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-114835",
-      "date": "2026-11-17T22:18:11.710000+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-114822",
-      "cve": "CVE-2026-114822",
-      "cves": [],
-      "titre": "CVE-2026-114822",
-      "resume": "Vulnerability in the RDBMS component of Oracle Database Server. Supported versions that are affected are 23.4.0-23.26.4. Easily exploitable vulnerability allows low privileged attacker having Create Session privilege with network access via Oracle Net to compromise RDBMS. While the vulnerability is…",
-      "editeur": null,
-      "produit": null,
-      "score": 30,
-      "raisons": [
-        {
-          "code": "cvss",
-          "label": "CVSS 9.9"
-        },
-        {
-          "code": "repandu",
-          "label": "Produit très répandu"
-        }
-      ],
-      "cvss": 9.9,
-      "epss": 0.0048,
-      "epss_percentile": 0.4206,
-      "sources": [
-        {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-114822"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-114822",
-      "date": "2026-11-17T22:18:10.103000+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-114819",
-      "cve": "CVE-2026-114819",
-      "cves": [],
-      "titre": "CVE-2026-114819",
-      "resume": "Vulnerability in the Oracle Text component of Oracle Database Server. Supported versions that are affected are 19.3-19.32, 21.3-21.24 and 23.4.0-23.26.3. Easily exploitable vulnerability allows low privileged attacker having Create Session privilege with network access via Oracle Net to compromise…",
-      "editeur": null,
-      "produit": null,
-      "score": 30,
-      "raisons": [
-        {
-          "code": "cvss",
-          "label": "CVSS 9.9"
-        },
-        {
-          "code": "repandu",
-          "label": "Produit très répandu"
-        }
-      ],
-      "cvss": 9.9,
-      "epss": 0.0048,
-      "epss_percentile": 0.4206,
-      "sources": [
-        {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-114819"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-114819",
-      "date": "2026-11-17T22:18:09.980000+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-114785",
-      "cve": "CVE-2026-114785",
-      "cves": [],
-      "titre": "CVE-2026-114785",
-      "resume": "Vulnerability in the Oracle Hyperion Planning product of Oracle Hyperion (component: Security). The supported version that is affected is 11.2.26.0.000. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Hyperion Planning. Successful a…",
-      "editeur": null,
-      "produit": null,
-      "score": 30,
-      "raisons": [
-        {
-          "code": "cvss",
-          "label": "CVSS 9.6"
-        },
-        {
-          "code": "repandu",
-          "label": "Produit très répandu"
-        }
-      ],
-      "cvss": 9.6,
-      "epss": 0.0043,
-      "epss_percentile": 0.3762,
-      "sources": [
-        {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-114785"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-114785",
-      "date": "2026-11-17T22:18:05.907000+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
       "cle": "CVE-2026-101691",
       "cve": "CVE-2026-101691",
       "cves": [],
@@ -767,11 +427,11 @@
       ]
     },
     {
-      "cle": "CVE-2026-110811",
-      "cve": "CVE-2026-110811",
+      "cle": "CVE-2018-25443",
+      "cve": "CVE-2018-25443",
       "cves": [],
-      "titre": "CVE-2026-110811",
-      "resume": "The Trust Payments Gateway for WooCommerce (JavaScript Library) plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 1.3.8. The vulnerability exists because the `new_customer_account()` function stores the raw return value of `wp_create_user()` — includi…",
+      "titre": "CVE-2018-25443",
+      "resume": "Baidu UEditor 1.4.0 through 1.4.3.3 contains an unrestricted file upload vulnerability in the catchimage action of /ueditor/net/controller.ashx that only validates the Content-Type header. Unauthenticated attackers can supply a source[] URL like x.jpg?.aspx to retain a malicious extension and write…",
       "editeur": null,
       "produit": null,
       "score": 20,
@@ -787,21 +447,21 @@
       "sources": [
         {
           "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-110811"
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2018-25443"
         }
       ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-110811",
-      "date": "2026-11-18T14:17:26.020000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2018-25443",
+      "date": "2026-11-18T16:17:48.500000+00:00",
       "origines": [
         "int"
       ]
     },
     {
-      "cle": "CVE-2026-130735",
-      "cve": "CVE-2026-130735",
+      "cle": "CVE-2012-20007",
+      "cve": "CVE-2012-20007",
       "cves": [],
-      "titre": "CVE-2026-130735",
-      "resume": "Grav from 2.0.0 before 2.2.18 contains a Twig injection vulnerability that allows media-only accounts and anonymous uploaders to execute Twig by placing delimiters in image titles, alt text, class, id, or file names. Attackers can combine injected Twig with the autoescape tag to serve script to eve…",
+      "titre": "CVE-2012-20007",
+      "resume": "ThinkPHP 2.0 through 2.2 and 3.0 Lite mode contains an eval injection vulnerability in the Dispatcher PATH_INFO parsing, which uses preg_replace with the /e modifier and a double-quoted replacement. Unauthenticated attackers can send crafted requests to index.php with a malicious 's' parameter cont…",
       "editeur": null,
       "produit": null,
       "score": 20,
@@ -817,11 +477,11 @@
       "sources": [
         {
           "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130735"
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2012-20007"
         }
       ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130735",
-      "date": "2026-11-18T12:17:20.010000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2012-20007",
+      "date": "2026-11-18T16:17:47.560000+00:00",
       "origines": [
         "int"
       ]
@@ -887,36 +547,6 @@
       ]
     },
     {
-      "cle": "CVE-2026-130681",
-      "cve": "CVE-2026-130681",
-      "cves": [],
-      "titre": "CVE-2026-130681",
-      "resume": "SiYuan before 3.8.10 contains a stored cross-site scripting vulnerability, an incomplete fix for CVE-2026-44670, because renderAVAttribute() inserts an Attribute View name unescaped into the database row attribute panel header. Attackers who can persist the name, such as via the setAttrViewName act…",
-      "editeur": null,
-      "produit": null,
-      "score": 20,
-      "raisons": [
-        {
-          "code": "cvss",
-          "label": "CVSS 9.0"
-        }
-      ],
-      "cvss": 9.0,
-      "epss": null,
-      "epss_percentile": null,
-      "sources": [
-        {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130681"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130681",
-      "date": "2026-11-18T12:17:11.817000+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
       "cle": "CVE-2026-130680",
       "cve": "CVE-2026-130680",
       "cves": [],
@@ -977,33 +607,200 @@
       ]
     },
     {
-      "cle": "CVE-2026-130678",
-      "cve": "CVE-2026-130678",
+      "cle": "CVE-2026-130675",
+      "cve": "CVE-2026-130675",
       "cves": [],
-      "titre": "CVE-2026-130678",
-      "resume": "SiYuan before 3.8.10 contains a stored cross-site scripting vulnerability that allows attackers to execute script by storing malicious Attribute View column names rendered unescaped in col.ts. Attackers can inject HTML via addAttributeViewKey, .sy.zip import, or sync, and when a victim adds or dupl…",
+      "titre": "CVE-2026-130675",
+      "resume": "Craft CMS from 5.0.0 before 5.11.4 contains a remote code execution vulnerability in ImageTransforms::normalizeTransform() that allows attackers to instantiate arbitrary classes by supplying class:null with a __class key. Attackers can reach the method through Craft Commerce's payments/pay redirect…",
       "editeur": null,
       "produit": null,
       "score": 20,
       "raisons": [
         {
           "code": "cvss",
-          "label": "CVSS 9.0"
+          "label": "CVSS 9.8"
         }
       ],
-      "cvss": 9.0,
+      "cvss": 9.8,
       "epss": null,
       "epss_percentile": null,
       "sources": [
         {
           "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130678"
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130675"
         }
       ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130678",
-      "date": "2026-11-18T12:17:11.277000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130675",
+      "date": "2026-11-18T12:17:10.783000+00:00",
       "origines": [
         "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-114938",
+      "cve": "CVE-2026-114938",
+      "cves": [],
+      "titre": "Java4Shell Flaw (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak and More",
+      "resume": "",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "repandu",
+          "label": "Produit très répandu"
+        },
+        {
+          "code": "medias",
+          "label": "Citée par 2 médias"
+        }
+      ],
+      "cvss": null,
+      "epss": 0.0073,
+      "epss_percentile": 0.5512,
+      "sources": [
+        {
+          "nom": "The Hacker News",
+          "lien": "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html"
+        },
+        {
+          "nom": "IT-Connect",
+          "lien": "https://www.it-connect.fr/java4shell-faille-critique-java-openjdk/"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-114938",
+      "date": "2026-11-18T11:55:49+00:00",
+      "origines": [
+        "fr",
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-130849",
+      "cve": "CVE-2026-130849",
+      "cves": [],
+      "titre": "CVE-2026-130849",
+      "resume": "BZFlag bzfs before 2.4.32 contains a heap out-of-bounds write vulnerability in NetHandler::tcpReceive() that allows remote unauthenticated attackers to corrupt heap memory by sending a TCP message with a body length of exactly 1024. Attackers can overwrite the tcplen receive offset with a negative…",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.8"
+        }
+      ],
+      "cvss": 9.8,
+      "epss": 0.0084,
+      "epss_percentile": 0.5871,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130849"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130849",
+      "date": "2026-11-17T20:17:50.113000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-130071",
+      "cve": "CVE-2026-130071",
+      "cves": [],
+      "titre": "CVE-2026-130071",
+      "resume": "TridotsTech go1cms master branch through commit 7f68d05 and version-3 branch before commit ead8da3 contains a missing authentication vulnerability in the guest-whitelisted update_doc method that allows unauthenticated attackers to modify any document. Attackers can supply a doctype, name and arbitr…",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.8"
+        }
+      ],
+      "cvss": 9.8,
+      "epss": 0.0041,
+      "epss_percentile": 0.3573,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130071"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130071",
+      "date": "2026-11-16T22:18:22.373000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-99288",
+      "cve": "CVE-2026-99288",
+      "cves": [],
+      "titre": "NoisyTCP : cette faille du noyau Linux vieille de 11 ans permet de faire planter un serveur à distance",
+      "resume": "",
+      "editeur": null,
+      "produit": null,
+      "score": 15,
+      "raisons": [
+        {
+          "code": "repandu",
+          "label": "Produit très répandu"
+        },
+        {
+          "code": "medias",
+          "label": "Citée par 1 média"
+        }
+      ],
+      "cvss": null,
+      "epss": 0.0025,
+      "epss_percentile": 0.1679,
+      "sources": [
+        {
+          "nom": "IT-Connect",
+          "lien": "https://www.it-connect.fr/noisytcp-cve-2026-99288-faille-noyau-linux-tcp/"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-99288",
+      "date": "2026-11-17T07:58:23+00:00",
+      "origines": [
+        "fr"
+      ]
+    },
+    {
+      "cle": "CVE-2026-6460",
+      "cve": "CVE-2026-6460",
+      "cves": [],
+      "titre": "PostgreSQL a corrigé 52 failles de sécurité, dont une vieille de 22 ans (CVE-2026-6460)",
+      "resume": "",
+      "editeur": null,
+      "produit": null,
+      "score": 10,
+      "raisons": [
+        {
+          "code": "medias",
+          "label": "Citée par 2 médias"
+        }
+      ],
+      "cvss": null,
+      "epss": 0.0059,
+      "epss_percentile": 0.4895,
+      "sources": [
+        {
+          "nom": "IT-Connect",
+          "lien": "https://www.it-connect.fr/postgresql-52-failles-cve-2026-6460-mise-a-jour/"
+        },
+        {
+          "nom": "Le Monde Informatique",
+          "lien": "https://www.lemondeinformatique.fr/cybersecurite-conformite/postgresql-corrige-52-failles-dont-une-vieille-de-"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-6460",
+      "date": "2026-11-17T05:00:00+00:00",
+      "origines": [
+        "fr"
       ]
     }
   ],
@@ -1056,6 +853,16 @@
       "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1551/",
       "date": "2026-11-17T00:00:00+00:00",
       "resume": "Une vulnérabilité a été découverte dans Juniper Networks Junos OS Evolved. Elle permet à un attaquant de provoquer une exécution de code arbitraire à distance et un déni de service à distance.",
+      "cves": []
+    },
+    {
+      "source": "CERT-FR",
+      "origine": "fr",
+      "categorie": "avis",
+      "titre": "Multiples vulnérabilités dans GitLab (17 novembre 2026)",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1552/",
+      "date": "2026-11-17T00:00:00+00:00",
+      "resume": "De multiples vulnérabilités ont été découvertes dans GitLab. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une falsification de requêtes côté serveur (SSRF).",
       "cves": []
     },
     {
@@ -1148,92 +955,12 @@
     {
       "source": "NVD",
       "origine": "int",
-      "cve": "CVE-2026-114835",
-      "resume": "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Admin Console). Supported versions that are affected are 12.2.1.4.0 and 14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Access Ma…",
-      "score": 10.0,
-      "severite": "CRITICAL",
-      "date": "2026-11-17T22:18:11.710000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-114835"
-    },
-    {
-      "source": "NVD",
-      "origine": "int",
-      "cve": "CVE-2026-91500",
-      "resume": "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine). Supported versions that are affected are 12.2.1.4.0 and 14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle A…",
-      "score": 10.0,
-      "severite": "CRITICAL",
-      "date": "2026-11-17T22:19:22.467000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-91500"
-    },
-    {
-      "source": "NVD",
-      "origine": "int",
       "cve": "CVE-2026-91510",
       "resume": "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine). Supported versions that are affected are 12.2.1.4.0 and 14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle A…",
       "score": 10.0,
       "severite": "CRITICAL",
       "date": "2026-11-17T22:19:22.823000+00:00",
       "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-91510"
-    },
-    {
-      "source": "NVD",
-      "origine": "int",
-      "cve": "CVE-2026-91569",
-      "resume": "Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: TopLink Integration). Supported versions that are affected are 12.2.1.4.0, 14.1.1.0.0, 14.1.2.0.0 and 15.1.1.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP…",
-      "score": 10.0,
-      "severite": "CRITICAL",
-      "date": "2026-11-17T22:19:24.980000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-91569"
-    },
-    {
-      "source": "NVD",
-      "origine": "int",
-      "cve": "CVE-2026-114819",
-      "resume": "Vulnerability in the Oracle Text component of Oracle Database Server. Supported versions that are affected are 19.3-19.32, 21.3-21.24 and 23.4.0-23.26.3. Easily exploitable vulnerability allows low privileged attacker having Create Session privilege with network access via Oracle Net to compromise…",
-      "score": 9.9,
-      "severite": "CRITICAL",
-      "date": "2026-11-17T22:18:09.980000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-114819"
-    },
-    {
-      "source": "NVD",
-      "origine": "int",
-      "cve": "CVE-2026-114822",
-      "resume": "Vulnerability in the RDBMS component of Oracle Database Server. Supported versions that are affected are 23.4.0-23.26.4. Easily exploitable vulnerability allows low privileged attacker having Create Session privilege with network access via Oracle Net to compromise RDBMS. While the vulnerability is…",
-      "score": 9.9,
-      "severite": "CRITICAL",
-      "date": "2026-11-17T22:18:10.103000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-114822"
-    },
-    {
-      "source": "NVD",
-      "origine": "int",
-      "cve": "CVE-2026-114848",
-      "resume": "Vulnerability in the Oracle Text component of Oracle Database Server. Supported versions that are affected are 19.3-19.33, 21.3-21.24 and 23.4.0-23.26.3. Easily exploitable vulnerability allows low privileged attacker having Create Session privilege with network access via Oracle Net to compromise…",
-      "score": 9.9,
-      "severite": "CRITICAL",
-      "date": "2026-11-17T22:18:13.277000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-114848"
-    },
-    {
-      "source": "NVD",
-      "origine": "int",
-      "cve": "CVE-2026-114978",
-      "resume": "Vulnerability in the Oracle Hyperion Financial Management product of Oracle Hyperion (component: Security). The supported version that is affected is 11.2.26.0.000. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Hyperion Financial M…",
-      "score": 9.9,
-      "severite": "CRITICAL",
-      "date": "2026-11-17T22:18:28.660000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-114978"
-    },
-    {
-      "source": "NVD",
-      "origine": "int",
-      "cve": "CVE-2026-114980",
-      "resume": "Vulnerability in the Oracle AutoVue product of Oracle Supply Chain (component: Security Related Issues). The supported version that is affected is 21.1.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle AutoVue. While the vulnerabili…",
-      "score": 9.9,
-      "severite": "CRITICAL",
-      "date": "2026-11-17T22:18:28.903000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-114980"
     },
     {
       "source": "NVD",
@@ -1248,42 +975,12 @@
     {
       "source": "NVD",
       "origine": "int",
-      "cve": "CVE-2026-130840",
-      "resume": "BISHENG before 3.0.0 contains an authentication bypass vulnerability that allows unauthenticated remote attackers to impersonate administrators by abusing a hard-coded default jwt_secret used by AuthJwt. Attackers can forge an HS256 token offline naming user_id 1 with the admin role, send it as acc…",
-      "score": 9.8,
-      "severite": "CRITICAL",
-      "date": "2026-11-17T20:17:48.737000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130840"
-    },
-    {
-      "source": "NVD",
-      "origine": "int",
       "cve": "CVE-2026-130849",
       "resume": "BZFlag bzfs before 2.4.32 contains a heap out-of-bounds write vulnerability in NetHandler::tcpReceive() that allows remote unauthenticated attackers to corrupt heap memory by sending a TCP message with a body length of exactly 1024. Attackers can overwrite the tcplen receive offset with a negative…",
       "score": 9.8,
       "severite": "CRITICAL",
       "date": "2026-11-17T20:17:50.113000+00:00",
       "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130849"
-    },
-    {
-      "source": "NVD",
-      "origine": "int",
-      "cve": "CVE-2026-130856",
-      "resume": "53AIHub before 0.5.5 contains a missing authentication vulnerability that allows remote unauthenticated attackers to reinitialize installed instances by calling the public POST /api/init endpoint. Attackers can reset an existing account's password, assign the top creator role, and obtain an access…",
-      "score": 9.8,
-      "severite": "CRITICAL",
-      "date": "2026-11-17T20:17:51.240000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130856"
-    },
-    {
-      "source": "NVD",
-      "origine": "int",
-      "cve": "CVE-2026-131852",
-      "resume": "OwnTracks Recorder before 1.0.5 contains a format string vulnerability in json_response() and related output functions that allows unauthenticated attackers to execute code by storing a malicious tid value. Attackers can publish locations via POST /pub or MQTT with printf specifiers in tid, then re…",
-      "score": 9.8,
-      "severite": "CRITICAL",
-      "date": "2026-11-18T00:18:43.127000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-131852"
     },
     {
       "source": "NVD",
@@ -1308,16 +1005,6 @@
     {
       "source": "NVD",
       "origine": "int",
-      "cve": "CVE-2026-130735",
-      "resume": "Grav from 2.0.0 before 2.2.18 contains a Twig injection vulnerability that allows media-only accounts and anonymous uploaders to execute Twig by placing delimiters in image titles, alt text, class, id, or file names. Attackers can combine injected Twig with the autoescape tag to serve script to eve…",
-      "score": 9.8,
-      "severite": "CRITICAL",
-      "date": "2026-11-18T12:17:20.010000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130735"
-    },
-    {
-      "source": "NVD",
-      "origine": "int",
       "cve": "CVE-2026-110009",
       "resume": "The Unzer Payments plugin for WordPress is vulnerable to Authentication Bypass leading to Account Takeover in all versions up to, and including, 2.2.1. The vulnerability exists because the Google Pay Express Checkout endpoint (`/?wc-api=google_pay_express`), handled by `startCheckoutDataWithNormali…",
       "score": 9.8,
@@ -1328,32 +1015,22 @@
     {
       "source": "NVD",
       "origine": "int",
-      "cve": "CVE-2026-110811",
-      "resume": "The Trust Payments Gateway for WooCommerce (JavaScript Library) plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 1.3.8. The vulnerability exists because the `new_customer_account()` function stores the raw return value of `wp_create_user()` — includi…",
+      "cve": "CVE-2012-20007",
+      "resume": "ThinkPHP 2.0 through 2.2 and 3.0 Lite mode contains an eval injection vulnerability in the Dispatcher PATH_INFO parsing, which uses preg_replace with the /e modifier and a double-quoted replacement. Unauthenticated attackers can send crafted requests to index.php with a malicious 's' parameter cont…",
       "score": 9.8,
       "severite": "CRITICAL",
-      "date": "2026-11-18T14:17:26.020000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-110811"
+      "date": "2026-11-18T16:17:47.560000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2012-20007"
     },
     {
       "source": "NVD",
       "origine": "int",
-      "cve": "CVE-2026-114785",
-      "resume": "Vulnerability in the Oracle Hyperion Planning product of Oracle Hyperion (component: Security). The supported version that is affected is 11.2.26.0.000. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Hyperion Planning. Successful a…",
-      "score": 9.6,
+      "cve": "CVE-2018-25443",
+      "resume": "Baidu UEditor 1.4.0 through 1.4.3.3 contains an unrestricted file upload vulnerability in the catchimage action of /ueditor/net/controller.ashx that only validates the Content-Type header. Unauthenticated attackers can supply a source[] URL like x.jpg?.aspx to retain a malicious extension and write…",
+      "score": 9.8,
       "severite": "CRITICAL",
-      "date": "2026-11-17T22:18:05.907000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-114785"
-    },
-    {
-      "source": "NVD",
-      "origine": "int",
-      "cve": "CVE-2026-114856",
-      "resume": "Vulnerability in Oracle REST Data Services (component: General). Supported versions that are affected are 24.2.0-26.3.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTPS to compromise Oracle REST Data Services. Successful attacks require human interacti…",
-      "score": 9.6,
-      "severite": "CRITICAL",
-      "date": "2026-11-17T22:18:14.213000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-114856"
+      "date": "2026-11-18T16:17:48.500000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2018-25443"
     },
     {
       "source": "NVD",
@@ -1448,16 +1125,6 @@
     {
       "source": "NVD",
       "origine": "int",
-      "cve": "CVE-2026-130072",
-      "resume": "Cloud Commander (cloudcmd) before 19.21.4 contains an authentication bypass and path traversal vulnerability that allows unauthenticated attackers to rename files by sending PUT /rename requests handled before authentication middleware. Attackers can supply absolute or ../ paths in the from and to…",
-      "score": 9.1,
-      "severite": "CRITICAL",
-      "date": "2026-11-16T22:18:22.533000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130072"
-    },
-    {
-      "source": "NVD",
-      "origine": "int",
       "cve": "CVE-2026-114881",
       "resume": "Vulnerability in the Document Management and Collaboration product of Oracle E-Business Suite (component: Attachments). Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Document Manag…",
       "score": 9.1,
@@ -1478,35 +1145,45 @@
     {
       "source": "NVD",
       "origine": "int",
-      "cve": "CVE-2026-130678",
-      "resume": "SiYuan before 3.8.10 contains a stored cross-site scripting vulnerability that allows attackers to execute script by storing malicious Attribute View column names rendered unescaped in col.ts. Attackers can inject HTML via addAttributeViewKey, .sy.zip import, or sync, and when a victim adds or dupl…",
-      "score": 9.0,
-      "severite": "CRITICAL",
-      "date": "2026-11-18T12:17:11.277000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130678"
-    },
-    {
-      "source": "NVD",
-      "origine": "int",
       "cve": "CVE-2026-130679",
       "resume": "SiYuan before 3.8.10 contains a stored cross-site scripting vulnerability in genAVValueHTML() that allows attackers who can store Attribute View asset values to inject script through an unescaped image src attribute. Attackers can store an image URL containing a double quote and onerror handler tha…",
       "score": 9.0,
       "severite": "CRITICAL",
       "date": "2026-11-18T12:17:11.450000+00:00",
       "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130679"
-    },
-    {
-      "source": "NVD",
-      "origine": "int",
-      "cve": "CVE-2026-130681",
-      "resume": "SiYuan before 3.8.10 contains a stored cross-site scripting vulnerability, an incomplete fix for CVE-2026-44670, because renderAVAttribute() inserts an Attribute View name unescaped into the database row attribute panel header. Attackers who can persist the name, such as via the setAttrViewName act…",
-      "score": 9.0,
-      "severite": "CRITICAL",
-      "date": "2026-11-18T12:17:11.817000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130681"
     }
   ],
   "presse": [
+    {
+      "source": "BleepingComputer",
+      "origine": "int",
+      "titre": "Microsoft’s Agent Framework PyPI package compromised to steal credentials",
+      "lien": "https://www.bleepingcomputer.com/news/security/microsofts-agent-framework-pypi-package-compromised-to-steal-credentials/",
+      "date": "2026-11-18T16:58:42+00:00",
+      "resume": "Hackers compromised Microsoft's official Agent Framework Python package on PyPI, publishing two malicious versions designed to steal cloud credentials and other sensitive information from developers' systems. [...]",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "IT-Connect",
+      "origine": "fr",
+      "titre": "FBI : avec ARTEX, certaines intrusions atteignent un accès privilégié en moins de trois heures",
+      "lien": "https://www.it-connect.fr/fbi-artex-framework-ia-cyberattaques/",
+      "date": "2026-11-18T15:45:00+00:00",
+      "resume": "Le FBI alerte sur ARTEX, un framework de pentest piloté par l'IA détourné par des pirates. Certaines intrusions atteignent un accès admin en moins de 3 heures. Le post FBI : avec ARTEX, certaines intrusions atteignent un accès privilégié en moins de trois heures a été publié sur IT-Connect .",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "SecurityWeek",
+      "origine": "int",
+      "titre": "VeroSecurity Raises $11 Million for AI Security Engineering Platform",
+      "lien": "https://www.securityweek.com/verosecurity-raises-11-million-for-ai-security-engineering-platform/",
+      "date": "2026-11-18T15:30:42+00:00",
+      "resume": "AI Security Engineering is a new and essential security discipline now being brought into focus by VeroSecurity. The post VeroSecurity Raises $11 Million for AI Security Engineering Platform appeared first on SecurityWeek .",
+      "attaque": false,
+      "cves": []
+    },
     {
       "source": "BleepingComputer",
       "origine": "int",
@@ -1830,10 +1507,10 @@
     {
       "source": "SecurityWeek",
       "origine": "int",
-      "titre": "Java4Shell Vulnerability Puts Many Enterprise Applications at Risk of Takeover",
+      "titre": "Java4Shell Vulnerability Puts Enterprise Applications at Risk of Takeover",
       "lien": "https://www.securityweek.com/java4shell-vulnerability-puts-many-enterprise-applications-at-risk-of-takeover/",
       "date": "2026-11-18T07:43:34+00:00",
-      "resume": "Calif demonstrated remote code execution in Jira, Jenkins and Keycloak, while VulnCheck says real-world RCE requires per-target work The post Java4Shell Vulnerability Puts Many Enterprise Applications at Risk of Takeover appeared first on SecurityWeek .",
+      "resume": "Calif demonstrated remote code execution in Jira, Jenkins and Keycloak, while VulnCheck says real-world RCE requires per-target work The post Java4Shell Vulnerability Puts Enterprise Applications at Risk of Takeover appeared first on SecurityWeek .",
       "attaque": false,
       "cves": []
     },
@@ -1865,16 +1542,6 @@
       "date": "2026-11-18T02:52:04+00:00",
       "resume": "At least 178 top web destinations unwittingly served a variety of malware exploits against visitors over the past 24 hours thanks to a security vulnerability involving Optimizely, a company that helps websites customize user experiences and test out new features. Experts say the incident, which saw…",
       "attaque": true,
-      "cves": []
-    },
-    {
-      "source": "SecurityWeek",
-      "origine": "int",
-      "titre": "Classified Communications Network at the National Security Agency Goes Down, Defense Official Says",
-      "lien": "https://www.securityweek.com/classified-communications-network-at-the-national-security-agency-goes-down-defense-official-says/",
-      "date": "2026-11-18T02:15:07+00:00",
-      "resume": "The problem disrupted the operations of NSANet, a classified internal network used by employees of the agency. The post Classified Communications Network at the National Security Agency Goes Down, Defense Official Says appeared first on SecurityWeek .",
-      "attaque": false,
       "cves": []
     },
     {
@@ -2056,16 +1723,6 @@
       "lien": "https://www.zataz.com/faux-coursiers-bancaires-trois-equipes-interpellees/",
       "date": "2026-11-17T11:02:44+00:00",
       "resume": "Dans le Nord, trois équipes de faux coursiers bancaires arrêtées. Des personnes âgées ciblées et dépouillées.",
-      "attaque": false,
-      "cves": []
-    },
-    {
-      "source": "BleepingComputer",
-      "origine": "int",
-      "titre": "Court clears brothers of $25 million Ethereum crypto heist charges",
-      "lien": "https://www.bleepingcomputer.com/news/security/court-clears-brothers-of-25-million-ethereum-crypto-heist-charges/",
-      "date": "2026-11-17T09:44:22+00:00",
-      "resume": "US District Judge Jessica Clarke has acquitted two brothers accused of stealing $25 million in cryptocurrency in about 12 seconds through a scheme that exploited a bug in the Ethereum blockchain. [...]",
       "attaque": false,
       "cves": []
     },
