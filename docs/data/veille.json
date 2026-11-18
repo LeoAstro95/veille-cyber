@@ -1,13 +1,13 @@
 {
-  "genere_le": "2026-11-18T19:11:52.139989+00:00",
+  "genere_le": "2026-11-18T23:15:08.521837+00:00",
   "fenetre_jours": 3,
   "stats": {
     "urgentes": 0,
     "alertes_certfr": 0,
     "avis_certfr": 13,
-    "kev": 1,
-    "cve_critiques": 20,
-    "attaques": 44
+    "kev": 5,
+    "cve_critiques": 31,
+    "attaques": 43
   },
   "priorites": [
     {
@@ -48,6 +48,134 @@
       ],
       "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-115731",
       "date": "2026-11-18T10:37:08+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-90436",
+      "cve": "CVE-2026-90436",
+      "cves": [],
+      "titre": "Apache Axis Unsafe Reflection Vulnerability",
+      "resume": "Apache Axis contains an unsafe reflection vulnerability that could allow an unauthenticated remote attacker to execute arbitrary code via a crafted SOAP fault message that causes Axis to load and instantiate an attacker-specified class when a suitable class is available on the application classpath…",
+      "editeur": "Apache",
+      "produit": "Axis",
+      "score": 45,
+      "raisons": [
+        {
+          "code": "kev",
+          "label": "Exploitée activement"
+        },
+        {
+          "code": "repandu",
+          "label": "Produit très répandu"
+        }
+      ],
+      "cvss": null,
+      "epss": 0.0113,
+      "epss_percentile": 0.6701,
+      "sources": [
+        {
+          "nom": "CISA KEV",
+          "lien": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-90436",
+      "date": "2026-11-18T00:00:00+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-40217",
+      "cve": "CVE-2026-40217",
+      "cves": [],
+      "titre": "BerriAI LiteLLM Unprotected Alternate Channel Vulnerability",
+      "resume": "BerriAI LiteLLM contains an unprotected alternate channel vulnerability that could allow remote attackers to execute arbitrary code via bytecode rewriting at the /guardrails/test_custom_code URI.",
+      "editeur": "BerriAI",
+      "produit": "LiteLLM",
+      "score": 39,
+      "raisons": [
+        {
+          "code": "kev",
+          "label": "Exploitée activement"
+        },
+        {
+          "code": "epss",
+          "label": "EPSS 17 %"
+        }
+      ],
+      "cvss": null,
+      "epss": 0.1702,
+      "epss_percentile": 0.9713,
+      "sources": [
+        {
+          "nom": "CISA KEV",
+          "lien": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-40217",
+      "date": "2026-11-18T00:00:00+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-90817",
+      "cve": "CVE-2026-90817",
+      "cves": [],
+      "titre": "Vanderbilt University Research Electronic Data Capture (REDCap) Code Injection Vulnerability",
+      "resume": "Vanderbilt University Research Electronic Data Capture (REDCap) contains a code injection vulnerability which could allow an unauthenticated attacker to execute arbitrary code on the server. An attacker could exploit this via crafted HTTP requests that access an unintended controller route from a p…",
+      "editeur": "Vanderbilt University",
+      "produit": "Research Electronic Data Capture (REDCap)",
+      "score": 36,
+      "raisons": [
+        {
+          "code": "kev",
+          "label": "Exploitée activement"
+        }
+      ],
+      "cvss": null,
+      "epss": 0.0375,
+      "epss_percentile": 0.9009,
+      "sources": [
+        {
+          "nom": "CISA KEV",
+          "lien": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-90817",
+      "date": "2026-11-18T00:00:00+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2024-10441",
+      "cve": "CVE-2024-10441",
+      "cves": [],
+      "titre": "Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability",
+      "resume": "Synology DSM contains an improper encoding or escaping of output vulnerability in the system plugin daemon in Synology BeeStation OS (BSM) that could allow a remote attacker to execute arbitrary code via unspecified vectors.",
+      "editeur": "Synology",
+      "produit": "DiskStation Manager (DSM)",
+      "score": 35,
+      "raisons": [
+        {
+          "code": "kev",
+          "label": "Exploitée activement"
+        }
+      ],
+      "cvss": null,
+      "epss": 0.0125,
+      "epss_percentile": 0.7001,
+      "sources": [
+        {
+          "nom": "CISA KEV",
+          "lien": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2024-10441",
+      "date": "2026-11-18T00:00:00+00:00",
       "origines": [
         "int"
       ]
@@ -427,101 +555,41 @@
       ]
     },
     {
-      "cle": "CVE-2018-25443",
-      "cve": "CVE-2018-25443",
+      "cle": "CVE-2026-132143",
+      "cve": "CVE-2026-132143",
       "cves": [],
-      "titre": "CVE-2018-25443",
-      "resume": "Baidu UEditor 1.4.0 through 1.4.3.3 contains an unrestricted file upload vulnerability in the catchimage action of /ueditor/net/controller.ashx that only validates the Content-Type header. Unauthenticated attackers can supply a source[] URL like x.jpg?.aspx to retain a malicious extension and write…",
+      "titre": "CVE-2026-132143",
+      "resume": "A vulnerability has been found in DrayTek Vigor2960 up to 1.5.1.6. This vulnerability affects the function doWebBackup of the file /cgi-bin/mainfunction.cgi of the component Backup Handler. Such manipulation of the argument path/value leads to stack-based buffer overflow. The attack can be launched…",
       "editeur": null,
       "produit": null,
       "score": 20,
       "raisons": [
         {
           "code": "cvss",
-          "label": "CVSS 9.8"
+          "label": "CVSS 9.9"
         }
       ],
-      "cvss": 9.8,
+      "cvss": 9.9,
       "epss": null,
       "epss_percentile": null,
       "sources": [
         {
           "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2018-25443"
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-132143"
         }
       ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2018-25443",
-      "date": "2026-11-18T16:17:48.500000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-132143",
+      "date": "2026-11-18T22:17:20.360000+00:00",
       "origines": [
         "int"
       ]
     },
     {
-      "cle": "CVE-2012-20007",
-      "cve": "CVE-2012-20007",
+      "cle": "CVE-2026-132142",
+      "cve": "CVE-2026-132142",
       "cves": [],
-      "titre": "CVE-2012-20007",
-      "resume": "ThinkPHP 2.0 through 2.2 and 3.0 Lite mode contains an eval injection vulnerability in the Dispatcher PATH_INFO parsing, which uses preg_replace with the /e modifier and a double-quoted replacement. Unauthenticated attackers can send crafted requests to index.php with a malicious 's' parameter cont…",
-      "editeur": null,
-      "produit": null,
-      "score": 20,
-      "raisons": [
-        {
-          "code": "cvss",
-          "label": "CVSS 9.8"
-        }
-      ],
-      "cvss": 9.8,
-      "epss": null,
-      "epss_percentile": null,
-      "sources": [
-        {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2012-20007"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2012-20007",
-      "date": "2026-11-18T16:17:47.560000+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-130733",
-      "cve": "CVE-2026-130733",
-      "cves": [],
-      "titre": "CVE-2026-130733",
-      "resume": "Grav from 2.0.0 before 2.2.18 contains an authorization bypass vulnerability that allows publishers to overwrite pages their per-page permissions deny by abusing FolderStorage key delimiter collisions and PageStorage folder reconstruction. Attackers can rename a folder like locked*** or save from a…",
-      "editeur": null,
-      "produit": null,
-      "score": 20,
-      "raisons": [
-        {
-          "code": "cvss",
-          "label": "CVSS 9.8"
-        }
-      ],
-      "cvss": 9.8,
-      "epss": null,
-      "epss_percentile": null,
-      "sources": [
-        {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130733"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130733",
-      "date": "2026-11-18T12:17:19.627000+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-130706",
-      "cve": "CVE-2026-130706",
-      "cves": [],
-      "titre": "CVE-2026-130706",
-      "resume": "NocoDB before 2026.09.0 contains an sql injection vulnerability that allows authenticated Creator or Owner users to inject raw SQL by persisting a crafted formula parsed_tree reused without revalidation. Attackers can bypass the SQLite metadata path guard with an alias to plant the tree, escalating…",
+      "titre": "CVE-2026-132142",
+      "resume": "A flaw has been found in DrayTek Vigor2960 up to 1.5.1.6. This affects the function dataflowstatus of the file /cgi-bin/mainfunction.cgi of the component CGI Process. This manipulation of the argument option causes stack-based buffer overflow. The attack can be initiated remotely. The exploit has b…",
       "editeur": null,
       "produit": null,
       "score": 20,
@@ -537,21 +605,180 @@
       "sources": [
         {
           "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130706"
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-132142"
         }
       ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130706",
-      "date": "2026-11-18T12:17:15.490000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-132142",
+      "date": "2026-11-18T22:17:20.160000+00:00",
       "origines": [
         "int"
       ]
     },
     {
-      "cle": "CVE-2026-130680",
-      "cve": "CVE-2026-130680",
+      "cle": "CVE-2026-132141",
+      "cve": "CVE-2026-132141",
       "cves": [],
-      "titre": "CVE-2026-130680",
-      "resume": "SiYuan from 3.3.0 before 3.8.10 contains a stored cross-site scripting vulnerability that allows attackers to inject HTML via unescaped checkbox column names in Gallery and Kanban AttributeView renderers. Attackers can share a crafted .sy.zip document whose rendering in the Electron desktop client…",
+      "titre": "CVE-2026-132141",
+      "resume": "A vulnerability was detected in DrayTek Vigor2960 up to 1.5.1.6. Affected by this issue is the function json_load_lock of the file /cgi-bin/mainfunction.cgi of the component Jsonstatus. The manipulation of the argument usefile results in stack-based buffer overflow. It is possible to launch the att…",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.9"
+        }
+      ],
+      "cvss": 9.9,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-132141"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-132141",
+      "date": "2026-11-18T22:17:19.960000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-132139",
+      "cve": "CVE-2026-132139",
+      "cves": [],
+      "titre": "CVE-2026-132139",
+      "resume": "A weakness has been identified in DrayTek Vigor2960 up to 1.5.1.6. Affected is the function setSWMProfile of the file /cgi-bin/mainfunction.cgi. Executing a manipulation of the argument filename can lead to stack-based buffer overflow. The attack may be performed from remote. The exploit has been m…",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.9"
+        }
+      ],
+      "cvss": 9.9,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-132139"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-132139",
+      "date": "2026-11-18T21:17:55.920000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-123007",
+      "cve": "CVE-2026-123007",
+      "cves": [],
+      "titre": "NGINX2Root : deux failles critiques permettent de prendre le contrôle d’un serveur NGINX",
+      "resume": "",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "repandu",
+          "label": "Produit très répandu"
+        },
+        {
+          "code": "medias",
+          "label": "Citée par 2 médias"
+        }
+      ],
+      "cvss": null,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "IT-Connect",
+          "lien": "https://www.it-connect.fr/nginx2root-failles-cve-2026-123007-rce/"
+        },
+        {
+          "nom": "The Hacker News",
+          "lien": "https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-123007",
+      "date": "2026-11-18T19:59:23+00:00",
+      "origines": [
+        "fr",
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-130786",
+      "cve": "CVE-2026-130786",
+      "cves": [],
+      "titre": "CVE-2026-130786",
+      "resume": "Incus before 7.6.0 contains a configuration injection vulnerability that allows users who can launch instances from controlled images to inject LXC directives by embedding line breaks in OCI config.json values or oci.entrypoint and oci.cwd keys. Attackers can add liblxc hooks or crafted tmpfs lxc.m…",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.9"
+        }
+      ],
+      "cvss": 9.9,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130786"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130786",
+      "date": "2026-11-18T19:17:55.157000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-130784",
+      "cve": "CVE-2026-130784",
+      "cves": [],
+      "titre": "CVE-2026-130784",
+      "resume": "Incus before 7.6.0 contains an authorization bypass vulnerability that allows restricted clients to create and access default project resources by exploiting entitlement checks against the requested project. Attackers can create bridge networks with raw.dnsmasq directives to execute code as root on…",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.9"
+        }
+      ],
+      "cvss": 9.9,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130784"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130784",
+      "date": "2026-11-18T19:17:54.837000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-130783",
+      "cve": "CVE-2026-130783",
+      "cves": [],
+      "titre": "CVE-2026-130783",
+      "resume": "Incus before 7.6.0 exposes certificate and cluster join token secrets through the default project event stream and skips authorization when cancelling operations without associated permissions. Restricted clients can subscribe to operation events to capture certificate tokens and enroll unrestricte…",
       "editeur": null,
       "produit": null,
       "score": 20,
@@ -567,51 +794,171 @@
       "sources": [
         {
           "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130680"
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130783"
         }
       ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130680",
-      "date": "2026-11-18T12:17:11.630000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130783",
+      "date": "2026-11-18T19:17:54.683000+00:00",
       "origines": [
         "int"
       ]
     },
     {
-      "cle": "CVE-2026-130679",
-      "cve": "CVE-2026-130679",
+      "cle": "CVE-2026-130780",
+      "cve": "CVE-2026-130780",
       "cves": [],
-      "titre": "CVE-2026-130679",
-      "resume": "SiYuan before 3.8.10 contains a stored cross-site scripting vulnerability in genAVValueHTML() that allows attackers who can store Attribute View asset values to inject script through an unescaped image src attribute. Attackers can store an image URL containing a double quote and onerror handler tha…",
+      "titre": "CVE-2026-130780",
+      "resume": "Incus before 7.6.0 contains a path traversal vulnerability that allows malicious migration peers to write outside intended directories by supplying unvalidated dependent volume and snapshot names in the migration offer header. Attackers controlling a migration source can create root-owned volumes w…",
       "editeur": null,
       "produit": null,
       "score": 20,
       "raisons": [
         {
           "code": "cvss",
-          "label": "CVSS 9.0"
+          "label": "CVSS 9.9"
         }
       ],
-      "cvss": 9.0,
+      "cvss": 9.9,
       "epss": null,
       "epss_percentile": null,
       "sources": [
         {
           "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130679"
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130780"
         }
       ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130679",
-      "date": "2026-11-18T12:17:11.450000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130780",
+      "date": "2026-11-18T19:17:54.067000+00:00",
       "origines": [
         "int"
       ]
     },
     {
-      "cle": "CVE-2026-130675",
-      "cve": "CVE-2026-130675",
+      "cle": "CVE-2026-130779",
+      "cve": "CVE-2026-130779",
       "cves": [],
-      "titre": "CVE-2026-130675",
-      "resume": "Craft CMS from 5.0.0 before 5.11.4 contains a remote code execution vulnerability in ImageTransforms::normalizeTransform() that allows attackers to instantiate arbitrary classes by supplying class:null with a __class key. Attackers can reach the method through Craft Commerce's payments/pay redirect…",
+      "titre": "CVE-2026-130779",
+      "resume": "Incus before 7.6.0 contains a path traversal vulnerability that allows users permitted to import custom volumes to store unvalidated snapshot names from the backup index configuration section. Attackers can craft a backup with traversal sequences in snapshot names so later deletion removes arbitrar…",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.6"
+        }
+      ],
+      "cvss": 9.6,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130779"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130779",
+      "date": "2026-11-18T19:17:53.830000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-130778",
+      "cve": "CVE-2026-130778",
+      "cves": [],
+      "titre": "CVE-2026-130778",
+      "resume": "Incus before 7.6.0 contains an authentication bypass vulnerability that allows remote attackers to authenticate as any trusted certificate by appending its public certificate to their presented TLS client chain. Attackers can append the server's or a cluster member's certificate to gain cluster-lev…",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 10.0"
+        }
+      ],
+      "cvss": 10.0,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130778"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130778",
+      "date": "2026-11-18T19:17:53.607000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-130771",
+      "cve": "CVE-2026-130771",
+      "cves": [],
+      "titre": "CVE-2026-130771",
+      "resume": "Incus before 7.6.0 fails to reject special files, hard links, or symlinks in backup or image metadata, allowing restricted project users to read or overwrite host files. Attackers can import crafted backups containing device nodes, a hard-linked backup.yaml, or symlinks to corrupt host storage, ove…",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.9"
+        }
+      ],
+      "cvss": 9.9,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130771"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130771",
+      "date": "2026-11-18T19:17:50.757000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-130759",
+      "cve": "CVE-2026-130759",
+      "cves": [],
+      "titre": "CVE-2026-130759",
+      "resume": "Fleet from 4.71.0 before 4.88.2 contains an authentication bypass vulnerability in the SAML SSO callback that looks up sessions using unvalidated client-supplied identifiers. Users able to run live queries or enroll secret holders can plant attacker-controlled identity provider metadata in the sess…",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.9"
+        }
+      ],
+      "cvss": 9.9,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130759"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130759",
+      "date": "2026-11-18T19:17:46.750000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-130756",
+      "cve": "CVE-2026-130756",
+      "cves": [],
+      "titre": "CVE-2026-130756",
+      "resume": "pnpm exe before 10.34.8 embeds an outdated Node.js runtime that still trusts compromised eMudhra intermediate CA certificates during registry TLS connections. Network attackers holding a recovered intermediate key can intercept standalone pnpm registry fetches and serve forged package metadata or t…",
       "editeur": null,
       "produit": null,
       "score": 20,
@@ -627,180 +974,13 @@
       "sources": [
         {
           "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130675"
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130756"
         }
       ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130675",
-      "date": "2026-11-18T12:17:10.783000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130756",
+      "date": "2026-11-18T19:17:46.287000+00:00",
       "origines": [
         "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-114938",
-      "cve": "CVE-2026-114938",
-      "cves": [],
-      "titre": "Java4Shell Flaw (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak and More",
-      "resume": "",
-      "editeur": null,
-      "produit": null,
-      "score": 20,
-      "raisons": [
-        {
-          "code": "repandu",
-          "label": "Produit très répandu"
-        },
-        {
-          "code": "medias",
-          "label": "Citée par 2 médias"
-        }
-      ],
-      "cvss": null,
-      "epss": 0.0073,
-      "epss_percentile": 0.5512,
-      "sources": [
-        {
-          "nom": "The Hacker News",
-          "lien": "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html"
-        },
-        {
-          "nom": "IT-Connect",
-          "lien": "https://www.it-connect.fr/java4shell-faille-critique-java-openjdk/"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-114938",
-      "date": "2026-11-18T11:55:49+00:00",
-      "origines": [
-        "fr",
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-130849",
-      "cve": "CVE-2026-130849",
-      "cves": [],
-      "titre": "CVE-2026-130849",
-      "resume": "BZFlag bzfs before 2.4.32 contains a heap out-of-bounds write vulnerability in NetHandler::tcpReceive() that allows remote unauthenticated attackers to corrupt heap memory by sending a TCP message with a body length of exactly 1024. Attackers can overwrite the tcplen receive offset with a negative…",
-      "editeur": null,
-      "produit": null,
-      "score": 20,
-      "raisons": [
-        {
-          "code": "cvss",
-          "label": "CVSS 9.8"
-        }
-      ],
-      "cvss": 9.8,
-      "epss": 0.0084,
-      "epss_percentile": 0.5871,
-      "sources": [
-        {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130849"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130849",
-      "date": "2026-11-17T20:17:50.113000+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-130071",
-      "cve": "CVE-2026-130071",
-      "cves": [],
-      "titre": "CVE-2026-130071",
-      "resume": "TridotsTech go1cms master branch through commit 7f68d05 and version-3 branch before commit ead8da3 contains a missing authentication vulnerability in the guest-whitelisted update_doc method that allows unauthenticated attackers to modify any document. Attackers can supply a doctype, name and arbitr…",
-      "editeur": null,
-      "produit": null,
-      "score": 20,
-      "raisons": [
-        {
-          "code": "cvss",
-          "label": "CVSS 9.8"
-        }
-      ],
-      "cvss": 9.8,
-      "epss": 0.0041,
-      "epss_percentile": 0.3573,
-      "sources": [
-        {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130071"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130071",
-      "date": "2026-11-16T22:18:22.373000+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-99288",
-      "cve": "CVE-2026-99288",
-      "cves": [],
-      "titre": "NoisyTCP : cette faille du noyau Linux vieille de 11 ans permet de faire planter un serveur à distance",
-      "resume": "",
-      "editeur": null,
-      "produit": null,
-      "score": 15,
-      "raisons": [
-        {
-          "code": "repandu",
-          "label": "Produit très répandu"
-        },
-        {
-          "code": "medias",
-          "label": "Citée par 1 média"
-        }
-      ],
-      "cvss": null,
-      "epss": 0.0025,
-      "epss_percentile": 0.1679,
-      "sources": [
-        {
-          "nom": "IT-Connect",
-          "lien": "https://www.it-connect.fr/noisytcp-cve-2026-99288-faille-noyau-linux-tcp/"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-99288",
-      "date": "2026-11-17T07:58:23+00:00",
-      "origines": [
-        "fr"
-      ]
-    },
-    {
-      "cle": "CVE-2026-6460",
-      "cve": "CVE-2026-6460",
-      "cves": [],
-      "titre": "PostgreSQL a corrigé 52 failles de sécurité, dont une vieille de 22 ans (CVE-2026-6460)",
-      "resume": "",
-      "editeur": null,
-      "produit": null,
-      "score": 10,
-      "raisons": [
-        {
-          "code": "medias",
-          "label": "Citée par 2 médias"
-        }
-      ],
-      "cvss": null,
-      "epss": 0.0059,
-      "epss_percentile": 0.4895,
-      "sources": [
-        {
-          "nom": "IT-Connect",
-          "lien": "https://www.it-connect.fr/postgresql-52-failles-cve-2026-6460-mise-a-jour/"
-        },
-        {
-          "nom": "Le Monde Informatique",
-          "lien": "https://www.lemondeinformatique.fr/cybersecurite-conformite/postgresql-corrige-52-failles-dont-une-vieille-de-"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-6460",
-      "date": "2026-11-17T05:00:00+00:00",
-      "origines": [
-        "fr"
       ]
     }
   ],
@@ -940,6 +1120,58 @@
     {
       "source": "CISA KEV",
       "origine": "int",
+      "cve": "CVE-2024-10441",
+      "titre": "Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability",
+      "editeur": "Synology",
+      "produit": "DiskStation Manager (DSM)",
+      "resume": "Synology DSM contains an improper encoding or escaping of output vulnerability in the system plugin daemon in Synology BeeStation OS (BSM) that could allow a remote attacker to execute arbitrary code via unspecified vectors.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triag…",
+      "date": "2026-11-18T00:00:00+00:00",
+      "ransomware": false,
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2024-10441"
+    },
+    {
+      "source": "CISA KEV",
+      "origine": "int",
+      "cve": "CVE-2026-40217",
+      "titre": "BerriAI LiteLLM Unprotected Alternate Channel Vulnerability",
+      "editeur": "BerriAI",
+      "produit": "LiteLLM",
+      "resume": "BerriAI LiteLLM contains an unprotected alternate channel vulnerability that could allow remote attackers to execute arbitrary code via bytecode rewriting at the /guardrails/test_custom_code URI.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triag…",
+      "date": "2026-11-18T00:00:00+00:00",
+      "ransomware": false,
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-40217"
+    },
+    {
+      "source": "CISA KEV",
+      "origine": "int",
+      "cve": "CVE-2026-90817",
+      "titre": "Vanderbilt University Research Electronic Data Capture (REDCap) Code Injection Vulnerability",
+      "editeur": "Vanderbilt University",
+      "produit": "Research Electronic Data Capture (REDCap)",
+      "resume": "Vanderbilt University Research Electronic Data Capture (REDCap) contains a code injection vulnerability which could allow an unauthenticated attacker to execute arbitrary code on the server. An attacker could exploit this via crafted HTTP requests that access an unintended controller route from a p…",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triag…",
+      "date": "2026-11-18T00:00:00+00:00",
+      "ransomware": false,
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-90817"
+    },
+    {
+      "source": "CISA KEV",
+      "origine": "int",
+      "cve": "CVE-2026-90436",
+      "titre": "Apache Axis Unsafe Reflection Vulnerability",
+      "editeur": "Apache",
+      "produit": "Axis",
+      "resume": "Apache Axis contains an unsafe reflection vulnerability that could allow an unauthenticated remote attacker to execute arbitrary code via a crafted SOAP fault message that causes Axis to load and instantiate an attacker-specified class when a suitable class is available on the application classpath…",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triag…",
+      "date": "2026-11-18T00:00:00+00:00",
+      "ransomware": false,
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-90436"
+    },
+    {
+      "source": "CISA KEV",
+      "origine": "int",
       "cve": "CVE-2026-115731",
       "titre": "Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability",
       "editeur": "Perforce",
@@ -965,12 +1197,92 @@
     {
       "source": "NVD",
       "origine": "int",
-      "cve": "CVE-2026-130071",
-      "resume": "TridotsTech go1cms master branch through commit 7f68d05 and version-3 branch before commit ead8da3 contains a missing authentication vulnerability in the guest-whitelisted update_doc method that allows unauthenticated attackers to modify any document. Attackers can supply a doctype, name and arbitr…",
-      "score": 9.8,
+      "cve": "CVE-2026-130778",
+      "resume": "Incus before 7.6.0 contains an authentication bypass vulnerability that allows remote attackers to authenticate as any trusted certificate by appending its public certificate to their presented TLS client chain. Attackers can append the server's or a cluster member's certificate to gain cluster-lev…",
+      "score": 10.0,
       "severite": "CRITICAL",
-      "date": "2026-11-16T22:18:22.373000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130071"
+      "date": "2026-11-18T19:17:53.607000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130778"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-130759",
+      "resume": "Fleet from 4.71.0 before 4.88.2 contains an authentication bypass vulnerability in the SAML SSO callback that looks up sessions using unvalidated client-supplied identifiers. Users able to run live queries or enroll secret holders can plant attacker-controlled identity provider metadata in the sess…",
+      "score": 9.9,
+      "severite": "CRITICAL",
+      "date": "2026-11-18T19:17:46.750000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130759"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-130771",
+      "resume": "Incus before 7.6.0 fails to reject special files, hard links, or symlinks in backup or image metadata, allowing restricted project users to read or overwrite host files. Attackers can import crafted backups containing device nodes, a hard-linked backup.yaml, or symlinks to corrupt host storage, ove…",
+      "score": 9.9,
+      "severite": "CRITICAL",
+      "date": "2026-11-18T19:17:50.757000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130771"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-130780",
+      "resume": "Incus before 7.6.0 contains a path traversal vulnerability that allows malicious migration peers to write outside intended directories by supplying unvalidated dependent volume and snapshot names in the migration offer header. Attackers controlling a migration source can create root-owned volumes w…",
+      "score": 9.9,
+      "severite": "CRITICAL",
+      "date": "2026-11-18T19:17:54.067000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130780"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-130784",
+      "resume": "Incus before 7.6.0 contains an authorization bypass vulnerability that allows restricted clients to create and access default project resources by exploiting entitlement checks against the requested project. Attackers can create bridge networks with raw.dnsmasq directives to execute code as root on…",
+      "score": 9.9,
+      "severite": "CRITICAL",
+      "date": "2026-11-18T19:17:54.837000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130784"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-130786",
+      "resume": "Incus before 7.6.0 contains a configuration injection vulnerability that allows users who can launch instances from controlled images to inject LXC directives by embedding line breaks in OCI config.json values or oci.entrypoint and oci.cwd keys. Attackers can add liblxc hooks or crafted tmpfs lxc.m…",
+      "score": 9.9,
+      "severite": "CRITICAL",
+      "date": "2026-11-18T19:17:55.157000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130786"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-132139",
+      "resume": "A weakness has been identified in DrayTek Vigor2960 up to 1.5.1.6. Affected is the function setSWMProfile of the file /cgi-bin/mainfunction.cgi. Executing a manipulation of the argument filename can lead to stack-based buffer overflow. The attack may be performed from remote. The exploit has been m…",
+      "score": 9.9,
+      "severite": "CRITICAL",
+      "date": "2026-11-18T21:17:55.920000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-132139"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-132141",
+      "resume": "A vulnerability was detected in DrayTek Vigor2960 up to 1.5.1.6. Affected by this issue is the function json_load_lock of the file /cgi-bin/mainfunction.cgi of the component Jsonstatus. The manipulation of the argument usefile results in stack-based buffer overflow. It is possible to launch the att…",
+      "score": 9.9,
+      "severite": "CRITICAL",
+      "date": "2026-11-18T22:17:19.960000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-132141"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-132143",
+      "resume": "A vulnerability has been found in DrayTek Vigor2960 up to 1.5.1.6. This vulnerability affects the function doWebBackup of the file /cgi-bin/mainfunction.cgi of the component Backup Handler. Such manipulation of the argument path/value leads to stack-based buffer overflow. The attack can be launched…",
+      "score": 9.9,
+      "severite": "CRITICAL",
+      "date": "2026-11-18T22:17:20.360000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-132143"
     },
     {
       "source": "NVD",
@@ -1035,6 +1347,26 @@
     {
       "source": "NVD",
       "origine": "int",
+      "cve": "CVE-2026-130754",
+      "resume": "All versions of LaraDashboard contain an authentication bypass in SocialAuthService::findOrCreateUser(), which links a social login to an existing account by email without checking that the OAuth provider verified that email. Unauthenticated attackers using an OAuth/OIDC provider that asserts a vic…",
+      "score": 9.8,
+      "severite": "CRITICAL",
+      "date": "2026-11-18T19:17:45.940000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130754"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-130756",
+      "resume": "pnpm exe before 10.34.8 embeds an outdated Node.js runtime that still trusts compromised eMudhra intermediate CA certificates during registry TLS connections. Network attackers holding a recovered intermediate key can intercept standalone pnpm registry fetches and serve forged package metadata or t…",
+      "score": 9.8,
+      "severite": "CRITICAL",
+      "date": "2026-11-18T19:17:46.287000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130756"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
       "cve": "CVE-2026-91561",
       "resume": "Vulnerability in the Oracle Service Bus product of Oracle Fusion Middleware (component: Core). Supported versions that are affected are 12.2.1.4.0 and 14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via RMI to compromise Oracle Service Bus. While the…",
       "score": 9.6,
@@ -1045,12 +1377,22 @@
     {
       "source": "NVD",
       "origine": "int",
-      "cve": "CVE-2026-130680",
-      "resume": "SiYuan from 3.3.0 before 3.8.10 contains a stored cross-site scripting vulnerability that allows attackers to inject HTML via unescaped checkbox column names in Gallery and Kanban AttributeView renderers. Attackers can share a crafted .sy.zip document whose rendering in the Electron desktop client…",
+      "cve": "CVE-2026-130779",
+      "resume": "Incus before 7.6.0 contains a path traversal vulnerability that allows users permitted to import custom volumes to store unvalidated snapshot names from the backup index configuration section. Attackers can craft a backup with traversal sequences in snapshot names so later deletion removes arbitrar…",
       "score": 9.6,
       "severite": "CRITICAL",
-      "date": "2026-11-18T12:17:11.630000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130680"
+      "date": "2026-11-18T19:17:53.830000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130779"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-130783",
+      "resume": "Incus before 7.6.0 exposes certificate and cluster join token secrets through the default project event stream and skips authorization when cancelling operations without associated permissions. Restricted clients can subscribe to operation events to capture certificate tokens and enroll unrestricte…",
+      "score": 9.6,
+      "severite": "CRITICAL",
+      "date": "2026-11-18T19:17:54.683000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130783"
     },
     {
       "source": "NVD",
@@ -1135,12 +1477,12 @@
     {
       "source": "NVD",
       "origine": "int",
-      "cve": "CVE-2026-130706",
-      "resume": "NocoDB before 2026.09.0 contains an sql injection vulnerability that allows authenticated Creator or Owner users to inject raw SQL by persisting a crafted formula parsed_tree reused without revalidation. Attackers can bypass the SQLite metadata path guard with an alias to plant the tree, escalating…",
+      "cve": "CVE-2026-132142",
+      "resume": "A flaw has been found in DrayTek Vigor2960 up to 1.5.1.6. This affects the function dataflowstatus of the file /cgi-bin/mainfunction.cgi of the component CGI Process. This manipulation of the argument option causes stack-based buffer overflow. The attack can be initiated remotely. The exploit has b…",
       "score": 9.1,
       "severite": "CRITICAL",
-      "date": "2026-11-18T12:17:15.490000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130706"
+      "date": "2026-11-18T22:17:20.160000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-132142"
     },
     {
       "source": "NVD",
@@ -1154,6 +1496,83 @@
     }
   ],
   "presse": [
+    {
+      "source": "BleepingComputer",
+      "origine": "int",
+      "titre": "Ukraine, FBI arrest ransomware gang members tied to $40M in ransoms",
+      "lien": "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/",
+      "date": "2026-11-18T23:08:33+00:00",
+      "resume": "Ukrainian authorities, working with the FBI, have arrested four suspected members of an international ransomware organization linked to more than $40.5 million in ransom payments from at least 28 companies worldwide. [...]",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "origine": "int",
+      "titre": "Coinbase blocks $4.7 million in transfers to Elon Musk deepfake scam",
+      "lien": "https://www.bleepingcomputer.com/news/security/coinbase-blocks-47-million-in-transfers-to-elon-musk-deepfake-scam/",
+      "date": "2026-11-18T20:49:32+00:00",
+      "resume": "Coinbase says it blocked $4.7 million in cryptocurrency transfers to scammers promoting a fake giveaway using an AI-generated deepfake of Elon Musk during a Tesla livestream that attracted more than 500,000 viewers. [...]",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "IT-Connect",
+      "origine": "fr",
+      "titre": "NGINX2Root : deux failles critiques permettent de prendre le contrôle d’un serveur NGINX",
+      "lien": "https://www.it-connect.fr/nginx2root-failles-cve-2026-123007-rce/",
+      "date": "2026-11-18T19:59:23+00:00",
+      "resume": "Failles NGINX : CVE-2026-123007 et CVE-2026-123633 permettent d'exécuter du code à distance via HTTP/2. Voici les versions à installer et comment vous protéger. Le post NGINX2Root : deux failles critiques permettent de prendre le contrôle d’un serveur NGINX a été publié sur IT-Connect .",
+      "attaque": false,
+      "cves": [
+        "CVE-2026-123007",
+        "CVE-2026-123633"
+      ]
+    },
+    {
+      "source": "BleepingComputer",
+      "origine": "int",
+      "titre": "Data breach impacts 40 Irish credit unions in reported IT provider hack",
+      "lien": "https://www.bleepingcomputer.com/news/security/data-breach-impacts-40-irish-credit-unions-in-reported-it-provider-hack/",
+      "date": "2026-11-18T19:39:33+00:00",
+      "resume": "A reported cyberattack on Wellington IT has exposed sensitive information belonging to members of 50 credit unions, the majority of which are located in Ireland. [...]",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "The Hacker News",
+      "origine": "int",
+      "titre": "10-Year-Old NGINX HTTP/2 Flaw Lets Unauthenticated Attackers Execute Code on Servers",
+      "lien": "https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html",
+      "date": "2026-11-18T18:31:17+00:00",
+      "resume": "A flaw in NGINX's HTTP/2 support can allow an attacker to run code on servers with HTTP/2 enabled, without needing to log in. The decade-old flaw, CVE-2026-123007, dubbed \"nginx2root,\" has been present in NGINX's open-source code since version 1.9.5, released on September 22, 2015. Fixed versions 1…",
+      "attaque": true,
+      "cves": [
+        "CVE-2026-123007"
+      ]
+    },
+    {
+      "source": "The Hacker News",
+      "origine": "int",
+      "titre": "F5 Warns 6 Critical BIG-IP Flaws Can Crash Traffic in Specific Setups, May Allow RCE",
+      "lien": "https://thehackernews.com/2026/11/f5-warns-6-critical-big-ip-flaws-can.html",
+      "date": "2026-11-18T18:15:39+00:00",
+      "resume": "Six critical vulnerabilities in F5 BIG-IP allow an attacker to crash the Traffic Management Microkernel (TMM) without logging in, disrupting traffic until the TMM restarts. Each flaw needs a specific setup on a virtual server: an iRule that uses a particular command, or an APM policy that includes…",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "The Hacker News",
+      "origine": "int",
+      "titre": "Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required",
+      "lien": "https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html",
+      "date": "2026-11-18T17:10:45+00:00",
+      "resume": "A critical security flaw in Apache Roller, an open-source, Java-based blogging platform, has come under active exploitation in the wild, according to the Apache Software Foundation (ASF) The vulnerability, tracked as CVE-2026-129448 (CVSS score: 9.8), is a case of unauthenticated deserialization in…",
+      "attaque": false,
+      "cves": [
+        "CVE-2026-129448"
+      ]
+    },
     {
       "source": "BleepingComputer",
       "origine": "int",
@@ -1625,16 +2044,6 @@
       "cves": []
     },
     {
-      "source": "BleepingComputer",
-      "origine": "int",
-      "titre": "Flipper Devices launches $399 ‘Flipper One’ Linux-based multi-tool",
-      "lien": "https://www.bleepingcomputer.com/news/hardware/flipper-devices-launches-399-flipper-one-linux-based-multi-tool/",
-      "date": "2026-11-17T16:00:00+00:00",
-      "resume": "Flipper Devices, the company behind the popular Flipper Zero pentesting device, has launched a crowdfunding campaign for Flipper One, a portable Linux computer and networking multi-tool. [...]",
-      "attaque": false,
-      "cves": []
-    },
-    {
       "source": "The Hacker News",
       "origine": "int",
       "titre": "Oracle to Patch 11 Java Flaws Today as Critical OpenJDK RCE (CVE-2026-114938) Report Emerges",
@@ -1654,16 +2063,6 @@
       "date": "2026-11-17T15:17:28+00:00",
       "resume": "Artificial intelligence (AI), blockchain, and logistics sectors across Europe and the U.S. have emerged as the target of a large-scale, industrialized campaign dubbed Trigram. \"Trigram is a large-scale campaign that impersonates about 50 brands in the blockchain and AI sectors, to trick developers…",
       "attaque": false,
-      "cves": []
-    },
-    {
-      "source": "BleepingComputer",
-      "origine": "int",
-      "titre": "Inside Modern Phishing Kits Built to Steal Microsoft 365 Sessions",
-      "lien": "https://www.bleepingcomputer.com/news/security/inside-modern-phishing-kits-built-to-steal-microsoft-365-sessions/",
-      "date": "2026-11-17T15:01:11+00:00",
-      "resume": "Huntress researchers break down how EvilTokens, Knight Office, and Kali365 capture and replay M365 tokens, plus how defenders can detect and contain them. [...]",
-      "attaque": true,
       "cves": []
     },
     {
@@ -1694,16 +2093,6 @@
       "date": "2026-11-17T11:20:18+00:00",
       "resume": "Government sectors in Asia and Africa have been targeted by an active cyber intrusion campaign that delivers to previously undocumented backdoors that leverage legitimate services like Microsoft SharePoint and GitHub for command‑and‑control (C2). The activity has been codenamed Operation ShadowClou…",
       "attaque": false,
-      "cves": []
-    },
-    {
-      "source": "BleepingComputer",
-      "origine": "int",
-      "titre": "Microsoft testing Remote Lock for lost or stolen Windows devices",
-      "lien": "https://www.bleepingcomputer.com/news/microsoft/microsoft-testing-remote-lock-for-lost-or-stolen-windows-devices/",
-      "date": "2026-11-17T11:19:51+00:00",
-      "resume": "Microsoft is testing a new feature that lets enterprise IT administrators remotely lock stolen or lost Windows devices without wiping them. [...]",
-      "attaque": true,
       "cves": []
     },
     {
@@ -1831,26 +2220,6 @@
       "cves": []
     },
     {
-      "source": "The Hacker News",
-      "origine": "int",
-      "titre": "Retadup Worm Resurfaces 7 Years After Takedown to Spread CoffeeLoader Malware",
-      "lien": "https://thehackernews.com/2026/11/retadup-worm-resurfaces-7-years-after.html",
-      "date": "2026-11-16T12:33:18+00:00",
-      "resume": "Cybersecurity researchers have disclosed details of a new variant of CoffeeLoader, a malware designed to deliver additional payloads to infected machines. \"On launch, the NSIS-based installer executable dropped a file named '7z.dll' into a temporary directory and ran it through rundll32.exe,\" Kaspe…",
-      "attaque": true,
-      "cves": []
-    },
-    {
-      "source": "The Hacker News",
-      "origine": "int",
-      "titre": "SANSAR Linux Cryptomining Malware Uses Modified NVIDIA Library to Hide GPU Activity",
-      "lien": "https://thehackernews.com/2026/11/sansar-linux-cryptomining-malware-uses.html",
-      "date": "2026-11-16T09:32:57+00:00",
-      "resume": "A financially motivated threat activity cluster tracked as REF3364 has been attributed to a Linux-focused cryptocurrency mining operation that tampers with the readings used to detect high GPU workloads. Central to the intrusion is a toolkit called SANSAR, a Rust-based orchestrator that receives co…",
-      "attaque": true,
-      "cves": []
-    },
-    {
       "source": "Le Monde Informatique",
       "origine": "fr",
       "titre": "Cursor : une clé volée chez Fireworks AI à l’origine d’une cyberattaque",
@@ -1871,16 +2240,6 @@
       "cves": [
         "CVE-2026-6460"
       ]
-    },
-    {
-      "source": "The Hacker News",
-      "origine": "int",
-      "titre": "Amazon Uncovers AI Agent Campaign Targeting LiteLLM, Dify, and Other Apps for API Keys",
-      "lien": "https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html",
-      "date": "2026-11-16T07:34:21+00:00",
-      "resume": "Attackers' AI agents have been hunting for weak spots in internet-exposed AI apps such as LiteLLM, One API, and Dify to steal the AI provider keys stored inside, according to the agents' own records. The records, which Amazon's threat intelligence team captured with decoy servers, describe stolen k…",
-      "attaque": true,
-      "cves": []
     }
   ],
   "erreurs": []
