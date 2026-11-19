@@ -1,13 +1,13 @@
 {
-  "genere_le": "2026-11-19T19:15:28.396264+00:00",
+  "genere_le": "2026-11-19T23:24:14.561787+00:00",
   "fenetre_jours": 3,
   "stats": {
     "urgentes": 0,
     "alertes_certfr": 0,
     "avis_certfr": 19,
     "kev": 5,
-    "cve_critiques": 13,
-    "attaques": 41
+    "cve_critiques": 14,
+    "attaques": 43
   },
   "priorites": [
     {
@@ -257,6 +257,74 @@
       ]
     },
     {
+      "cle": "CVE-2026-84236",
+      "cve": "CVE-2026-84236",
+      "cves": [],
+      "titre": "CVE-2026-84236",
+      "resume": "IBM Guardium Data Protection 12.2 is vulnerable to insecure deserialization in the SharePoint Tap MulticastTransceiver component. An unauthenticated remote attacker could exploit this vulnerability to execute arbitrary code on the affected system.",
+      "editeur": null,
+      "produit": null,
+      "score": 30,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.8"
+        },
+        {
+          "code": "repandu",
+          "label": "Produit très répandu"
+        }
+      ],
+      "cvss": 9.8,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-84236"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-84236",
+      "date": "2026-11-19T21:18:06.053000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-82339",
+      "cve": "CVE-2026-82339",
+      "cves": [],
+      "titre": "CVE-2026-82339",
+      "resume": "IBM Guardium Data Protection 12.2 is vulnerable to missing authentication in the SharePoint S-TAP RelayService, allowing an unauthenticated network attacker to inject forged audit events and access the active monitoring policy.",
+      "editeur": null,
+      "produit": null,
+      "score": 30,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.1"
+        },
+        {
+          "code": "repandu",
+          "label": "Produit très répandu"
+        }
+      ],
+      "cvss": 9.1,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-82339"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-82339",
+      "date": "2026-11-19T21:18:05.050000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
       "cle": "CVE-2026-115139",
       "cve": "CVE-2026-115139",
       "cves": [],
@@ -286,40 +354,6 @@
       ],
       "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-115139",
       "date": "2026-11-17T22:18:47.437000+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-114956",
-      "cve": "CVE-2026-114956",
-      "cves": [],
-      "titre": "CVE-2026-114956",
-      "resume": "Vulnerability in the Oracle Hyperion Planning product of Oracle Hyperion (component: Security). The supported version that is affected is 11.2.26.0.000. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Hyperion Planning. Successful a…",
-      "editeur": null,
-      "produit": null,
-      "score": 30,
-      "raisons": [
-        {
-          "code": "cvss",
-          "label": "CVSS 9.3"
-        },
-        {
-          "code": "repandu",
-          "label": "Produit très répandu"
-        }
-      ],
-      "cvss": 9.3,
-      "epss": 0.0027,
-      "epss_percentile": 0.1918,
-      "sources": [
-        {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-114956"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-114956",
-      "date": "2026-11-17T22:18:26.023000+00:00",
       "origines": [
         "int"
       ]
@@ -398,6 +432,66 @@
       ]
     },
     {
+      "cle": "CVE-2026-76536",
+      "cve": "CVE-2026-76536",
+      "cves": [],
+      "titre": "CVE-2026-76536",
+      "resume": "In Splunk Enterprise versions below 10.4.5, 10.2.9, 10.0.12, and 9.4.17, an unauthenticated user could use an empty clustering shared secret to read and modify clustering configuration through the cluster configuration Representational State Transfer (REST) API endpoint on a standalone instance. Th…",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.4"
+        }
+      ],
+      "cvss": 9.4,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-76536"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-76536",
+      "date": "2026-11-19T20:17:52.850000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-76535",
+      "cve": "CVE-2026-76535",
+      "cves": [],
+      "titre": "CVE-2026-76535",
+      "resume": "In Splunk Enterprise versions below 10.6.1, 10.4.5, 10.2.9, 10.0.12, and 9.4.17, an unauthenticated user could run arbitrary Search Processing Language (SPL) searches through RapidDiag task collection as an authenticated user. With this access, the user could read or modify data and configuration a…",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.1"
+        }
+      ],
+      "cvss": 9.1,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-76535"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-76535",
+      "date": "2026-11-19T20:17:52.730000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
       "cle": "CVE-2026-132142",
       "cve": "CVE-2026-132142",
       "cves": [],
@@ -423,36 +517,6 @@
       ],
       "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-132142",
       "date": "2026-11-18T22:17:20.160000+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-132141",
-      "cve": "CVE-2026-132141",
-      "cves": [],
-      "titre": "CVE-2026-132141",
-      "resume": "A vulnerability was detected in DrayTek Vigor2960 up to 1.5.1.6. Affected by this issue is the function json_load_lock of the file /cgi-bin/mainfunction.cgi of the component Jsonstatus. The manipulation of the argument usefile results in stack-based buffer overflow. It is possible to launch the att…",
-      "editeur": null,
-      "produit": null,
-      "score": 20,
-      "raisons": [
-        {
-          "code": "cvss",
-          "label": "CVSS 9.9"
-        }
-      ],
-      "cvss": 9.9,
-      "epss": 0.0047,
-      "epss_percentile": 0.4112,
-      "sources": [
-        {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-132141"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-132141",
-      "date": "2026-11-18T22:17:19.960000+00:00",
       "origines": [
         "int"
       ]
@@ -543,36 +607,6 @@
       ],
       "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130754",
       "date": "2026-11-18T19:17:45.940000+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2018-25443",
-      "cve": "CVE-2018-25443",
-      "cves": [],
-      "titre": "CVE-2018-25443",
-      "resume": "Baidu UEditor 1.4.0 through 1.4.3.3 contains an unrestricted file upload vulnerability in the catchimage action of /ueditor/net/controller.ashx that only validates the Content-Type header. Unauthenticated attackers can supply a source[] URL like x.jpg?.aspx to retain a malicious extension and write…",
-      "editeur": null,
-      "produit": null,
-      "score": 20,
-      "raisons": [
-        {
-          "code": "cvss",
-          "label": "CVSS 9.8"
-        }
-      ],
-      "cvss": 9.8,
-      "epss": 0.006,
-      "epss_percentile": 0.496,
-      "sources": [
-        {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2018-25443"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2018-25443",
-      "date": "2026-11-18T16:17:48.500000+00:00",
       "origines": [
         "int"
       ]
@@ -809,45 +843,6 @@
       ]
     },
     {
-      "cle": "CVE-2026-115560",
-      "cve": "CVE-2026-115560",
-      "cves": [],
-      "titre": "PHP Fixes 7 Critical Flaws, Including Bugs That Could Allow Remote Code Execution",
-      "resume": "",
-      "editeur": null,
-      "produit": null,
-      "score": 15,
-      "raisons": [
-        {
-          "code": "medias",
-          "label": "Citée par 3 médias"
-        }
-      ],
-      "cvss": null,
-      "epss": null,
-      "epss_percentile": null,
-      "sources": [
-        {
-          "nom": "The Hacker News",
-          "lien": "https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html"
-        },
-        {
-          "nom": "SecurityWeek",
-          "lien": "https://www.securityweek.com/php-readies-critical-security-updates-to-patch-another-rce-flaw/"
-        },
-        {
-          "nom": "IT-Connect",
-          "lien": "https://www.it-connect.fr/mise-a-jour-php-faille-critique-19-novembre-2026/"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-115560",
-      "date": "2026-11-19T15:18:07+00:00",
-      "origines": [
-        "fr",
-        "int"
-      ]
-    },
-    {
       "cle": "CVE-2026-129448",
       "cve": "CVE-2026-129448",
       "cves": [],
@@ -945,6 +940,41 @@
       ],
       "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-126714",
       "date": "2026-11-19T16:59:56+00:00",
+      "origines": [
+        "fr",
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-115560",
+      "cve": "CVE-2026-115560",
+      "cves": [],
+      "titre": "PHP Fixes 7 Critical Flaws, Including Bugs That Could Allow Remote Code Execution",
+      "resume": "",
+      "editeur": null,
+      "produit": null,
+      "score": 10,
+      "raisons": [
+        {
+          "code": "medias",
+          "label": "Citée par 2 médias"
+        }
+      ],
+      "cvss": null,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "The Hacker News",
+          "lien": "https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html"
+        },
+        {
+          "nom": "IT-Connect",
+          "lien": "https://www.it-connect.fr/mise-a-jour-php-faille-critique-19-novembre-2026/"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-115560",
+      "date": "2026-11-19T15:18:07+00:00",
       "origines": [
         "fr",
         "int"
@@ -1264,16 +1294,6 @@
     {
       "source": "NVD",
       "origine": "int",
-      "cve": "CVE-2026-132141",
-      "resume": "A vulnerability was detected in DrayTek Vigor2960 up to 1.5.1.6. Affected by this issue is the function json_load_lock of the file /cgi-bin/mainfunction.cgi of the component Jsonstatus. The manipulation of the argument usefile results in stack-based buffer overflow. It is possible to launch the att…",
-      "score": 9.9,
-      "severite": "CRITICAL",
-      "date": "2026-11-18T22:17:19.960000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-132141"
-    },
-    {
-      "source": "NVD",
-      "origine": "int",
       "cve": "CVE-2026-130675",
       "resume": "Craft CMS from 5.0.0 before 5.11.4 contains a remote code execution vulnerability in ImageTransforms::normalizeTransform() that allows attackers to instantiate arbitrary classes by supplying class:null with a __class key. Attackers can reach the method through Craft Commerce's payments/pay redirect…",
       "score": 9.8,
@@ -1304,16 +1324,6 @@
     {
       "source": "NVD",
       "origine": "int",
-      "cve": "CVE-2018-25443",
-      "resume": "Baidu UEditor 1.4.0 through 1.4.3.3 contains an unrestricted file upload vulnerability in the catchimage action of /ueditor/net/controller.ashx that only validates the Content-Type header. Unauthenticated attackers can supply a source[] URL like x.jpg?.aspx to retain a malicious extension and write…",
-      "score": 9.8,
-      "severite": "CRITICAL",
-      "date": "2026-11-18T16:17:48.500000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2018-25443"
-    },
-    {
-      "source": "NVD",
-      "origine": "int",
       "cve": "CVE-2026-130754",
       "resume": "All versions of LaraDashboard contain an authentication bypass in SocialAuthService::findOrCreateUser(), which links a social login to an existing account by email without checking that the OAuth provider verified that email. Unauthenticated attackers using an OAuth/OIDC provider that asserts a vic…",
       "score": 9.8,
@@ -1334,12 +1344,22 @@
     {
       "source": "NVD",
       "origine": "int",
-      "cve": "CVE-2026-114956",
-      "resume": "Vulnerability in the Oracle Hyperion Planning product of Oracle Hyperion (component: Security). The supported version that is affected is 11.2.26.0.000. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Hyperion Planning. Successful a…",
-      "score": 9.3,
+      "cve": "CVE-2026-84236",
+      "resume": "IBM Guardium Data Protection 12.2 is vulnerable to insecure deserialization in the SharePoint Tap MulticastTransceiver component. An unauthenticated remote attacker could exploit this vulnerability to execute arbitrary code on the affected system.",
+      "score": 9.8,
       "severite": "CRITICAL",
-      "date": "2026-11-17T22:18:26.023000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-114956"
+      "date": "2026-11-19T21:18:06.053000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-84236"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-76536",
+      "resume": "In Splunk Enterprise versions below 10.4.5, 10.2.9, 10.0.12, and 9.4.17, an unauthenticated user could use an empty clustering shared secret to read and modify clustering configuration through the cluster configuration Representational State Transfer (REST) API endpoint on a standalone instance. Th…",
+      "score": 9.4,
+      "severite": "CRITICAL",
+      "date": "2026-11-19T20:17:52.850000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-76536"
     },
     {
       "source": "NVD",
@@ -1364,6 +1384,26 @@
     {
       "source": "NVD",
       "origine": "int",
+      "cve": "CVE-2026-76535",
+      "resume": "In Splunk Enterprise versions below 10.6.1, 10.4.5, 10.2.9, 10.0.12, and 9.4.17, an unauthenticated user could run arbitrary Search Processing Language (SPL) searches through RapidDiag task collection as an authenticated user. With this access, the user could read or modify data and configuration a…",
+      "score": 9.1,
+      "severite": "CRITICAL",
+      "date": "2026-11-19T20:17:52.730000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-76535"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-82339",
+      "resume": "IBM Guardium Data Protection 12.2 is vulnerable to missing authentication in the SharePoint S-TAP RelayService, allowing an unauthenticated network attacker to inject forged audit events and access the active monitoring policy.",
+      "score": 9.1,
+      "severite": "CRITICAL",
+      "date": "2026-11-19T21:18:05.050000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-82339"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
       "cve": "CVE-2026-130679",
       "resume": "SiYuan before 3.8.10 contains a stored cross-site scripting vulnerability in genAVValueHTML() that allows attackers who can store Attribute View asset values to inject script through an unescaped image src attribute. Attackers can store an image URL containing a double quote and onerror handler tha…",
       "score": 9.0,
@@ -1373,6 +1413,36 @@
     }
   ],
   "presse": [
+    {
+      "source": "BleepingComputer",
+      "origine": "int",
+      "titre": "Hackers steal data of 1.6 million SBC Medical Group customers",
+      "lien": "https://www.bleepingcomputer.com/news/security/hackers-steal-data-of-16-million-sbc-medical-group-customers/",
+      "date": "2026-11-19T22:25:42+00:00",
+      "resume": "SBC Medical Group has warned in a filing with the U.S. Securities and Exchange Commission (SEC) that two cybersecurity incidents exposed sensitive customer and employee information, including personal data belonging to 1.6 million people. [...]",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "origine": "int",
+      "titre": "ASUS warns of critical hard-coded key flaw in Control Center Express",
+      "lien": "https://www.bleepingcomputer.com/news/security/asus-warns-of-critical-hard-coded-key-flaw-in-control-center-express/",
+      "date": "2026-11-19T21:15:59+00:00",
+      "resume": "ASUS released Control Center Express v1.7.29 to fix three critical vulnerabilities that could let remote attackers gain administrative control of the management console and the devices it manages. [...]",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "SecurityWeek",
+      "origine": "int",
+      "titre": "Newly Patched VMware vCenter Flaw Exploited as Zero-Day by Chinese APT",
+      "lien": "https://www.securityweek.com/newly-patched-vmware-vcenter-flaw-exploited-as-zero-day-by-chinese-apt/",
+      "date": "2026-11-19T19:21:06+00:00",
+      "resume": "Google says a China-linked espionage group exploited a critical VMware vCenter authentication bypass before Broadcom released a patch. The post Newly Patched VMware vCenter Flaw Exploited as Zero-Day by Chinese APT appeared first on SecurityWeek .",
+      "attaque": true,
+      "cves": []
+    },
     {
       "source": "IT-Connect",
       "origine": "fr",
@@ -1384,6 +1454,16 @@
       "cves": [
         "CVE-2026-123890"
       ]
+    },
+    {
+      "source": "The Hacker News",
+      "origine": "int",
+      "titre": "ThreatsDay: GPT-6.2 Jailbreak Flaws, BubbleLoader PNG Malware, $500M Ransom Demands + 17 More Stories",
+      "lien": "https://thehackernews.com/2026/11/threatsday-gpt-62-jailbreak-flaws.html",
+      "date": "2026-11-19T18:47:58+00:00",
+      "resume": "The easiest way to fool someone is to give them something they already expect. A job offer. A message about a service outage. A familiar app. Nothing looks strange at first. And that's the problem. This week's stories show how ordinary things are being used to steal data, spread malware, and get pe…",
+      "attaque": true,
+      "cves": []
     },
     {
       "source": "BleepingComputer",
@@ -1765,18 +1845,6 @@
       "cves": []
     },
     {
-      "source": "SecurityWeek",
-      "origine": "int",
-      "titre": "PHP Readies Critical Security Updates to Patch Another RCE Flaw",
-      "lien": "https://www.securityweek.com/php-readies-critical-security-updates-to-patch-another-rce-flaw/",
-      "date": "2026-11-19T07:45:17+00:00",
-      "resume": "Affecting the session upload progress, CVE-2026-115560 was publicly disclosed two days after PHP2Shell patches landed. The post PHP Readies Critical Security Updates to Patch Another RCE Flaw appeared first on SecurityWeek .",
-      "attaque": false,
-      "cves": [
-        "CVE-2026-115560"
-      ]
-    },
-    {
       "source": "IT-Connect",
       "origine": "fr",
       "titre": "PHP va corriger au moins une faille critique ce jeudi : préparez-vous à mettre à jour PHP 8.2 à 8.5",
@@ -1948,16 +2016,6 @@
       ]
     },
     {
-      "source": "BleepingComputer",
-      "origine": "int",
-      "titre": "Dizigom illegal streaming service with 21M monthly visits shuts down",
-      "lien": "https://www.bleepingcomputer.com/news/security/dizigom-illegal-streaming-service-with-21m-monthly-visits-shuts-down/",
-      "date": "2026-11-18T11:50:25+00:00",
-      "resume": "The Alliance for Creativity and Entertainment (ACE) has announced the shutdown of Dizigom, one of Turkey's largest piracy sites, after a settlement agreement with the site's operators. [...]",
-      "attaque": false,
-      "cves": []
-    },
-    {
       "source": "The Hacker News",
       "origine": "int",
       "titre": "Quality Isn’t The Main Worry About AI Pentesting — Data Privacy and Production Safety Are",
@@ -1974,16 +2032,6 @@
       "lien": "https://www.zataz.com/osaka-exposee-a-une-fuite-massive/",
       "date": "2026-11-18T10:37:09+00:00",
       "resume": "Osaka et des centaines d'organisations japonaises sont touchées par un incident ressemblant à l'affaire Maileva !",
-      "attaque": true,
-      "cves": []
-    },
-    {
-      "source": "BleepingComputer",
-      "origine": "int",
-      "titre": "Apache warns of Roller RCE vulnerability exploited in attacks",
-      "lien": "https://www.bleepingcomputer.com/news/security/apache-warns-of-roller-rce-vulnerability-exploited-in-attacks/",
-      "date": "2026-11-18T10:35:05+00:00",
-      "resume": "Apache has released security updates to address a critical Roller flaw that threat actors are exploiting to gain code execution on vulnerable servers. [...]",
       "attaque": true,
       "cves": []
     },
@@ -2106,16 +2154,6 @@
       ]
     },
     {
-      "source": "The Hacker News",
-      "origine": "int",
-      "titre": "Trigram Campaign Impersonates About 50 AI and Blockchain Brands to Target Devs with Infostealers",
-      "lien": "https://thehackernews.com/2026/11/trigram-campaign-impersonates-about-50.html",
-      "date": "2026-11-17T15:17:28+00:00",
-      "resume": "Artificial intelligence (AI), blockchain, and logistics sectors across Europe and the U.S. have emerged as the target of a large-scale, industrialized campaign dubbed Trigram. \"Trigram is a large-scale campaign that impersonates about 50 brands in the blockchain and AI sectors, to trick developers…",
-      "attaque": false,
-      "cves": []
-    },
-    {
       "source": "IT-Connect",
       "origine": "fr",
       "titre": "NoisyTCP : cette faille du noyau Linux vieille de 11 ans permet de faire planter un serveur à distance",
@@ -2148,16 +2186,6 @@
       "cves": [
         "CVE-2026-6460"
       ]
-    },
-    {
-      "source": "IT-Connect",
-      "origine": "fr",
-      "titre": "Maileva (La Poste) : les noms et adresses de 22 millions de personnes dérobés lors d’une cyberattaque",
-      "lien": "https://www.it-connect.fr/maileva-la-poste-fuite-donnees-22-millions-personnes/",
-      "date": "2026-11-16T19:47:53+00:00",
-      "resume": "Maileva, filiale de La Poste, confirme le vol des noms et adresses de 22 millions de personnes. Relances, données des clients : voici ce que l'on sait. Le post Maileva (La Poste) : les noms et adresses de 22 millions de personnes dérobés lors d’une cyberattaque a été publié sur IT-Connect .",
-      "attaque": true,
-      "cves": []
     }
   ],
   "erreurs": []
