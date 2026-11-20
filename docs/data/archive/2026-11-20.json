@@ -1,13 +1,13 @@
 {
-  "genere_le": "2026-11-20T18:54:59.461454+00:00",
+  "genere_le": "2026-11-20T22:57:13.119298+00:00",
   "fenetre_jours": 3,
   "stats": {
     "urgentes": 0,
     "alertes_certfr": 0,
     "avis_certfr": 23,
     "kev": 8,
-    "cve_critiques": 12,
-    "attaques": 42
+    "cve_critiques": 10,
+    "attaques": 40
   },
   "priorites": [
     {
@@ -492,91 +492,69 @@
       ]
     },
     {
-      "cle": "CVE-2026-120681",
-      "cve": "CVE-2026-120681",
+      "cle": "CVE-2026-133680",
+      "cve": "CVE-2026-133680",
       "cves": [],
-      "titre": "CVE-2026-120681",
-      "resume": "The Mang Board plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 2.4.7. This is due to the plugin not properly verifying that a user is authorized to perform an action. This makes it possible for unauthenticated attackers to delete any board post — inc…",
+      "titre": "CVE-2026-133680",
+      "resume": "A vulnerability was found in D-Link DCS-935L 1.10.01. This affects the function loginRouter of the file web/cgi-bin/localrecording/setconf.cgi of the component Local Recording CGI. Performing a manipulation of the argument account/password results in os command injection. Remote exploitation of the…",
       "editeur": null,
       "produit": null,
       "score": 20,
       "raisons": [
         {
           "code": "cvss",
-          "label": "CVSS 9.1"
+          "label": "CVSS 9.9"
         }
       ],
-      "cvss": 9.1,
+      "cvss": 9.9,
       "epss": null,
       "epss_percentile": null,
       "sources": [
         {
           "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-120681"
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-133680"
         }
       ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-120681",
-      "date": "2026-11-20T10:17:08.647000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-133680",
+      "date": "2026-11-20T20:17:35.750000+00:00",
       "origines": [
         "int"
       ]
     },
     {
-      "cle": "CVE-2026-76536",
-      "cve": "CVE-2026-76536",
+      "cle": "CVE-2026-23871",
+      "cve": "CVE-2026-23871",
       "cves": [],
-      "titre": "CVE-2026-76536",
-      "resume": "In Splunk Enterprise versions below 10.4.5, 10.2.9, 10.0.12, and 9.4.17, an unauthenticated user could use an empty clustering shared secret to read and modify clustering configuration through the cluster configuration Representational State Transfer (REST) API endpoint on a standalone instance. Th…",
+      "titre": "WhatsApp Patches 3 Security Flaws, Including Android Bug Suspected of Use in Scams",
+      "resume": "",
       "editeur": null,
       "produit": null,
       "score": 20,
       "raisons": [
         {
-          "code": "cvss",
-          "label": "CVSS 9.4"
+          "code": "repandu",
+          "label": "Produit très répandu"
+        },
+        {
+          "code": "medias",
+          "label": "Citée par 2 médias"
         }
       ],
-      "cvss": 9.4,
-      "epss": 0.0031,
-      "epss_percentile": 0.2445,
+      "cvss": null,
+      "epss": null,
+      "epss_percentile": null,
       "sources": [
         {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-76536"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-76536",
-      "date": "2026-11-19T20:17:52.850000+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-14492",
-      "cve": "CVE-2026-14492",
-      "cves": [],
-      "titre": "CVE-2026-14492",
-      "resume": "The WP Duplicate – WordPress Migration Plugin plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 1.1.11 via the save_single_batch_file function. This is due to a PHP type-juggling authentication bypass via loose != comparison with no is_string() guard,…",
-      "editeur": null,
-      "produit": null,
-      "score": 20,
-      "raisons": [
+          "nom": "The Hacker News",
+          "lien": "https://thehackernews.com/2026/11/whatsapp-patches-3-security-flaws.html"
+        },
         {
-          "code": "cvss",
-          "label": "CVSS 9.8"
+          "nom": "SecurityWeek",
+          "lien": "https://www.securityweek.com/whatsapp-fixes-flaw-uncovered-while-disrupting-scam-campaign/"
         }
       ],
-      "cvss": 9.8,
-      "epss": 0.0122,
-      "epss_percentile": 0.6952,
-      "sources": [
-        {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-14492"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-14492",
-      "date": "2026-11-19T10:17:28.927000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-23871",
+      "date": "2026-11-20T17:57:20+00:00",
       "origines": [
         "int"
       ]
@@ -933,36 +911,6 @@
       ]
     },
     {
-      "cle": "CVE-2026-23871",
-      "cve": "CVE-2026-23871",
-      "cves": [],
-      "titre": "WhatsApp Fixes Flaw Uncovered While Disrupting Scam Campaign",
-      "resume": "",
-      "editeur": null,
-      "produit": null,
-      "score": 5,
-      "raisons": [
-        {
-          "code": "medias",
-          "label": "Citée par 1 média"
-        }
-      ],
-      "cvss": null,
-      "epss": null,
-      "epss_percentile": null,
-      "sources": [
-        {
-          "nom": "SecurityWeek",
-          "lien": "https://www.securityweek.com/whatsapp-fixes-flaw-uncovered-while-disrupting-scam-campaign/"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-23871",
-      "date": "2026-11-20T16:01:02+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
       "cle": "CVE-2026-132825",
       "cve": "CVE-2026-132825",
       "cves": [],
@@ -1018,6 +966,36 @@
       ],
       "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-120382",
       "date": "2026-11-20T06:04:17+00:00",
+      "origines": [
+        "fr"
+      ]
+    },
+    {
+      "cle": "CVE-2026-114938",
+      "cve": "CVE-2026-114938",
+      "cves": [],
+      "titre": "La faille Java4Shell (CVE-2026-114938) menace Keycloak, Jira, Jenkins, etc.",
+      "resume": "",
+      "editeur": null,
+      "produit": null,
+      "score": 5,
+      "raisons": [
+        {
+          "code": "medias",
+          "label": "Citée par 1 média"
+        }
+      ],
+      "cvss": null,
+      "epss": 0.0091,
+      "epss_percentile": 0.6075,
+      "sources": [
+        {
+          "nom": "IT-Connect",
+          "lien": "https://www.it-connect.fr/java4shell-faille-critique-java-openjdk/"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-114938",
+      "date": "2026-11-18T08:44:52+00:00",
       "origines": [
         "fr"
       ]
@@ -1385,6 +1363,16 @@
     {
       "source": "NVD",
       "origine": "int",
+      "cve": "CVE-2026-133680",
+      "resume": "A vulnerability was found in D-Link DCS-935L 1.10.01. This affects the function loginRouter of the file web/cgi-bin/localrecording/setconf.cgi of the component Local Recording CGI. Performing a manipulation of the argument account/password results in os command injection. Remote exploitation of the…",
+      "score": 9.9,
+      "severite": "CRITICAL",
+      "date": "2026-11-20T20:17:35.750000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-133680"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
       "cve": "CVE-2026-130675",
       "resume": "Craft CMS from 5.0.0 before 5.11.4 contains a remote code execution vulnerability in ImageTransforms::normalizeTransform() that allows attackers to instantiate arbitrary classes by supplying class:null with a __class key. Attackers can reach the method through Craft Commerce's payments/pay redirect…",
       "score": 9.8,
@@ -1425,26 +1413,6 @@
     {
       "source": "NVD",
       "origine": "int",
-      "cve": "CVE-2026-14492",
-      "resume": "The WP Duplicate – WordPress Migration Plugin plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 1.1.11 via the save_single_batch_file function. This is due to a PHP type-juggling authentication bypass via loose != comparison with no is_string() guard,…",
-      "score": 9.8,
-      "severite": "CRITICAL",
-      "date": "2026-11-19T10:17:28.927000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-14492"
-    },
-    {
-      "source": "NVD",
-      "origine": "int",
-      "cve": "CVE-2026-76536",
-      "resume": "In Splunk Enterprise versions below 10.4.5, 10.2.9, 10.0.12, and 9.4.17, an unauthenticated user could use an empty clustering shared secret to read and modify clustering configuration through the cluster configuration Representational State Transfer (REST) API endpoint on a standalone instance. Th…",
-      "score": 9.4,
-      "severite": "CRITICAL",
-      "date": "2026-11-19T20:17:52.850000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-76536"
-    },
-    {
-      "source": "NVD",
-      "origine": "int",
       "cve": "CVE-2026-132142",
       "resume": "A flaw has been found in DrayTek Vigor2960 up to 1.5.1.6. This affects the function dataflowstatus of the file /cgi-bin/mainfunction.cgi of the component CGI Process. This manipulation of the argument option causes stack-based buffer overflow. The attack can be initiated remotely. The exploit has b…",
       "score": 9.1,
@@ -1461,16 +1429,6 @@
       "severite": "CRITICAL",
       "date": "2026-11-20T09:20:07.047000+00:00",
       "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-133500"
-    },
-    {
-      "source": "NVD",
-      "origine": "int",
-      "cve": "CVE-2026-120681",
-      "resume": "The Mang Board plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 2.4.7. This is due to the plugin not properly verifying that a user is authorized to perform an action. This makes it possible for unauthenticated attackers to delete any board post — inc…",
-      "score": 9.1,
-      "severite": "CRITICAL",
-      "date": "2026-11-20T10:17:08.647000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-120681"
     },
     {
       "source": "NVD",
@@ -1493,6 +1451,18 @@
       "resume": "Bell Canada has confirmed that an \"agentic\" threat actor breached its systems on November 17, 2026, and stole enterprise customer data, including information from a system used to order and provision telecommunications circuits. [...]",
       "attaque": true,
       "cves": []
+    },
+    {
+      "source": "The Hacker News",
+      "origine": "int",
+      "titre": "WhatsApp Patches 3 Security Flaws, Including Android Bug Suspected of Use in Scams",
+      "lien": "https://thehackernews.com/2026/11/whatsapp-patches-3-security-flaws.html",
+      "date": "2026-11-20T17:57:20+00:00",
+      "resume": "Meta-owned WhatsApp has addressed security vulnerabilities, including one impacting its Android app that it suspects may have been exploited in connection with scam messages. The vulnerability, tracked as CVE-2026-23871, has been described as a case of incomplete validation of external ad-reply URL…",
+      "attaque": false,
+      "cves": [
+        "CVE-2026-23871"
+      ]
     },
     {
       "source": "BleepingComputer",
@@ -2197,16 +2167,6 @@
       "cves": []
     },
     {
-      "source": "The Hacker News",
-      "origine": "int",
-      "titre": "AI Pentesting Checklist for Web Apps: 15 Questions to Ask Before Choosing a Vendor",
-      "lien": "https://thehackernews.com/2026/11/ai-pentesting-checklist-for-web-apps-15.html",
-      "date": "2026-11-18T12:15:00+00:00",
-      "resume": "TL;DR Attackers move first. On average, exploitation now starts before a patch exists (Mandiant M-Trends 2026). In 1H 2026, 23% of vulnerabilities VulnCheck added to its exploited list were hit on or before disclosure day. AI pentesting vendors aren't interchangeable. Most look convincing in a demo…",
-      "attaque": true,
-      "cves": []
-    },
-    {
       "source": "IT-Connect",
       "origine": "fr",
       "titre": "La faille Java4Shell (CVE-2026-114938) menace Keycloak, Jira, Jenkins, etc.",
@@ -2235,16 +2195,6 @@
       "lien": "https://krebsonsecurity.com/2026/11/attackers-used-optimizely-to-a-b-test-malware-on-top-websites/",
       "date": "2026-11-18T02:52:04+00:00",
       "resume": "At least 178 top web destinations unwittingly served a variety of malware exploits against visitors over the past 24 hours thanks to a security vulnerability involving Optimizely, a company that helps websites customize user experiences and test out new features. Experts say the incident, which saw…",
-      "attaque": true,
-      "cves": []
-    },
-    {
-      "source": "IT-Connect",
-      "origine": "fr",
-      "titre": "Cyberattaque : Air France, IKEA, HSBC, Zoom… De nombreux sites ont servi du code malveillant à leurs visiteurs",
-      "lien": "https://www.it-connect.fr/optimizely-pirate-scripts-malveillants-cnn-bbc-zoom/",
-      "date": "2026-11-17T19:23:39+00:00",
-      "resume": "Un pirate a détourné les scripts Optimizely de 178 organisations, dont Ikea, Transavia, CNN, la BBC et Zoom, pour voler des cartes bancaires et des cryptos. Le post Cyberattaque : Air France, IKEA, HSBC, Zoom… De nombreux sites ont servi du code malveillant à leurs visiteurs a été publié sur IT-Con…",
       "attaque": true,
       "cves": []
     }
