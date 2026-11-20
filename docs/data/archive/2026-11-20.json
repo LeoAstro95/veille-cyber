@@ -1,12 +1,12 @@
 {
-  "genere_le": "2026-11-20T15:16:36.562815+00:00",
+  "genere_le": "2026-11-20T18:54:59.461454+00:00",
   "fenetre_jours": 3,
   "stats": {
     "urgentes": 0,
     "alertes_certfr": 0,
     "avis_certfr": 23,
-    "kev": 4,
-    "cve_critiques": 17,
+    "kev": 8,
+    "cve_critiques": 12,
     "attaques": 42
   },
   "priorites": [
@@ -87,6 +87,53 @@
       ]
     },
     {
+      "cle": "CVE-2026-123890",
+      "cve": "CVE-2026-123890",
+      "cves": [],
+      "titre": "VMWare vCenter Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+      "resume": "Broadcom VMware vCenter contains an authentication bypass using an alternate path or channel vulnerability in the VMware Directory Service that allows an unauthenticated attacker with network access to vCenter to bypass authentication and gain unauthorized access to the system.",
+      "editeur": "Broadcom",
+      "produit": "VMware vCenter",
+      "score": 55,
+      "raisons": [
+        {
+          "code": "kev",
+          "label": "Exploitée activement"
+        },
+        {
+          "code": "repandu",
+          "label": "Produit très répandu"
+        },
+        {
+          "code": "medias",
+          "label": "Citée par 2 médias"
+        }
+      ],
+      "cvss": null,
+      "epss": 0.0084,
+      "epss_percentile": 0.5885,
+      "sources": [
+        {
+          "nom": "CISA KEV",
+          "lien": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "nom": "The Hacker News",
+          "lien": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html"
+        },
+        {
+          "nom": "IT-Connect",
+          "lien": "https://www.it-connect.fr/vmware-vcenter-cve-2026-123890-zero-day/"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-123890",
+      "date": "2026-11-20T09:38:15+00:00",
+      "origines": [
+        "fr",
+        "int"
+      ]
+    },
+    {
       "cle": "CVE-2026-40217",
       "cve": "CVE-2026-40217",
       "cves": [],
@@ -116,6 +163,90 @@
       ],
       "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-40217",
       "date": "2026-11-18T00:00:00+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-76466",
+      "cve": "CVE-2026-76466",
+      "cves": [],
+      "titre": "Cisco Expressway Series Use of Hard-coded Credentials Vulnerability",
+      "resume": "Cisco Expressway Series contains a use of hard-coded credentials vulnerability that allows an unauthenticated, remote attacker with persistent cookies and network access to execute commands as root on a clustered device via the database service.",
+      "editeur": "Cisco",
+      "produit": "Expressway Series",
+      "score": 50,
+      "raisons": [
+        {
+          "code": "kev",
+          "label": "Exploitée activement"
+        },
+        {
+          "code": "repandu",
+          "label": "Produit très répandu"
+        },
+        {
+          "code": "medias",
+          "label": "Citée par 1 média"
+        }
+      ],
+      "cvss": null,
+      "epss": 0.0042,
+      "epss_percentile": 0.3684,
+      "sources": [
+        {
+          "nom": "CISA KEV",
+          "lien": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "nom": "The Hacker News",
+          "lien": "https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-76466",
+      "date": "2026-11-20T10:32:50+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-129448",
+      "cve": "CVE-2026-129448",
+      "cves": [],
+      "titre": "Apache Roller Deserialization of Untrusted Data Vulnerability",
+      "resume": "Apache Roller contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via the XML-RPC endpoint, which accepts and deserializes vendor extension types before authentication. This CVE covers the same underlying vulnerability…",
+      "editeur": "Apache",
+      "produit": "Roller",
+      "score": 50,
+      "raisons": [
+        {
+          "code": "kev",
+          "label": "Exploitée activement"
+        },
+        {
+          "code": "repandu",
+          "label": "Produit très répandu"
+        },
+        {
+          "code": "medias",
+          "label": "Citée par 1 média"
+        }
+      ],
+      "cvss": null,
+      "epss": 0.0119,
+      "epss_percentile": 0.6872,
+      "sources": [
+        {
+          "nom": "CISA KEV",
+          "lien": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "nom": "The Hacker News",
+          "lien": "https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-129448",
+      "date": "2026-11-20T00:00:00+00:00",
       "origines": [
         "int"
       ]
@@ -219,69 +350,31 @@
       ]
     },
     {
-      "cle": "CVE-2026-80188",
-      "cve": "CVE-2026-80188",
+      "cle": "CVE-2025-42884",
+      "cve": "CVE-2025-42884",
       "cves": [],
-      "titre": "CVE-2026-80188",
-      "resume": "The BuddyBoss Addons plugin for WordPress is vulnerable to Authentication Bypass leading to Account Takeover in versions up to, and including, 1.2.1. This is due to the Social Login REST endpoint trusting unverified Apple and Facebook identity-token claims and linking an attacker-controlled provide…",
-      "editeur": null,
-      "produit": null,
-      "score": 30,
+      "titre": "SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability",
+      "resume": "SAP NetWeaver Enterprise Portal contains an improper neutralization of special elements in data query logic vulnerability that allows an unauthenticated attacker to disclose or modify server information via injected JNDI environment properties or a URL used during JNDI lookup operations.",
+      "editeur": "SAP",
+      "produit": "NetWeaver",
+      "score": 35,
       "raisons": [
         {
-          "code": "cvss",
-          "label": "CVSS 9.8"
-        },
-        {
-          "code": "repandu",
-          "label": "Produit très répandu"
+          "code": "kev",
+          "label": "Exploitée activement"
         }
       ],
-      "cvss": 9.8,
-      "epss": null,
-      "epss_percentile": null,
+      "cvss": null,
+      "epss": 0.0028,
+      "epss_percentile": 0.2048,
       "sources": [
         {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-80188"
+          "nom": "CISA KEV",
+          "lien": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
         }
       ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-80188",
-      "date": "2026-11-20T14:17:54.003000+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-115139",
-      "cve": "CVE-2026-115139",
-      "cves": [],
-      "titre": "CVE-2026-115139",
-      "resume": "Vulnerability in the Oracle Hyperion Infrastructure Technology product of Oracle Hyperion (component: Installation and Configuration). The supported version that is affected is 11.2.26.0.000. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise…",
-      "editeur": null,
-      "produit": null,
-      "score": 30,
-      "raisons": [
-        {
-          "code": "cvss",
-          "label": "CVSS 9.3"
-        },
-        {
-          "code": "repandu",
-          "label": "Produit très répandu"
-        }
-      ],
-      "cvss": 9.3,
-      "epss": 0.0035,
-      "epss_percentile": 0.2963,
-      "sources": [
-        {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-115139"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-115139",
-      "date": "2026-11-17T22:18:47.437000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2025-42884",
+      "date": "2026-11-20T00:00:00+00:00",
       "origines": [
         "int"
       ]
@@ -399,66 +492,6 @@
       ]
     },
     {
-      "cle": "CVE-2026-133493",
-      "cve": "CVE-2026-133493",
-      "cves": [],
-      "titre": "CVE-2026-133493",
-      "resume": "A vulnerability was identified in D-Link DIR-600L 2.17b02. Affected is the function genacgi_main of the file gena.cgi of the component GENA Handler. Such manipulation leads to os command injection. The attack can be launched remotely. The exploit is publicly available and might be used.",
-      "editeur": null,
-      "produit": null,
-      "score": 21,
-      "raisons": [
-        {
-          "code": "cvss",
-          "label": "CVSS 10.0"
-        }
-      ],
-      "cvss": 10.0,
-      "epss": 0.0251,
-      "epss_percentile": 0.8519,
-      "sources": [
-        {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-133493"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-133493",
-      "date": "2026-11-20T07:17:10.853000+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-14914",
-      "cve": "CVE-2026-14914",
-      "cves": [],
-      "titre": "CVE-2026-14914",
-      "resume": "Unrestricted upload of file with dangerous type vulnerability in Tegsoft Yönetim ve Bilişim Hizmetleri Tic. Ltd. Şti. Tegsoft Contact Center allows Upload a Web Shell to a Web Server. This issue affects Tegsoft Contact Center: before latest-202611161510.",
-      "editeur": null,
-      "produit": null,
-      "score": 20,
-      "raisons": [
-        {
-          "code": "cvss",
-          "label": "CVSS 10.0"
-        }
-      ],
-      "cvss": 10.0,
-      "epss": null,
-      "epss_percentile": null,
-      "sources": [
-        {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-14914"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-14914",
-      "date": "2026-11-20T14:17:53.043000+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
       "cle": "CVE-2026-120681",
       "cve": "CVE-2026-120681",
       "cves": [],
@@ -484,75 +517,6 @@
       ],
       "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-120681",
       "date": "2026-11-20T10:17:08.647000+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-123890",
-      "cve": "CVE-2026-123890",
-      "cves": [],
-      "titre": "China-Linked Hackers Exploit Critical VMware vCenter Zero-Day to Gain Admin Access and Steal Data",
-      "resume": "",
-      "editeur": null,
-      "produit": null,
-      "score": 20,
-      "raisons": [
-        {
-          "code": "repandu",
-          "label": "Produit très répandu"
-        },
-        {
-          "code": "medias",
-          "label": "Citée par 2 médias"
-        }
-      ],
-      "cvss": null,
-      "epss": 0.0084,
-      "epss_percentile": 0.5885,
-      "sources": [
-        {
-          "nom": "The Hacker News",
-          "lien": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html"
-        },
-        {
-          "nom": "IT-Connect",
-          "lien": "https://www.it-connect.fr/vmware-vcenter-cve-2026-123890-zero-day/"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-123890",
-      "date": "2026-11-20T09:38:15+00:00",
-      "origines": [
-        "fr",
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-133501",
-      "cve": "CVE-2026-133501",
-      "cves": [],
-      "titre": "CVE-2026-133501",
-      "resume": "A security flaw has been discovered in Gladys Assistant up to 4.71.0. This impacts an unknown function of the file server/lib/gateway/gateway.downloadBackup.js of the component Backup Restore Handler. The manipulation results in path traversal. The attack can be launched remotely. The exploit has b…",
-      "editeur": null,
-      "produit": null,
-      "score": 20,
-      "raisons": [
-        {
-          "code": "cvss",
-          "label": "CVSS 9.0"
-        }
-      ],
-      "cvss": 9.0,
-      "epss": 0.0077,
-      "epss_percentile": 0.564,
-      "sources": [
-        {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-133501"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-133501",
-      "date": "2026-11-20T09:20:07.277000+00:00",
       "origines": [
         "int"
       ]
@@ -930,71 +894,132 @@
       ]
     },
     {
-      "cle": "CVE-2026-76466",
-      "cve": "CVE-2026-76466",
+      "cle": "CVE-2026-126714",
+      "cve": "CVE-2026-126714",
       "cves": [],
-      "titre": "Hackers Exploit Critical Cisco Expressway Flaw, Breach Four Devices and Reach Internal Network",
+      "titre": "phpAfterShell Explained: How Hackers Could Turn a PHP Session Flaw Into Code Execution",
       "resume": "",
       "editeur": null,
       "produit": null,
-      "score": 15,
+      "score": 14,
       "raisons": [
         {
-          "code": "repandu",
-          "label": "Produit très répandu"
+          "code": "epss",
+          "label": "EPSS 18 %"
         },
+        {
+          "code": "medias",
+          "label": "Citée par 2 médias"
+        }
+      ],
+      "cvss": null,
+      "epss": 0.1759,
+      "epss_percentile": 0.9721,
+      "sources": [
+        {
+          "nom": "The Hacker News",
+          "lien": "https://thehackernews.com/2026/11/phpaftershell-explained-how-hackers.html"
+        },
+        {
+          "nom": "IT-Connect",
+          "lien": "https://www.it-connect.fr/phpaftershell-cve-2026-126714-php-failles-critiques/"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-126714",
+      "date": "2026-11-19T16:59:56+00:00",
+      "origines": [
+        "fr",
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-23871",
+      "cve": "CVE-2026-23871",
+      "cves": [],
+      "titre": "WhatsApp Fixes Flaw Uncovered While Disrupting Scam Campaign",
+      "resume": "",
+      "editeur": null,
+      "produit": null,
+      "score": 5,
+      "raisons": [
         {
           "code": "medias",
           "label": "Citée par 1 média"
         }
       ],
       "cvss": null,
-      "epss": 0.0042,
-      "epss_percentile": 0.3684,
+      "epss": null,
+      "epss_percentile": null,
       "sources": [
         {
-          "nom": "The Hacker News",
-          "lien": "https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html"
+          "nom": "SecurityWeek",
+          "lien": "https://www.securityweek.com/whatsapp-fixes-flaw-uncovered-while-disrupting-scam-campaign/"
         }
       ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-76466",
-      "date": "2026-11-20T10:32:50+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-23871",
+      "date": "2026-11-20T16:01:02+00:00",
       "origines": [
         "int"
       ]
     },
     {
-      "cle": "CVE-2026-129448",
-      "cve": "CVE-2026-129448",
+      "cle": "CVE-2026-132825",
+      "cve": "CVE-2026-132825",
       "cves": [],
-      "titre": "Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required",
+      "titre": "Ruby Patches Ruby2Shell Vulnerability That Could Lead to RCE",
       "resume": "",
       "editeur": null,
       "produit": null,
-      "score": 15,
+      "score": 5,
       "raisons": [
-        {
-          "code": "repandu",
-          "label": "Produit très répandu"
-        },
         {
           "code": "medias",
           "label": "Citée par 1 média"
         }
       ],
       "cvss": null,
-      "epss": 0.0119,
-      "epss_percentile": 0.6872,
+      "epss": 0.0019,
+      "epss_percentile": 0.0893,
       "sources": [
         {
-          "nom": "The Hacker News",
-          "lien": "https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html"
+          "nom": "SecurityWeek",
+          "lien": "https://www.securityweek.com/ruby-patches-ruby2shell-vulnerability-that-could-lead-to-rce/"
         }
       ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-129448",
-      "date": "2026-11-18T17:10:45+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-132825",
+      "date": "2026-11-20T10:34:10+00:00",
       "origines": [
         "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-120382",
+      "cve": "CVE-2026-120382",
+      "cves": [],
+      "titre": "NAS Synology : une mise à jour DSM corrige deux failles critiques, dont NGINX2Root",
+      "resume": "",
+      "editeur": null,
+      "produit": null,
+      "score": 5,
+      "raisons": [
+        {
+          "code": "medias",
+          "label": "Citée par 1 média"
+        }
+      ],
+      "cvss": null,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "IT-Connect",
+          "lien": "https://www.it-connect.fr/nginx2root-synology-dsm-faille-oauth-cve-2026-120382/"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-120382",
+      "date": "2026-11-20T06:04:17+00:00",
+      "origines": [
+        "fr"
       ]
     }
   ],
@@ -1234,6 +1259,58 @@
     {
       "source": "CISA KEV",
       "origine": "int",
+      "cve": "CVE-2026-129448",
+      "titre": "Apache Roller Deserialization of Untrusted Data Vulnerability",
+      "editeur": "Apache",
+      "produit": "Roller",
+      "resume": "Apache Roller contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via the XML-RPC endpoint, which accepts and deserializes vendor extension types before authentication. This CVE covers the same underlying vulnerability…",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triag…",
+      "date": "2026-11-20T00:00:00+00:00",
+      "ransomware": false,
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-129448"
+    },
+    {
+      "source": "CISA KEV",
+      "origine": "int",
+      "cve": "CVE-2026-123890",
+      "titre": "VMWare vCenter Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+      "editeur": "Broadcom",
+      "produit": "VMware vCenter",
+      "resume": "Broadcom VMware vCenter contains an authentication bypass using an alternate path or channel vulnerability in the VMware Directory Service that allows an unauthenticated attacker with network access to vCenter to bypass authentication and gain unauthorized access to the system.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triag…",
+      "date": "2026-11-20T00:00:00+00:00",
+      "ransomware": false,
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-123890"
+    },
+    {
+      "source": "CISA KEV",
+      "origine": "int",
+      "cve": "CVE-2025-42884",
+      "titre": "SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability",
+      "editeur": "SAP",
+      "produit": "NetWeaver",
+      "resume": "SAP NetWeaver Enterprise Portal contains an improper neutralization of special elements in data query logic vulnerability that allows an unauthenticated attacker to disclose or modify server information via injected JNDI environment properties or a URL used during JNDI lookup operations.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triag…",
+      "date": "2026-11-20T00:00:00+00:00",
+      "ransomware": false,
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2025-42884"
+    },
+    {
+      "source": "CISA KEV",
+      "origine": "int",
+      "cve": "CVE-2026-76466",
+      "titre": "Cisco Expressway Series Use of Hard-coded Credentials Vulnerability",
+      "editeur": "Cisco",
+      "produit": "Expressway Series",
+      "resume": "Cisco Expressway Series contains a use of hard-coded credentials vulnerability that allows an unauthenticated, remote attacker with persistent cookies and network access to execute commands as root on a clustered device via the database service.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triag…",
+      "date": "2026-11-20T00:00:00+00:00",
+      "ransomware": false,
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-76466"
+    },
+    {
+      "source": "CISA KEV",
+      "origine": "int",
       "cve": "CVE-2024-10441",
       "titre": "Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability",
       "editeur": "Synology",
@@ -1298,26 +1375,6 @@
     {
       "source": "NVD",
       "origine": "int",
-      "cve": "CVE-2026-133493",
-      "resume": "A vulnerability was identified in D-Link DIR-600L 2.17b02. Affected is the function genacgi_main of the file gena.cgi of the component GENA Handler. Such manipulation leads to os command injection. The attack can be launched remotely. The exploit is publicly available and might be used.",
-      "score": 10.0,
-      "severite": "CRITICAL",
-      "date": "2026-11-20T07:17:10.853000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-133493"
-    },
-    {
-      "source": "NVD",
-      "origine": "int",
-      "cve": "CVE-2026-14914",
-      "resume": "Unrestricted upload of file with dangerous type vulnerability in Tegsoft Yönetim ve Bilişim Hizmetleri Tic. Ltd. Şti. Tegsoft Contact Center allows Upload a Web Shell to a Web Server. This issue affects Tegsoft Contact Center: before latest-202611161510.",
-      "score": 10.0,
-      "severite": "CRITICAL",
-      "date": "2026-11-20T14:17:53.043000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-14914"
-    },
-    {
-      "source": "NVD",
-      "origine": "int",
       "cve": "CVE-2026-130786",
       "resume": "Incus before 7.6.0 contains a configuration injection vulnerability that allows users who can launch instances from controlled images to inject LXC directives by embedding line breaks in OCI config.json values or oci.entrypoint and oci.cwd keys. Attackers can add liblxc hooks or crafted tmpfs lxc.m…",
       "score": 9.9,
@@ -1378,32 +1435,12 @@
     {
       "source": "NVD",
       "origine": "int",
-      "cve": "CVE-2026-80188",
-      "resume": "The BuddyBoss Addons plugin for WordPress is vulnerable to Authentication Bypass leading to Account Takeover in versions up to, and including, 1.2.1. This is due to the Social Login REST endpoint trusting unverified Apple and Facebook identity-token claims and linking an attacker-controlled provide…",
-      "score": 9.8,
-      "severite": "CRITICAL",
-      "date": "2026-11-20T14:17:54.003000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-80188"
-    },
-    {
-      "source": "NVD",
-      "origine": "int",
       "cve": "CVE-2026-76536",
       "resume": "In Splunk Enterprise versions below 10.4.5, 10.2.9, 10.0.12, and 9.4.17, an unauthenticated user could use an empty clustering shared secret to read and modify clustering configuration through the cluster configuration Representational State Transfer (REST) API endpoint on a standalone instance. Th…",
       "score": 9.4,
       "severite": "CRITICAL",
       "date": "2026-11-19T20:17:52.850000+00:00",
       "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-76536"
-    },
-    {
-      "source": "NVD",
-      "origine": "int",
-      "cve": "CVE-2026-115139",
-      "resume": "Vulnerability in the Oracle Hyperion Infrastructure Technology product of Oracle Hyperion (component: Installation and Configuration). The supported version that is affected is 11.2.26.0.000. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise…",
-      "score": 9.3,
-      "severite": "CRITICAL",
-      "date": "2026-11-17T22:18:47.437000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-115139"
     },
     {
       "source": "NVD",
@@ -1444,19 +1481,81 @@
       "severite": "CRITICAL",
       "date": "2026-11-18T12:17:11.450000+00:00",
       "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-130679"
-    },
-    {
-      "source": "NVD",
-      "origine": "int",
-      "cve": "CVE-2026-133501",
-      "resume": "A security flaw has been discovered in Gladys Assistant up to 4.71.0. This impacts an unknown function of the file server/lib/gateway/gateway.downloadBackup.js of the component Backup Restore Handler. The manipulation results in path traversal. The attack can be launched remotely. The exploit has b…",
-      "score": 9.0,
-      "severite": "CRITICAL",
-      "date": "2026-11-20T09:20:07.277000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-133501"
     }
   ],
   "presse": [
+    {
+      "source": "BleepingComputer",
+      "origine": "int",
+      "titre": "Bell Canada says 'agentic' hacker stole enterprise customer data",
+      "lien": "https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/",
+      "date": "2026-11-20T18:51:43+00:00",
+      "resume": "Bell Canada has confirmed that an \"agentic\" threat actor breached its systems on November 17, 2026, and stole enterprise customer data, including information from a system used to order and provision telecommunications circuits. [...]",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "origine": "int",
+      "titre": "Hackers use autonomous AI tool Cairn to find zero-day, take over server",
+      "lien": "https://www.bleepingcomputer.com/news/security/hackers-use-autonomous-ai-tool-cairn-to-find-zero-day-take-over-server/",
+      "date": "2026-11-20T17:30:00+00:00",
+      "resume": "Threat actors used the open-source AI penetration-testing framework Cairn to find a previously unknown vulnerability in a medical imaging application. [...]",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "The Hacker News",
+      "origine": "int",
+      "titre": "Bazuka Android Malware Uses Fake Screen Overlays to Hide Credential Theft and Device Control",
+      "lien": "https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html",
+      "date": "2026-11-20T16:58:16+00:00",
+      "resume": "Cybersecurity researchers have disclosed details of a previously unknown Android malware framework called Bazuka that offers large language model (LLM) integration for victim management and control at scale. Dutch mobile security company ThreatFabric said it discovered the threat in late October 20…",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "ZATAZ",
+      "origine": "fr",
+      "titre": "Actualités cybersécurité de la semaine du 16 novembre 2026",
+      "lien": "https://www.zataz.com/actualites-cybersecurite-de-la-semaine-du-16-novembre-2026/",
+      "date": "2026-11-20T16:09:30+00:00",
+      "resume": "Retrouvez les actualités cybersécurité ZATAZ de la semaine du 16 novembre 2026 : fuite de données chez Maileva, amende de la CNIL et faux coursiers bancaires.",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "SecurityWeek",
+      "origine": "int",
+      "titre": "WhatsApp Fixes Flaw Uncovered While Disrupting Scam Campaign",
+      "lien": "https://www.securityweek.com/whatsapp-fixes-flaw-uncovered-while-disrupting-scam-campaign/",
+      "date": "2026-11-20T16:01:02+00:00",
+      "resume": "Tracked as CVE-2026-23871, the vulnerability was found by WhatsApp’s security team, and it may have been used to make scam messages more credible. The post WhatsApp Fixes Flaw Uncovered While Disrupting Scam Campaign appeared first on SecurityWeek .",
+      "attaque": false,
+      "cves": [
+        "CVE-2026-23871"
+      ]
+    },
+    {
+      "source": "BleepingComputer",
+      "origine": "int",
+      "titre": "Vendor data breach exposes Chase, Visa, Mastercard customer info",
+      "lien": "https://www.bleepingcomputer.com/news/security/vendor-data-breach-exposes-chase-visa-mastercard-customer-info/",
+      "date": "2026-11-20T15:58:06+00:00",
+      "resume": "J.P. Morgan Chase warned it suffered a data breach after a cyberattack at a third-party service provider exposed customers' personal information and marketing data. [...]",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "ZATAZ",
+      "origine": "fr",
+      "titre": "NON, c’est NON. Sauf quand il réclame une rançon.",
+      "lien": "https://www.zataz.com/non-cest-non-sauf-quand-il-reclame-une-rancon/",
+      "date": "2026-11-20T15:53:02+00:00",
+      "resume": "n0n revendique 179 fuites de données. Le maritime arrive en tête et un groupe pharmaceutique français est cité.",
+      "attaque": false,
+      "cves": []
+    },
     {
       "source": "BleepingComputer",
       "origine": "int",
@@ -1874,16 +1973,6 @@
       ]
     },
     {
-      "source": "ZATAZ",
-      "origine": "fr",
-      "titre": "Infoblox : des configurations réseau dérobées",
-      "lien": "https://www.zataz.com/infoblox-des-configurations-reseau-derobees/",
-      "date": "2026-11-19T16:03:36+00:00",
-      "resume": "Infoblox confirme une fuite via un prestataire compromis, exposant des configurations réseau et des données de salariés.",
-      "attaque": true,
-      "cves": []
-    },
-    {
       "source": "SecurityWeek",
       "origine": "int",
       "titre": "PHP Patches Seven Critical RCE Vulnerabilities",
@@ -1891,16 +1980,6 @@
       "date": "2026-11-19T15:54:20+00:00",
       "resume": "Successful exploitation could allow attackers to crash the worker process and execute code with the PHP worker’s privileges. The post PHP Patches Seven Critical RCE Vulnerabilities appeared first on SecurityWeek .",
       "attaque": true,
-      "cves": []
-    },
-    {
-      "source": "ZATAZ",
-      "origine": "fr",
-      "titre": "Scattered Spider : six ans de prison pour un pirate",
-      "lien": "https://www.zataz.com/scattered-spider-six-ans-de-prison-pour-un-pirate/",
-      "date": "2026-11-19T15:52:51+00:00",
-      "resume": "Scattered Spider : six ans de prison pour un pirate impliqué dans des attaques par SMS et des vols de cryptomonnaies.",
-      "attaque": false,
       "cves": []
     },
     {
@@ -1956,26 +2035,6 @@
       "cves": []
     },
     {
-      "source": "SecurityWeek",
-      "origine": "int",
-      "titre": "Nvidia Responds to Gentlemen Ransomware Claim",
-      "lien": "https://www.securityweek.com/nvidia-responds-to-gentlemen-ransomware-claim/",
-      "date": "2026-11-19T14:17:32+00:00",
-      "resume": "Nvidia says it has found no indication that its systems were compromised after the Gentlemen ransomware group listed the company as a victim. The post Nvidia Responds to Gentlemen Ransomware Claim appeared first on SecurityWeek .",
-      "attaque": true,
-      "cves": []
-    },
-    {
-      "source": "BleepingComputer",
-      "origine": "int",
-      "titre": "Drupal patches critical RCE flaw, warns exploits may surface quickly",
-      "lien": "https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaw-warns-exploits-may-surface-quickly/",
-      "date": "2026-11-19T13:08:08+00:00",
-      "resume": "The Drupal Security Team has patched a critical remote code execution vulnerability that can let attackers take over vulnerable sites. [...]",
-      "attaque": true,
-      "cves": []
-    },
-    {
       "source": "The Hacker News",
       "origine": "int",
       "titre": "Everything Is a Web Application, Including Your Firewall",
@@ -1987,26 +2046,6 @@
         "CVE-2026-109618",
         "CVE-2026-109619"
       ]
-    },
-    {
-      "source": "BleepingComputer",
-      "origine": "int",
-      "titre": "Microsoft tests new Edge Lockdown Mode that disables GPU APIs",
-      "lien": "https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-new-edge-lockdown-mode-that-disables-gpu-apis/",
-      "date": "2026-11-19T11:46:00+00:00",
-      "resume": "Microsoft is developing a new Edge security feature to reduce the attack surface by disabling the WebGL, WebGL2, and WebGPU APIs. [...]",
-      "attaque": true,
-      "cves": []
-    },
-    {
-      "source": "BleepingComputer",
-      "origine": "int",
-      "titre": "Microsoft confirms app installation, launch issues after hotpatch",
-      "lien": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-app-installation-launch-issues-after-hotpatch/",
-      "date": "2026-11-19T10:35:05+00:00",
-      "resume": "Microsoft has shared a workaround for installation and launch issues affecting Office and third-party applications after installing this month's Windows 11 hotpatch. [...]",
-      "attaque": false,
-      "cves": []
     },
     {
       "source": "The Hacker News",
@@ -2166,18 +2205,6 @@
       "resume": "TL;DR Attackers move first. On average, exploitation now starts before a patch exists (Mandiant M-Trends 2026). In 1H 2026, 23% of vulnerabilities VulnCheck added to its exploited list were hit on or before disclosure day. AI pentesting vendors aren't interchangeable. Most look convincing in a demo…",
       "attaque": true,
       "cves": []
-    },
-    {
-      "source": "The Hacker News",
-      "origine": "int",
-      "titre": "Java4Shell Flaw (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak and More",
-      "lien": "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html",
-      "date": "2026-11-18T11:55:49+00:00",
-      "resume": "A Java flaw called Java4Shell can let attackers without an account run their own code on Jira, Jenkins, Keycloak, and three other widely used applications, says Calif, the security research firm that disclosed it this week. The flaw is present in Java 17.0.6 and later, and the vulnerable code runs…",
-      "attaque": true,
-      "cves": [
-        "CVE-2026-114938"
-      ]
     },
     {
       "source": "IT-Connect",
