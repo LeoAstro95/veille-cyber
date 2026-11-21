@@ -1,12 +1,12 @@
 {
-  "genere_le": "2026-11-21T14:30:00.795422+00:00",
+  "genere_le": "2026-11-21T17:50:01.615803+00:00",
   "fenetre_jours": 3,
   "stats": {
     "urgentes": 0,
     "alertes_certfr": 0,
     "avis_certfr": 16,
     "kev": 4,
-    "cve_critiques": 6,
+    "cve_critiques": 7,
     "attaques": 39
   },
   "priorites": [
@@ -94,7 +94,7 @@
       "resume": "Broadcom VMware vCenter contains an authentication bypass using an alternate path or channel vulnerability in the VMware Directory Service that allows an unauthenticated attacker with network access to vCenter to bypass authentication and gain unauthorized access to the system.",
       "editeur": "Broadcom",
       "produit": "VMware vCenter",
-      "score": 55,
+      "score": 56,
       "raisons": [
         {
           "code": "kev",
@@ -110,8 +110,8 @@
         }
       ],
       "cvss": null,
-      "epss": 0.0084,
-      "epss_percentile": 0.5885,
+      "epss": 0.0299,
+      "epss_percentile": 0.8763,
       "sources": [
         {
           "nom": "CISA KEV",
@@ -141,11 +141,15 @@
       "resume": "Apache Roller contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via the XML-RPC endpoint, which accepts and deserializes vendor extension types before authentication. This CVE covers the same underlying vulnerability…",
       "editeur": "Apache",
       "produit": "Roller",
-      "score": 50,
+      "score": 51,
       "raisons": [
         {
           "code": "kev",
           "label": "Exploitée activement"
+        },
+        {
+          "code": "epss",
+          "label": "EPSS 5 %"
         },
         {
           "code": "repandu",
@@ -157,8 +161,8 @@
         }
       ],
       "cvss": null,
-      "epss": 0.0119,
-      "epss_percentile": 0.6872,
+      "epss": 0.0546,
+      "epss_percentile": 0.9293,
       "sources": [
         {
           "nom": "CISA KEV",
@@ -183,7 +187,7 @@
       "resume": "Cisco Expressway Series contains a use of hard-coded credentials vulnerability that allows an unauthenticated, remote attacker with persistent cookies and network access to execute commands as root on a clustered device via the database service.",
       "editeur": "Cisco",
       "produit": "Expressway Series",
-      "score": 50,
+      "score": 51,
       "raisons": [
         {
           "code": "kev",
@@ -199,8 +203,8 @@
         }
       ],
       "cvss": null,
-      "epss": 0.0042,
-      "epss_percentile": 0.3684,
+      "epss": 0.0219,
+      "epss_percentile": 0.8286,
       "sources": [
         {
           "nom": "CISA KEV",
@@ -233,8 +237,8 @@
         }
       ],
       "cvss": null,
-      "epss": 0.0028,
-      "epss_percentile": 0.2048,
+      "epss": 0.0071,
+      "epss_percentile": 0.5458,
       "sources": [
         {
           "nom": "CISA KEV",
@@ -255,11 +259,11 @@
       "resume": "",
       "editeur": null,
       "produit": null,
-      "score": 24,
+      "score": 28,
       "raisons": [
         {
           "code": "epss",
-          "label": "EPSS 56 %"
+          "label": "EPSS 71 %"
         },
         {
           "code": "medias",
@@ -267,8 +271,8 @@
         }
       ],
       "cvss": null,
-      "epss": 0.5643,
-      "epss_percentile": 0.9908,
+      "epss": 0.7112,
+      "epss_percentile": 0.9942,
       "sources": [
         {
           "nom": "The Hacker News",
@@ -287,33 +291,41 @@
       ]
     },
     {
-      "cle": "CVE-2026-133500",
-      "cve": "CVE-2026-133500",
+      "cle": "CVE-2026-123007",
+      "cve": "CVE-2026-123007",
       "cves": [],
-      "titre": "CVE-2026-133500",
-      "resume": "A vulnerability was identified in Gladys Assistant up to 4.71.0. This affects an unknown function of the file gateway.downloadBackup.js of the component Backup Restore Endpoint. The manipulation of the argument file_url leads to os command injection. The attack can be initiated remotely. The exploi…",
+      "titre": "NGINX2Root : deux failles critiques permettent de prendre le contrôle d’un serveur NGINX",
+      "resume": "",
       "editeur": null,
       "produit": null,
-      "score": 21,
+      "score": 22,
       "raisons": [
         {
-          "code": "cvss",
-          "label": "CVSS 9.1"
+          "code": "epss",
+          "label": "EPSS 30 %"
+        },
+        {
+          "code": "repandu",
+          "label": "Produit très répandu"
+        },
+        {
+          "code": "medias",
+          "label": "Citée par 1 média"
         }
       ],
-      "cvss": 9.1,
-      "epss": 0.0366,
-      "epss_percentile": 0.8989,
+      "cvss": null,
+      "epss": 0.2986,
+      "epss_percentile": 0.9824,
       "sources": [
         {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-133500"
+          "nom": "IT-Connect",
+          "lien": "https://www.it-connect.fr/nginx2root-failles-cve-2026-123007-rce/"
         }
       ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-133500",
-      "date": "2026-11-20T09:20:07.047000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-123007",
+      "date": "2026-11-18T19:59:23+00:00",
       "origines": [
-        "int"
+        "fr"
       ]
     },
     {
@@ -324,7 +336,7 @@
       "resume": "The Restrictions for BuddyPress plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 1.5.4 This is due to the plugin splicing the attacker-controlled request URI into a PHP expression inside a double-quoted string and evaluating it with eval(). Because P…",
       "editeur": null,
       "produit": null,
-      "score": 20,
+      "score": 21,
       "raisons": [
         {
           "code": "cvss",
@@ -332,8 +344,8 @@
         }
       ],
       "cvss": 9.8,
-      "epss": null,
-      "epss_percentile": null,
+      "epss": 0.0216,
+      "epss_percentile": 0.8263,
       "sources": [
         {
           "nom": "NVD",
@@ -354,7 +366,7 @@
       "resume": "A vulnerability was found in D-Link DCS-935L 1.10.01. This affects the function loginRouter of the file web/cgi-bin/localrecording/setconf.cgi of the component Local Recording CGI. Performing a manipulation of the argument account/password results in os command injection. Remote exploitation of the…",
       "editeur": null,
       "produit": null,
-      "score": 20,
+      "score": 21,
       "raisons": [
         {
           "code": "cvss",
@@ -362,8 +374,8 @@
         }
       ],
       "cvss": 9.9,
-      "epss": null,
-      "epss_percentile": null,
+      "epss": 0.0221,
+      "epss_percentile": 0.8307,
       "sources": [
         {
           "nom": "NVD",
@@ -372,6 +384,66 @@
       ],
       "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-133680",
       "date": "2026-11-20T20:17:35.750000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-133500",
+      "cve": "CVE-2026-133500",
+      "cves": [],
+      "titre": "CVE-2026-133500",
+      "resume": "A vulnerability was identified in Gladys Assistant up to 4.71.0. This affects an unknown function of the file gateway.downloadBackup.js of the component Backup Restore Endpoint. The manipulation of the argument file_url leads to os command injection. The attack can be initiated remotely. The exploi…",
+      "editeur": null,
+      "produit": null,
+      "score": 21,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.1"
+        }
+      ],
+      "cvss": 9.1,
+      "epss": 0.0302,
+      "epss_percentile": 0.8778,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-133500"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-133500",
+      "date": "2026-11-20T09:20:07.047000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-134292",
+      "cve": "CVE-2026-134292",
+      "cves": [],
+      "titre": "CVE-2026-134292",
+      "resume": "SurrealDB 1.0.0 before 4.0.0 contains a capability check bypass in its embedded JavaScript scripting engine, where the surrealdb.functions bridge calls the internal fnc::synchronous() and fnc::asynchronous() dispatchers without enforcing function capability checks. Authenticated users denied access…",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.8"
+        }
+      ],
+      "cvss": 9.8,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-134292"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-134292",
+      "date": "2026-11-21T17:16:48.897000+00:00",
       "origines": [
         "int"
       ]
@@ -396,8 +468,8 @@
         }
       ],
       "cvss": null,
-      "epss": null,
-      "epss_percentile": null,
+      "epss": 0.0048,
+      "epss_percentile": 0.4224,
       "sources": [
         {
           "nom": "The Hacker News",
@@ -431,7 +503,7 @@
       ],
       "cvss": 9.1,
       "epss": 0.0049,
-      "epss_percentile": 0.4325,
+      "epss_percentile": 0.4318,
       "sources": [
         {
           "nom": "NVD",
@@ -461,7 +533,7 @@
       ],
       "cvss": 9.9,
       "epss": 0.0052,
-      "epss_percentile": 0.4494,
+      "epss_percentile": 0.4489,
       "sources": [
         {
           "nom": "NVD",
@@ -491,7 +563,7 @@
       ],
       "cvss": 10.0,
       "epss": 0.0027,
-      "epss_percentile": 0.1964,
+      "epss_percentile": 0.1945,
       "sources": [
         {
           "nom": "NVD",
@@ -505,44 +577,6 @@
       ]
     },
     {
-      "cle": "CVE-2026-123007",
-      "cve": "CVE-2026-123007",
-      "cves": [],
-      "titre": "NGINX2Root : deux failles critiques permettent de prendre le contrôle d’un serveur NGINX",
-      "resume": "",
-      "editeur": null,
-      "produit": null,
-      "score": 17,
-      "raisons": [
-        {
-          "code": "epss",
-          "label": "EPSS 6 %"
-        },
-        {
-          "code": "repandu",
-          "label": "Produit très répandu"
-        },
-        {
-          "code": "medias",
-          "label": "Citée par 1 média"
-        }
-      ],
-      "cvss": null,
-      "epss": 0.0603,
-      "epss_percentile": 0.9353,
-      "sources": [
-        {
-          "nom": "IT-Connect",
-          "lien": "https://www.it-connect.fr/nginx2root-failles-cve-2026-123007-rce/"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-123007",
-      "date": "2026-11-18T19:59:23+00:00",
-      "origines": [
-        "fr"
-      ]
-    },
-    {
       "cle": "CVE-2026-123633",
       "cve": "CVE-2026-123633",
       "cves": [],
@@ -550,11 +584,11 @@
       "resume": "",
       "editeur": null,
       "produit": null,
-      "score": 17,
+      "score": 19,
       "raisons": [
         {
           "code": "epss",
-          "label": "EPSS 6 %"
+          "label": "EPSS 18 %"
         },
         {
           "code": "repandu",
@@ -566,8 +600,8 @@
         }
       ],
       "cvss": null,
-      "epss": 0.0609,
-      "epss_percentile": 0.9358,
+      "epss": 0.1752,
+      "epss_percentile": 0.9721,
       "sources": [
         {
           "nom": "IT-Connect",
@@ -600,8 +634,8 @@
         }
       ],
       "cvss": null,
-      "epss": 0.0015,
-      "epss_percentile": 0.0448,
+      "epss": 0.0019,
+      "epss_percentile": 0.0843,
       "sources": [
         {
           "nom": "The Hacker News",
@@ -622,11 +656,11 @@
       "resume": "",
       "editeur": null,
       "produit": null,
-      "score": 14,
+      "score": 13,
       "raisons": [
         {
           "code": "epss",
-          "label": "EPSS 18 %"
+          "label": "EPSS 13 %"
         },
         {
           "code": "medias",
@@ -634,8 +668,8 @@
         }
       ],
       "cvss": null,
-      "epss": 0.1759,
-      "epss_percentile": 0.9721,
+      "epss": 0.131,
+      "epss_percentile": 0.9645,
       "sources": [
         {
           "nom": "The Hacker News",
@@ -699,8 +733,8 @@
         }
       ],
       "cvss": null,
-      "epss": 0.0019,
-      "epss_percentile": 0.0893,
+      "epss": 0.0198,
+      "epss_percentile": 0.81,
       "sources": [
         {
           "nom": "SecurityWeek",
@@ -1004,6 +1038,16 @@
     {
       "source": "NVD",
       "origine": "int",
+      "cve": "CVE-2026-134292",
+      "resume": "SurrealDB 1.0.0 before 4.0.0 contains a capability check bypass in its embedded JavaScript scripting engine, where the surrealdb.functions bridge calls the internal fnc::synchronous() and fnc::asynchronous() dispatchers without enforcing function capability checks. Authenticated users denied access…",
+      "score": 9.8,
+      "severite": "CRITICAL",
+      "date": "2026-11-21T17:16:48.897000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-134292"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
       "cve": "CVE-2026-132142",
       "resume": "A flaw has been found in DrayTek Vigor2960 up to 1.5.1.6. This affects the function dataflowstatus of the file /cgi-bin/mainfunction.cgi of the component CGI Process. This manipulation of the argument option causes stack-based buffer overflow. The attack can be initiated remotely. The exploit has b…",
       "score": 9.1,
@@ -1023,6 +1067,16 @@
     }
   ],
   "presse": [
+    {
+      "source": "BleepingComputer",
+      "origine": "int",
+      "titre": "BADBOX botnet returns with record-breaking 40 billion daily ad requests",
+      "lien": "https://www.bleepingcomputer.com/news/security/badbox-30-botnet-returns-with-record-breaking-40-billion-daily-ad-requests/",
+      "date": "2026-11-21T15:17:27+00:00",
+      "resume": "The BADBOX malware found in a broad range of generic Android TV boxes has returned to large-scale ad-fraud operations following last year's disruptions. [...]",
+      "attaque": true,
+      "cves": []
+    },
     {
       "source": "BleepingComputer",
       "origine": "int",
@@ -1630,16 +1684,6 @@
       "cves": []
     },
     {
-      "source": "BleepingComputer",
-      "origine": "int",
-      "titre": "Five warning signs of ransomware breach before encryption or data theft",
-      "lien": "https://www.bleepingcomputer.com/news/security/five-warning-signs-of-ransomware-breach-before-encryption-or-data-theft/",
-      "date": "2026-11-19T15:00:10+00:00",
-      "resume": "Ransomware attacks often involve credential theft, lateral movement, and attempts to disable security controls long before encryption begins. Acronis examines five warning signs that can help defenders detect intrusions earlier, contain malicious activity, and protect critical systems and backups.…",
-      "attaque": true,
-      "cves": []
-    },
-    {
       "source": "The Hacker News",
       "origine": "int",
       "titre": "Drupal Patches Critical Installer Flaw That Could Give Unauthenticated Attackers Control of Sites",
@@ -1746,16 +1790,6 @@
         "CVE-2026-123007",
         "CVE-2026-123633"
       ]
-    },
-    {
-      "source": "IT-Connect",
-      "origine": "fr",
-      "titre": "FBI : avec ARTEX, certaines intrusions atteignent un accès privilégié en moins de trois heures",
-      "lien": "https://www.it-connect.fr/fbi-artex-framework-ia-cyberattaques/",
-      "date": "2026-11-18T15:45:00+00:00",
-      "resume": "Le FBI alerte sur ARTEX, un framework de pentest piloté par l'IA détourné par des pirates. Certaines intrusions atteignent un accès admin en moins de 3 heures. Le post FBI : avec ARTEX, certaines intrusions atteignent un accès privilégié en moins de trois heures a été publié sur IT-Connect .",
-      "attaque": false,
-      "cves": []
     }
   ],
   "erreurs": []
