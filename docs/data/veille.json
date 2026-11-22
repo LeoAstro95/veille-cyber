@@ -1,15 +1,175 @@
 {
-  "genere_le": "2026-11-22T18:08:28.995050+00:00",
+  "genere_le": "2026-11-22T22:16:55.164328+00:00",
   "fenetre_jours": 3,
   "stats": {
     "urgentes": 0,
     "alertes_certfr": 0,
     "avis_certfr": 3,
-    "kev": 0,
+    "kev": 4,
     "cve_critiques": 6,
-    "attaques": 31
+    "attaques": 30
   },
   "priorites": [
+    {
+      "cle": "CVE-2026-129448",
+      "cve": "CVE-2026-129448",
+      "cves": [],
+      "titre": "Apache Roller Deserialization of Untrusted Data Vulnerability",
+      "resume": "Apache Roller contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via the XML-RPC endpoint, which accepts and deserializes vendor extension types before authentication. This CVE covers the same underlying vulnerability…",
+      "editeur": "Apache",
+      "produit": "Roller",
+      "score": 51,
+      "raisons": [
+        {
+          "code": "kev",
+          "label": "Exploitée activement"
+        },
+        {
+          "code": "epss",
+          "label": "EPSS 5 %"
+        },
+        {
+          "code": "repandu",
+          "label": "Produit très répandu"
+        },
+        {
+          "code": "medias",
+          "label": "Citée par 1 média"
+        }
+      ],
+      "cvss": null,
+      "epss": 0.0546,
+      "epss_percentile": 0.9294,
+      "sources": [
+        {
+          "nom": "CISA KEV",
+          "lien": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "nom": "The Hacker News",
+          "lien": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-129448",
+      "date": "2026-11-21T08:49:13+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-76466",
+      "cve": "CVE-2026-76466",
+      "cves": [],
+      "titre": "Cisco Expressway Series Use of Hard-coded Credentials Vulnerability",
+      "resume": "Cisco Expressway Series contains a use of hard-coded credentials vulnerability that allows an unauthenticated, remote attacker with persistent cookies and network access to execute commands as root on a clustered device via the database service.",
+      "editeur": "Cisco",
+      "produit": "Expressway Series",
+      "score": 51,
+      "raisons": [
+        {
+          "code": "kev",
+          "label": "Exploitée activement"
+        },
+        {
+          "code": "repandu",
+          "label": "Produit très répandu"
+        },
+        {
+          "code": "medias",
+          "label": "Citée par 1 média"
+        }
+      ],
+      "cvss": null,
+      "epss": 0.0219,
+      "epss_percentile": 0.8287,
+      "sources": [
+        {
+          "nom": "CISA KEV",
+          "lien": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "nom": "The Hacker News",
+          "lien": "https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-76466",
+      "date": "2026-11-20T10:32:50+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-123890",
+      "cve": "CVE-2026-123890",
+      "cves": [],
+      "titre": "VMWare vCenter Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+      "resume": "Broadcom VMware vCenter contains an authentication bypass using an alternate path or channel vulnerability in the VMware Directory Service that allows an unauthenticated attacker with network access to vCenter to bypass authentication and gain unauthorized access to the system.",
+      "editeur": "Broadcom",
+      "produit": "VMware vCenter",
+      "score": 51,
+      "raisons": [
+        {
+          "code": "kev",
+          "label": "Exploitée activement"
+        },
+        {
+          "code": "repandu",
+          "label": "Produit très répandu"
+        },
+        {
+          "code": "medias",
+          "label": "Citée par 1 média"
+        }
+      ],
+      "cvss": null,
+      "epss": 0.0353,
+      "epss_percentile": 0.8953,
+      "sources": [
+        {
+          "nom": "CISA KEV",
+          "lien": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "nom": "The Hacker News",
+          "lien": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-123890",
+      "date": "2026-11-20T09:38:15+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2025-42884",
+      "cve": "CVE-2025-42884",
+      "cves": [],
+      "titre": "SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability",
+      "resume": "SAP NetWeaver Enterprise Portal contains an improper neutralization of special elements in data query logic vulnerability that allows an unauthenticated attacker to disclose or modify server information via injected JNDI environment properties or a URL used during JNDI lookup operations.",
+      "editeur": "SAP",
+      "produit": "NetWeaver",
+      "score": 35,
+      "raisons": [
+        {
+          "code": "kev",
+          "label": "Exploitée activement"
+        }
+      ],
+      "cvss": null,
+      "epss": 0.0071,
+      "epss_percentile": 0.546,
+      "sources": [
+        {
+          "nom": "CISA KEV",
+          "lien": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2025-42884",
+      "date": "2026-11-20T00:00:00+00:00",
+      "origines": [
+        "int"
+      ]
+    },
     {
       "cle": "CVE-2026-120539",
       "cve": "CVE-2026-120539",
@@ -67,45 +227,6 @@
       "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-133680",
       "date": "2026-11-20T20:17:35.750000+00:00",
       "origines": [
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-123890",
-      "cve": "CVE-2026-123890",
-      "cves": [],
-      "titre": "China-Linked Hackers Exploit Critical VMware vCenter Zero-Day to Gain Admin Access and Steal Data",
-      "resume": "",
-      "editeur": null,
-      "produit": null,
-      "score": 21,
-      "raisons": [
-        {
-          "code": "repandu",
-          "label": "Produit très répandu"
-        },
-        {
-          "code": "medias",
-          "label": "Citée par 2 médias"
-        }
-      ],
-      "cvss": null,
-      "epss": 0.0353,
-      "epss_percentile": 0.8953,
-      "sources": [
-        {
-          "nom": "The Hacker News",
-          "lien": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html"
-        },
-        {
-          "nom": "IT-Connect",
-          "lien": "https://www.it-connect.fr/vmware-vcenter-cve-2026-123890-zero-day/"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-123890",
-      "date": "2026-11-20T09:38:15+00:00",
-      "origines": [
-        "fr",
         "int"
       ]
     },
@@ -268,78 +389,6 @@
       ]
     },
     {
-      "cle": "CVE-2026-129448",
-      "cve": "CVE-2026-129448",
-      "cves": [],
-      "titre": "Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge",
-      "resume": "",
-      "editeur": null,
-      "produit": null,
-      "score": 16,
-      "raisons": [
-        {
-          "code": "epss",
-          "label": "EPSS 5 %"
-        },
-        {
-          "code": "repandu",
-          "label": "Produit très répandu"
-        },
-        {
-          "code": "medias",
-          "label": "Citée par 1 média"
-        }
-      ],
-      "cvss": null,
-      "epss": 0.0546,
-      "epss_percentile": 0.9294,
-      "sources": [
-        {
-          "nom": "The Hacker News",
-          "lien": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-129448",
-      "date": "2026-11-21T08:49:13+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-76466",
-      "cve": "CVE-2026-76466",
-      "cves": [],
-      "titre": "Hackers Exploit Critical Cisco Expressway Flaw, Breach Four Devices and Reach Internal Network",
-      "resume": "",
-      "editeur": null,
-      "produit": null,
-      "score": 16,
-      "raisons": [
-        {
-          "code": "repandu",
-          "label": "Produit très répandu"
-        },
-        {
-          "code": "medias",
-          "label": "Citée par 1 média"
-        }
-      ],
-      "cvss": null,
-      "epss": 0.0219,
-      "epss_percentile": 0.8287,
-      "sources": [
-        {
-          "nom": "The Hacker News",
-          "lien": "https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-76466",
-      "date": "2026-11-20T10:32:50+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
       "cle": "CVE-2026-99312",
       "cve": "CVE-2026-99312",
       "cves": [],
@@ -496,7 +545,60 @@
       "cves": []
     }
   ],
-  "kev": [],
+  "kev": [
+    {
+      "source": "CISA KEV",
+      "origine": "int",
+      "cve": "CVE-2026-129448",
+      "titre": "Apache Roller Deserialization of Untrusted Data Vulnerability",
+      "editeur": "Apache",
+      "produit": "Roller",
+      "resume": "Apache Roller contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via the XML-RPC endpoint, which accepts and deserializes vendor extension types before authentication. This CVE covers the same underlying vulnerability…",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triag…",
+      "date": "2026-11-20T00:00:00+00:00",
+      "ransomware": false,
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-129448"
+    },
+    {
+      "source": "CISA KEV",
+      "origine": "int",
+      "cve": "CVE-2026-123890",
+      "titre": "VMWare vCenter Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+      "editeur": "Broadcom",
+      "produit": "VMware vCenter",
+      "resume": "Broadcom VMware vCenter contains an authentication bypass using an alternate path or channel vulnerability in the VMware Directory Service that allows an unauthenticated attacker with network access to vCenter to bypass authentication and gain unauthorized access to the system.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triag…",
+      "date": "2026-11-20T00:00:00+00:00",
+      "ransomware": false,
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-123890"
+    },
+    {
+      "source": "CISA KEV",
+      "origine": "int",
+      "cve": "CVE-2025-42884",
+      "titre": "SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability",
+      "editeur": "SAP",
+      "produit": "NetWeaver",
+      "resume": "SAP NetWeaver Enterprise Portal contains an improper neutralization of special elements in data query logic vulnerability that allows an unauthenticated attacker to disclose or modify server information via injected JNDI environment properties or a URL used during JNDI lookup operations.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triag…",
+      "date": "2026-11-20T00:00:00+00:00",
+      "ransomware": false,
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2025-42884"
+    },
+    {
+      "source": "CISA KEV",
+      "origine": "int",
+      "cve": "CVE-2026-76466",
+      "titre": "Cisco Expressway Series Use of Hard-coded Credentials Vulnerability",
+      "editeur": "Cisco",
+      "produit": "Expressway Series",
+      "resume": "Cisco Expressway Series contains a use of hard-coded credentials vulnerability that allows an unauthenticated, remote attacker with persistent cookies and network access to execute commands as root on a clustered device via the database service.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triag…",
+      "date": "2026-11-20T00:00:00+00:00",
+      "ransomware": false,
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-76466"
+    }
+  ],
   "nvd": [
     {
       "source": "NVD",
@@ -560,6 +662,16 @@
     }
   ],
   "presse": [
+    {
+      "source": "BleepingComputer",
+      "origine": "int",
+      "titre": "Hackers exploit GL.iNet cloud flaw to infect routers, KVM devices",
+      "lien": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/",
+      "date": "2026-11-22T18:45:37+00:00",
+      "resume": "GL.iNet has confirmed that hackers exploited a vulnerability in its cloud remote management services to install custom malware on customers' routers and KVM devices, with some affected users reporting backdoors and reverse shells giving remote access to infected devices. [...]",
+      "attaque": true,
+      "cves": []
+    },
     {
       "source": "BleepingComputer",
       "origine": "int",
@@ -1087,41 +1199,7 @@
       "resume": "A newly disclosed unpatched zero-day technique called FastUnlock lets someone with physical access to a locked Windows computer start programs without signing in. Whoever uses it gets only a limited account, not administrator control of the machine. The method was posted yesterday by a researcher w…",
       "attaque": false,
       "cves": []
-    },
-    {
-      "source": "BleepingComputer",
-      "origine": "int",
-      "titre": "VMware patches vCenter zero-day exploited in attacks since September",
-      "lien": "https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/",
-      "date": "2026-11-20T00:26:25+00:00",
-      "resume": "Broadcom has released security updates to fix a critical VMware vCenter Server authentication bypass vulnerability that Chinese-linked hackers have exploited in zero-day attacks since September 2026. [...]",
-      "attaque": true,
-      "cves": []
-    },
-    {
-      "source": "IT-Connect",
-      "origine": "fr",
-      "titre": "VMware vCenter : une faille critique exploitée comme zero-day depuis septembre 2026",
-      "lien": "https://www.it-connect.fr/vmware-vcenter-cve-2026-123890-zero-day/",
-      "date": "2026-11-19T19:00:00+00:00",
-      "resume": "Broadcom a corrigé la CVE-2026-123890, une faille critique dans VMware vCenter exploitée comme zero-day dès septembre 2026 d'après Mandiant. Le post VMware vCenter : une faille critique exploitée comme zero-day depuis septembre 2026 a été publié sur IT-Connect .",
-      "attaque": false,
-      "cves": [
-        "CVE-2026-123890"
-      ]
-    },
-    {
-      "source": "The Hacker News",
-      "origine": "int",
-      "titre": "ThreatsDay: GPT-6.2 Jailbreak Flaws, BubbleLoader PNG Malware, $500M Ransom Demands + 17 More Stories",
-      "lien": "https://thehackernews.com/2026/11/threatsday-gpt-62-jailbreak-flaws.html",
-      "date": "2026-11-19T18:47:58+00:00",
-      "resume": "The easiest way to fool someone is to give them something they already expect. A job offer. A message about a service outage. A familiar app. Nothing looks strange at first. And that's the problem. This week's stories show how ordinary things are being used to steal data, spread malware, and get pe…",
-      "attaque": true,
-      "cves": []
     }
   ],
-  "erreurs": [
-    "CISA KEV : HTTP Error 403: Forbidden"
-  ]
+  "erreurs": []
 }
