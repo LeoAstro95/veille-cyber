@@ -1,0 +1,1005 @@
+{
+  "genere_le": "2026-11-23T17:53:25.468646+00:00",
+  "fenetre_jours": 3,
+  "stats": {
+    "urgentes": 0,
+    "alertes_certfr": 0,
+    "avis_certfr": 0,
+    "kev": 0,
+    "cve_critiques": 5,
+    "attaques": 34
+  },
+  "priorites": [
+    {
+      "cle": "CVE-2026-129448",
+      "cve": "CVE-2026-129448",
+      "cves": [],
+      "titre": "Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge",
+      "resume": "",
+      "editeur": null,
+      "produit": null,
+      "score": 51,
+      "raisons": [
+        {
+          "code": "kev",
+          "label": "Exploitée activement"
+        },
+        {
+          "code": "epss",
+          "label": "EPSS 5 %"
+        },
+        {
+          "code": "repandu",
+          "label": "Produit très répandu"
+        },
+        {
+          "code": "medias",
+          "label": "Citée par 1 média"
+        }
+      ],
+      "cvss": null,
+      "epss": 0.0546,
+      "epss_percentile": 0.9294,
+      "sources": [
+        {
+          "nom": "The Hacker News",
+          "lien": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-129448",
+      "date": "2026-11-21T08:49:13+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-84869",
+      "cve": "CVE-2026-84869",
+      "cves": [],
+      "titre": "Hackers Exploit Critical ScreenConnect Flaw to Hijack MSP Technician PCs Without Warning",
+      "resume": "",
+      "editeur": null,
+      "produit": null,
+      "score": 40,
+      "raisons": [
+        {
+          "code": "kev",
+          "label": "Exploitée activement"
+        },
+        {
+          "code": "medias",
+          "label": "Citée par 1 média"
+        }
+      ],
+      "cvss": null,
+      "epss": 0.0117,
+      "epss_percentile": 0.6828,
+      "sources": [
+        {
+          "nom": "The Hacker News",
+          "lien": "https://thehackernews.com/2026/11/hackers-exploit-critical-screenconnect.html"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-84869",
+      "date": "2026-11-23T12:41:04+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-134882",
+      "cve": "CVE-2026-134882",
+      "cves": [],
+      "titre": "CVE-2026-134882",
+      "resume": "A weakness has been identified in TOTOLINK A7100RU 7.4cu.2313_B20191024. This issue affects the function exportOvpn of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. This manipulation of the argument Username causes os command injection. The attack is possible to be carried out remotel…",
+      "editeur": null,
+      "produit": null,
+      "score": 21,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 10.0"
+        }
+      ],
+      "cvss": 10.0,
+      "epss": 0.0252,
+      "epss_percentile": 0.8527,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-134882"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-134882",
+      "date": "2026-11-23T09:17:05.653000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-133680",
+      "cve": "CVE-2026-133680",
+      "cves": [],
+      "titre": "CVE-2026-133680",
+      "resume": "A vulnerability was found in D-Link DCS-935L 1.10.01. This affects the function loginRouter of the file web/cgi-bin/localrecording/setconf.cgi of the component Local Recording CGI. Performing a manipulation of the argument account/password results in os command injection. Remote exploitation of the…",
+      "editeur": null,
+      "produit": null,
+      "score": 21,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.9"
+        }
+      ],
+      "cvss": 9.9,
+      "epss": 0.0221,
+      "epss_percentile": 0.8309,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-133680"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-133680",
+      "date": "2026-11-20T20:17:35.750000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-135208",
+      "cve": "CVE-2026-135208",
+      "cves": [],
+      "titre": "CVE-2026-135208",
+      "resume": "Kerberos Agent before 3.14.4 contains an authentication bypass vulnerability that allows unauthenticated attackers to forge administrator tokens because JWTMiddleWare() falls back to the hard-coded key TOBECHANGED. Attackers can sign HS256 tokens with arbitrary username and role claims to access /a…",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.8"
+        }
+      ],
+      "cvss": 9.8,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-135208"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-135208",
+      "date": "2026-11-23T16:17:38.250000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-120382",
+      "cve": "CVE-2026-120382",
+      "cves": [],
+      "titre": "CVE-2026-120382",
+      "resume": "An improper neutralization of argument delimiters in a command vulnerability in the OAuth API in Synology DiskStation Manager (DSM) before 7.1.1-42962-10, 7.2.1-69057-14, 7.2.2-72806-11, 7.3.2-86009-6, and 7.4.1-90080-2 allows remote attackers to read or write arbitrary files and conduct denial-of-…",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.8"
+        }
+      ],
+      "cvss": 9.8,
+      "epss": 0.0121,
+      "epss_percentile": 0.693,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-120382"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-120382",
+      "date": "2026-11-23T08:17:14.183000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-133993",
+      "cve": "CVE-2026-133993",
+      "cves": [],
+      "titre": "CVE-2026-133993",
+      "resume": "A security flaw has been discovered in D-Link DIR-600L 2.17b02. This affects the function FUN_0040efb0 of the file gena.cgi of the component GENA Subscription Handler. Performing a manipulation of the argument service results in stack-based buffer overflow. The attack is possible to be carried out…",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 10.0"
+        }
+      ],
+      "cvss": 10.0,
+      "epss": 0.0105,
+      "epss_percentile": 0.6519,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-133993"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-133993",
+      "date": "2026-11-21T18:16:54.277000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-23871",
+      "cve": "CVE-2026-23871",
+      "cves": [],
+      "titre": "WhatsApp Patches 3 Security Flaws, Including Android Bug Suspected of Use in Scams",
+      "resume": "",
+      "editeur": null,
+      "produit": null,
+      "score": 15,
+      "raisons": [
+        {
+          "code": "repandu",
+          "label": "Produit très répandu"
+        },
+        {
+          "code": "medias",
+          "label": "Citée par 1 média"
+        }
+      ],
+      "cvss": null,
+      "epss": 0.0048,
+      "epss_percentile": 0.4223,
+      "sources": [
+        {
+          "nom": "The Hacker News",
+          "lien": "https://thehackernews.com/2026/11/whatsapp-patches-3-security-flaws.html"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-23871",
+      "date": "2026-11-20T17:57:20+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-134814",
+      "cve": "CVE-2026-134814",
+      "cves": [],
+      "titre": "Critical binary-parser Flaw Enables JavaScript Injection via Malicious Parser Definitions",
+      "resume": "",
+      "editeur": null,
+      "produit": null,
+      "score": 5,
+      "raisons": [
+        {
+          "code": "medias",
+          "label": "Citée par 1 média"
+        }
+      ],
+      "cvss": null,
+      "epss": 0.0061,
+      "epss_percentile": 0.5008,
+      "sources": [
+        {
+          "nom": "The Hacker News",
+          "lien": "https://thehackernews.com/2026/11/critical-binary-parser-flaw-enables.html"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-134814",
+      "date": "2026-11-23T13:22:20+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-134624",
+      "cve": "CVE-2026-134624",
+      "cves": [],
+      "titre": "N-able Discloses Critical Mail Assure Vulnerability Found During Breach Investigation",
+      "resume": "",
+      "editeur": null,
+      "produit": null,
+      "score": 5,
+      "raisons": [
+        {
+          "code": "medias",
+          "label": "Citée par 1 média"
+        }
+      ],
+      "cvss": null,
+      "epss": 0.0035,
+      "epss_percentile": 0.2969,
+      "sources": [
+        {
+          "nom": "The Hacker News",
+          "lien": "https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-134624",
+      "date": "2026-11-23T12:28:09+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-131914",
+      "cve": "CVE-2026-131914",
+      "cves": [],
+      "titre": "Hackers Exploit Critical ASP.NET Anti-CSRF Library Flaw Allowing Unauthenticated RCE",
+      "resume": "",
+      "editeur": null,
+      "produit": null,
+      "score": 5,
+      "raisons": [
+        {
+          "code": "medias",
+          "label": "Citée par 1 média"
+        }
+      ],
+      "cvss": null,
+      "epss": 0.0061,
+      "epss_percentile": 0.5037,
+      "sources": [
+        {
+          "nom": "The Hacker News",
+          "lien": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-131914",
+      "date": "2026-11-23T09:11:56+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-129975",
+      "cve": "CVE-2026-129975",
+      "cves": [],
+      "titre": "GnuPG Warns Critical GPGME Flaw Could Expose App Data via Malicious OpenPGP Keys",
+      "resume": "",
+      "editeur": null,
+      "produit": null,
+      "score": 5,
+      "raisons": [
+        {
+          "code": "medias",
+          "label": "Citée par 1 média"
+        }
+      ],
+      "cvss": null,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "The Hacker News",
+          "lien": "https://thehackernews.com/2026/11/gnupg-warns-critical-gpgme-flaw-could.html"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-129975",
+      "date": "2026-11-21T11:05:53+00:00",
+      "origines": [
+        "int"
+      ]
+    }
+  ],
+  "certfr": [],
+  "kev": [],
+  "nvd": [
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-133993",
+      "resume": "A security flaw has been discovered in D-Link DIR-600L 2.17b02. This affects the function FUN_0040efb0 of the file gena.cgi of the component GENA Subscription Handler. Performing a manipulation of the argument service results in stack-based buffer overflow. The attack is possible to be carried out…",
+      "score": 10.0,
+      "severite": "CRITICAL",
+      "date": "2026-11-21T18:16:54.277000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-133993"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-134882",
+      "resume": "A weakness has been identified in TOTOLINK A7100RU 7.4cu.2313_B20191024. This issue affects the function exportOvpn of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. This manipulation of the argument Username causes os command injection. The attack is possible to be carried out remotel…",
+      "score": 10.0,
+      "severite": "CRITICAL",
+      "date": "2026-11-23T09:17:05.653000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-134882"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-133680",
+      "resume": "A vulnerability was found in D-Link DCS-935L 1.10.01. This affects the function loginRouter of the file web/cgi-bin/localrecording/setconf.cgi of the component Local Recording CGI. Performing a manipulation of the argument account/password results in os command injection. Remote exploitation of the…",
+      "score": 9.9,
+      "severite": "CRITICAL",
+      "date": "2026-11-20T20:17:35.750000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-133680"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-120382",
+      "resume": "An improper neutralization of argument delimiters in a command vulnerability in the OAuth API in Synology DiskStation Manager (DSM) before 7.1.1-42962-10, 7.2.1-69057-14, 7.2.2-72806-11, 7.3.2-86009-6, and 7.4.1-90080-2 allows remote attackers to read or write arbitrary files and conduct denial-of-…",
+      "score": 9.8,
+      "severite": "CRITICAL",
+      "date": "2026-11-23T08:17:14.183000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-120382"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-135208",
+      "resume": "Kerberos Agent before 3.14.4 contains an authentication bypass vulnerability that allows unauthenticated attackers to forge administrator tokens because JWTMiddleWare() falls back to the hard-coded key TOBECHANGED. Attackers can sign HS256 tokens with arbitrary username and role claims to access /a…",
+      "score": 9.8,
+      "severite": "CRITICAL",
+      "date": "2026-11-23T16:17:38.250000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-135208"
+    }
+  ],
+  "presse": [
+    {
+      "source": "BleepingComputer",
+      "origine": "int",
+      "titre": "GlobeTopper loses $2.5 million after hackers steal $70k in gift cards",
+      "lien": "https://www.bleepingcomputer.com/news/security/globetopper-loses-25-million-after-hackers-steal-70k-in-gift-cards/",
+      "date": "2026-11-23T16:50:01+00:00",
+      "resume": "A cyberattack disrupted operations at B2B top-up solutions provider GlobeTopper, causing an estimated $2.5 million in lost revenue, while the attacker redeemed digital gift cards worth $70,000. [...]",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "SecurityWeek",
+      "origine": "int",
+      "titre": "Azure Flaw Exploited to Target Secrets at Norwegian Energy Firms",
+      "lien": "https://www.securityweek.com/azure-flaw-exploited-to-target-secrets-at-norwegian-energy-firms/",
+      "date": "2026-11-23T15:47:40+00:00",
+      "resume": "Microsoft closed an Azure API Management flaw exploited to target secrets at Norwegian energy companies, with other sectors also affected. The post Azure Flaw Exploited to Target Secrets at Norwegian Energy Firms appeared first on SecurityWeek .",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "The Hacker News",
+      "origine": "int",
+      "titre": "⚡ Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble",
+      "lien": "https://thehackernews.com/2026/11/weekly-recap-vmware-0-day-java4shell.html",
+      "date": "2026-11-23T15:10:48+00:00",
+      "resume": "A stolen key. A trusted message. A routine update. None of these looks like the start of a major security problem. That's partly why they work. Attackers don't always need to break down a door. Sometimes they just use one that's already open. This week's stories show how quickly a small opening can…",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "SecurityWeek",
+      "origine": "int",
+      "titre": "N-able Patches Critical Flaw Disclosed After Mail Assure Cyberattack",
+      "lien": "https://www.securityweek.com/n-able-patches-critical-flaw-disclosed-after-mail-assure-cyberattack/",
+      "date": "2026-11-23T15:06:49+00:00",
+      "resume": "The company has restored access to the affected services and continues to monitor the affected environments. The post N-able Patches Critical Flaw Disclosed After Mail Assure Cyberattack appeared first on SecurityWeek .",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "origine": "int",
+      "titre": "AI Agents Are Creating a Shared Responsibility Gap",
+      "lien": "https://www.bleepingcomputer.com/news/security/ai-agents-are-creating-a-shared-responsibility-gap/",
+      "date": "2026-11-23T15:00:10+00:00",
+      "resume": "AI agents operate across multiple platforms, creating security gaps when no single vendor can see or control their actions. Token Security examines the shared responsibility problem and explains how organizations can better manage agent identities, permissions, and accountability. [...]",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "SecurityWeek",
+      "origine": "int",
+      "titre": "phpAfterShell Vulnerability Revives PHP2Shell’s Attack Path",
+      "lien": "https://www.securityweek.com/phpaftershell-vulnerability-revives-php2shells-attack-path/",
+      "date": "2026-11-23T13:58:07+00:00",
+      "resume": "If a session overwrite operation is interrupted, an attacker who controls the fresh data could trigger data deserialization and RCE. The post phpAfterShell Vulnerability Revives PHP2Shell’s Attack Path appeared first on SecurityWeek .",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "origine": "int",
+      "titre": "Microsoft testing fix for Windows 11 Bluetooth audio quality drops",
+      "lien": "https://www.bleepingcomputer.com/news/microsoft/microsoft-testing-fix-for-windows-11-bluetooth-audio-quality-drops/",
+      "date": "2026-11-23T13:28:45+00:00",
+      "resume": "Microsoft is working to fix a long-standing Windows issue that has been causing significant audio quality drops for Bluetooth headphone users. [...]",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "SecurityWeek",
+      "origine": "int",
+      "titre": "GL.iNet Routers, KVMs Compromised via Remote Management Service Flaw",
+      "lien": "https://www.securityweek.com/gl-inet-routers-kvms-compromised-via-remote-management-service-flaw/",
+      "date": "2026-11-23T13:26:22+00:00",
+      "resume": "Attackers abused a flaw in the GoodCloud remote management service to push malware to devices, and cleaning them requires new firmware. The post GL.iNet Routers, KVMs Compromised via Remote Management Service Flaw appeared first on SecurityWeek .",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "The Hacker News",
+      "origine": "int",
+      "titre": "Critical binary-parser Flaw Enables JavaScript Injection via Malicious Parser Definitions",
+      "lien": "https://thehackernews.com/2026/11/critical-binary-parser-flaw-enables.html",
+      "date": "2026-11-23T13:22:20+00:00",
+      "resume": "A critical security flaw has been disclosed in the popular binary-parser library that could allow an attacker who controls parser definitions to execute arbitrary code. The vulnerability, tracked as CVE-2026-134814 (CVSS score: 9.2 / 8.1), is a case of code injection impacting binary-parser version…",
+      "attaque": true,
+      "cves": [
+        "CVE-2026-134814"
+      ]
+    },
+    {
+      "source": "The Hacker News",
+      "origine": "int",
+      "titre": "Hackers Exploit Critical ScreenConnect Flaw to Hijack MSP Technician PCs Without Warning",
+      "lien": "https://thehackernews.com/2026/11/hackers-exploit-critical-screenconnect.html",
+      "date": "2026-11-23T12:41:04+00:00",
+      "resume": "Threat actors are exploiting a now-patched security flaw in ConnectWise ScreenConnect to target managed service provider (MSP) servers. The activity revolves around CVE-2026-84869 (CVSS score: 9.9), a critical ScreenConnect client flaw that allows a guest to transfer and execute a malicious payload…",
+      "attaque": true,
+      "cves": [
+        "CVE-2026-84869"
+      ]
+    },
+    {
+      "source": "The Hacker News",
+      "origine": "int",
+      "titre": "N-able Discloses Critical Mail Assure Vulnerability Found During Breach Investigation",
+      "lien": "https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html",
+      "date": "2026-11-23T12:28:09+00:00",
+      "resume": "N-able yesterday disclosed a critical flaw it found while investigating the breach of its Mail Assure and SpamExperts Hosted Cloud, an email filtering service it runs for managed service providers. The bug, tracked as CVE-2026-134624, is a server-side request forgery (SSRF) flaw. It allowed a user…",
+      "attaque": true,
+      "cves": [
+        "CVE-2026-134624"
+      ]
+    },
+    {
+      "source": "SecurityWeek",
+      "origine": "int",
+      "titre": "AI Inference Providers Failed to Detect Hacking and Prompt Theft, Says Dragos",
+      "lien": "https://www.securityweek.com/ai-inference-providers-failed-to-detect-hacking-and-prompt-theft-says-dragos/",
+      "date": "2026-11-23T12:16:20+00:00",
+      "resume": "Dragos uncovered undetected intrusions at three AI inference providers using nearly two million prompts sent to AI services. The post AI Inference Providers Failed to Detect Hacking and Prompt Theft, Says Dragos appeared first on SecurityWeek .",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "ZATAZ",
+      "origine": "fr",
+      "titre": "Courtiers en or piratés, dix personnes mises en examen",
+      "lien": "https://www.zataz.com/courtiers-en-or-pirates-dix-personnes-mises-en-examen/",
+      "date": "2026-11-23T12:05:22+00:00",
+      "resume": "Trois courtiers en métaux précieux piratés, des clients ciblés par de faux policiers et dix personnes mises en examen.",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "origine": "int",
+      "titre": "Call center operator gets 8 years for helping scam 30,000 Americans",
+      "lien": "https://www.bleepingcomputer.com/news/security/call-center-operator-gets-8-years-for-helping-scam-30-000-americans/",
+      "date": "2026-11-23T12:02:23+00:00",
+      "resume": "A Peruvian call center operator was sentenced to eight years in prison for helping steal millions of dollars from over 30,000 Spanish-speaking US residents in a years-long government-impersonation fraud scheme. [...]",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "ZATAZ",
+      "origine": "fr",
+      "titre": "L’aquaponey, un drôle de cadeau de Noël qui fait réfléchir !",
+      "lien": "https://www.zataz.com/laquaponey-un-drole-de-cadeau-de-noel-qui-fait-reflechir/",
+      "date": "2026-11-23T11:53:31+00:00",
+      "resume": "Un poney sous le sapin pour comprendre comment les algorithmes et l’IA donnent du crédit aux fausses informations.",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "SecurityWeek",
+      "origine": "int",
+      "titre": "BadBox 3.0 Ad Fraud Operation Generating 40 Billion Daily Bid Requests Disrupted",
+      "lien": "https://www.securityweek.com/badbox-3-0-ad-fraud-operation-generating-40-billion-daily-bid-requests-disrupted/",
+      "date": "2026-11-23T11:44:18+00:00",
+      "resume": "Backdoors on low-cost consumer devices served modules for ad fraud and for turning devices into residential proxies. The post BadBox 3.0 Ad Fraud Operation Generating 40 Billion Daily Bid Requests Disrupted appeared first on SecurityWeek .",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "SecurityWeek",
+      "origine": "int",
+      "titre": "SAP NetWeaver, Cisco Expressway Flaws Exploited in Attacks",
+      "lien": "https://www.securityweek.com/sap-netweaver-cisco-expressway-flaws-exploited-in-attacks/",
+      "date": "2026-11-23T11:35:15+00:00",
+      "resume": "Threat actors could exploit them to leak or modify server information and to execute commands as root. The post SAP NetWeaver, Cisco Expressway Flaws Exploited in Attacks appeared first on SecurityWeek .",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "SecurityWeek",
+      "origine": "int",
+      "titre": "CrowdStrike to Acquire Zscaler in $43.9 Billion Deal",
+      "lien": "https://www.securityweek.com/crowdstrike-to-acquire-zscaler-in-43-9-billion-deal/",
+      "date": "2026-11-23T11:31:44+00:00",
+      "resume": "CrowdStrike expects the combined company to have more than $10 billion in annual recurring revenue. The post CrowdStrike to Acquire Zscaler in $43.9 Billion Deal appeared first on SecurityWeek .",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "Le Monde Informatique",
+      "origine": "fr",
+      "titre": "Cyberattaque : la Banque Delubac & Cie déjoue une tentative de fraude mais subit une fuite de données",
+      "lien": "https://www.lemondeinformatique.fr/cybersecurite-conformite/cyberattaque-la-banque-delubac-cie-dejoue-une-tentative-de-fraude-mais-subit-une-fuite-de-donnees",
+      "date": "2026-11-23T11:16:34+00:00",
+      "resume": "La Banque Delubac & Cie a été victime d'une intrusion dans ses systèmes d'information, détectée le vendredi 20 novembre. Selon l'établissement ardéchois, les attaquants ont tenté de réaliser des opérations financières frauduleuses, sans y parvenir. L'intrusion a toutefois entraîné une fuite de donn…",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "ZATAZ",
+      "origine": "fr",
+      "titre": "Cyberespionnage en Bulgarie, 62 millions de pages volées",
+      "lien": "https://www.zataz.com/cyberespionnage-en-bulgarie-62-millions-de-pages-volees/",
+      "date": "2026-11-23T10:59:22+00:00",
+      "resume": "La Bulgarie révèle cinq ans de cyberespionnage et le vol d’au moins 62 millions de pages.",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "ZATAZ",
+      "origine": "fr",
+      "titre": "Cleverbridge confirme un vol de données bancaires",
+      "lien": "https://www.zataz.com/cleverbridge-confirme-un-vol-de-donnees-bancaires/",
+      "date": "2026-11-23T10:51:12+00:00",
+      "resume": "Cleverbridge confirme un vol de données de cartes bancaires. Une notification détaille les numéros, dates et CVV.",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "IT-Connect",
+      "origine": "fr",
+      "titre": "Microsoft Edge : avec le Lockdown Mode, Microsoft veut bloquer les attaques",
+      "lien": "https://www.it-connect.fr/edge-lockdown-mode-webgl-webgpu/",
+      "date": "2026-11-23T10:30:00+00:00",
+      "resume": "Microsoft teste dans Edge Canary un Lockdown Mode qui bloque WebGL et WebGPU pour contrer les attaques ciblées. Voici ce qu'il faut savoir sur ce mode. Le post Microsoft Edge : avec le Lockdown Mode, Microsoft veut bloquer les attaques a été publié sur IT-Connect .",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "ZATAZ",
+      "origine": "fr",
+      "titre": "BlackHat Sector : une IA offensive à louer pour 500 €",
+      "lien": "https://www.zataz.com/blackhat-sector-une-ia-offensive-a-louer-pour-500-e/",
+      "date": "2026-11-23T10:29:10+00:00",
+      "resume": "BlackHat Sector commercialise une IA offensive après des cyberattaques revendiquées contre des sociétés françaises.",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "ZATAZ",
+      "origine": "fr",
+      "titre": "Cyberattaque contre AAAEP : 585 000 personnes exposées ?",
+      "lien": "https://www.zataz.com/cyberattaque-contre-aaaep-585-000-personnes-exposees/",
+      "date": "2026-11-23T10:19:58+00:00",
+      "resume": "AAAEP visée par BlackHatSect0r : 585 000 personnes potentiellement concernées, données psychotechniques et appels exposés.",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "ZATAZ",
+      "origine": "fr",
+      "titre": "BlackHatSect0r : phishing bancaire, extorsion et industrie",
+      "lien": "https://www.zataz.com/blackhatsect0r-phishing-bancaire-extorsion-et-industrie/",
+      "date": "2026-11-23T09:51:37+00:00",
+      "resume": "BlackHatSect0r associe phishing bancaire, extorsion, destruction de sauvegardes et interfaces industrielles exposées.",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "The Hacker News",
+      "origine": "int",
+      "titre": "Hackers Exploit Critical ASP.NET Anti-CSRF Library Flaw Allowing Unauthenticated RCE",
+      "lien": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html",
+      "date": "2026-11-23T09:11:56+00:00",
+      "resume": "Cybersecurity researchers have urged users to discontinue using a legacy ASP.NET anti-CSRF library named Idunno.AntiCsrf (\"Idunno.AntiCsrf.dll\") following the discovery of a critical vulnerability that has been exploited in the wild. The vulnerability, tracked as CVE-2026-131914, carries a CVSS sco…",
+      "attaque": true,
+      "cves": [
+        "CVE-2026-131914"
+      ]
+    },
+    {
+      "source": "BleepingComputer",
+      "origine": "int",
+      "titre": "Microsoft confirms Windows printing issues affecting Forcepoint users",
+      "lien": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-printing-issues-after-kb5132043-windows-hotpatch/",
+      "date": "2026-11-23T09:11:15+00:00",
+      "resume": "Microsoft confirmed printing issues on systems running Forcepoint DLP software after installing the KB5132043 November 2026 Windows 11 hotpatch. [...]",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "The Hacker News",
+      "origine": "int",
+      "titre": "Hackers Exploited GL.iNet Cloud Flaw to Install Malware on Routers and KVM Devices",
+      "lien": "https://thehackernews.com/2026/11/hackers-exploited-glinet-cloud-flaw-to.html",
+      "date": "2026-11-23T09:04:08+00:00",
+      "resume": "Hackers exploited a vulnerability in GL.iNet's GoodCloud remote management service to install malware on some customer routers and KVM devices, the maker of travel routers and remote-access KVM hardware said in a security notice updated today. The company identified and fixed the flaw on Friday and…",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "The Hacker News",
+      "origine": "int",
+      "titre": "AI-Assisted Cyber Attacks Trigger Unauthorized Payments at Indian Banks and Fintech Firms",
+      "lien": "https://thehackernews.com/2026/11/ai-assisted-cyberattacks-trigger.html",
+      "date": "2026-11-23T08:24:15+00:00",
+      "resume": "The Indian Computer Emergency Response Team (CERT-In) has warned that threat actors are carrying out artificial intelligence (AI)-assisted cyber attacks targeting information and communication technology (ICT) assets in the country. This unsanctioned activity has resulted in unauthorized financial…",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "IT-Connect",
+      "origine": "fr",
+      "titre": "Specops lance une API pour vérifier l’identité des utilisateurs dans vos outils : chatbots IA, ITSM, etc.",
+      "lien": "https://www.it-connect.fr/api-specops-authentication/",
+      "date": "2026-11-23T08:00:00+00:00",
+      "resume": "Specops lance l'API Specops Authentication : vérifiez l'identité d'un utilisateur depuis un chatbot IA ou ServiceNow avant toute action sensible. Le post Specops lance une API pour vérifier l’identité des utilisateurs dans vos outils : chatbots IA, ITSM, etc. a été publié sur IT-Connect .",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "IT-Connect",
+      "origine": "fr",
+      "titre": "GL.iNet : des pirates ont exploité le cloud GoodCloud pour infecter des routeurs et des KVM",
+      "lien": "https://www.it-connect.fr/gl-inet-goodcloud-routeurs-kvm-malware/",
+      "date": "2026-11-23T07:49:13+00:00",
+      "resume": "GL.iNet confirme qu'une faille de son cloud GoodCloud a servi à installer un malware sur des routeurs et des KVM. Voici ce qu'il faut savoir. Le post GL.iNet : des pirates ont exploité le cloud GoodCloud pour infecter des routeurs et des KVM a été publié sur IT-Connect .",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "origine": "int",
+      "titre": "CISA flags critical Cisco RCE flaw as actively exploited in attacks",
+      "lien": "https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/",
+      "date": "2026-11-23T07:44:19+00:00",
+      "resume": "The US Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies that attackers are now exploiting a recently patched critical Cisco Expressway vulnerability in the wild. [...]",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "ZATAZ",
+      "origine": "fr",
+      "titre": "Ledger : un pirate piège d’autres pirates avec un faux fichier",
+      "lien": "https://www.zataz.com/ledger-un-pirate-piege-dautres-pirates-avec-un-faux-fichier/",
+      "date": "2026-11-23T01:31:54+00:00",
+      "resume": "Sur un forum pirate, une prétendue nouvelle fuite de données Ledger dissimule un piège. ZATAZ a suivi la manœuvre.",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "ZATAZ",
+      "origine": "fr",
+      "titre": "Cyberattaque à Chambourcy : INC Ransom revendique l’attaque",
+      "lien": "https://www.zataz.com/cyberattaque-a-chambourcy-inc-ransom-revendique-lattaque/",
+      "date": "2026-11-23T00:36:24+00:00",
+      "resume": "Cyberattaque à Chambourcy : INC Ransom revendique l'intrusion. ZATAZ révèle des documents de police municipale exposés.",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "origine": "int",
+      "titre": "Hackers exploit GL.iNet cloud flaw to infect routers, KVM devices",
+      "lien": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/",
+      "date": "2026-11-22T18:45:37+00:00",
+      "resume": "GL.iNet has confirmed that hackers exploited a vulnerability in its cloud remote management services to install custom malware on customers' routers and KVM devices, with some affected users reporting backdoors and reverse shells giving remote access to infected devices. [...]",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "origine": "int",
+      "titre": "Cleverbridge warns hackers stole credit card numbers, CVVs in data breach",
+      "lien": "https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/",
+      "date": "2026-11-22T15:43:04+00:00",
+      "resume": "E-commerce platform Cleverbridge is warning that hackers breached its systems and stole customers' payment card information, including credit card numbers and CVV security codes. [...]",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "origine": "int",
+      "titre": "Signal to block Siri, Gemini AI from capturing chats on iOS, Android",
+      "lien": "https://www.bleepingcomputer.com/news/security/signal-to-block-siri-gemini-ai-from-capturing-chats-on-ios-android/",
+      "date": "2026-11-22T15:15:25+00:00",
+      "resume": "Signal has announced new protections that block screenshots on iOS 27 and prevent AI assistants from capturing conversations on supported Android devices. [...]",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "The Hacker News",
+      "origine": "int",
+      "titre": "OpenRouter Drops 3 Providers After Researchers Catch Months of Prompt Theft at AI Hosting Firms",
+      "lien": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html",
+      "date": "2026-11-22T05:06:55+00:00",
+      "resume": "Attackers stole data from inside three AI inference providers for months, and none of the three knew until researchers told them, the industrial cybersecurity company Dragos said this week. Some of the stolen requests were flagged as Zero Data Retention, the setting that is supposed to mean a promp…",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "The Hacker News",
+      "origine": "int",
+      "titre": "Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in Popular Apps",
+      "lien": "https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html",
+      "date": "2026-11-22T05:03:41+00:00",
+      "resume": "A now-patched flaw in Ghostscript allows a crafted file to escape the program's security sandbox and run commands on the server that processes it. Ghostscript is the interpreter that many Linux servers use to convert uploaded PDFs, PostScript files, and images into other formats, often without the…",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "SecurityWeek",
+      "origine": "int",
+      "titre": "FBI Investigating Apparent Hack of Its Key National Criminal Justice Database, AP Source Says",
+      "lien": "https://www.securityweek.com/fbi-investigating-apparent-hack-of-its-key-national-criminal-justice-database-ap-source-says/",
+      "date": "2026-11-22T00:53:02+00:00",
+      "resume": "The FBI is investigating an apparent hack of a national law enforcement database that it maintains. The post FBI Investigating Apparent Hack of Its Key National Criminal Justice Database, AP Source Says appeared first on SecurityWeek .",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "origine": "int",
+      "titre": "Rackspace Spot breach let hackers access customer Kubernetes secrets",
+      "lien": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/",
+      "date": "2026-11-21T22:59:58+00:00",
+      "resume": "Rackspace warned customers that hackers breached its Rackspace Spot cloud platform using compromised credentials, allowing them to deploy unauthorized workloads and access Kubernetes secrets in customer clusters. [...]",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "origine": "int",
+      "titre": "Microsoft Entra Connect Health flaw exploited to steal tenant data",
+      "lien": "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/",
+      "date": "2026-11-21T18:01:58+00:00",
+      "resume": "Microsoft is warning organizations that it suffered a data breach after attackers exploited a vulnerability in its Entra Connect Health service to gain unauthorized access to administrator email addresses and tenant configuration information. [...]",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "origine": "int",
+      "titre": "BADBOX botnet returns with record-breaking 40 billion daily ad requests",
+      "lien": "https://www.bleepingcomputer.com/news/security/badbox-30-botnet-returns-with-record-breaking-40-billion-daily-ad-requests/",
+      "date": "2026-11-21T15:17:27+00:00",
+      "resume": "The BADBOX malware found in a broad range of generic Android TV boxes has returned to large-scale ad-fraud operations following last year's disruptions. [...]",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "origine": "int",
+      "titre": "FBI reportedly hacked again, this time targeting nationwide police database",
+      "lien": "https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/",
+      "date": "2026-11-21T14:26:04+00:00",
+      "resume": "FBI systems have reportedly been breached for the second time in two months, this time targeting the agency's National Crime Information Center (NCIC), which is used to share information between local, state, and federal law enforcement agencies. [...]",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "ZATAZ",
+      "origine": "fr",
+      "titre": "Cyberattaques : la boîte de Pandora est-elle ouverte avec l’IA ARTEX",
+      "lien": "https://www.zataz.com/cyberattaques-la-boite-de-pandora-est-elle-ouverte-avec-lia-artex/",
+      "date": "2026-11-21T13:39:38+00:00",
+      "resume": "ARTEX révèle comment l'IA accélère les cyberattaques, le vol de données et les intrusions. La boîte de Pandore 2.0 a-t-elle été ouverte ?",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "SecurityWeek",
+      "origine": "int",
+      "titre": "President Trump Taps Kirsten Davies as National Cyber Director",
+      "lien": "https://www.securityweek.com/president-trump-taps-kirsten-davies-as-national-cyber-director/",
+      "date": "2026-11-21T13:00:00+00:00",
+      "resume": "White House says the battle-tested cyber leader will drive an America First cyber strategy. The post President Trump Taps Kirsten Davies as National Cyber Director appeared first on SecurityWeek .",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "The Hacker News",
+      "origine": "int",
+      "titre": "A Single Malicious Webpage Let Researchers Hijack Meta Muse and Access Private Chats",
+      "lien": "https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html",
+      "date": "2026-11-21T11:53:07+00:00",
+      "resume": "A malicious webpage could extract a Meta Muse user's private conversations and stored memories from the assistant without triggering any approval prompt, researchers have shown. The same attack could be extended to reach the credentials Muse stores for the user's connected accounts. The work was a…",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "The Hacker News",
+      "origine": "int",
+      "titre": "GnuPG Warns Critical GPGME Flaw Could Expose App Data via Malicious OpenPGP Keys",
+      "lien": "https://thehackernews.com/2026/11/gnupg-warns-critical-gpgme-flaw-could.html",
+      "date": "2026-11-21T11:05:53+00:00",
+      "resume": "A malicious OpenPGP key with an unusually long user ID can trigger a critical memory bug in GPGME, the standard library that programs use to work with GnuPG. The GnuPG project warned yesterday that the flaw could be used to steal data from affected applications and has released fixed versions. The…",
+      "attaque": false,
+      "cves": [
+        "CVE-2026-129975"
+      ]
+    },
+    {
+      "source": "The Hacker News",
+      "origine": "int",
+      "titre": "Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access",
+      "lien": "https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html",
+      "date": "2026-11-21T11:03:17+00:00",
+      "resume": "Suspected China-linked hackers used autonomous AI agents to find a previously unknown flaw in MONAI Label, an open-source medical imaging server, and gain root access to a university server, Amazon Threat Intelligence said this week. The flaw allows an attacker with no account to write files outsid…",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "The Hacker News",
+      "origine": "int",
+      "titre": "Signal Blocks AI Agents From Reading Private Chats via Screenshots on Android and iOS",
+      "lien": "https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html",
+      "date": "2026-11-21T08:49:20+00:00",
+      "resume": "Signal has announced that it will restrict screenshots by default to stop artificial intelligence (AI) agents from reading private chats on Android and iOS devices, but conceded that the protection is \"incomplete.\" The feature applies to agentic systems built into iOS 27 and on Android versions whe…",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "The Hacker News",
+      "origine": "int",
+      "titre": "Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge",
+      "lien": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html",
+      "date": "2026-11-21T08:49:13+00:00",
+      "resume": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added four flaws impacting Apache Roller, Cisco Expressway, SAP NetWeaver, and Broadcom VMware vCenter to its Known Exploited Vulnerabilities (KEV), citing evidence of active exploitation. The vulnerabilities are listed belo…",
+      "attaque": true,
+      "cves": [
+        "CVE-2026-129448"
+      ]
+    },
+    {
+      "source": "Krebs on Security",
+      "origine": "int",
+      "titre": "CTO of ‘RansomwareHelp’ Indicted for Wire Fraud",
+      "lien": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
+      "date": "2026-11-21T00:36:39+00:00",
+      "resume": "The chief technology officer and co-founder of ransomwarehelp.com, a six year old Florida business that claimed to use \"advanced cryptographic tools\" to restore data locked by ransomware, has been charged with wire fraud after an FBI sting operation found the company was simply paying the attackers…",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "origine": "int",
+      "titre": "Bell Canada says 'agentic' hacker stole enterprise customer data",
+      "lien": "https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/",
+      "date": "2026-11-20T18:51:43+00:00",
+      "resume": "Bell Canada has confirmed that an \"agentic\" threat actor breached its systems on November 17, 2026, and stole enterprise customer data, including information from a system used to order and provision telecommunications circuits. [...]",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "The Hacker News",
+      "origine": "int",
+      "titre": "WhatsApp Patches 3 Security Flaws, Including Android Bug Suspected of Use in Scams",
+      "lien": "https://thehackernews.com/2026/11/whatsapp-patches-3-security-flaws.html",
+      "date": "2026-11-20T17:57:20+00:00",
+      "resume": "Meta-owned WhatsApp has addressed security vulnerabilities, including one impacting its Android app that it suspects may have been exploited in connection with scam messages. The vulnerability, tracked as CVE-2026-23871 (CVSS score: 3.5), has been described as a case of incomplete validation of ext…",
+      "attaque": false,
+      "cves": [
+        "CVE-2026-23871"
+      ]
+    }
+  ],
+  "erreurs": []
+}
