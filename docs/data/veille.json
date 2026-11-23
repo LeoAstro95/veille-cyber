@@ -1,13 +1,13 @@
 {
-  "genere_le": "2026-11-23T17:53:25.468646+00:00",
+  "genere_le": "2026-11-23T22:19:03.397510+00:00",
   "fenetre_jours": 3,
   "stats": {
     "urgentes": 0,
     "alertes_certfr": 0,
     "avis_certfr": 0,
-    "kev": 0,
-    "cve_critiques": 5,
-    "attaques": 34
+    "kev": 2,
+    "cve_critiques": 6,
+    "attaques": 35
   },
   "priorites": [
     {
@@ -87,6 +87,74 @@
       ]
     },
     {
+      "cle": "CVE-2026-134624",
+      "cve": "CVE-2026-134624",
+      "cves": [],
+      "titre": "N-able MailAssure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability",
+      "resume": "N-able MailAssure (SpamExperts) contains a server-side request forgery vulnerability in the LDAP synchronization connection check that allows an authenticated API user to connect to arbitrary internal hosts and ports, determine which are reachable, and send crafted data to internal services.",
+      "editeur": "N-able",
+      "produit": "MailAssure",
+      "score": 40,
+      "raisons": [
+        {
+          "code": "kev",
+          "label": "Exploitée activement"
+        },
+        {
+          "code": "medias",
+          "label": "Citée par 1 média"
+        }
+      ],
+      "cvss": null,
+      "epss": 0.0035,
+      "epss_percentile": 0.2969,
+      "sources": [
+        {
+          "nom": "CISA KEV",
+          "lien": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "nom": "The Hacker News",
+          "lien": "https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-134624",
+      "date": "2026-11-23T12:28:09+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-133968",
+      "cve": "CVE-2026-133968",
+      "cves": [],
+      "titre": "Project MONAI MONAI Label Path Traversal Vulnerability",
+      "resume": "Project MONAI MONAI Label contains a path traversal vulnerability that allows an unauthenticated remote attacker to write arbitrary files outside the intended datastore directory, potentially resulting in remote code execution.",
+      "editeur": "Project MONAI",
+      "produit": "MONAI Label",
+      "score": 36,
+      "raisons": [
+        {
+          "code": "kev",
+          "label": "Exploitée activement"
+        }
+      ],
+      "cvss": null,
+      "epss": 0.0366,
+      "epss_percentile": 0.8992,
+      "sources": [
+        {
+          "nom": "CISA KEV",
+          "lien": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-133968",
+      "date": "2026-11-23T00:00:00+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
       "cle": "CVE-2026-134882",
       "cve": "CVE-2026-134882",
       "cves": [],
@@ -117,31 +185,61 @@
       ]
     },
     {
-      "cle": "CVE-2026-133680",
-      "cve": "CVE-2026-133680",
+      "cle": "CVE-2026-109490",
+      "cve": "CVE-2026-109490",
       "cves": [],
-      "titre": "CVE-2026-133680",
-      "resume": "A vulnerability was found in D-Link DCS-935L 1.10.01. This affects the function loginRouter of the file web/cgi-bin/localrecording/setconf.cgi of the component Local Recording CGI. Performing a manipulation of the argument account/password results in os command injection. Remote exploitation of the…",
+      "titre": "CVE-2026-109490",
+      "resume": "Improper neutralization of input during web page generation ('cross-site scripting') in Authentication Methods Portal Extension allows an unauthorized attacker to elevate privileges over a network.",
       "editeur": null,
       "produit": null,
-      "score": 21,
+      "score": 20,
       "raisons": [
         {
           "code": "cvss",
-          "label": "CVSS 9.9"
+          "label": "CVSS 9.3"
         }
       ],
-      "cvss": 9.9,
-      "epss": 0.0221,
-      "epss_percentile": 0.8309,
+      "cvss": 9.3,
+      "epss": null,
+      "epss_percentile": null,
       "sources": [
         {
           "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-133680"
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-109490"
         }
       ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-133680",
-      "date": "2026-11-20T20:17:35.750000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-109490",
+      "date": "2026-11-23T22:18:30.130000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-109480",
+      "cve": "CVE-2026-109480",
+      "cves": [],
+      "titre": "CVE-2026-109480",
+      "resume": "Server-side request forgery in Profile Data Roaming Service (PDRS) allows an authorized attacker to elevate privileges over a network.",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.6"
+        }
+      ],
+      "cvss": 9.6,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-109480"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-109480",
+      "date": "2026-11-23T22:18:29.133000+00:00",
       "origines": [
         "int"
       ]
@@ -237,40 +335,6 @@
       ]
     },
     {
-      "cle": "CVE-2026-23871",
-      "cve": "CVE-2026-23871",
-      "cves": [],
-      "titre": "WhatsApp Patches 3 Security Flaws, Including Android Bug Suspected of Use in Scams",
-      "resume": "",
-      "editeur": null,
-      "produit": null,
-      "score": 15,
-      "raisons": [
-        {
-          "code": "repandu",
-          "label": "Produit très répandu"
-        },
-        {
-          "code": "medias",
-          "label": "Citée par 1 média"
-        }
-      ],
-      "cvss": null,
-      "epss": 0.0048,
-      "epss_percentile": 0.4223,
-      "sources": [
-        {
-          "nom": "The Hacker News",
-          "lien": "https://thehackernews.com/2026/11/whatsapp-patches-3-security-flaws.html"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-23871",
-      "date": "2026-11-20T17:57:20+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
       "cle": "CVE-2026-134814",
       "cve": "CVE-2026-134814",
       "cves": [],
@@ -296,36 +360,6 @@
       ],
       "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-134814",
       "date": "2026-11-23T13:22:20+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-134624",
-      "cve": "CVE-2026-134624",
-      "cves": [],
-      "titre": "N-able Discloses Critical Mail Assure Vulnerability Found During Breach Investigation",
-      "resume": "",
-      "editeur": null,
-      "produit": null,
-      "score": 5,
-      "raisons": [
-        {
-          "code": "medias",
-          "label": "Citée par 1 média"
-        }
-      ],
-      "cvss": null,
-      "epss": 0.0035,
-      "epss_percentile": 0.2969,
-      "sources": [
-        {
-          "nom": "The Hacker News",
-          "lien": "https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-134624",
-      "date": "2026-11-23T12:28:09+00:00",
       "origines": [
         "int"
       ]
@@ -392,7 +426,34 @@
     }
   ],
   "certfr": [],
-  "kev": [],
+  "kev": [
+    {
+      "source": "CISA KEV",
+      "origine": "int",
+      "cve": "CVE-2026-133968",
+      "titre": "Project MONAI MONAI Label Path Traversal Vulnerability",
+      "editeur": "Project MONAI",
+      "produit": "MONAI Label",
+      "resume": "Project MONAI MONAI Label contains a path traversal vulnerability that allows an unauthenticated remote attacker to write arbitrary files outside the intended datastore directory, potentially resulting in remote code execution.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triag…",
+      "date": "2026-11-23T00:00:00+00:00",
+      "ransomware": false,
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-133968"
+    },
+    {
+      "source": "CISA KEV",
+      "origine": "int",
+      "cve": "CVE-2026-134624",
+      "titre": "N-able MailAssure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability",
+      "editeur": "N-able",
+      "produit": "MailAssure",
+      "resume": "N-able MailAssure (SpamExperts) contains a server-side request forgery vulnerability in the LDAP synchronization connection check that allows an authenticated API user to connect to arbitrary internal hosts and ports, determine which are reachable, and send crafted data to internal services.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triag…",
+      "date": "2026-11-23T00:00:00+00:00",
+      "ransomware": false,
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-134624"
+    }
+  ],
   "nvd": [
     {
       "source": "NVD",
@@ -417,16 +478,6 @@
     {
       "source": "NVD",
       "origine": "int",
-      "cve": "CVE-2026-133680",
-      "resume": "A vulnerability was found in D-Link DCS-935L 1.10.01. This affects the function loginRouter of the file web/cgi-bin/localrecording/setconf.cgi of the component Local Recording CGI. Performing a manipulation of the argument account/password results in os command injection. Remote exploitation of the…",
-      "score": 9.9,
-      "severite": "CRITICAL",
-      "date": "2026-11-20T20:17:35.750000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-133680"
-    },
-    {
-      "source": "NVD",
-      "origine": "int",
       "cve": "CVE-2026-120382",
       "resume": "An improper neutralization of argument delimiters in a command vulnerability in the OAuth API in Synology DiskStation Manager (DSM) before 7.1.1-42962-10, 7.2.1-69057-14, 7.2.2-72806-11, 7.3.2-86009-6, and 7.4.1-90080-2 allows remote attackers to read or write arbitrary files and conduct denial-of-…",
       "score": 9.8,
@@ -443,9 +494,79 @@
       "severite": "CRITICAL",
       "date": "2026-11-23T16:17:38.250000+00:00",
       "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-135208"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-109480",
+      "resume": "Server-side request forgery in Profile Data Roaming Service (PDRS) allows an authorized attacker to elevate privileges over a network.",
+      "score": 9.6,
+      "severite": "CRITICAL",
+      "date": "2026-11-23T22:18:29.133000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-109480"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-109490",
+      "resume": "Improper neutralization of input during web page generation ('cross-site scripting') in Authentication Methods Portal Extension allows an unauthorized attacker to elevate privileges over a network.",
+      "score": 9.3,
+      "severite": "CRITICAL",
+      "date": "2026-11-23T22:18:30.130000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-109490"
     }
   ],
   "presse": [
+    {
+      "source": "BleepingComputer",
+      "origine": "int",
+      "titre": "South Korea’s power giant KEPCO confirms data breach impacting 1.5 million",
+      "lien": "https://www.bleepingcomputer.com/news/security/south-koreas-power-giant-kepco-confirms-data-breach-impacting-15-million/",
+      "date": "2026-11-23T20:54:51+00:00",
+      "resume": "A threat actor breached the internal network of Korea Electric Power Corporation (KEPCO) and accessed two systems containing customer, employee, and contractor data. [...]",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "origine": "int",
+      "titre": "OpenRouter drops AI providers over leaked prompts and secrets",
+      "lien": "https://www.bleepingcomputer.com/news/security/openrouter-drops-ai-providers-over-leaked-prompts-and-secrets/",
+      "date": "2026-11-23T20:00:20+00:00",
+      "resume": "OpenRouter removed three AI providers from its platform after discovering that they had violated their stated data-handling policies and exposed sensitive data. [...]",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "origine": "int",
+      "titre": "Microsoft Azure flaw exploited to steal customers' API credentials",
+      "lien": "https://www.bleepingcomputer.com/news/security/microsoft-azure-flaw-exploited-to-steal-customers-api-credentials/",
+      "date": "2026-11-23T19:42:20+00:00",
+      "resume": "Microsoft is warning customers that a security vulnerability in Azure API Management (APIM) Classic tiers was exploited to steal stored API credentials, with Norwegian authorities linking the flaw to cyberattacks against energy companies. [...]",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "origine": "int",
+      "titre": "Spanish LaLiga confirms hackers stole soccer fans’ personal data",
+      "lien": "https://www.bleepingcomputer.com/news/security/spanish-laliga-confirms-hackers-stole-soccer-fans-personal-data/",
+      "date": "2026-11-23T18:38:40+00:00",
+      "resume": "LaLiga, Spain's top men's football league, disclosed a data breach that exposed personal information belonging to users of its services and those of some affiliated clubs. [...]",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "The Hacker News",
+      "origine": "int",
+      "titre": "Webworm Suspected of Modifying SoftEther VPN to Evade Detection and Hide Remote Access",
+      "lien": "https://thehackernews.com/2026/11/webworm-suspected-of-modifying.html",
+      "date": "2026-11-23T17:45:15+00:00",
+      "resume": "The China-aligned threat actor known as Webworm is suspected to be using a custom version of the open-source SoftEther VPN Bridge tool in an attempt to remove recognizable detection fingerprints, while disguising it as network-monitoring software to establish covert remote access to compromised net…",
+      "attaque": true,
+      "cves": []
+    },
     {
       "source": "BleepingComputer",
       "origine": "int",
@@ -875,26 +996,6 @@
       "cves": []
     },
     {
-      "source": "BleepingComputer",
-      "origine": "int",
-      "titre": "BADBOX botnet returns with record-breaking 40 billion daily ad requests",
-      "lien": "https://www.bleepingcomputer.com/news/security/badbox-30-botnet-returns-with-record-breaking-40-billion-daily-ad-requests/",
-      "date": "2026-11-21T15:17:27+00:00",
-      "resume": "The BADBOX malware found in a broad range of generic Android TV boxes has returned to large-scale ad-fraud operations following last year's disruptions. [...]",
-      "attaque": true,
-      "cves": []
-    },
-    {
-      "source": "BleepingComputer",
-      "origine": "int",
-      "titre": "FBI reportedly hacked again, this time targeting nationwide police database",
-      "lien": "https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/",
-      "date": "2026-11-21T14:26:04+00:00",
-      "resume": "FBI systems have reportedly been breached for the second time in two months, this time targeting the agency's National Crime Information Center (NCIC), which is used to share information between local, state, and federal law enforcement agencies. [...]",
-      "attaque": true,
-      "cves": []
-    },
-    {
       "source": "ZATAZ",
       "origine": "fr",
       "titre": "Cyberattaques : la boîte de Pandora est-elle ouverte avec l’IA ARTEX",
@@ -977,28 +1078,6 @@
       "resume": "The chief technology officer and co-founder of ransomwarehelp.com, a six year old Florida business that claimed to use \"advanced cryptographic tools\" to restore data locked by ransomware, has been charged with wire fraud after an FBI sting operation found the company was simply paying the attackers…",
       "attaque": true,
       "cves": []
-    },
-    {
-      "source": "BleepingComputer",
-      "origine": "int",
-      "titre": "Bell Canada says 'agentic' hacker stole enterprise customer data",
-      "lien": "https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/",
-      "date": "2026-11-20T18:51:43+00:00",
-      "resume": "Bell Canada has confirmed that an \"agentic\" threat actor breached its systems on November 17, 2026, and stole enterprise customer data, including information from a system used to order and provision telecommunications circuits. [...]",
-      "attaque": true,
-      "cves": []
-    },
-    {
-      "source": "The Hacker News",
-      "origine": "int",
-      "titre": "WhatsApp Patches 3 Security Flaws, Including Android Bug Suspected of Use in Scams",
-      "lien": "https://thehackernews.com/2026/11/whatsapp-patches-3-security-flaws.html",
-      "date": "2026-11-20T17:57:20+00:00",
-      "resume": "Meta-owned WhatsApp has addressed security vulnerabilities, including one impacting its Android app that it suspects may have been exploited in connection with scam messages. The vulnerability, tracked as CVE-2026-23871 (CVSS score: 3.5), has been described as a case of incomplete validation of ext…",
-      "attaque": false,
-      "cves": [
-        "CVE-2026-23871"
-      ]
     }
   ],
   "erreurs": []
