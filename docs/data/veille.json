@@ -1,24 +1,24 @@
 {
-  "genere_le": "2026-11-24T03:09:32.727051+00:00",
+  "genere_le": "2026-11-24T17:26:32.098072+00:00",
   "fenetre_jours": 3,
   "stats": {
     "urgentes": 0,
     "alertes_certfr": 0,
-    "avis_certfr": 0,
+    "avis_certfr": 1,
     "kev": 2,
-    "cve_critiques": 14,
+    "cve_critiques": 19,
     "attaques": 34
   },
   "priorites": [
     {
-      "cle": "CVE-2026-129448",
-      "cve": "CVE-2026-129448",
+      "cle": "CVE-2026-133968",
+      "cve": "CVE-2026-133968",
       "cves": [],
-      "titre": "Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge",
-      "resume": "",
-      "editeur": null,
-      "produit": null,
-      "score": 51,
+      "titre": "Project MONAI MONAI Label Path Traversal Vulnerability",
+      "resume": "Project MONAI MONAI Label contains a path traversal vulnerability that allows an unauthenticated remote attacker to write arbitrary files outside the intended datastore directory, potentially resulting in remote code execution.",
+      "editeur": "Project MONAI",
+      "produit": "MONAI Label",
+      "score": 47,
       "raisons": [
         {
           "code": "kev",
@@ -26,11 +26,37 @@
         },
         {
           "code": "epss",
-          "label": "EPSS 5 %"
-        },
+          "label": "EPSS 50 %"
+        }
+      ],
+      "cvss": null,
+      "epss": 0.498,
+      "epss_percentile": 0.9892,
+      "sources": [
         {
-          "code": "repandu",
-          "label": "Produit très répandu"
+          "nom": "CISA KEV",
+          "lien": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-133968",
+      "date": "2026-11-23T00:00:00+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-134624",
+      "cve": "CVE-2026-134624",
+      "cves": [],
+      "titre": "N-able MailAssure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability",
+      "resume": "N-able MailAssure (SpamExperts) contains a server-side request forgery vulnerability in the LDAP synchronization connection check that allows an authenticated API user to connect to arbitrary internal hosts and ports, determine which are reachable, and send crafted data to internal services.",
+      "editeur": "N-able",
+      "produit": "MailAssure",
+      "score": 40,
+      "raisons": [
+        {
+          "code": "kev",
+          "label": "Exploitée activement"
         },
         {
           "code": "medias",
@@ -38,16 +64,20 @@
         }
       ],
       "cvss": null,
-      "epss": 0.0546,
-      "epss_percentile": 0.9294,
+      "epss": 0.0062,
+      "epss_percentile": 0.5029,
       "sources": [
         {
+          "nom": "CISA KEV",
+          "lien": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
           "nom": "The Hacker News",
-          "lien": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html"
+          "lien": "https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html"
         }
       ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-129448",
-      "date": "2026-11-21T08:49:13+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-134624",
+      "date": "2026-11-24T06:02:45+00:00",
       "origines": [
         "int"
       ]
@@ -73,7 +103,7 @@
       ],
       "cvss": null,
       "epss": 0.0117,
-      "epss_percentile": 0.6828,
+      "epss_percentile": 0.6812,
       "sources": [
         {
           "nom": "The Hacker News",
@@ -87,147 +117,11 @@
       ]
     },
     {
-      "cle": "CVE-2026-134624",
-      "cve": "CVE-2026-134624",
+      "cle": "CVE-2026-82322",
+      "cve": "CVE-2026-82322",
       "cves": [],
-      "titre": "N-able MailAssure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability",
-      "resume": "N-able MailAssure (SpamExperts) contains a server-side request forgery vulnerability in the LDAP synchronization connection check that allows an authenticated API user to connect to arbitrary internal hosts and ports, determine which are reachable, and send crafted data to internal services.",
-      "editeur": "N-able",
-      "produit": "MailAssure",
-      "score": 40,
-      "raisons": [
-        {
-          "code": "kev",
-          "label": "Exploitée activement"
-        },
-        {
-          "code": "medias",
-          "label": "Citée par 1 média"
-        }
-      ],
-      "cvss": null,
-      "epss": 0.0035,
-      "epss_percentile": 0.2969,
-      "sources": [
-        {
-          "nom": "CISA KEV",
-          "lien": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "nom": "The Hacker News",
-          "lien": "https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-134624",
-      "date": "2026-11-23T12:28:09+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-133968",
-      "cve": "CVE-2026-133968",
-      "cves": [],
-      "titre": "Project MONAI MONAI Label Path Traversal Vulnerability",
-      "resume": "Project MONAI MONAI Label contains a path traversal vulnerability that allows an unauthenticated remote attacker to write arbitrary files outside the intended datastore directory, potentially resulting in remote code execution.",
-      "editeur": "Project MONAI",
-      "produit": "MONAI Label",
-      "score": 36,
-      "raisons": [
-        {
-          "code": "kev",
-          "label": "Exploitée activement"
-        }
-      ],
-      "cvss": null,
-      "epss": 0.0366,
-      "epss_percentile": 0.8992,
-      "sources": [
-        {
-          "nom": "CISA KEV",
-          "lien": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-133968",
-      "date": "2026-11-23T00:00:00+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-70305",
-      "cve": "CVE-2026-70305",
-      "cves": [],
-      "titre": "CVE-2026-70305",
-      "resume": "Improper neutralization of input during web page generation ('cross-site scripting') in Azure Portal allows an unauthorized attacker to perform spoofing over a network.",
-      "editeur": null,
-      "produit": null,
-      "score": 30,
-      "raisons": [
-        {
-          "code": "cvss",
-          "label": "CVSS 9.6"
-        },
-        {
-          "code": "repandu",
-          "label": "Produit très répandu"
-        }
-      ],
-      "cvss": 9.6,
-      "epss": null,
-      "epss_percentile": null,
-      "sources": [
-        {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-70305"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-70305",
-      "date": "2026-11-23T22:22:50.890000+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-70193",
-      "cve": "CVE-2026-70193",
-      "cves": [],
-      "titre": "CVE-2026-70193",
-      "resume": "Improper limitation of a pathname to a restricted directory ('path traversal') in Microsoft Office SharePoint allows an authorized attacker to execute code over a network.",
-      "editeur": null,
-      "produit": null,
-      "score": 30,
-      "raisons": [
-        {
-          "code": "cvss",
-          "label": "CVSS 9.9"
-        },
-        {
-          "code": "repandu",
-          "label": "Produit très répandu"
-        }
-      ],
-      "cvss": 9.9,
-      "epss": null,
-      "epss_percentile": null,
-      "sources": [
-        {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-70193"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-70193",
-      "date": "2026-11-23T22:22:36.660000+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-69899",
-      "cve": "CVE-2026-69899",
-      "cves": [],
-      "titre": "CVE-2026-69899",
-      "resume": "Authentication bypass by spoofing in Azure DevTest Labs allows an unauthorized attacker to perform spoofing over a network.",
+      "titre": "CVE-2026-82322",
+      "resume": "SolarWinds Serv-U is affected by an Insecure Direct Object Reference (IDOR) vulnerability that allows a domain group administrator to bypass restrictions and escalate privileges to the server administrator level. The risk is lower for Windows installations.",
       "editeur": null,
       "produit": null,
       "score": 30,
@@ -247,55 +141,21 @@
       "sources": [
         {
           "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-69899"
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-82322"
         }
       ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-69899",
-      "date": "2026-11-23T22:22:11.980000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-82322",
+      "date": "2026-11-24T17:18:54.850000+00:00",
       "origines": [
         "int"
       ]
     },
     {
-      "cle": "CVE-2026-62841",
-      "cve": "CVE-2026-62841",
+      "cle": "CVE-2026-82321",
+      "cve": "CVE-2026-82321",
       "cves": [],
-      "titre": "CVE-2026-62841",
-      "resume": "Improper authentication in Azure Event Grid allows an unauthorized attacker to elevate privileges over a network.",
-      "editeur": null,
-      "produit": null,
-      "score": 30,
-      "raisons": [
-        {
-          "code": "cvss",
-          "label": "CVSS 10.0"
-        },
-        {
-          "code": "repandu",
-          "label": "Produit très répandu"
-        }
-      ],
-      "cvss": 10.0,
-      "epss": null,
-      "epss_percentile": null,
-      "sources": [
-        {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-62841"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-62841",
-      "date": "2026-11-23T22:20:39.293000+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-118286",
-      "cve": "CVE-2026-118286",
-      "cves": [],
-      "titre": "CVE-2026-118286",
-      "resume": "Improper access control in Azure Site Recovery allows an unauthorized attacker to elevate privileges over a network.",
+      "titre": "CVE-2026-82321",
+      "resume": "SolarWinds Serv-U was found to be affected by a type confusion vulnerability that may allow domain administrators to escalate privileges to that of a system administrator. The risk is lower for Windows installations.",
       "editeur": null,
       "produit": null,
       "score": 30,
@@ -315,55 +175,21 @@
       "sources": [
         {
           "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-118286"
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-82321"
         }
       ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-118286",
-      "date": "2026-11-23T22:19:30.903000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-82321",
+      "date": "2026-11-24T17:18:54.720000+00:00",
       "origines": [
         "int"
       ]
     },
     {
-      "cle": "CVE-2026-118285",
-      "cve": "CVE-2026-118285",
+      "cle": "CVE-2026-82320",
+      "cve": "CVE-2026-82320",
       "cves": [],
-      "titre": "CVE-2026-118285",
-      "resume": "Server-side request forgery in Azure Machine Learning allows an authorized attacker to elevate privileges over a network.",
-      "editeur": null,
-      "produit": null,
-      "score": 30,
-      "raisons": [
-        {
-          "code": "cvss",
-          "label": "CVSS 9.6"
-        },
-        {
-          "code": "repandu",
-          "label": "Produit très répandu"
-        }
-      ],
-      "cvss": 9.6,
-      "epss": null,
-      "epss_percentile": null,
-      "sources": [
-        {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-118285"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-118285",
-      "date": "2026-11-23T22:19:30.710000+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-113824",
-      "cve": "CVE-2026-113824",
-      "cves": [],
-      "titre": "CVE-2026-113824",
-      "resume": "Authorization bypass through user-controlled key in Microsoft Clarity allows an unauthorized attacker to elevate privileges over a network.",
+      "titre": "CVE-2026-82320",
+      "resume": "SolarWinds Serv-U was found to be affected by another type confusion vulnerability that may allow domain administrators to escalate privileges to that of a system administrator. The risk is lower for Windows installations.",
       "editeur": null,
       "produit": null,
       "score": 30,
@@ -383,11 +209,181 @@
       "sources": [
         {
           "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-113824"
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-82320"
         }
       ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-113824",
-      "date": "2026-11-23T22:19:04.970000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-82320",
+      "date": "2026-11-24T17:18:54.587000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-82316",
+      "cve": "CVE-2026-82316",
+      "cves": [],
+      "titre": "CVE-2026-82316",
+      "resume": "SolarWinds Serv-U is affected by a Time-of-Check to Time-of-Use (TOCTOU) vulnerability. A user with domain administrator or higher privileges may be able to access or modify protected files outside the intended directory, potentially leading to code execution. The risk is lower in Windows installat…",
+      "editeur": null,
+      "produit": null,
+      "score": 30,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.1"
+        },
+        {
+          "code": "repandu",
+          "label": "Produit très répandu"
+        }
+      ],
+      "cvss": 9.1,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-82316"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-82316",
+      "date": "2026-11-24T17:18:54.193000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-82315",
+      "cve": "CVE-2026-82315",
+      "cves": [],
+      "titre": "CVE-2026-82315",
+      "resume": "SolarWinds Serv-U is affected by another Time-of-Check to Time-of-Use (TOCTOU) vulnerability. A user with domain administrator or higher privileges may be able to access or modify protected files outside the intended directory, potentially leading to code execution. The risk is lower in Windows ins…",
+      "editeur": null,
+      "produit": null,
+      "score": 30,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.1"
+        },
+        {
+          "code": "repandu",
+          "label": "Produit très répandu"
+        }
+      ],
+      "cvss": 9.1,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-82315"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-82315",
+      "date": "2026-11-24T17:18:54.047000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-123172",
+      "cve": "CVE-2026-123172",
+      "cves": [],
+      "titre": "CVE-2026-123172",
+      "resume": "Solarwinds Serv-U is affected by a privilege escalation vulnerability that, when exploited, could lead to the escalation of privileges to root for Linux installations. The risk is lower for Windows installations.",
+      "editeur": null,
+      "produit": null,
+      "score": 30,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.1"
+        },
+        {
+          "code": "repandu",
+          "label": "Produit très répandu"
+        }
+      ],
+      "cvss": 9.1,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-123172"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-123172",
+      "date": "2026-11-24T17:18:13.933000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-123168",
+      "cve": "CVE-2026-123168",
+      "cves": [],
+      "titre": "CVE-2026-123168",
+      "resume": "SolarWinds Serv-U is affected by an insufficient validation vulnerability that, when exploited, could lead to privilege escalation into the root user in Linux installations. The risk is lower for Windows installations.",
+      "editeur": null,
+      "produit": null,
+      "score": 30,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.1"
+        },
+        {
+          "code": "repandu",
+          "label": "Produit très répandu"
+        }
+      ],
+      "cvss": 9.1,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-123168"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-123168",
+      "date": "2026-11-24T17:18:13.427000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-123167",
+      "cve": "CVE-2026-123167",
+      "cves": [],
+      "titre": "CVE-2026-123167",
+      "resume": "SolarWinds Serv-U is affected by a privilege escalation vulnerability that, when exploited, can allow a domain administrator to access files that otherwise would require elevated privileges. The risk is lower for Windows installations.",
+      "editeur": null,
+      "produit": null,
+      "score": 30,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.1"
+        },
+        {
+          "code": "repandu",
+          "label": "Produit très répandu"
+        }
+      ],
+      "cvss": 9.1,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-123167"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-123167",
+      "date": "2026-11-24T17:18:13.293000+00:00",
       "origines": [
         "int"
       ]
@@ -409,7 +405,7 @@
       ],
       "cvss": 10.0,
       "epss": 0.0252,
-      "epss_percentile": 0.8527,
+      "epss_percentile": 0.8517,
       "sources": [
         {
           "nom": "NVD",
@@ -423,71 +419,41 @@
       ]
     },
     {
-      "cle": "CVE-2026-50691",
-      "cve": "CVE-2026-50691",
+      "cle": "CVE-2026-82319",
+      "cve": "CVE-2026-82319",
       "cves": [],
-      "titre": "CVE-2026-50691",
-      "resume": "Improper authorization in M365 Copilot allows an authorized attacker to elevate privileges over a network.",
+      "titre": "CVE-2026-82319",
+      "resume": "SolarWinds Serv-U is affected by a time-of-check to time-of-use (TOCTOU) vulnerability. A user with domain administrator or higher privileges may allow a user to modify protected files outside their home directory. The issue can result in read and write access to the application files and privilege…",
       "editeur": null,
       "produit": null,
       "score": 20,
       "raisons": [
         {
           "code": "cvss",
-          "label": "CVSS 9.9"
+          "label": "CVSS 9.1"
         }
       ],
-      "cvss": 9.9,
+      "cvss": 9.1,
       "epss": null,
       "epss_percentile": null,
       "sources": [
         {
           "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-50691"
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-82319"
         }
       ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-50691",
-      "date": "2026-11-23T22:20:16.553000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-82319",
+      "date": "2026-11-24T17:18:54.453000+00:00",
       "origines": [
         "int"
       ]
     },
     {
-      "cle": "CVE-2026-109490",
-      "cve": "CVE-2026-109490",
+      "cle": "CVE-2026-136184",
+      "cve": "CVE-2026-136184",
       "cves": [],
-      "titre": "CVE-2026-109490",
-      "resume": "Improper neutralization of input during web page generation ('cross-site scripting') in Authentication Methods Portal Extension allows an unauthorized attacker to elevate privileges over a network.",
-      "editeur": null,
-      "produit": null,
-      "score": 20,
-      "raisons": [
-        {
-          "code": "cvss",
-          "label": "CVSS 9.3"
-        }
-      ],
-      "cvss": 9.3,
-      "epss": null,
-      "epss_percentile": null,
-      "sources": [
-        {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-109490"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-109490",
-      "date": "2026-11-23T22:18:30.130000+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-109480",
-      "cve": "CVE-2026-109480",
-      "cves": [],
-      "titre": "CVE-2026-109480",
-      "resume": "Server-side request forgery in Profile Data Roaming Service (PDRS) allows an authorized attacker to elevate privileges over a network.",
+      "titre": "CVE-2026-136184",
+      "resume": "compose-farm 0.19.0 before 1.22.0 contains a cross-site WebSocket hijacking and cross-site request forgery vulnerability because its unauthenticated web UI performs no Origin validation. Malicious websites visited by users can open /ws/shell/{host} or /ws/exec sockets, or abuse unquoted service par…",
       "editeur": null,
       "produit": null,
       "score": 20,
@@ -503,11 +469,161 @@
       "sources": [
         {
           "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-109480"
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136184"
         }
       ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-109480",
-      "date": "2026-11-23T22:18:29.133000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136184",
+      "date": "2026-11-24T17:18:46.180000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-135790",
+      "cve": "CVE-2026-135790",
+      "cves": [],
+      "titre": "CVE-2026-135790",
+      "resume": "A vulnerability was detected in Panabit Smart Application Gateway TANGr7p10. This affects an unknown part of the file /cgi-bin/dashboard/ajax_chart_dump. The manipulation of the argument isntmeye results in os command injection. The attack can be launched remotely. The exploit is now public and may…",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.9"
+        }
+      ],
+      "cvss": 9.9,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-135790"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-135790",
+      "date": "2026-11-24T17:18:43.717000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-135789",
+      "cve": "CVE-2026-135789",
+      "cves": [],
+      "titre": "CVE-2026-135789",
+      "resume": "A security vulnerability has been detected in D-Link R95 101B06. Affected by this issue is the function GetBluetoothAdapterSettings/GetBluetoothBloodPressure/GetBluetoothDeviceList/GetBluetoothScanDeviceList/SetBluetoothAdapterSettings/SetBluetoothUnpairDevice/SetTriggerBluetoothScan/SetBluetoothPa…",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.1"
+        }
+      ],
+      "cvss": 9.1,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-135789"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-135789",
+      "date": "2026-11-24T17:18:43.480000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-135788",
+      "cve": "CVE-2026-135788",
+      "cves": [],
+      "titre": "CVE-2026-135788",
+      "resume": "A weakness has been identified in D-Link DIR-X1860 4.5.2. Affected by this vulnerability is an unknown functionality of the file /usr/sbin/anweb. Executing a manipulation can lead to os command injection. It is possible to launch the attack remotely. The exploit has been made available to the publi…",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.9"
+        }
+      ],
+      "cvss": 9.9,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-135788"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-135788",
+      "date": "2026-11-24T17:18:43.250000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-119582",
+      "cve": "CVE-2026-119582",
+      "cves": [],
+      "titre": "CVE-2026-119582",
+      "resume": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in ITG Bilgisayar Teknoloji Grubu Tic. Ltd. Şti. VSRM allows SQL Injection. This issue affects vSRM: from v14.08.3 before v14.08.5.",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.8"
+        }
+      ],
+      "cvss": 9.8,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-119582"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-119582",
+      "date": "2026-11-24T12:17:17.617000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-117593",
+      "cve": "CVE-2026-117593",
+      "cves": [],
+      "titre": "CVE-2026-117593",
+      "resume": "Weak Password Recovery Mechanism for Forgotten Password vulnerability in ITG Bilgisayar Teknoloji Grubu Tic. Ltd. Şti. VSRM allows Password Recovery Exploitation. This issue affects vSRM: from v14.08.3 before v14.08.5.",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.1"
+        }
+      ],
+      "cvss": 9.1,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-117593"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-117593",
+      "date": "2026-11-24T12:17:17.343000+00:00",
       "origines": [
         "int"
       ]
@@ -528,8 +644,8 @@
         }
       ],
       "cvss": 9.8,
-      "epss": null,
-      "epss_percentile": null,
+      "epss": 0.0056,
+      "epss_percentile": 0.4712,
       "sources": [
         {
           "nom": "NVD",
@@ -538,36 +654,6 @@
       ],
       "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-135208",
       "date": "2026-11-23T16:17:38.250000+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-120382",
-      "cve": "CVE-2026-120382",
-      "cves": [],
-      "titre": "CVE-2026-120382",
-      "resume": "An improper neutralization of argument delimiters in a command vulnerability in the OAuth API in Synology DiskStation Manager (DSM) before 7.1.1-42962-10, 7.2.1-69057-14, 7.2.2-72806-11, 7.3.2-86009-6, and 7.4.1-90080-2 allows remote attackers to read or write arbitrary files and conduct denial-of-…",
-      "editeur": null,
-      "produit": null,
-      "score": 20,
-      "raisons": [
-        {
-          "code": "cvss",
-          "label": "CVSS 9.8"
-        }
-      ],
-      "cvss": 9.8,
-      "epss": 0.0121,
-      "epss_percentile": 0.693,
-      "sources": [
-        {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-120382"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-120382",
-      "date": "2026-11-23T08:17:14.183000+00:00",
       "origines": [
         "int"
       ]
@@ -589,7 +675,7 @@
       ],
       "cvss": 10.0,
       "epss": 0.0105,
-      "epss_percentile": 0.6519,
+      "epss_percentile": 0.6502,
       "sources": [
         {
           "nom": "NVD",
@@ -598,6 +684,138 @@
       ],
       "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-133993",
       "date": "2026-11-21T18:16:54.277000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-123903",
+      "cve": "CVE-2026-123903",
+      "cves": [],
+      "titre": "VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation",
+      "resume": "",
+      "editeur": null,
+      "produit": null,
+      "score": 15,
+      "raisons": [
+        {
+          "code": "repandu",
+          "label": "Produit très répandu"
+        },
+        {
+          "code": "medias",
+          "label": "Citée par 1 média"
+        }
+      ],
+      "cvss": null,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "The Hacker News",
+          "lien": "https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-123903",
+      "date": "2026-11-24T13:28:26+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-87268",
+      "cve": "CVE-2026-87268",
+      "cves": [],
+      "titre": "Google Researcher Shows How a Single Bit Change in .NET Files Bypassed Windows Code Integrity",
+      "resume": "",
+      "editeur": null,
+      "produit": null,
+      "score": 15,
+      "raisons": [
+        {
+          "code": "repandu",
+          "label": "Produit très répandu"
+        },
+        {
+          "code": "medias",
+          "label": "Citée par 1 média"
+        }
+      ],
+      "cvss": null,
+      "epss": 0.0016,
+      "epss_percentile": 0.0518,
+      "sources": [
+        {
+          "nom": "The Hacker News",
+          "lien": "https://thehackernews.com/2026/11/google-researcher-shows-how-single-bit.html"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-87268",
+      "date": "2026-11-24T12:02:00+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-134401",
+      "cve": "CVE-2026-134401",
+      "cves": [],
+      "titre": "Google Chrome : une seule faille corrigée, mais elle est critique (CVE-2026-134401)",
+      "resume": "",
+      "editeur": null,
+      "produit": null,
+      "score": 15,
+      "raisons": [
+        {
+          "code": "repandu",
+          "label": "Produit très répandu"
+        },
+        {
+          "code": "medias",
+          "label": "Citée par 1 média"
+        }
+      ],
+      "cvss": null,
+      "epss": 0.0041,
+      "epss_percentile": 0.3562,
+      "sources": [
+        {
+          "nom": "IT-Connect",
+          "lien": "https://www.it-connect.fr/cve-2026-134401-faille-critique-chrome/"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-134401",
+      "date": "2026-11-24T10:33:39+00:00",
+      "origines": [
+        "fr"
+      ]
+    },
+    {
+      "cle": "CVE-2026-135736",
+      "cve": "CVE-2026-135736",
+      "cves": [],
+      "titre": "CVE-2026-135736",
+      "resume": "FFmpeg 4.4 before 9.1 contains a heap out-of-bounds read and write vulnerability in libavfilter/vf_deband.c that allows attackers to corrupt heap memory by sending a runtime coupling command. Attackers can send a 'deband coupling 1' command via sendcmd or an unauthenticated zmq filter, making chrom…",
+      "editeur": null,
+      "produit": null,
+      "score": 12,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 8.1"
+        }
+      ],
+      "cvss": 8.1,
+      "epss": 0.0068,
+      "epss_percentile": 0.5318,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-135736"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-135736",
+      "date": "2026-11-24T04:17:32.500000+00:00",
       "origines": [
         "int"
       ]
@@ -619,7 +837,7 @@
       ],
       "cvss": null,
       "epss": 0.0061,
-      "epss_percentile": 0.5008,
+      "epss_percentile": 0.4986,
       "sources": [
         {
           "nom": "The Hacker News",
@@ -649,7 +867,7 @@
       ],
       "cvss": null,
       "epss": 0.0061,
-      "epss_percentile": 0.5037,
+      "epss_percentile": 0.5015,
       "sources": [
         {
           "nom": "The Hacker News",
@@ -661,39 +879,20 @@
       "origines": [
         "int"
       ]
-    },
-    {
-      "cle": "CVE-2026-129975",
-      "cve": "CVE-2026-129975",
-      "cves": [],
-      "titre": "GnuPG Warns Critical GPGME Flaw Could Expose App Data via Malicious OpenPGP Keys",
-      "resume": "",
-      "editeur": null,
-      "produit": null,
-      "score": 5,
-      "raisons": [
-        {
-          "code": "medias",
-          "label": "Citée par 1 média"
-        }
-      ],
-      "cvss": null,
-      "epss": null,
-      "epss_percentile": null,
-      "sources": [
-        {
-          "nom": "The Hacker News",
-          "lien": "https://thehackernews.com/2026/11/gnupg-warns-critical-gpgme-flaw-could.html"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-129975",
-      "date": "2026-11-21T11:05:53+00:00",
-      "origines": [
-        "int"
-      ]
     }
   ],
-  "certfr": [],
+  "certfr": [
+    {
+      "source": "CERT-FR",
+      "origine": "fr",
+      "categorie": "avis",
+      "titre": "Multiples vulnérabilités dans SPIP (23 novembre 2026)",
+      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1599/",
+      "date": "2026-11-23T00:00:00+00:00",
+      "resume": "De multiples vulnérabilités ont été découvertes dans SPIP. Elles permettent à un attaquant de provoquer une injection de code indirecte à distance (XSS) et une injection de requêtes illégitimes par rebond (CSRF).",
+      "cves": []
+    }
+  ],
   "kev": [
     {
       "source": "CISA KEV",
@@ -746,42 +945,22 @@
     {
       "source": "NVD",
       "origine": "int",
-      "cve": "CVE-2026-62841",
-      "resume": "Improper authentication in Azure Event Grid allows an unauthorized attacker to elevate privileges over a network.",
-      "score": 10.0,
-      "severite": "CRITICAL",
-      "date": "2026-11-23T22:20:39.293000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-62841"
-    },
-    {
-      "source": "NVD",
-      "origine": "int",
-      "cve": "CVE-2026-50691",
-      "resume": "Improper authorization in M365 Copilot allows an authorized attacker to elevate privileges over a network.",
+      "cve": "CVE-2026-135788",
+      "resume": "A weakness has been identified in D-Link DIR-X1860 4.5.2. Affected by this vulnerability is an unknown functionality of the file /usr/sbin/anweb. Executing a manipulation can lead to os command injection. It is possible to launch the attack remotely. The exploit has been made available to the publi…",
       "score": 9.9,
       "severite": "CRITICAL",
-      "date": "2026-11-23T22:20:16.553000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-50691"
+      "date": "2026-11-24T17:18:43.250000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-135788"
     },
     {
       "source": "NVD",
       "origine": "int",
-      "cve": "CVE-2026-70193",
-      "resume": "Improper limitation of a pathname to a restricted directory ('path traversal') in Microsoft Office SharePoint allows an authorized attacker to execute code over a network.",
+      "cve": "CVE-2026-135790",
+      "resume": "A vulnerability was detected in Panabit Smart Application Gateway TANGr7p10. This affects an unknown part of the file /cgi-bin/dashboard/ajax_chart_dump. The manipulation of the argument isntmeye results in os command injection. The attack can be launched remotely. The exploit is now public and may…",
       "score": 9.9,
       "severite": "CRITICAL",
-      "date": "2026-11-23T22:22:36.660000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-70193"
-    },
-    {
-      "source": "NVD",
-      "origine": "int",
-      "cve": "CVE-2026-120382",
-      "resume": "An improper neutralization of argument delimiters in a command vulnerability in the OAuth API in Synology DiskStation Manager (DSM) before 7.1.1-42962-10, 7.2.1-69057-14, 7.2.2-72806-11, 7.3.2-86009-6, and 7.4.1-90080-2 allows remote attackers to read or write arbitrary files and conduct denial-of-…",
-      "score": 9.8,
-      "severite": "CRITICAL",
-      "date": "2026-11-23T08:17:14.183000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-120382"
+      "date": "2026-11-24T17:18:43.717000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-135790"
     },
     {
       "source": "NVD",
@@ -796,75 +975,443 @@
     {
       "source": "NVD",
       "origine": "int",
-      "cve": "CVE-2026-109480",
-      "resume": "Server-side request forgery in Profile Data Roaming Service (PDRS) allows an authorized attacker to elevate privileges over a network.",
+      "cve": "CVE-2026-119582",
+      "resume": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in ITG Bilgisayar Teknoloji Grubu Tic. Ltd. Şti. VSRM allows SQL Injection. This issue affects vSRM: from v14.08.3 before v14.08.5.",
+      "score": 9.8,
+      "severite": "CRITICAL",
+      "date": "2026-11-24T12:17:17.617000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-119582"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-136184",
+      "resume": "compose-farm 0.19.0 before 1.22.0 contains a cross-site WebSocket hijacking and cross-site request forgery vulnerability because its unauthenticated web UI performs no Origin validation. Malicious websites visited by users can open /ws/shell/{host} or /ws/exec sockets, or abuse unquoted service par…",
       "score": 9.6,
       "severite": "CRITICAL",
-      "date": "2026-11-23T22:18:29.133000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-109480"
+      "date": "2026-11-24T17:18:46.180000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136184"
     },
     {
       "source": "NVD",
       "origine": "int",
-      "cve": "CVE-2026-118285",
-      "resume": "Server-side request forgery in Azure Machine Learning allows an authorized attacker to elevate privileges over a network.",
-      "score": 9.6,
-      "severite": "CRITICAL",
-      "date": "2026-11-23T22:19:30.710000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-118285"
-    },
-    {
-      "source": "NVD",
-      "origine": "int",
-      "cve": "CVE-2026-70305",
-      "resume": "Improper neutralization of input during web page generation ('cross-site scripting') in Azure Portal allows an unauthorized attacker to perform spoofing over a network.",
-      "score": 9.6,
-      "severite": "CRITICAL",
-      "date": "2026-11-23T22:22:50.890000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-70305"
-    },
-    {
-      "source": "NVD",
-      "origine": "int",
-      "cve": "CVE-2026-109490",
-      "resume": "Improper neutralization of input during web page generation ('cross-site scripting') in Authentication Methods Portal Extension allows an unauthorized attacker to elevate privileges over a network.",
-      "score": 9.3,
-      "severite": "CRITICAL",
-      "date": "2026-11-23T22:18:30.130000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-109490"
-    },
-    {
-      "source": "NVD",
-      "origine": "int",
-      "cve": "CVE-2026-113824",
-      "resume": "Authorization bypass through user-controlled key in Microsoft Clarity allows an unauthorized attacker to elevate privileges over a network.",
+      "cve": "CVE-2026-117593",
+      "resume": "Weak Password Recovery Mechanism for Forgotten Password vulnerability in ITG Bilgisayar Teknoloji Grubu Tic. Ltd. Şti. VSRM allows Password Recovery Exploitation. This issue affects vSRM: from v14.08.3 before v14.08.5.",
       "score": 9.1,
       "severite": "CRITICAL",
-      "date": "2026-11-23T22:19:04.970000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-113824"
+      "date": "2026-11-24T12:17:17.343000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-117593"
     },
     {
       "source": "NVD",
       "origine": "int",
-      "cve": "CVE-2026-118286",
-      "resume": "Improper access control in Azure Site Recovery allows an unauthorized attacker to elevate privileges over a network.",
+      "cve": "CVE-2026-123167",
+      "resume": "SolarWinds Serv-U is affected by a privilege escalation vulnerability that, when exploited, can allow a domain administrator to access files that otherwise would require elevated privileges. The risk is lower for Windows installations.",
       "score": 9.1,
       "severite": "CRITICAL",
-      "date": "2026-11-23T22:19:30.903000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-118286"
+      "date": "2026-11-24T17:18:13.293000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-123167"
     },
     {
       "source": "NVD",
       "origine": "int",
-      "cve": "CVE-2026-69899",
-      "resume": "Authentication bypass by spoofing in Azure DevTest Labs allows an unauthorized attacker to perform spoofing over a network.",
+      "cve": "CVE-2026-123168",
+      "resume": "SolarWinds Serv-U is affected by an insufficient validation vulnerability that, when exploited, could lead to privilege escalation into the root user in Linux installations. The risk is lower for Windows installations.",
       "score": 9.1,
       "severite": "CRITICAL",
-      "date": "2026-11-23T22:22:11.980000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-69899"
+      "date": "2026-11-24T17:18:13.427000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-123168"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-123172",
+      "resume": "Solarwinds Serv-U is affected by a privilege escalation vulnerability that, when exploited, could lead to the escalation of privileges to root for Linux installations. The risk is lower for Windows installations.",
+      "score": 9.1,
+      "severite": "CRITICAL",
+      "date": "2026-11-24T17:18:13.933000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-123172"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-135789",
+      "resume": "A security vulnerability has been detected in D-Link R95 101B06. Affected by this issue is the function GetBluetoothAdapterSettings/GetBluetoothBloodPressure/GetBluetoothDeviceList/GetBluetoothScanDeviceList/SetBluetoothAdapterSettings/SetBluetoothUnpairDevice/SetTriggerBluetoothScan/SetBluetoothPa…",
+      "score": 9.1,
+      "severite": "CRITICAL",
+      "date": "2026-11-24T17:18:43.480000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-135789"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-82315",
+      "resume": "SolarWinds Serv-U is affected by another Time-of-Check to Time-of-Use (TOCTOU) vulnerability. A user with domain administrator or higher privileges may be able to access or modify protected files outside the intended directory, potentially leading to code execution. The risk is lower in Windows ins…",
+      "score": 9.1,
+      "severite": "CRITICAL",
+      "date": "2026-11-24T17:18:54.047000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-82315"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-82316",
+      "resume": "SolarWinds Serv-U is affected by a Time-of-Check to Time-of-Use (TOCTOU) vulnerability. A user with domain administrator or higher privileges may be able to access or modify protected files outside the intended directory, potentially leading to code execution. The risk is lower in Windows installat…",
+      "score": 9.1,
+      "severite": "CRITICAL",
+      "date": "2026-11-24T17:18:54.193000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-82316"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-82319",
+      "resume": "SolarWinds Serv-U is affected by a time-of-check to time-of-use (TOCTOU) vulnerability. A user with domain administrator or higher privileges may allow a user to modify protected files outside their home directory. The issue can result in read and write access to the application files and privilege…",
+      "score": 9.1,
+      "severite": "CRITICAL",
+      "date": "2026-11-24T17:18:54.453000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-82319"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-82320",
+      "resume": "SolarWinds Serv-U was found to be affected by another type confusion vulnerability that may allow domain administrators to escalate privileges to that of a system administrator. The risk is lower for Windows installations.",
+      "score": 9.1,
+      "severite": "CRITICAL",
+      "date": "2026-11-24T17:18:54.587000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-82320"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-82321",
+      "resume": "SolarWinds Serv-U was found to be affected by a type confusion vulnerability that may allow domain administrators to escalate privileges to that of a system administrator. The risk is lower for Windows installations.",
+      "score": 9.1,
+      "severite": "CRITICAL",
+      "date": "2026-11-24T17:18:54.720000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-82321"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-82322",
+      "resume": "SolarWinds Serv-U is affected by an Insecure Direct Object Reference (IDOR) vulnerability that allows a domain group administrator to bypass restrictions and escalate privileges to the server administrator level. The risk is lower for Windows installations.",
+      "score": 9.1,
+      "severite": "CRITICAL",
+      "date": "2026-11-24T17:18:54.850000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-82322"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-135736",
+      "resume": "FFmpeg 4.4 before 9.1 contains a heap out-of-bounds read and write vulnerability in libavfilter/vf_deband.c that allows attackers to corrupt heap memory by sending a runtime coupling command. Attackers can send a 'deband coupling 1' command via sendcmd or an unauthenticated zmq filter, making chrom…",
+      "score": 8.1,
+      "severite": "HIGH",
+      "date": "2026-11-24T04:17:32.500000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-135736"
     }
   ],
   "presse": [
+    {
+      "source": "SecurityWeek",
+      "origine": "int",
+      "titre": "VMware Updates Patch Critical ESX, vCenter Vulnerabilities",
+      "lien": "https://www.securityweek.com/vmware-updates-patch-critical-esx-vcenter-vulnerabilities/",
+      "date": "2026-11-24T16:32:56+00:00",
+      "resume": "The critical bugs include an authentication bypass in vCenter and flaws that could allow code execution on ESX hosts. The post VMware Updates Patch Critical ESX, vCenter Vulnerabilities appeared first on SecurityWeek .",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "origine": "int",
+      "titre": "ShinyHunters claims to return after FBI arrests, uses old PGP keys as proof",
+      "lien": "https://www.bleepingcomputer.com/news/security/shinyhunters-resurfaces-after-fbi-arrests-uses-old-pgp-keys-as-proof/",
+      "date": "2026-11-24T16:30:19+00:00",
+      "resume": "The ShinyHunters extortion gang claims to have returned in posts on a new data leak site after a series of arrests over the past two months targeting alleged members. [...]",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "origine": "int",
+      "titre": "European Commission confirms data theft in EU Academy breach",
+      "lien": "https://www.bleepingcomputer.com/news/security/european-commission-confirms-data-theft-in-eu-academy-breach/",
+      "date": "2026-11-24T16:22:44+00:00",
+      "resume": "The European Commission, the European Union's main executive body, has confirmed that attackers breached its EU Academy online learning hub and stole the personal data of an undisclosed number of users. [...]",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "origine": "int",
+      "titre": "Hackers compromise Check Point Servers in 22 organizations",
+      "lien": "https://www.bleepingcomputer.com/news/security/hackers-compromise-check-point-servers-in-22-organizations/",
+      "date": "2026-11-24T16:15:23+00:00",
+      "resume": "Threat actors have exploited multiple vulnerabilities to compromise two dozen Check Point Security management servers in an ongoing campaign targeting 22 organizations. [...]",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "origine": "int",
+      "titre": "Police disrupt 57 illegal streaming services with 7.3 million visits",
+      "lien": "https://www.bleepingcomputer.com/news/security/police-disrupt-57-illegal-streaming-services-with-73-million-visits/",
+      "date": "2026-11-24T15:10:10+00:00",
+      "resume": "Law enforcement authorities from 11 countries have disrupted 57 illegal streaming services that operated hundreds of websites and drew over 7.3 million visits each year. [...]",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "origine": "int",
+      "titre": "From Vulnerability Noise to Resilience: Rethinking Security in the AI Era",
+      "lien": "https://www.bleepingcomputer.com/news/security/from-vulnerability-noise-to-resilience-rethinking-security-in-the-ai-era/",
+      "date": "2026-11-24T15:01:11+00:00",
+      "resume": "AI-driven development is adding complexity to software supply chains, leaving security teams overwhelmed by vulnerabilities that may pose little actual risk. RapidFort explains how runtime visibility, container hardening, and automated remediation can reduce vulnerability noise and improve software…",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "SecurityWeek",
+      "origine": "int",
+      "titre": "European Commission Uncovers Data Breach in Cyberattack Investigation",
+      "lien": "https://www.securityweek.com/european-commission-uncovers-data-breach-in-cyberattack-investigation/",
+      "date": "2026-11-24T14:49:59+00:00",
+      "resume": "Names and email addresses of EU Academy users were exposed in the AI-assisted cyberattack the European Commission detected in October. The post European Commission Uncovers Data Breach in Cyberattack Investigation appeared first on SecurityWeek .",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "SecurityWeek",
+      "origine": "int",
+      "titre": "Check Point Security Management Servers Hacked in AI-Assisted Campaign",
+      "lien": "https://www.securityweek.com/check-point-security-management-servers-hacked-in-ai-assisted-campaign/",
+      "date": "2026-11-24T14:21:56+00:00",
+      "resume": "The attacks were launched from 99 IP addresses and targeted organizations across multiple industries and countries. The post Check Point Security Management Servers Hacked in AI-Assisted Campaign appeared first on SecurityWeek .",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "origine": "int",
+      "titre": "McDonald's Japan data breach exposes customer location information",
+      "lien": "https://www.bleepingcomputer.com/news/security/mcdonalds-japan-data-breach-exposes-customer-location-information/",
+      "date": "2026-11-24T14:09:37+00:00",
+      "resume": "McDonald's Japan, the fast-food giant's Japanese subsidiary, has disclosed a data breach after attackers accessed a database containing sensitive information for users of the company's official smartphone app. [...]",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "origine": "int",
+      "titre": "New Shirudo tool uses AI to shield unpatched Linux systems from exploits",
+      "lien": "https://www.bleepingcomputer.com/news/security/new-shirudo-tool-uses-ai-to-shield-unpatched-linux-systems-from-exploits/",
+      "date": "2026-11-24T13:34:23+00:00",
+      "resume": "OpenAI and Cisco launched an open-source Linux security tool named Shirudo that deploys temporary runtime protections to block vulnerability exploitation while administrators prepare and roll out patches, without restarting services. [...]",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "SecurityWeek",
+      "origine": "int",
+      "titre": "Anthropic Expands Enterprise Safeguards for Detecting AI Misuse",
+      "lien": "https://www.securityweek.com/anthropic-expands-enterprise-safeguards-for-detecting-ai-misuse/",
+      "date": "2026-11-24T13:30:23+00:00",
+      "resume": "EFS helps zero-retention customers spot Claude misuse spread across many requests while keeping conversation data in their own cloud. The post Anthropic Expands Enterprise Safeguards for Detecting AI Misuse appeared first on SecurityWeek .",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "The Hacker News",
+      "origine": "int",
+      "titre": "VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation",
+      "lien": "https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html",
+      "date": "2026-11-24T13:28:26+00:00",
+      "resume": "Broadcom has shipped patches to address 23 vulnerabilities impacting VMware ESX, vCenter, Workstation, Fusion, and Avi Load Balancer, including one critical bug that could be abused to bypass authentication. The critical vulnerability, tracked as CVE-2026-123903, is rated 9.8 out of 10.0 on the CVS…",
+      "attaque": false,
+      "cves": [
+        "CVE-2026-123903"
+      ]
+    },
+    {
+      "source": "The Hacker News",
+      "origine": "int",
+      "titre": "Okta Links ShinyHunters-Associated Vishing Group to New INCEPTION Data Leak Site",
+      "lien": "https://thehackernews.com/2026/11/okta-links-shinyhunters-associated.html",
+      "date": "2026-11-24T13:28:21+00:00",
+      "resume": "A threat cluster previously assessed to be affiliated with the ShinyHunters extortion crew may have rebranded and continued operations under a new name called INCEPTION, according to Okta's Threat Intelligence team. The cluster, dubbed O-UNC-053, is characterized by the use of voice phishing (aka v…",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "The Hacker News",
+      "origine": "int",
+      "titre": "Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap",
+      "lien": "https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html",
+      "date": "2026-11-24T12:42:09+00:00",
+      "resume": "Pinning GitHub Actions to an exact version of their code, known as SHA pinning, has become the go-to defense against software supply chain attacks. Attackers have already found a way around it. In March 2026, the hackers who hijacked Trivy, a widely used open-source security scanner, planted malici…",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "SecurityWeek",
+      "origine": "int",
+      "titre": "OpenAI, Cisco Unveil Open Source Tool to Shield Unpatched Linux Systems",
+      "lien": "https://www.securityweek.com/openai-cisco-unveil-open-source-tool-to-shield-unpatched-linux-systems/",
+      "date": "2026-11-24T12:20:41+00:00",
+      "resume": "OpenAI and Cisco’s Shirudo uses AI-generated shields to block Linux exploits while patches are prepared, but it’s not yet production-ready. The post OpenAI, Cisco Unveil Open Source Tool to Shield Unpatched Linux Systems appeared first on SecurityWeek .",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "The Hacker News",
+      "origine": "int",
+      "titre": "Google Researcher Shows How a Single Bit Change in .NET Files Bypassed Windows Code Integrity",
+      "lien": "https://thehackernews.com/2026/11/google-researcher-shows-how-single-bit.html",
+      "date": "2026-11-24T12:02:00+00:00",
+      "resume": "A quirk in how the .NET Framework loads a program file let a local attacker run untrusted code past two separate protections on Windows built to block it, Google Project Zero researcher James Forshaw showed in a write-up published yesterday. The same loading behavior bypassed Oracle VirtualBox's pr…",
+      "attaque": true,
+      "cves": [
+        "CVE-2026-87268"
+      ]
+    },
+    {
+      "source": "The Hacker News",
+      "origine": "int",
+      "titre": "2027 SOC Budget Reset: 5 Priorities to Cut Costs and Reduce Cyber Risk",
+      "lien": "https://thehackernews.com/2026/11/2027-soc-budget-reset-5-priorities-to.html",
+      "date": "2026-11-24T12:01:54+00:00",
+      "resume": "What if your biggest SOC budget problem isn't how much you spend, but how much analyst time you lose? According to ANY.RUN's estimates, SOC teams could recover 450 analyst hours per 1,000 investigated alerts through faster threat analysis and IOC research. That's a significant opportunity as manual…",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "SecurityWeek",
+      "origine": "int",
+      "titre": "1.5 Million Impacted by Data Breach at South Korean Electric Company KEPCO",
+      "lien": "https://www.securityweek.com/1-5-million-impacted-by-data-breach-at-south-korean-electric-company-kepco/",
+      "date": "2026-11-24T11:50:21+00:00",
+      "resume": "Hackers stole personal information from the company’s customer portal and supplier relationship management platform. The post 1.5 Million Impacted by Data Breach at South Korean Electric Company KEPCO appeared first on SecurityWeek .",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "Le Monde Informatique",
+      "origine": "fr",
+      "titre": "Cybersécurité : des failles Bluetooth permettent de contrôler à distance les freins de remorques",
+      "lien": "https://www.lemondeinformatique.fr/cybersecurite-conformite/cybersecurite-des-failles-bluetooth-permettent-de-controler-a-distance-les-freins-de-remorques",
+      "date": "2026-11-24T11:45:01+00:00",
+      "resume": "Des chercheurs en cybersécurité ont découvert plusieurs vulnérabilités critiques dans les contrôleurs de freinage Bluetooth du fabricant australien Elecbrakes. Ces failles permettent à une personne située à portée du signal radio d'activer ou de modifier la puissance de freinage d'une remorque sans…",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "Le Monde Informatique",
+      "origine": "fr",
+      "titre": "IA et Cybersécurité : les entreprises contraintes de revoir leur priorités",
+      "lien": "https://www.lemondeinformatique.fr/cybersecurite-conformite/la-bataille-des-priorites-dans-les-budgets-it",
+      "date": "2026-11-24T11:25:03+00:00",
+      "resume": "Face au renchérissement des infrastructures et à la multiplication des projets d'IA, les entreprises doivent revoir leurs arbitrages numériques. Lors d'une table ronde organisée au TechShow Paris le 18 novembre, trois intervenants ont plaidé pour des investissements guidés par les besoins métiers,…",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "The Hacker News",
+      "origine": "int",
+      "titre": "Microsoft Fixes Azure API Management Classic Flaw as Actor Targets Customer Secrets",
+      "lien": "https://thehackernews.com/2026/11/microsoft-fixes-azure-api-management.html",
+      "date": "2026-11-24T10:44:49+00:00",
+      "resume": "Norway's National Security Authority (NSM) has disclosed that it became aware of a security vulnerability in Microsoft's Azure API Management (APIM) that has affected multiple businesses in the country, including energy companies Equinor and Skagerak Energi. \"An unknown actor has been actively look…",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "SecurityWeek",
+      "origine": "int",
+      "titre": "Elecbrakes Bluetooth Vulnerabilities Expose Trailers to Forced Braking",
+      "lien": "https://www.securityweek.com/elecbrakes-bluetooth-vulnerabilities-expose-trailers-to-forced-braking/",
+      "date": "2026-11-24T10:44:44+00:00",
+      "resume": "Critical Bluetooth flaws in Elecbrakes controllers could let nearby attackers force trailer braking, potentially causing accidents. The post Elecbrakes Bluetooth Vulnerabilities Expose Trailers to Forced Braking appeared first on SecurityWeek .",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "SecurityWeek",
+      "origine": "int",
+      "titre": "Peninsula Energy Halts Trading After Cyber Incident Hits US Uranium Mine",
+      "lien": "https://www.securityweek.com/peninsula-energy-halts-trading-after-cyber-incident-hits-us-uranium-mine/",
+      "date": "2026-11-24T10:35:04+00:00",
+      "resume": "The company told the ASX that a cybersecurity incident at its Wyoming uranium project would temporarily affect operations. The post Peninsula Energy Halts Trading After Cyber Incident Hits US Uranium Mine appeared first on SecurityWeek .",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "IT-Connect",
+      "origine": "fr",
+      "titre": "Google Chrome : une seule faille corrigée, mais elle est critique (CVE-2026-134401)",
+      "lien": "https://www.it-connect.fr/cve-2026-134401-faille-critique-chrome/",
+      "date": "2026-11-24T10:33:39+00:00",
+      "resume": "Google a publié Chrome 158.0.8127.88 pour corriger la CVE-2026-134401, une faille critique qui permettrait de sortir de la sandbox : voici ce qu'il faut savoir. Le post Google Chrome : une seule faille corrigée, mais elle est critique (CVE-2026-134401) a été publié sur IT-Connect .",
+      "attaque": false,
+      "cves": [
+        "CVE-2026-134401"
+      ]
+    },
+    {
+      "source": "Le Monde Informatique",
+      "origine": "fr",
+      "titre": "Règlementation : les entreprises doivent intégrer les contraintes dès la conception de leurs systèmes IT",
+      "lien": "https://www.lemondeinformatique.fr/cybersecurite-conformite/reglementation-les-entreprises-doivent-integrer-les-contraintes-des-la-conception-de-leurs-systemes-it",
+      "date": "2026-11-24T09:30:57+00:00",
+      "resume": "Avec l'accumulation des réglementations européennes, de l'IA Act à NIS 2 en passant par le RGPD et DORA, la conformité devient un enjeu structurant pour les directions IT. Lors d'une conférence organisée au TechShow Paris le 18 novembre, trois intervenants ont plaidé pour une approche intégrée dès…",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "The Hacker News",
+      "origine": "int",
+      "titre": "WHMCS SQL Injection Could Expose Customer Data and Admin Password Hashes without Login",
+      "lien": "https://thehackernews.com/2026/11/whmcs-sql-injection-flaw-could-expose.html",
+      "date": "2026-11-24T08:34:20+00:00",
+      "resume": "A flaw in WHMCS's shopping cart, the billing and automation platform many web hosting companies use to run their businesses, could allow anyone on the internet to retrieve customer records and administrator password hashes from an installation's database. No login is needed. The company disclosed t…",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "IT-Connect",
+      "origine": "fr",
+      "titre": "Neutralisé en 2019 par la gendarmerie, le ver USB Retadup revient pour distribuer CoffeeLoader",
+      "lien": "https://www.it-connect.fr/retadup-ver-usb-coffeeloader/",
+      "date": "2026-11-24T08:00:00+00:00",
+      "resume": "Démantelé en 2019 par la gendarmerie, le botnet du ver USB Retadup a été réactivé via ses anciens domaines. Il distribue désormais le loader CoffeeLoader. Le post Neutralisé en 2019 par la gendarmerie, le ver USB Retadup revient pour distribuer CoffeeLoader a été publié sur IT-Connect .",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "The Hacker News",
+      "origine": "int",
+      "titre": "OpenAI and Cisco Unveil AI-Assisted Linux Security Tool to Block Exploits Before Patching",
+      "lien": "https://thehackernews.com/2026/11/openai-and-cisco-unveil-ai-assisted.html",
+      "date": "2026-11-24T06:02:57+00:00",
+      "resume": "OpenAI and Cisco have teamed up to launch Shirudo (meaning \"shield\" in Japanese), an open-source Linux runtime that allows artificial intelligence (AI) agents to defend systems without downtime. \"It lets agents write dynamic eBPF controls to shield systems from exploits, giving defenders more time…",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "The Hacker News",
+      "origine": "int",
+      "titre": "Hackers Exploit N-able MailAssure Flaw While AI Agents Exploit MONAI Label Zero-Day",
+      "lien": "https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html",
+      "date": "2026-11-24T06:02:45+00:00",
+      "resume": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday added two flaws impacting N-able MailAssure and MONAI Label to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The critical vulnerabilities are listed below - CVE-2026-134624 (CVSS…",
+      "attaque": true,
+      "cves": [
+        "CVE-2026-134624"
+      ]
+    },
     {
       "source": "IT-Connect",
       "origine": "fr",
@@ -958,10 +1505,10 @@
     {
       "source": "SecurityWeek",
       "origine": "int",
-      "titre": "N-able Patches Critical Flaw Disclosed After Mail Assure Cyberattack",
+      "titre": "N-able Patches Critical Flaw Discovered After Mail Assure Cyberattack",
       "lien": "https://www.securityweek.com/n-able-patches-critical-flaw-disclosed-after-mail-assure-cyberattack/",
       "date": "2026-11-23T15:06:49+00:00",
-      "resume": "The company has restored access to the affected services and continues to monitor the affected environments. The post N-able Patches Critical Flaw Disclosed After Mail Assure Cyberattack appeared first on SecurityWeek .",
+      "resume": "The company has restored access to the affected services and continues to monitor the affected environments. The post N-able Patches Critical Flaw Discovered After Mail Assure Cyberattack appeared first on SecurityWeek .",
       "attaque": false,
       "cves": []
     },
@@ -976,16 +1523,6 @@
       "cves": []
     },
     {
-      "source": "SecurityWeek",
-      "origine": "int",
-      "titre": "phpAfterShell Vulnerability Revives PHP2Shell’s Attack Path",
-      "lien": "https://www.securityweek.com/phpaftershell-vulnerability-revives-php2shells-attack-path/",
-      "date": "2026-11-23T13:58:07+00:00",
-      "resume": "If a session overwrite operation is interrupted, an attacker who controls the fresh data could trigger data deserialization and RCE. The post phpAfterShell Vulnerability Revives PHP2Shell’s Attack Path appeared first on SecurityWeek .",
-      "attaque": true,
-      "cves": []
-    },
-    {
       "source": "BleepingComputer",
       "origine": "int",
       "titre": "Microsoft testing fix for Windows 11 Bluetooth audio quality drops",
@@ -993,16 +1530,6 @@
       "date": "2026-11-23T13:28:45+00:00",
       "resume": "Microsoft is working to fix a long-standing Windows issue that has been causing significant audio quality drops for Bluetooth headphone users. [...]",
       "attaque": false,
-      "cves": []
-    },
-    {
-      "source": "SecurityWeek",
-      "origine": "int",
-      "titre": "GL.iNet Routers, KVMs Compromised via Remote Management Service Flaw",
-      "lien": "https://www.securityweek.com/gl-inet-routers-kvms-compromised-via-remote-management-service-flaw/",
-      "date": "2026-11-23T13:26:22+00:00",
-      "resume": "Attackers abused a flaw in the GoodCloud remote management service to push malware to devices, and cleaning them requires new firmware. The post GL.iNet Routers, KVMs Compromised via Remote Management Service Flaw appeared first on SecurityWeek .",
-      "attaque": true,
       "cves": []
     },
     {
@@ -1042,16 +1569,6 @@
       ]
     },
     {
-      "source": "SecurityWeek",
-      "origine": "int",
-      "titre": "AI Inference Providers Failed to Detect Hacking and Prompt Theft, Says Dragos",
-      "lien": "https://www.securityweek.com/ai-inference-providers-failed-to-detect-hacking-and-prompt-theft-says-dragos/",
-      "date": "2026-11-23T12:16:20+00:00",
-      "resume": "Dragos uncovered undetected intrusions at three AI inference providers using nearly two million prompts sent to AI services. The post AI Inference Providers Failed to Detect Hacking and Prompt Theft, Says Dragos appeared first on SecurityWeek .",
-      "attaque": true,
-      "cves": []
-    },
-    {
       "source": "ZATAZ",
       "origine": "fr",
       "titre": "Courtiers en or piratés, dix personnes mises en examen",
@@ -1078,36 +1595,6 @@
       "lien": "https://www.zataz.com/laquaponey-un-drole-de-cadeau-de-noel-qui-fait-reflechir/",
       "date": "2026-11-23T11:53:31+00:00",
       "resume": "Un poney sous le sapin pour comprendre comment les algorithmes et l’IA donnent du crédit aux fausses informations.",
-      "attaque": false,
-      "cves": []
-    },
-    {
-      "source": "SecurityWeek",
-      "origine": "int",
-      "titre": "BadBox 3.0 Ad Fraud Operation Generating 40 Billion Daily Bid Requests Disrupted",
-      "lien": "https://www.securityweek.com/badbox-3-0-ad-fraud-operation-generating-40-billion-daily-bid-requests-disrupted/",
-      "date": "2026-11-23T11:44:18+00:00",
-      "resume": "Backdoors on low-cost consumer devices served modules for ad fraud and for turning devices into residential proxies. The post BadBox 3.0 Ad Fraud Operation Generating 40 Billion Daily Bid Requests Disrupted appeared first on SecurityWeek .",
-      "attaque": false,
-      "cves": []
-    },
-    {
-      "source": "SecurityWeek",
-      "origine": "int",
-      "titre": "SAP NetWeaver, Cisco Expressway Flaws Exploited in Attacks",
-      "lien": "https://www.securityweek.com/sap-netweaver-cisco-expressway-flaws-exploited-in-attacks/",
-      "date": "2026-11-23T11:35:15+00:00",
-      "resume": "Threat actors could exploit them to leak or modify server information and to execute commands as root. The post SAP NetWeaver, Cisco Expressway Flaws Exploited in Attacks appeared first on SecurityWeek .",
-      "attaque": true,
-      "cves": []
-    },
-    {
-      "source": "SecurityWeek",
-      "origine": "int",
-      "titre": "CrowdStrike to Acquire Zscaler in $43.9 Billion Deal",
-      "lien": "https://www.securityweek.com/crowdstrike-to-acquire-zscaler-in-43-9-billion-deal/",
-      "date": "2026-11-23T11:31:44+00:00",
-      "resume": "CrowdStrike expects the combined company to have more than $10 billion in annual recurring revenue. The post CrowdStrike to Acquire Zscaler in $43.9 Billion Deal appeared first on SecurityWeek .",
       "attaque": false,
       "cves": []
     },
@@ -1194,16 +1681,6 @@
       ]
     },
     {
-      "source": "BleepingComputer",
-      "origine": "int",
-      "titre": "Microsoft confirms Windows printing issues affecting Forcepoint users",
-      "lien": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-printing-issues-after-kb5132043-windows-hotpatch/",
-      "date": "2026-11-23T09:11:15+00:00",
-      "resume": "Microsoft confirmed printing issues on systems running Forcepoint DLP software after installing the KB5132043 November 2026 Windows 11 hotpatch. [...]",
-      "attaque": false,
-      "cves": []
-    },
-    {
       "source": "The Hacker News",
       "origine": "int",
       "titre": "Hackers Exploited GL.iNet Cloud Flaw to Install Malware on Routers and KVM Devices",
@@ -1244,16 +1721,6 @@
       "cves": []
     },
     {
-      "source": "BleepingComputer",
-      "origine": "int",
-      "titre": "CISA flags critical Cisco RCE flaw as actively exploited in attacks",
-      "lien": "https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/",
-      "date": "2026-11-23T07:44:19+00:00",
-      "resume": "The US Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies that attackers are now exploiting a recently patched critical Cisco Expressway vulnerability in the wild. [...]",
-      "attaque": true,
-      "cves": []
-    },
-    {
       "source": "ZATAZ",
       "origine": "fr",
       "titre": "Ledger : un pirate piège d’autres pirates avec un faux fichier",
@@ -1271,36 +1738,6 @@
       "date": "2026-11-23T00:36:24+00:00",
       "resume": "Cyberattaque à Chambourcy : INC Ransom revendique l'intrusion. ZATAZ révèle des documents de police municipale exposés.",
       "attaque": true,
-      "cves": []
-    },
-    {
-      "source": "BleepingComputer",
-      "origine": "int",
-      "titre": "Hackers exploit GL.iNet cloud flaw to infect routers, KVM devices",
-      "lien": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/",
-      "date": "2026-11-22T18:45:37+00:00",
-      "resume": "GL.iNet has confirmed that hackers exploited a vulnerability in its cloud remote management services to install custom malware on customers' routers and KVM devices, with some affected users reporting backdoors and reverse shells giving remote access to infected devices. [...]",
-      "attaque": true,
-      "cves": []
-    },
-    {
-      "source": "BleepingComputer",
-      "origine": "int",
-      "titre": "Cleverbridge warns hackers stole credit card numbers, CVVs in data breach",
-      "lien": "https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/",
-      "date": "2026-11-22T15:43:04+00:00",
-      "resume": "E-commerce platform Cleverbridge is warning that hackers breached its systems and stole customers' payment card information, including credit card numbers and CVV security codes. [...]",
-      "attaque": true,
-      "cves": []
-    },
-    {
-      "source": "BleepingComputer",
-      "origine": "int",
-      "titre": "Signal to block Siri, Gemini AI from capturing chats on iOS, Android",
-      "lien": "https://www.bleepingcomputer.com/news/security/signal-to-block-siri-gemini-ai-from-capturing-chats-on-ios-android/",
-      "date": "2026-11-22T15:15:25+00:00",
-      "resume": "Signal has announced new protections that block screenshots on iOS 27 and prevent AI assistants from capturing conversations on supported Android devices. [...]",
-      "attaque": false,
       "cves": []
     },
     {
@@ -1322,110 +1759,6 @@
       "resume": "A now-patched flaw in Ghostscript allows a crafted file to escape the program's security sandbox and run commands on the server that processes it. Ghostscript is the interpreter that many Linux servers use to convert uploaded PDFs, PostScript files, and images into other formats, often without the…",
       "attaque": false,
       "cves": []
-    },
-    {
-      "source": "SecurityWeek",
-      "origine": "int",
-      "titre": "FBI Investigating Apparent Hack of Its Key National Criminal Justice Database, AP Source Says",
-      "lien": "https://www.securityweek.com/fbi-investigating-apparent-hack-of-its-key-national-criminal-justice-database-ap-source-says/",
-      "date": "2026-11-22T00:53:02+00:00",
-      "resume": "The FBI is investigating an apparent hack of a national law enforcement database that it maintains. The post FBI Investigating Apparent Hack of Its Key National Criminal Justice Database, AP Source Says appeared first on SecurityWeek .",
-      "attaque": true,
-      "cves": []
-    },
-    {
-      "source": "BleepingComputer",
-      "origine": "int",
-      "titre": "Rackspace Spot breach let hackers access customer Kubernetes secrets",
-      "lien": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/",
-      "date": "2026-11-21T22:59:58+00:00",
-      "resume": "Rackspace warned customers that hackers breached its Rackspace Spot cloud platform using compromised credentials, allowing them to deploy unauthorized workloads and access Kubernetes secrets in customer clusters. [...]",
-      "attaque": true,
-      "cves": []
-    },
-    {
-      "source": "BleepingComputer",
-      "origine": "int",
-      "titre": "Microsoft Entra Connect Health flaw exploited to steal tenant data",
-      "lien": "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/",
-      "date": "2026-11-21T18:01:58+00:00",
-      "resume": "Microsoft is warning organizations that it suffered a data breach after attackers exploited a vulnerability in its Entra Connect Health service to gain unauthorized access to administrator email addresses and tenant configuration information. [...]",
-      "attaque": true,
-      "cves": []
-    },
-    {
-      "source": "ZATAZ",
-      "origine": "fr",
-      "titre": "Cyberattaques : la boîte de Pandora est-elle ouverte avec l’IA ARTEX",
-      "lien": "https://www.zataz.com/cyberattaques-la-boite-de-pandora-est-elle-ouverte-avec-lia-artex/",
-      "date": "2026-11-21T13:39:38+00:00",
-      "resume": "ARTEX révèle comment l'IA accélère les cyberattaques, le vol de données et les intrusions. La boîte de Pandore 2.0 a-t-elle été ouverte ?",
-      "attaque": false,
-      "cves": []
-    },
-    {
-      "source": "SecurityWeek",
-      "origine": "int",
-      "titre": "President Trump Taps Kirsten Davies as National Cyber Director",
-      "lien": "https://www.securityweek.com/president-trump-taps-kirsten-davies-as-national-cyber-director/",
-      "date": "2026-11-21T13:00:00+00:00",
-      "resume": "White House says the battle-tested cyber leader will drive an America First cyber strategy. The post President Trump Taps Kirsten Davies as National Cyber Director appeared first on SecurityWeek .",
-      "attaque": false,
-      "cves": []
-    },
-    {
-      "source": "The Hacker News",
-      "origine": "int",
-      "titre": "A Single Malicious Webpage Let Researchers Hijack Meta Muse and Access Private Chats",
-      "lien": "https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html",
-      "date": "2026-11-21T11:53:07+00:00",
-      "resume": "A malicious webpage could extract a Meta Muse user's private conversations and stored memories from the assistant without triggering any approval prompt, researchers have shown. The same attack could be extended to reach the credentials Muse stores for the user's connected accounts. The work was a…",
-      "attaque": true,
-      "cves": []
-    },
-    {
-      "source": "The Hacker News",
-      "origine": "int",
-      "titre": "GnuPG Warns Critical GPGME Flaw Could Expose App Data via Malicious OpenPGP Keys",
-      "lien": "https://thehackernews.com/2026/11/gnupg-warns-critical-gpgme-flaw-could.html",
-      "date": "2026-11-21T11:05:53+00:00",
-      "resume": "A malicious OpenPGP key with an unusually long user ID can trigger a critical memory bug in GPGME, the standard library that programs use to work with GnuPG. The GnuPG project warned yesterday that the flaw could be used to steal data from affected applications and has released fixed versions. The…",
-      "attaque": false,
-      "cves": [
-        "CVE-2026-129975"
-      ]
-    },
-    {
-      "source": "The Hacker News",
-      "origine": "int",
-      "titre": "Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access",
-      "lien": "https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html",
-      "date": "2026-11-21T11:03:17+00:00",
-      "resume": "Suspected China-linked hackers used autonomous AI agents to find a previously unknown flaw in MONAI Label, an open-source medical imaging server, and gain root access to a university server, Amazon Threat Intelligence said this week. The flaw allows an attacker with no account to write files outsid…",
-      "attaque": true,
-      "cves": []
-    },
-    {
-      "source": "The Hacker News",
-      "origine": "int",
-      "titre": "Signal Blocks AI Agents From Reading Private Chats via Screenshots on Android and iOS",
-      "lien": "https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html",
-      "date": "2026-11-21T08:49:20+00:00",
-      "resume": "Signal has announced that it will restrict screenshots by default to stop artificial intelligence (AI) agents from reading private chats on Android and iOS devices, but conceded that the protection is \"incomplete.\" The feature applies to agentic systems built into iOS 27 and on Android versions whe…",
-      "attaque": false,
-      "cves": []
-    },
-    {
-      "source": "The Hacker News",
-      "origine": "int",
-      "titre": "Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge",
-      "lien": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html",
-      "date": "2026-11-21T08:49:13+00:00",
-      "resume": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added four flaws impacting Apache Roller, Cisco Expressway, SAP NetWeaver, and Broadcom VMware vCenter to its Known Exploited Vulnerabilities (KEV), citing evidence of active exploitation. The vulnerabilities are listed belo…",
-      "attaque": true,
-      "cves": [
-        "CVE-2026-129448"
-      ]
     }
   ],
   "erreurs": []
