@@ -1,13 +1,13 @@
 {
-  "genere_le": "2026-11-23T22:19:03.397510+00:00",
+  "genere_le": "2026-11-24T03:09:32.727051+00:00",
   "fenetre_jours": 3,
   "stats": {
     "urgentes": 0,
     "alertes_certfr": 0,
     "avis_certfr": 0,
     "kev": 2,
-    "cve_critiques": 6,
-    "attaques": 35
+    "cve_critiques": 14,
+    "attaques": 34
   },
   "priorites": [
     {
@@ -155,6 +155,244 @@
       ]
     },
     {
+      "cle": "CVE-2026-70305",
+      "cve": "CVE-2026-70305",
+      "cves": [],
+      "titre": "CVE-2026-70305",
+      "resume": "Improper neutralization of input during web page generation ('cross-site scripting') in Azure Portal allows an unauthorized attacker to perform spoofing over a network.",
+      "editeur": null,
+      "produit": null,
+      "score": 30,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.6"
+        },
+        {
+          "code": "repandu",
+          "label": "Produit très répandu"
+        }
+      ],
+      "cvss": 9.6,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-70305"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-70305",
+      "date": "2026-11-23T22:22:50.890000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-70193",
+      "cve": "CVE-2026-70193",
+      "cves": [],
+      "titre": "CVE-2026-70193",
+      "resume": "Improper limitation of a pathname to a restricted directory ('path traversal') in Microsoft Office SharePoint allows an authorized attacker to execute code over a network.",
+      "editeur": null,
+      "produit": null,
+      "score": 30,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.9"
+        },
+        {
+          "code": "repandu",
+          "label": "Produit très répandu"
+        }
+      ],
+      "cvss": 9.9,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-70193"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-70193",
+      "date": "2026-11-23T22:22:36.660000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-69899",
+      "cve": "CVE-2026-69899",
+      "cves": [],
+      "titre": "CVE-2026-69899",
+      "resume": "Authentication bypass by spoofing in Azure DevTest Labs allows an unauthorized attacker to perform spoofing over a network.",
+      "editeur": null,
+      "produit": null,
+      "score": 30,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.1"
+        },
+        {
+          "code": "repandu",
+          "label": "Produit très répandu"
+        }
+      ],
+      "cvss": 9.1,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-69899"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-69899",
+      "date": "2026-11-23T22:22:11.980000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-62841",
+      "cve": "CVE-2026-62841",
+      "cves": [],
+      "titre": "CVE-2026-62841",
+      "resume": "Improper authentication in Azure Event Grid allows an unauthorized attacker to elevate privileges over a network.",
+      "editeur": null,
+      "produit": null,
+      "score": 30,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 10.0"
+        },
+        {
+          "code": "repandu",
+          "label": "Produit très répandu"
+        }
+      ],
+      "cvss": 10.0,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-62841"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-62841",
+      "date": "2026-11-23T22:20:39.293000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-118286",
+      "cve": "CVE-2026-118286",
+      "cves": [],
+      "titre": "CVE-2026-118286",
+      "resume": "Improper access control in Azure Site Recovery allows an unauthorized attacker to elevate privileges over a network.",
+      "editeur": null,
+      "produit": null,
+      "score": 30,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.1"
+        },
+        {
+          "code": "repandu",
+          "label": "Produit très répandu"
+        }
+      ],
+      "cvss": 9.1,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-118286"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-118286",
+      "date": "2026-11-23T22:19:30.903000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-118285",
+      "cve": "CVE-2026-118285",
+      "cves": [],
+      "titre": "CVE-2026-118285",
+      "resume": "Server-side request forgery in Azure Machine Learning allows an authorized attacker to elevate privileges over a network.",
+      "editeur": null,
+      "produit": null,
+      "score": 30,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.6"
+        },
+        {
+          "code": "repandu",
+          "label": "Produit très répandu"
+        }
+      ],
+      "cvss": 9.6,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-118285"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-118285",
+      "date": "2026-11-23T22:19:30.710000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-113824",
+      "cve": "CVE-2026-113824",
+      "cves": [],
+      "titre": "CVE-2026-113824",
+      "resume": "Authorization bypass through user-controlled key in Microsoft Clarity allows an unauthorized attacker to elevate privileges over a network.",
+      "editeur": null,
+      "produit": null,
+      "score": 30,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.1"
+        },
+        {
+          "code": "repandu",
+          "label": "Produit très répandu"
+        }
+      ],
+      "cvss": 9.1,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-113824"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-113824",
+      "date": "2026-11-23T22:19:04.970000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
       "cle": "CVE-2026-134882",
       "cve": "CVE-2026-134882",
       "cves": [],
@@ -180,6 +418,36 @@
       ],
       "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-134882",
       "date": "2026-11-23T09:17:05.653000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-50691",
+      "cve": "CVE-2026-50691",
+      "cves": [],
+      "titre": "CVE-2026-50691",
+      "resume": "Improper authorization in M365 Copilot allows an authorized attacker to elevate privileges over a network.",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.9"
+        }
+      ],
+      "cvss": 9.9,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-50691"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-50691",
+      "date": "2026-11-23T22:20:16.553000+00:00",
       "origines": [
         "int"
       ]
@@ -478,6 +746,36 @@
     {
       "source": "NVD",
       "origine": "int",
+      "cve": "CVE-2026-62841",
+      "resume": "Improper authentication in Azure Event Grid allows an unauthorized attacker to elevate privileges over a network.",
+      "score": 10.0,
+      "severite": "CRITICAL",
+      "date": "2026-11-23T22:20:39.293000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-62841"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-50691",
+      "resume": "Improper authorization in M365 Copilot allows an authorized attacker to elevate privileges over a network.",
+      "score": 9.9,
+      "severite": "CRITICAL",
+      "date": "2026-11-23T22:20:16.553000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-50691"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-70193",
+      "resume": "Improper limitation of a pathname to a restricted directory ('path traversal') in Microsoft Office SharePoint allows an authorized attacker to execute code over a network.",
+      "score": 9.9,
+      "severite": "CRITICAL",
+      "date": "2026-11-23T22:22:36.660000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-70193"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
       "cve": "CVE-2026-120382",
       "resume": "An improper neutralization of argument delimiters in a command vulnerability in the OAuth API in Synology DiskStation Manager (DSM) before 7.1.1-42962-10, 7.2.1-69057-14, 7.2.2-72806-11, 7.3.2-86009-6, and 7.4.1-90080-2 allows remote attackers to read or write arbitrary files and conduct denial-of-…",
       "score": 9.8,
@@ -508,15 +806,75 @@
     {
       "source": "NVD",
       "origine": "int",
+      "cve": "CVE-2026-118285",
+      "resume": "Server-side request forgery in Azure Machine Learning allows an authorized attacker to elevate privileges over a network.",
+      "score": 9.6,
+      "severite": "CRITICAL",
+      "date": "2026-11-23T22:19:30.710000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-118285"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-70305",
+      "resume": "Improper neutralization of input during web page generation ('cross-site scripting') in Azure Portal allows an unauthorized attacker to perform spoofing over a network.",
+      "score": 9.6,
+      "severite": "CRITICAL",
+      "date": "2026-11-23T22:22:50.890000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-70305"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
       "cve": "CVE-2026-109490",
       "resume": "Improper neutralization of input during web page generation ('cross-site scripting') in Authentication Methods Portal Extension allows an unauthorized attacker to elevate privileges over a network.",
       "score": 9.3,
       "severite": "CRITICAL",
       "date": "2026-11-23T22:18:30.130000+00:00",
       "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-109490"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-113824",
+      "resume": "Authorization bypass through user-controlled key in Microsoft Clarity allows an unauthorized attacker to elevate privileges over a network.",
+      "score": 9.1,
+      "severite": "CRITICAL",
+      "date": "2026-11-23T22:19:04.970000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-113824"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-118286",
+      "resume": "Improper access control in Azure Site Recovery allows an unauthorized attacker to elevate privileges over a network.",
+      "score": 9.1,
+      "severite": "CRITICAL",
+      "date": "2026-11-23T22:19:30.903000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-118286"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-69899",
+      "resume": "Authentication bypass by spoofing in Azure DevTest Labs allows an unauthorized attacker to perform spoofing over a network.",
+      "score": 9.1,
+      "severite": "CRITICAL",
+      "date": "2026-11-23T22:22:11.980000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-69899"
     }
   ],
   "presse": [
+    {
+      "source": "IT-Connect",
+      "origine": "fr",
+      "titre": "Entra Connect Health : une faille exploitée a exposé les e-mails des admins de tenants Microsoft",
+      "lien": "https://www.it-connect.fr/entra-connect-health-faille-exploitee-metadonnees-tenants/",
+      "date": "2026-11-24T02:00:00+00:00",
+      "resume": "Une faille dans l'API d'Entra Connect Health a été exploitée pour lire les métadonnées de tenants, dont les e-mails des admins. Voici ce qu'il faut savoir. Le post Entra Connect Health : une faille exploitée a exposé les e-mails des admins de tenants Microsoft a été publié sur IT-Connect .",
+      "attaque": false,
+      "cves": []
+    },
     {
       "source": "BleepingComputer",
       "origine": "int",
@@ -1068,16 +1426,6 @@
       "cves": [
         "CVE-2026-129448"
       ]
-    },
-    {
-      "source": "Krebs on Security",
-      "origine": "int",
-      "titre": "CTO of ‘RansomwareHelp’ Indicted for Wire Fraud",
-      "lien": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
-      "date": "2026-11-21T00:36:39+00:00",
-      "resume": "The chief technology officer and co-founder of ransomwarehelp.com, a six year old Florida business that claimed to use \"advanced cryptographic tools\" to restore data locked by ransomware, has been charged with wire fraud after an FBI sting operation found the company was simply paying the attackers…",
-      "attaque": true,
-      "cves": []
     }
   ],
   "erreurs": []
