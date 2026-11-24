@@ -1,13 +1,13 @@
 {
-  "genere_le": "2026-11-24T17:26:32.098072+00:00",
+  "genere_le": "2026-11-24T20:56:03.681511+00:00",
   "fenetre_jours": 3,
   "stats": {
     "urgentes": 0,
     "alertes_certfr": 0,
     "avis_certfr": 1,
-    "kev": 2,
-    "cve_critiques": 19,
-    "attaques": 34
+    "kev": 5,
+    "cve_critiques": 29,
+    "attaques": 36
   },
   "priorites": [
     {
@@ -83,6 +83,44 @@
       ]
     },
     {
+      "cle": "CVE-2026-131914",
+      "cve": "CVE-2026-131914",
+      "cves": [],
+      "titre": "Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability",
+      "resume": "Idunno AntiCsrf contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via object injection. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or trans…",
+      "editeur": "Idunno",
+      "produit": "AntiCsrf",
+      "score": 40,
+      "raisons": [
+        {
+          "code": "kev",
+          "label": "Exploitée activement"
+        },
+        {
+          "code": "medias",
+          "label": "Citée par 1 média"
+        }
+      ],
+      "cvss": null,
+      "epss": 0.0061,
+      "epss_percentile": 0.5015,
+      "sources": [
+        {
+          "nom": "CISA KEV",
+          "lien": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "nom": "The Hacker News",
+          "lien": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-131914",
+      "date": "2026-11-24T00:00:00+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
       "cle": "CVE-2026-84869",
       "cve": "CVE-2026-84869",
       "cves": [],
@@ -117,103 +155,95 @@
       ]
     },
     {
-      "cle": "CVE-2026-82322",
-      "cve": "CVE-2026-82322",
+      "cle": "CVE-2026-132224",
+      "cve": "CVE-2026-132224",
       "cves": [],
-      "titre": "CVE-2026-82322",
-      "resume": "SolarWinds Serv-U is affected by an Insecure Direct Object Reference (IDOR) vulnerability that allows a domain group administrator to bypass restrictions and escalate privileges to the server administrator level. The risk is lower for Windows installations.",
-      "editeur": null,
-      "produit": null,
-      "score": 30,
+      "titre": "Optimizely Web Experimentation External Control of Critical State Data Vulnerability",
+      "resume": "Optimizely Web Experimentation contains an external control of critical state data vulnerability in its account signup flow that could allow an attacker to impersonate existing customer users and modify Project JavaScript. Successful exploitation can result in attacker-controlled JavaScript being d…",
+      "editeur": "Optimizely",
+      "produit": "Web Experimentation",
+      "score": 35,
       "raisons": [
         {
-          "code": "cvss",
-          "label": "CVSS 9.1"
-        },
-        {
-          "code": "repandu",
-          "label": "Produit très répandu"
+          "code": "kev",
+          "label": "Exploitée activement"
         }
       ],
-      "cvss": 9.1,
-      "epss": null,
-      "epss_percentile": null,
+      "cvss": null,
+      "epss": 0.0041,
+      "epss_percentile": 0.3584,
       "sources": [
         {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-82322"
+          "nom": "CISA KEV",
+          "lien": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
         }
       ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-82322",
-      "date": "2026-11-24T17:18:54.850000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-132224",
+      "date": "2026-11-24T00:00:00+00:00",
       "origines": [
         "int"
       ]
     },
     {
-      "cle": "CVE-2026-82321",
-      "cve": "CVE-2026-82321",
+      "cle": "CVE-2026-132165",
+      "cve": "CVE-2026-132165",
       "cves": [],
-      "titre": "CVE-2026-82321",
-      "resume": "SolarWinds Serv-U was found to be affected by a type confusion vulnerability that may allow domain administrators to escalate privileges to that of a system administrator. The risk is lower for Windows installations.",
-      "editeur": null,
-      "produit": null,
-      "score": 30,
+      "titre": "Drupal Core Remote Code Execution Vulnerability",
+      "resume": "Drupal Core contains a not failing securely vulnerability that could allow an unauthenticated attacker to take over an existing site or execute arbitrary code via the Drupal installer. Under specific conditions, the attacker can use install.php to attempt to reinstall Drupal on the site.",
+      "editeur": "Drupal",
+      "produit": "Core",
+      "score": 35,
       "raisons": [
         {
-          "code": "cvss",
-          "label": "CVSS 9.1"
-        },
-        {
-          "code": "repandu",
-          "label": "Produit très répandu"
+          "code": "kev",
+          "label": "Exploitée activement"
         }
       ],
-      "cvss": 9.1,
+      "cvss": null,
       "epss": null,
       "epss_percentile": null,
       "sources": [
         {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-82321"
+          "nom": "CISA KEV",
+          "lien": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
         }
       ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-82321",
-      "date": "2026-11-24T17:18:54.720000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-132165",
+      "date": "2026-11-24T00:00:00+00:00",
       "origines": [
         "int"
       ]
     },
     {
-      "cle": "CVE-2026-82320",
-      "cve": "CVE-2026-82320",
+      "cle": "CVE-2026-112732",
+      "cve": "CVE-2026-112732",
       "cves": [],
-      "titre": "CVE-2026-82320",
-      "resume": "SolarWinds Serv-U was found to be affected by another type confusion vulnerability that may allow domain administrators to escalate privileges to that of a system administrator. The risk is lower for Windows installations.",
+      "titre": "CVE-2026-112732",
+      "resume": "Double free in Microsoft Office Visio allows an unauthorized attacker to execute code over a network.",
       "editeur": null,
       "produit": null,
       "score": 30,
       "raisons": [
         {
           "code": "cvss",
-          "label": "CVSS 9.1"
+          "label": "CVSS 9.8"
         },
         {
           "code": "repandu",
           "label": "Produit très répandu"
         }
       ],
-      "cvss": 9.1,
+      "cvss": 9.8,
       "epss": null,
       "epss_percentile": null,
       "sources": [
         {
           "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-82320"
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-112732"
         }
       ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-82320",
-      "date": "2026-11-24T17:18:54.587000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-112732",
+      "date": "2026-11-24T20:18:21.960000+00:00",
       "origines": [
         "int"
       ]
@@ -287,74 +317,6 @@
       ]
     },
     {
-      "cle": "CVE-2026-123172",
-      "cve": "CVE-2026-123172",
-      "cves": [],
-      "titre": "CVE-2026-123172",
-      "resume": "Solarwinds Serv-U is affected by a privilege escalation vulnerability that, when exploited, could lead to the escalation of privileges to root for Linux installations. The risk is lower for Windows installations.",
-      "editeur": null,
-      "produit": null,
-      "score": 30,
-      "raisons": [
-        {
-          "code": "cvss",
-          "label": "CVSS 9.1"
-        },
-        {
-          "code": "repandu",
-          "label": "Produit très répandu"
-        }
-      ],
-      "cvss": 9.1,
-      "epss": null,
-      "epss_percentile": null,
-      "sources": [
-        {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-123172"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-123172",
-      "date": "2026-11-24T17:18:13.933000+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-123168",
-      "cve": "CVE-2026-123168",
-      "cves": [],
-      "titre": "CVE-2026-123168",
-      "resume": "SolarWinds Serv-U is affected by an insufficient validation vulnerability that, when exploited, could lead to privilege escalation into the root user in Linux installations. The risk is lower for Windows installations.",
-      "editeur": null,
-      "produit": null,
-      "score": 30,
-      "raisons": [
-        {
-          "code": "cvss",
-          "label": "CVSS 9.1"
-        },
-        {
-          "code": "repandu",
-          "label": "Produit très répandu"
-        }
-      ],
-      "cvss": 9.1,
-      "epss": null,
-      "epss_percentile": null,
-      "sources": [
-        {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-123168"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-123168",
-      "date": "2026-11-24T17:18:13.427000+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
       "cle": "CVE-2026-123167",
       "cve": "CVE-2026-123167",
       "cves": [],
@@ -419,11 +381,281 @@
       ]
     },
     {
-      "cle": "CVE-2026-82319",
-      "cve": "CVE-2026-82319",
+      "cle": "CVE-2026-136411",
+      "cve": "CVE-2026-136411",
       "cves": [],
-      "titre": "CVE-2026-82319",
-      "resume": "SolarWinds Serv-U is affected by a time-of-check to time-of-use (TOCTOU) vulnerability. A user with domain administrator or higher privileges may allow a user to modify protected files outside their home directory. The issue can result in read and write access to the application files and privilege…",
+      "titre": "CVE-2026-136411",
+      "resume": "BusyBox through 1.38.0 contains an absolute path traversal vulnerability in tftpd that allows unauthenticated remote attackers to access files outside any intended directory when started without a DIR argument. Attackers can send RRQ or WRQ packets with file names beginning with '/' to read sensiti…",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.8"
+        }
+      ],
+      "cvss": 9.8,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136411"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136411",
+      "date": "2026-11-24T19:18:17.003000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-136410",
+      "cve": "CVE-2026-136410",
+      "cves": [],
+      "titre": "CVE-2026-136410",
+      "resume": "Thymeleaf before 3.1.6.RELEASE contains a restricted expression mode bypass vulnerability that allows unauthenticated remote attackers to perform forbidden actions through improperly scoped expression objects. Attackers can inject input into restricted contexts like preprocessing, th:utext, th:on*…",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.0"
+        }
+      ],
+      "cvss": 9.0,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136410"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136410",
+      "date": "2026-11-24T19:18:16.850000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-136404",
+      "cve": "CVE-2026-136404",
+      "cves": [],
+      "titre": "CVE-2026-136404",
+      "resume": "ntop n2n supernode 3.0 through 3.1.1 contains a stack-based buffer overflow vulnerability that allows remote unauthenticated attackers to leak memory and execute code by sending an untrusted 16-bit auth token_size in REGISTER_SUPER_NAK datagrams. Attackers can register an edge in a chosen community…",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.8"
+        }
+      ],
+      "cvss": 9.8,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136404"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136404",
+      "date": "2026-11-24T19:18:16.040000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-135797",
+      "cve": "CVE-2026-135797",
+      "cves": [],
+      "titre": "CVE-2026-135797",
+      "resume": "A vulnerability was identified in Volans NGFW Next-Generation Firewall r5.1. Impacted is the function exec of the file sslvpn/sslvpn_client.php of the component SSLVPN Client. Such manipulation of the argument img leads to os command injection. The attack can be executed remotely. The exploit is pu…",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 10.0"
+        }
+      ],
+      "cvss": 10.0,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-135797"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-135797",
+      "date": "2026-11-24T19:18:14.630000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-135796",
+      "cve": "CVE-2026-135796",
+      "cves": [],
+      "titre": "CVE-2026-135796",
+      "resume": "A vulnerability was determined in Volans NGFW Next-Generation Firewall r5.1. This issue affects the function exec/system of the file modules/assets/port_serve_scan.mds of the component Web Management UI. This manipulation of the argument task_name/where/path causes os command injection. Remote expl…",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.9"
+        }
+      ],
+      "cvss": 9.9,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-135796"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-135796",
+      "date": "2026-11-24T19:18:14.430000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-135794",
+      "cve": "CVE-2026-135794",
+      "cves": [],
+      "titre": "CVE-2026-135794",
+      "resume": "A vulnerability was determined in Panabit Smart Application Gateway TANGr7p10. The affected element is the function add_crontab of the file admin/cgi-bin/sac/ajax_sac_crontab of the component SAC. Executing a manipulation of the argument cmd can lead to code injection. The attack can be executed re…",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.9"
+        }
+      ],
+      "cvss": 9.9,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-135794"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-135794",
+      "date": "2026-11-24T19:18:14.237000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-132877",
+      "cve": "CVE-2026-132877",
+      "cves": [],
+      "titre": "CVE-2026-132877",
+      "resume": "Adobe Experience Manager is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could result in arbitrary code execution in the context of the current user. A low-privileged attacker could exploit this vulnerability to execute arbitrary code. Exploitation of…",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.9"
+        }
+      ],
+      "cvss": 9.9,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-132877"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-132877",
+      "date": "2026-11-24T19:18:09.507000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-135792",
+      "cve": "CVE-2026-135792",
+      "cves": [],
+      "titre": "CVE-2026-135792",
+      "resume": "A vulnerability has been found in Panabit Smart Application Gateway TANGr7p10. This issue affects the function send_email_authcode of the file user.cgi of the component Email Auth Code Sender. Such manipulation of the argument Username leads to os command injection. The attack may be launched remot…",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 10.0"
+        }
+      ],
+      "cvss": 10.0,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-135792"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-135792",
+      "date": "2026-11-24T18:19:03.150000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-135791",
+      "cve": "CVE-2026-135791",
+      "cves": [],
+      "titre": "CVE-2026-135791",
+      "resume": "A flaw has been found in Panabit Smart Application Gateway TANGr7p10. This vulnerability affects the function edit_data_pie of the file /cgi-bin/flowcontrol/ajax_data_pie. This manipulation of the argument Name causes os command injection. The attack may be initiated remotely. The exploit has been…",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.9"
+        }
+      ],
+      "cvss": 9.9,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-135791"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-135791",
+      "date": "2026-11-24T18:19:02.880000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-125718",
+      "cve": "CVE-2026-125718",
+      "cves": [],
+      "titre": "CVE-2026-125718",
+      "resume": "Adobe Campaign Classic (ACC) is affected by an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability that could result in a Security feature bypass. A low-privileged attacker could leverage this vulnerability to bypass security measures and gain unauthor…",
       "editeur": null,
       "produit": null,
       "score": 20,
@@ -439,11 +671,191 @@
       "sources": [
         {
           "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-82319"
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-125718"
         }
       ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-82319",
-      "date": "2026-11-24T17:18:54.453000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-125718",
+      "date": "2026-11-24T18:18:54.717000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-125717",
+      "cve": "CVE-2026-125717",
+      "cves": [],
+      "titre": "CVE-2026-125717",
+      "resume": "Adobe Campaign Classic (ACC) is affected by an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability that could result in privilege escalation. A low-privileged attacker could exploit this vulnerability to gain elevated access to sensitive data or functi…",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.6"
+        }
+      ],
+      "cvss": 9.6,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-125717"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-125717",
+      "date": "2026-11-24T18:18:54.533000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-125716",
+      "cve": "CVE-2026-125716",
+      "cves": [],
+      "titre": "CVE-2026-125716",
+      "resume": "Adobe Campaign Classic (ACC) is affected by a reflected Cross-Site Scripting (XSS) vulnerability. An attacker could exploit this vulnerability to inject malicious scripts into a web page, potentially gaining elevated access or control over the victim's account or session. Exploitation of this issue…",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.3"
+        }
+      ],
+      "cvss": 9.3,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-125716"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-125716",
+      "date": "2026-11-24T18:18:54.380000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-123987",
+      "cve": "CVE-2026-123987",
+      "cves": [],
+      "titre": "CVE-2026-123987",
+      "resume": "Adobe Campaign Classic (ACC) is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could result in arbitrary code execution in the context of the current user. A low-privileged attacker could exploit this vulnerability to execute arbitrary code. Exploitation…",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.9"
+        }
+      ],
+      "cvss": 9.9,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-123987"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-123987",
+      "date": "2026-11-24T18:18:53.753000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-123986",
+      "cve": "CVE-2026-123986",
+      "cves": [],
+      "titre": "CVE-2026-123986",
+      "resume": "Adobe Campaign Classic (ACC) is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could result in arbitrary code execution in the context of the current user. A low-privileged attacker could exploit this vulnerability to execute arbitrary code. Exploitation…",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.9"
+        }
+      ],
+      "cvss": 9.9,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-123986"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-123986",
+      "date": "2026-11-24T18:18:53.603000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-123723",
+      "cve": "CVE-2026-123723",
+      "cves": [],
+      "titre": "CVE-2026-123723",
+      "resume": "Adobe Campaign Classic (ACC) is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could result in arbitrary code execution in the context of the current user. A low-privileged attacker could exploit this vulnerability to execute arbitrary code. Exploitation…",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.9"
+        }
+      ],
+      "cvss": 9.9,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-123723"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-123723",
+      "date": "2026-11-24T18:18:53.453000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-123342",
+      "cve": "CVE-2026-123342",
+      "cves": [],
+      "titre": "CVE-2026-123342",
+      "resume": "Adobe Campaign Classic (ACC) is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could result in arbitrary code execution in the context of the current user. A low-privileged attacker could exploit this vulnerability to execute arbitrary code. Exploitation…",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.9"
+        }
+      ],
+      "cvss": 9.9,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-123342"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-123342",
+      "date": "2026-11-24T18:18:53+00:00",
       "origines": [
         "int"
       ]
@@ -537,348 +949,6 @@
       "origines": [
         "int"
       ]
-    },
-    {
-      "cle": "CVE-2026-135788",
-      "cve": "CVE-2026-135788",
-      "cves": [],
-      "titre": "CVE-2026-135788",
-      "resume": "A weakness has been identified in D-Link DIR-X1860 4.5.2. Affected by this vulnerability is an unknown functionality of the file /usr/sbin/anweb. Executing a manipulation can lead to os command injection. It is possible to launch the attack remotely. The exploit has been made available to the publi…",
-      "editeur": null,
-      "produit": null,
-      "score": 20,
-      "raisons": [
-        {
-          "code": "cvss",
-          "label": "CVSS 9.9"
-        }
-      ],
-      "cvss": 9.9,
-      "epss": null,
-      "epss_percentile": null,
-      "sources": [
-        {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-135788"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-135788",
-      "date": "2026-11-24T17:18:43.250000+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-119582",
-      "cve": "CVE-2026-119582",
-      "cves": [],
-      "titre": "CVE-2026-119582",
-      "resume": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in ITG Bilgisayar Teknoloji Grubu Tic. Ltd. Şti. VSRM allows SQL Injection. This issue affects vSRM: from v14.08.3 before v14.08.5.",
-      "editeur": null,
-      "produit": null,
-      "score": 20,
-      "raisons": [
-        {
-          "code": "cvss",
-          "label": "CVSS 9.8"
-        }
-      ],
-      "cvss": 9.8,
-      "epss": null,
-      "epss_percentile": null,
-      "sources": [
-        {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-119582"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-119582",
-      "date": "2026-11-24T12:17:17.617000+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-117593",
-      "cve": "CVE-2026-117593",
-      "cves": [],
-      "titre": "CVE-2026-117593",
-      "resume": "Weak Password Recovery Mechanism for Forgotten Password vulnerability in ITG Bilgisayar Teknoloji Grubu Tic. Ltd. Şti. VSRM allows Password Recovery Exploitation. This issue affects vSRM: from v14.08.3 before v14.08.5.",
-      "editeur": null,
-      "produit": null,
-      "score": 20,
-      "raisons": [
-        {
-          "code": "cvss",
-          "label": "CVSS 9.1"
-        }
-      ],
-      "cvss": 9.1,
-      "epss": null,
-      "epss_percentile": null,
-      "sources": [
-        {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-117593"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-117593",
-      "date": "2026-11-24T12:17:17.343000+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-135208",
-      "cve": "CVE-2026-135208",
-      "cves": [],
-      "titre": "CVE-2026-135208",
-      "resume": "Kerberos Agent before 3.14.4 contains an authentication bypass vulnerability that allows unauthenticated attackers to forge administrator tokens because JWTMiddleWare() falls back to the hard-coded key TOBECHANGED. Attackers can sign HS256 tokens with arbitrary username and role claims to access /a…",
-      "editeur": null,
-      "produit": null,
-      "score": 20,
-      "raisons": [
-        {
-          "code": "cvss",
-          "label": "CVSS 9.8"
-        }
-      ],
-      "cvss": 9.8,
-      "epss": 0.0056,
-      "epss_percentile": 0.4712,
-      "sources": [
-        {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-135208"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-135208",
-      "date": "2026-11-23T16:17:38.250000+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-133993",
-      "cve": "CVE-2026-133993",
-      "cves": [],
-      "titre": "CVE-2026-133993",
-      "resume": "A security flaw has been discovered in D-Link DIR-600L 2.17b02. This affects the function FUN_0040efb0 of the file gena.cgi of the component GENA Subscription Handler. Performing a manipulation of the argument service results in stack-based buffer overflow. The attack is possible to be carried out…",
-      "editeur": null,
-      "produit": null,
-      "score": 20,
-      "raisons": [
-        {
-          "code": "cvss",
-          "label": "CVSS 10.0"
-        }
-      ],
-      "cvss": 10.0,
-      "epss": 0.0105,
-      "epss_percentile": 0.6502,
-      "sources": [
-        {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-133993"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-133993",
-      "date": "2026-11-21T18:16:54.277000+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-123903",
-      "cve": "CVE-2026-123903",
-      "cves": [],
-      "titre": "VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation",
-      "resume": "",
-      "editeur": null,
-      "produit": null,
-      "score": 15,
-      "raisons": [
-        {
-          "code": "repandu",
-          "label": "Produit très répandu"
-        },
-        {
-          "code": "medias",
-          "label": "Citée par 1 média"
-        }
-      ],
-      "cvss": null,
-      "epss": null,
-      "epss_percentile": null,
-      "sources": [
-        {
-          "nom": "The Hacker News",
-          "lien": "https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-123903",
-      "date": "2026-11-24T13:28:26+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-87268",
-      "cve": "CVE-2026-87268",
-      "cves": [],
-      "titre": "Google Researcher Shows How a Single Bit Change in .NET Files Bypassed Windows Code Integrity",
-      "resume": "",
-      "editeur": null,
-      "produit": null,
-      "score": 15,
-      "raisons": [
-        {
-          "code": "repandu",
-          "label": "Produit très répandu"
-        },
-        {
-          "code": "medias",
-          "label": "Citée par 1 média"
-        }
-      ],
-      "cvss": null,
-      "epss": 0.0016,
-      "epss_percentile": 0.0518,
-      "sources": [
-        {
-          "nom": "The Hacker News",
-          "lien": "https://thehackernews.com/2026/11/google-researcher-shows-how-single-bit.html"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-87268",
-      "date": "2026-11-24T12:02:00+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-134401",
-      "cve": "CVE-2026-134401",
-      "cves": [],
-      "titre": "Google Chrome : une seule faille corrigée, mais elle est critique (CVE-2026-134401)",
-      "resume": "",
-      "editeur": null,
-      "produit": null,
-      "score": 15,
-      "raisons": [
-        {
-          "code": "repandu",
-          "label": "Produit très répandu"
-        },
-        {
-          "code": "medias",
-          "label": "Citée par 1 média"
-        }
-      ],
-      "cvss": null,
-      "epss": 0.0041,
-      "epss_percentile": 0.3562,
-      "sources": [
-        {
-          "nom": "IT-Connect",
-          "lien": "https://www.it-connect.fr/cve-2026-134401-faille-critique-chrome/"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-134401",
-      "date": "2026-11-24T10:33:39+00:00",
-      "origines": [
-        "fr"
-      ]
-    },
-    {
-      "cle": "CVE-2026-135736",
-      "cve": "CVE-2026-135736",
-      "cves": [],
-      "titre": "CVE-2026-135736",
-      "resume": "FFmpeg 4.4 before 9.1 contains a heap out-of-bounds read and write vulnerability in libavfilter/vf_deband.c that allows attackers to corrupt heap memory by sending a runtime coupling command. Attackers can send a 'deband coupling 1' command via sendcmd or an unauthenticated zmq filter, making chrom…",
-      "editeur": null,
-      "produit": null,
-      "score": 12,
-      "raisons": [
-        {
-          "code": "cvss",
-          "label": "CVSS 8.1"
-        }
-      ],
-      "cvss": 8.1,
-      "epss": 0.0068,
-      "epss_percentile": 0.5318,
-      "sources": [
-        {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-135736"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-135736",
-      "date": "2026-11-24T04:17:32.500000+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-134814",
-      "cve": "CVE-2026-134814",
-      "cves": [],
-      "titre": "Critical binary-parser Flaw Enables JavaScript Injection via Malicious Parser Definitions",
-      "resume": "",
-      "editeur": null,
-      "produit": null,
-      "score": 5,
-      "raisons": [
-        {
-          "code": "medias",
-          "label": "Citée par 1 média"
-        }
-      ],
-      "cvss": null,
-      "epss": 0.0061,
-      "epss_percentile": 0.4986,
-      "sources": [
-        {
-          "nom": "The Hacker News",
-          "lien": "https://thehackernews.com/2026/11/critical-binary-parser-flaw-enables.html"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-134814",
-      "date": "2026-11-23T13:22:20+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-131914",
-      "cve": "CVE-2026-131914",
-      "cves": [],
-      "titre": "Hackers Exploit Critical ASP.NET Anti-CSRF Library Flaw Allowing Unauthenticated RCE",
-      "resume": "",
-      "editeur": null,
-      "produit": null,
-      "score": 5,
-      "raisons": [
-        {
-          "code": "medias",
-          "label": "Citée par 1 média"
-        }
-      ],
-      "cvss": null,
-      "epss": 0.0061,
-      "epss_percentile": 0.5015,
-      "sources": [
-        {
-          "nom": "The Hacker News",
-          "lien": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-131914",
-      "date": "2026-11-23T09:11:56+00:00",
-      "origines": [
-        "int"
-      ]
     }
   ],
   "certfr": [
@@ -894,6 +964,45 @@
     }
   ],
   "kev": [
+    {
+      "source": "CISA KEV",
+      "origine": "int",
+      "cve": "CVE-2026-132224",
+      "titre": "Optimizely Web Experimentation External Control of Critical State Data Vulnerability",
+      "editeur": "Optimizely",
+      "produit": "Web Experimentation",
+      "resume": "Optimizely Web Experimentation contains an external control of critical state data vulnerability in its account signup flow that could allow an attacker to impersonate existing customer users and modify Project JavaScript. Successful exploitation can result in attacker-controlled JavaScript being d…",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triag…",
+      "date": "2026-11-24T00:00:00+00:00",
+      "ransomware": false,
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-132224"
+    },
+    {
+      "source": "CISA KEV",
+      "origine": "int",
+      "cve": "CVE-2026-131914",
+      "titre": "Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability",
+      "editeur": "Idunno",
+      "produit": "AntiCsrf",
+      "resume": "Idunno AntiCsrf contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via object injection. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or trans…",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triag…",
+      "date": "2026-11-24T00:00:00+00:00",
+      "ransomware": false,
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-131914"
+    },
+    {
+      "source": "CISA KEV",
+      "origine": "int",
+      "cve": "CVE-2026-132165",
+      "titre": "Drupal Core Remote Code Execution Vulnerability",
+      "editeur": "Drupal",
+      "produit": "Core",
+      "resume": "Drupal Core contains a not failing securely vulnerability that could allow an unauthenticated attacker to take over an existing site or execute arbitrary code via the Drupal installer. Under specific conditions, the attacker can use install.php to attempt to reinstall Drupal on the site.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triag…",
+      "date": "2026-11-24T00:00:00+00:00",
+      "ransomware": false,
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-132165"
+    },
     {
       "source": "CISA KEV",
       "origine": "int",
@@ -925,22 +1034,32 @@
     {
       "source": "NVD",
       "origine": "int",
-      "cve": "CVE-2026-133993",
-      "resume": "A security flaw has been discovered in D-Link DIR-600L 2.17b02. This affects the function FUN_0040efb0 of the file gena.cgi of the component GENA Subscription Handler. Performing a manipulation of the argument service results in stack-based buffer overflow. The attack is possible to be carried out…",
-      "score": 10.0,
-      "severite": "CRITICAL",
-      "date": "2026-11-21T18:16:54.277000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-133993"
-    },
-    {
-      "source": "NVD",
-      "origine": "int",
       "cve": "CVE-2026-134882",
       "resume": "A weakness has been identified in TOTOLINK A7100RU 7.4cu.2313_B20191024. This issue affects the function exportOvpn of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. This manipulation of the argument Username causes os command injection. The attack is possible to be carried out remotel…",
       "score": 10.0,
       "severite": "CRITICAL",
       "date": "2026-11-23T09:17:05.653000+00:00",
       "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-134882"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-135792",
+      "resume": "A vulnerability has been found in Panabit Smart Application Gateway TANGr7p10. This issue affects the function send_email_authcode of the file user.cgi of the component Email Auth Code Sender. Such manipulation of the argument Username leads to os command injection. The attack may be launched remot…",
+      "score": 10.0,
+      "severite": "CRITICAL",
+      "date": "2026-11-24T18:19:03.150000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-135792"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-135797",
+      "resume": "A vulnerability was identified in Volans NGFW Next-Generation Firewall r5.1. Impacted is the function exec of the file sslvpn/sslvpn_client.php of the component SSLVPN Client. Such manipulation of the argument img leads to os command injection. The attack can be executed remotely. The exploit is pu…",
+      "score": 10.0,
+      "severite": "CRITICAL",
+      "date": "2026-11-24T19:18:14.630000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-135797"
     },
     {
       "source": "NVD",
@@ -965,6 +1084,86 @@
     {
       "source": "NVD",
       "origine": "int",
+      "cve": "CVE-2026-123342",
+      "resume": "Adobe Campaign Classic (ACC) is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could result in arbitrary code execution in the context of the current user. A low-privileged attacker could exploit this vulnerability to execute arbitrary code. Exploitation…",
+      "score": 9.9,
+      "severite": "CRITICAL",
+      "date": "2026-11-24T18:18:53+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-123342"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-123723",
+      "resume": "Adobe Campaign Classic (ACC) is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could result in arbitrary code execution in the context of the current user. A low-privileged attacker could exploit this vulnerability to execute arbitrary code. Exploitation…",
+      "score": 9.9,
+      "severite": "CRITICAL",
+      "date": "2026-11-24T18:18:53.453000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-123723"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-123986",
+      "resume": "Adobe Campaign Classic (ACC) is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could result in arbitrary code execution in the context of the current user. A low-privileged attacker could exploit this vulnerability to execute arbitrary code. Exploitation…",
+      "score": 9.9,
+      "severite": "CRITICAL",
+      "date": "2026-11-24T18:18:53.603000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-123986"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-123987",
+      "resume": "Adobe Campaign Classic (ACC) is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could result in arbitrary code execution in the context of the current user. A low-privileged attacker could exploit this vulnerability to execute arbitrary code. Exploitation…",
+      "score": 9.9,
+      "severite": "CRITICAL",
+      "date": "2026-11-24T18:18:53.753000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-123987"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-135791",
+      "resume": "A flaw has been found in Panabit Smart Application Gateway TANGr7p10. This vulnerability affects the function edit_data_pie of the file /cgi-bin/flowcontrol/ajax_data_pie. This manipulation of the argument Name causes os command injection. The attack may be initiated remotely. The exploit has been…",
+      "score": 9.9,
+      "severite": "CRITICAL",
+      "date": "2026-11-24T18:19:02.880000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-135791"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-132877",
+      "resume": "Adobe Experience Manager is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could result in arbitrary code execution in the context of the current user. A low-privileged attacker could exploit this vulnerability to execute arbitrary code. Exploitation of…",
+      "score": 9.9,
+      "severite": "CRITICAL",
+      "date": "2026-11-24T19:18:09.507000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-132877"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-135794",
+      "resume": "A vulnerability was determined in Panabit Smart Application Gateway TANGr7p10. The affected element is the function add_crontab of the file admin/cgi-bin/sac/ajax_sac_crontab of the component SAC. Executing a manipulation of the argument cmd can lead to code injection. The attack can be executed re…",
+      "score": 9.9,
+      "severite": "CRITICAL",
+      "date": "2026-11-24T19:18:14.237000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-135794"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-135796",
+      "resume": "A vulnerability was determined in Volans NGFW Next-Generation Firewall r5.1. This issue affects the function exec/system of the file modules/assets/port_serve_scan.mds of the component Web Management UI. This manipulation of the argument task_name/where/path causes os command injection. Remote expl…",
+      "score": 9.9,
+      "severite": "CRITICAL",
+      "date": "2026-11-24T19:18:14.430000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-135796"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
       "cve": "CVE-2026-135208",
       "resume": "Kerberos Agent before 3.14.4 contains an authentication bypass vulnerability that allows unauthenticated attackers to forge administrator tokens because JWTMiddleWare() falls back to the hard-coded key TOBECHANGED. Attackers can sign HS256 tokens with arbitrary username and role claims to access /a…",
       "score": 9.8,
@@ -985,12 +1184,62 @@
     {
       "source": "NVD",
       "origine": "int",
+      "cve": "CVE-2026-136404",
+      "resume": "ntop n2n supernode 3.0 through 3.1.1 contains a stack-based buffer overflow vulnerability that allows remote unauthenticated attackers to leak memory and execute code by sending an untrusted 16-bit auth token_size in REGISTER_SUPER_NAK datagrams. Attackers can register an edge in a chosen community…",
+      "score": 9.8,
+      "severite": "CRITICAL",
+      "date": "2026-11-24T19:18:16.040000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136404"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-136411",
+      "resume": "BusyBox through 1.38.0 contains an absolute path traversal vulnerability in tftpd that allows unauthenticated remote attackers to access files outside any intended directory when started without a DIR argument. Attackers can send RRQ or WRQ packets with file names beginning with '/' to read sensiti…",
+      "score": 9.8,
+      "severite": "CRITICAL",
+      "date": "2026-11-24T19:18:17.003000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136411"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-112732",
+      "resume": "Double free in Microsoft Office Visio allows an unauthorized attacker to execute code over a network.",
+      "score": 9.8,
+      "severite": "CRITICAL",
+      "date": "2026-11-24T20:18:21.960000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-112732"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
       "cve": "CVE-2026-136184",
       "resume": "compose-farm 0.19.0 before 1.22.0 contains a cross-site WebSocket hijacking and cross-site request forgery vulnerability because its unauthenticated web UI performs no Origin validation. Malicious websites visited by users can open /ws/shell/{host} or /ws/exec sockets, or abuse unquoted service par…",
       "score": 9.6,
       "severite": "CRITICAL",
       "date": "2026-11-24T17:18:46.180000+00:00",
       "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136184"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-125717",
+      "resume": "Adobe Campaign Classic (ACC) is affected by an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability that could result in privilege escalation. A low-privileged attacker could exploit this vulnerability to gain elevated access to sensitive data or functi…",
+      "score": 9.6,
+      "severite": "CRITICAL",
+      "date": "2026-11-24T18:18:54.533000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-125717"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-125716",
+      "resume": "Adobe Campaign Classic (ACC) is affected by a reflected Cross-Site Scripting (XSS) vulnerability. An attacker could exploit this vulnerability to inject malicious scripts into a web page, potentially gaining elevated access or control over the victim's account or session. Exploitation of this issue…",
+      "score": 9.3,
+      "severite": "CRITICAL",
+      "date": "2026-11-24T18:18:54.380000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-125716"
     },
     {
       "source": "NVD",
@@ -1011,26 +1260,6 @@
       "severite": "CRITICAL",
       "date": "2026-11-24T17:18:13.293000+00:00",
       "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-123167"
-    },
-    {
-      "source": "NVD",
-      "origine": "int",
-      "cve": "CVE-2026-123168",
-      "resume": "SolarWinds Serv-U is affected by an insufficient validation vulnerability that, when exploited, could lead to privilege escalation into the root user in Linux installations. The risk is lower for Windows installations.",
-      "score": 9.1,
-      "severite": "CRITICAL",
-      "date": "2026-11-24T17:18:13.427000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-123168"
-    },
-    {
-      "source": "NVD",
-      "origine": "int",
-      "cve": "CVE-2026-123172",
-      "resume": "Solarwinds Serv-U is affected by a privilege escalation vulnerability that, when exploited, could lead to the escalation of privileges to root for Linux installations. The risk is lower for Windows installations.",
-      "score": 9.1,
-      "severite": "CRITICAL",
-      "date": "2026-11-24T17:18:13.933000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-123172"
     },
     {
       "source": "NVD",
@@ -1065,42 +1294,22 @@
     {
       "source": "NVD",
       "origine": "int",
-      "cve": "CVE-2026-82319",
-      "resume": "SolarWinds Serv-U is affected by a time-of-check to time-of-use (TOCTOU) vulnerability. A user with domain administrator or higher privileges may allow a user to modify protected files outside their home directory. The issue can result in read and write access to the application files and privilege…",
+      "cve": "CVE-2026-125718",
+      "resume": "Adobe Campaign Classic (ACC) is affected by an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability that could result in a Security feature bypass. A low-privileged attacker could leverage this vulnerability to bypass security measures and gain unauthor…",
       "score": 9.1,
       "severite": "CRITICAL",
-      "date": "2026-11-24T17:18:54.453000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-82319"
+      "date": "2026-11-24T18:18:54.717000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-125718"
     },
     {
       "source": "NVD",
       "origine": "int",
-      "cve": "CVE-2026-82320",
-      "resume": "SolarWinds Serv-U was found to be affected by another type confusion vulnerability that may allow domain administrators to escalate privileges to that of a system administrator. The risk is lower for Windows installations.",
-      "score": 9.1,
+      "cve": "CVE-2026-136410",
+      "resume": "Thymeleaf before 3.1.6.RELEASE contains a restricted expression mode bypass vulnerability that allows unauthenticated remote attackers to perform forbidden actions through improperly scoped expression objects. Attackers can inject input into restricted contexts like preprocessing, th:utext, th:on*…",
+      "score": 9.0,
       "severite": "CRITICAL",
-      "date": "2026-11-24T17:18:54.587000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-82320"
-    },
-    {
-      "source": "NVD",
-      "origine": "int",
-      "cve": "CVE-2026-82321",
-      "resume": "SolarWinds Serv-U was found to be affected by a type confusion vulnerability that may allow domain administrators to escalate privileges to that of a system administrator. The risk is lower for Windows installations.",
-      "score": 9.1,
-      "severite": "CRITICAL",
-      "date": "2026-11-24T17:18:54.720000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-82321"
-    },
-    {
-      "source": "NVD",
-      "origine": "int",
-      "cve": "CVE-2026-82322",
-      "resume": "SolarWinds Serv-U is affected by an Insecure Direct Object Reference (IDOR) vulnerability that allows a domain group administrator to bypass restrictions and escalate privileges to the server administrator level. The risk is lower for Windows installations.",
-      "score": 9.1,
-      "severite": "CRITICAL",
-      "date": "2026-11-24T17:18:54.850000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-82322"
+      "date": "2026-11-24T19:18:16.850000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136410"
     },
     {
       "source": "NVD",
@@ -1114,6 +1323,46 @@
     }
   ],
   "presse": [
+    {
+      "source": "BleepingComputer",
+      "origine": "int",
+      "titre": "New Inception extortion gang launches large-scale vishing campaign",
+      "lien": "https://www.bleepingcomputer.com/news/security/new-inception-extortion-gang-launches-large-scale-vishing-campaign/",
+      "date": "2026-11-24T20:21:20+00:00",
+      "resume": "A newly formed data extortion group named 'Inception' has been linked to a large-scale campaign that targets single sign-on (SSO) credentials of multiple global brands and firms. [...]",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "origine": "int",
+      "titre": "Turnitin discloses cyberattack affecting customer-facing systems",
+      "lien": "https://www.bleepingcomputer.com/news/security/turnitin-discloses-cyberattack-affecting-customer-facing-systems/",
+      "date": "2026-11-24T18:59:52+00:00",
+      "resume": "Turnitin disclosed via a statement from its CEO, Chris Caren, that it recently detected unauthorized activity involving certain customer-facing systems. [...]",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "origine": "int",
+      "titre": "Radware discloses breach exposing customer cloud access keys",
+      "lien": "https://www.bleepingcomputer.com/news/security/radware-discloses-breach-exposing-customer-cloud-access-keys/",
+      "date": "2026-11-24T17:49:05+00:00",
+      "resume": "Cybersecurity company Radware says attackers gained access to some of its customers' account details and cloud access keys through an unsecured internal Cloud WAF (Web Application Firewall) management API that was left exposed online. [...]",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "The Hacker News",
+      "origine": "int",
+      "titre": "Iran-Aligned Volant Manticore Uses IPFS-Based KuboShell Backdoor in Espionage Campaigns",
+      "lien": "https://thehackernews.com/2026/11/iran-aligned-volant-manticore-uses-ipfs.html",
+      "date": "2026-11-24T16:54:07+00:00",
+      "resume": "A previously undocumented Iran-aligned cyber espionage group called Volant Manticore has targeted telecommunications companies, airlines, and critical infrastructure in Cyprus. Central to the group's operations is a backdoor called KuboShell that uses the InterPlanetary File System (IPFS) for comma…",
+      "attaque": true,
+      "cves": []
+    },
     {
       "source": "SecurityWeek",
       "origine": "int",
@@ -1513,26 +1762,6 @@
       "cves": []
     },
     {
-      "source": "BleepingComputer",
-      "origine": "int",
-      "titre": "AI Agents Are Creating a Shared Responsibility Gap",
-      "lien": "https://www.bleepingcomputer.com/news/security/ai-agents-are-creating-a-shared-responsibility-gap/",
-      "date": "2026-11-23T15:00:10+00:00",
-      "resume": "AI agents operate across multiple platforms, creating security gaps when no single vendor can see or control their actions. Token Security examines the shared responsibility problem and explains how organizations can better manage agent identities, permissions, and accountability. [...]",
-      "attaque": false,
-      "cves": []
-    },
-    {
-      "source": "BleepingComputer",
-      "origine": "int",
-      "titre": "Microsoft testing fix for Windows 11 Bluetooth audio quality drops",
-      "lien": "https://www.bleepingcomputer.com/news/microsoft/microsoft-testing-fix-for-windows-11-bluetooth-audio-quality-drops/",
-      "date": "2026-11-23T13:28:45+00:00",
-      "resume": "Microsoft is working to fix a long-standing Windows issue that has been causing significant audio quality drops for Bluetooth headphone users. [...]",
-      "attaque": false,
-      "cves": []
-    },
-    {
       "source": "The Hacker News",
       "origine": "int",
       "titre": "Critical binary-parser Flaw Enables JavaScript Injection via Malicious Parser Definitions",
@@ -1576,16 +1805,6 @@
       "date": "2026-11-23T12:05:22+00:00",
       "resume": "Trois courtiers en métaux précieux piratés, des clients ciblés par de faux policiers et dix personnes mises en examen.",
       "attaque": true,
-      "cves": []
-    },
-    {
-      "source": "BleepingComputer",
-      "origine": "int",
-      "titre": "Call center operator gets 8 years for helping scam 30,000 Americans",
-      "lien": "https://www.bleepingcomputer.com/news/security/call-center-operator-gets-8-years-for-helping-scam-30-000-americans/",
-      "date": "2026-11-23T12:02:23+00:00",
-      "resume": "A Peruvian call center operator was sentenced to eight years in prison for helping steal millions of dollars from over 30,000 Spanish-speaking US residents in a years-long government-impersonation fraud scheme. [...]",
-      "attaque": false,
       "cves": []
     },
     {
