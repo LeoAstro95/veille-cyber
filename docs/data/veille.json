@@ -1,5 +1,5 @@
 {
-  "genere_le": "2026-11-24T20:56:03.681511+00:00",
+  "genere_le": "2026-11-25T01:15:34.313221+00:00",
   "fenetre_jours": 3,
   "stats": {
     "urgentes": 0,
@@ -7,7 +7,7 @@
     "avis_certfr": 1,
     "kev": 5,
     "cve_critiques": 29,
-    "attaques": 36
+    "attaques": 37
   },
   "priorites": [
     {
@@ -215,40 +215,6 @@
       ]
     },
     {
-      "cle": "CVE-2026-112732",
-      "cve": "CVE-2026-112732",
-      "cves": [],
-      "titre": "CVE-2026-112732",
-      "resume": "Double free in Microsoft Office Visio allows an unauthorized attacker to execute code over a network.",
-      "editeur": null,
-      "produit": null,
-      "score": 30,
-      "raisons": [
-        {
-          "code": "cvss",
-          "label": "CVSS 9.8"
-        },
-        {
-          "code": "repandu",
-          "label": "Produit très répandu"
-        }
-      ],
-      "cvss": 9.8,
-      "epss": null,
-      "epss_percentile": null,
-      "sources": [
-        {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-112732"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-112732",
-      "date": "2026-11-24T20:18:21.960000+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
       "cle": "CVE-2026-82316",
       "cve": "CVE-2026-82316",
       "cves": [],
@@ -381,6 +347,66 @@
       ]
     },
     {
+      "cle": "CVE-2026-136136",
+      "cve": "CVE-2026-136136",
+      "cves": [],
+      "titre": "CVE-2026-136136",
+      "resume": "A vulnerability was identified in Netis WF2409E up to 20261026. Affected by this issue is some unknown functionality of the file /cgi-bin/skk_set.cgi of the component CGI Interface. The manipulation of the argument app/password/new_pwd_confirm/passwd_set/mode_name/wl_link leads to improper authenti…",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 10.0"
+        }
+      ],
+      "cvss": 10.0,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136136"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136136",
+      "date": "2026-11-25T00:17:10.560000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-136522",
+      "cve": "CVE-2026-136522",
+      "cves": [],
+      "titre": "CVE-2026-136522",
+      "resume": "CubeWP Forms before 1.1.13 contains an unauthenticated stored cross-site scripting vulnerability that allows attackers to inject malicious JavaScript by submitting unregistered field names through the public REST route cubewp-custom-form/v1/submit/, which bypasses its own nonce check and saves unsa…",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.6"
+        }
+      ],
+      "cvss": 9.6,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136522"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136522",
+      "date": "2026-11-24T21:18:20.433000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
       "cle": "CVE-2026-136411",
       "cve": "CVE-2026-136411",
       "cves": [],
@@ -406,36 +432,6 @@
       ],
       "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136411",
       "date": "2026-11-24T19:18:17.003000+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-136410",
-      "cve": "CVE-2026-136410",
-      "cves": [],
-      "titre": "CVE-2026-136410",
-      "resume": "Thymeleaf before 3.1.6.RELEASE contains a restricted expression mode bypass vulnerability that allows unauthenticated remote attackers to perform forbidden actions through improperly scoped expression objects. Attackers can inject input into restricted contexts like preprocessing, th:utext, th:on*…",
-      "editeur": null,
-      "produit": null,
-      "score": 20,
-      "raisons": [
-        {
-          "code": "cvss",
-          "label": "CVSS 9.0"
-        }
-      ],
-      "cvss": 9.0,
-      "epss": null,
-      "epss_percentile": null,
-      "sources": [
-        {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136410"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136410",
-      "date": "2026-11-24T19:18:16.850000+00:00",
       "origines": [
         "int"
       ]
@@ -1064,6 +1060,16 @@
     {
       "source": "NVD",
       "origine": "int",
+      "cve": "CVE-2026-136136",
+      "resume": "A vulnerability was identified in Netis WF2409E up to 20261026. Affected by this issue is some unknown functionality of the file /cgi-bin/skk_set.cgi of the component CGI Interface. The manipulation of the argument app/password/new_pwd_confirm/passwd_set/mode_name/wl_link leads to improper authenti…",
+      "score": 10.0,
+      "severite": "CRITICAL",
+      "date": "2026-11-25T00:17:10.560000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136136"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
       "cve": "CVE-2026-135788",
       "resume": "A weakness has been identified in D-Link DIR-X1860 4.5.2. Affected by this vulnerability is an unknown functionality of the file /usr/sbin/anweb. Executing a manipulation can lead to os command injection. It is possible to launch the attack remotely. The exploit has been made available to the publi…",
       "score": 9.9,
@@ -1204,16 +1210,6 @@
     {
       "source": "NVD",
       "origine": "int",
-      "cve": "CVE-2026-112732",
-      "resume": "Double free in Microsoft Office Visio allows an unauthorized attacker to execute code over a network.",
-      "score": 9.8,
-      "severite": "CRITICAL",
-      "date": "2026-11-24T20:18:21.960000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-112732"
-    },
-    {
-      "source": "NVD",
-      "origine": "int",
       "cve": "CVE-2026-136184",
       "resume": "compose-farm 0.19.0 before 1.22.0 contains a cross-site WebSocket hijacking and cross-site request forgery vulnerability because its unauthenticated web UI performs no Origin validation. Malicious websites visited by users can open /ws/shell/{host} or /ws/exec sockets, or abuse unquoted service par…",
       "score": 9.6,
@@ -1230,6 +1226,16 @@
       "severite": "CRITICAL",
       "date": "2026-11-24T18:18:54.533000+00:00",
       "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-125717"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-136522",
+      "resume": "CubeWP Forms before 1.1.13 contains an unauthenticated stored cross-site scripting vulnerability that allows attackers to inject malicious JavaScript by submitting unregistered field names through the public REST route cubewp-custom-form/v1/submit/, which bypasses its own nonce check and saves unsa…",
+      "score": 9.6,
+      "severite": "CRITICAL",
+      "date": "2026-11-24T21:18:20.433000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136522"
     },
     {
       "source": "NVD",
@@ -1304,16 +1310,6 @@
     {
       "source": "NVD",
       "origine": "int",
-      "cve": "CVE-2026-136410",
-      "resume": "Thymeleaf before 3.1.6.RELEASE contains a restricted expression mode bypass vulnerability that allows unauthenticated remote attackers to perform forbidden actions through improperly scoped expression objects. Attackers can inject input into restricted contexts like preprocessing, th:utext, th:on*…",
-      "score": 9.0,
-      "severite": "CRITICAL",
-      "date": "2026-11-24T19:18:16.850000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136410"
-    },
-    {
-      "source": "NVD",
-      "origine": "int",
       "cve": "CVE-2026-135736",
       "resume": "FFmpeg 4.4 before 9.1 contains a heap out-of-bounds read and write vulnerability in libavfilter/vf_deband.c that allows attackers to corrupt heap memory by sending a runtime coupling command. Attackers can send a 'deband coupling 1' command via sendcmd or an unauthenticated zmq filter, making chrom…",
       "score": 8.1,
@@ -1323,6 +1319,26 @@
     }
   ],
   "presse": [
+    {
+      "source": "SecurityWeek",
+      "origine": "int",
+      "titre": "An Unclassified CIA System Was Breached in a Cyberattack, AP Source Says",
+      "lien": "https://www.securityweek.com/an-unclassified-cia-system-was-breached-in-a-cyberattack-ap-source-says/",
+      "date": "2026-11-24T22:41:58+00:00",
+      "resume": "It was not clear what specific information was compromised or who was responsible. The post An Unclassified CIA System Was Breached in a Cyberattack, AP Source Says appeared first on SecurityWeek .",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "origine": "int",
+      "titre": "Rackspace shuts down Spot cloud platform after security breach",
+      "lien": "https://www.bleepingcomputer.com/news/security/rackspace-shuts-down-spot-cloud-platform-after-security-breach/",
+      "date": "2026-11-24T21:37:30+00:00",
+      "resume": "Rackspace is shutting down its Rackspace Spot cloud platform after a security breach allowed hackers to access customer Kubernetes clusters and secrets, giving customers until December 8 to migrate their services and download their data. [...]",
+      "attaque": true,
+      "cves": []
+    },
     {
       "source": "BleepingComputer",
       "origine": "int",
@@ -1722,16 +1738,6 @@
       "cves": []
     },
     {
-      "source": "BleepingComputer",
-      "origine": "int",
-      "titre": "GlobeTopper loses $2.5 million after hackers steal $70k in gift cards",
-      "lien": "https://www.bleepingcomputer.com/news/security/globetopper-loses-25-million-after-hackers-steal-70k-in-gift-cards/",
-      "date": "2026-11-23T16:50:01+00:00",
-      "resume": "A cyberattack disrupted operations at B2B top-up solutions provider GlobeTopper, causing an estimated $2.5 million in lost revenue, while the attacker redeemed digital gift cards worth $70,000. [...]",
-      "attaque": true,
-      "cves": []
-    },
-    {
       "source": "SecurityWeek",
       "origine": "int",
       "titre": "Azure Flaw Exploited to Target Secrets at Norwegian Energy Firms",
@@ -1749,16 +1755,6 @@
       "date": "2026-11-23T15:10:48+00:00",
       "resume": "A stolen key. A trusted message. A routine update. None of these looks like the start of a major security problem. That's partly why they work. Attackers don't always need to break down a door. Sometimes they just use one that's already open. This week's stories show how quickly a small opening can…",
       "attaque": true,
-      "cves": []
-    },
-    {
-      "source": "SecurityWeek",
-      "origine": "int",
-      "titre": "N-able Patches Critical Flaw Discovered After Mail Assure Cyberattack",
-      "lien": "https://www.securityweek.com/n-able-patches-critical-flaw-disclosed-after-mail-assure-cyberattack/",
-      "date": "2026-11-23T15:06:49+00:00",
-      "resume": "The company has restored access to the affected services and continues to monitor the affected environments. The post N-able Patches Critical Flaw Discovered After Mail Assure Cyberattack appeared first on SecurityWeek .",
-      "attaque": false,
       "cves": []
     },
     {
