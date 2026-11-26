@@ -1,12 +1,12 @@
 {
-  "genere_le": "2026-11-25T20:18:46.144135+00:00",
+  "genere_le": "2026-11-26T00:49:56.321428+00:00",
   "fenetre_jours": 3,
   "stats": {
     "urgentes": 0,
     "alertes_certfr": 0,
-    "avis_certfr": 9,
-    "kev": 15,
-    "cve_critiques": 27,
+    "avis_certfr": 0,
+    "kev": 13,
+    "cve_critiques": 31,
     "attaques": 39
   },
   "priorites": [
@@ -129,40 +129,6 @@
       ]
     },
     {
-      "cle": "CVE-2026-133968",
-      "cve": "CVE-2026-133968",
-      "cves": [],
-      "titre": "Project MONAI MONAI Label Path Traversal Vulnerability",
-      "resume": "Project MONAI MONAI Label contains a path traversal vulnerability that allows an unauthenticated remote attacker to write arbitrary files outside the intended datastore directory, potentially resulting in remote code execution.",
-      "editeur": "Project MONAI",
-      "produit": "MONAI Label",
-      "score": 42,
-      "raisons": [
-        {
-          "code": "kev",
-          "label": "Exploitée activement"
-        },
-        {
-          "code": "epss",
-          "label": "EPSS 27 %"
-        }
-      ],
-      "cvss": null,
-      "epss": 0.2716,
-      "epss_percentile": 0.9849,
-      "sources": [
-        {
-          "nom": "CISA KEV",
-          "lien": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-133968",
-      "date": "2026-11-23T00:00:00+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
       "cle": "CVE-2026-132165",
       "cve": "CVE-2026-132165",
       "cves": [],
@@ -204,10 +170,10 @@
       "cle": "CVE-2026-134624",
       "cve": "CVE-2026-134624",
       "cves": [],
-      "titre": "N-able MailAssure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability",
-      "resume": "N-able MailAssure (SpamExperts) contains a server-side request forgery vulnerability in the LDAP synchronization connection check that allows an authenticated API user to connect to arbitrary internal hosts and ports, determine which are reachable, and send crafted data to internal services.",
-      "editeur": "N-able",
-      "produit": "MailAssure",
+      "titre": "Hackers Exploit N-able MailAssure Flaw While AI Agents Exploit MONAI Label Zero-Day",
+      "resume": "",
+      "editeur": null,
+      "produit": null,
       "score": 40,
       "raisons": [
         {
@@ -223,10 +189,6 @@
       "epss": 0.0179,
       "epss_percentile": 0.7889,
       "sources": [
-        {
-          "nom": "CISA KEV",
-          "lien": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
         {
           "nom": "The Hacker News",
           "lien": "https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html"
@@ -817,6 +779,126 @@
       ]
     },
     {
+      "cle": "CVE-2026-136823",
+      "cve": "CVE-2026-136823",
+      "cves": [],
+      "titre": "CVE-2026-136823",
+      "resume": "A vulnerability was found in D-Link R32 1.10B02. This affects an unknown function of the file /usr/bin/httpd of the component flupl self Endpoint. Performing a manipulation of the argument fpath results in os command injection. The attack can be initiated remotely. The exploit has been made public…",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 10.0"
+        }
+      ],
+      "cvss": 10.0,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136823"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136823",
+      "date": "2026-11-25T22:17:20.717000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-136822",
+      "cve": "CVE-2026-136822",
+      "cves": [],
+      "titre": "CVE-2026-136822",
+      "resume": "A vulnerability has been found in D-Link R32 1.10B02. The impacted element is the function SetDeviceSettings of the file /usr/bin/httpd of the component DHMAPI Action Handler. Such manipulation of the argument TZLocation leads to os command injection. It is possible to launch the attack remotely. T…",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.9"
+        }
+      ],
+      "cvss": 9.9,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136822"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136822",
+      "date": "2026-11-25T21:17:19.850000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-136821",
+      "cve": "CVE-2026-136821",
+      "cves": [],
+      "titre": "CVE-2026-136821",
+      "resume": "A flaw has been found in D-Link R32 1.10B02. The affected element is the function SetTimeSettings of the component DHMAPI Action Handler. This manipulation of the argument TZLocation causes os command injection. It is possible to initiate the attack remotely. The exploit has been published and may…",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.9"
+        }
+      ],
+      "cvss": 9.9,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136821"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136821",
+      "date": "2026-11-25T21:17:19.630000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-137090",
+      "cve": "CVE-2026-137090",
+      "cves": [],
+      "titre": "CVE-2026-137090",
+      "resume": "build-git-clone before 1.0.4 contains an OS command injection vulnerability in the clone() function that allows attackers to execute commands by supplying crafted repository URLs. Attackers can embed shell metacharacters such as ; or $() in the url argument, which is concatenated into a sh -c comma…",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.8"
+        }
+      ],
+      "cvss": 9.8,
+      "epss": null,
+      "epss_percentile": null,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-137090"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-137090",
+      "date": "2026-11-25T20:18:46.220000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
       "cle": "CVE-2026-82489",
       "cve": "CVE-2026-82489",
       "cves": [],
@@ -875,199 +957,9 @@
       "origines": [
         "int"
       ]
-    },
-    {
-      "cle": "CVE-2026-136548",
-      "cve": "CVE-2026-136548",
-      "cves": [],
-      "titre": "CVE-2026-136548",
-      "resume": "A vulnerability was identified in Tenda RX3 16.03.13.11. The affected element is an unknown function of the file /bin/auto_discover of the component GBK-to-UTF-8 Conversion. The manipulation of the argument Hostname leads to stack-based buffer overflow. Remote exploitation of the attack is possible…",
-      "editeur": null,
-      "produit": null,
-      "score": 20,
-      "raisons": [
-        {
-          "code": "cvss",
-          "label": "CVSS 10.0"
-        }
-      ],
-      "cvss": 10.0,
-      "epss": 0.0086,
-      "epss_percentile": 0.5616,
-      "sources": [
-        {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136548"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136548",
-      "date": "2026-11-25T06:17:13.967000+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-123903",
-      "cve": "CVE-2026-123903",
-      "cves": [],
-      "titre": "VMware vCenter et ESX : trois nouvelles failles critiques, cinq jours après la faille zero-day",
-      "resume": "",
-      "editeur": null,
-      "produit": null,
-      "score": 20,
-      "raisons": [
-        {
-          "code": "repandu",
-          "label": "Produit très répandu"
-        },
-        {
-          "code": "medias",
-          "label": "Citée par 2 médias"
-        }
-      ],
-      "cvss": null,
-      "epss": null,
-      "epss_percentile": null,
-      "sources": [
-        {
-          "nom": "IT-Connect",
-          "lien": "https://www.it-connect.fr/vmware-vcenter-esx-cve-2026-123903-failles-novembre/"
-        },
-        {
-          "nom": "The Hacker News",
-          "lien": "https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-123903",
-      "date": "2026-11-25T06:05:00+00:00",
-      "origines": [
-        "fr",
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-136136",
-      "cve": "CVE-2026-136136",
-      "cves": [],
-      "titre": "CVE-2026-136136",
-      "resume": "A vulnerability was identified in Netis WF2409E up to 20261026. Affected by this issue is some unknown functionality of the file /cgi-bin/skk_set.cgi of the component CGI Interface. The manipulation of the argument app/password/new_pwd_confirm/passwd_set/mode_name/wl_link leads to improper authenti…",
-      "editeur": null,
-      "produit": null,
-      "score": 20,
-      "raisons": [
-        {
-          "code": "cvss",
-          "label": "CVSS 10.0"
-        }
-      ],
-      "cvss": 10.0,
-      "epss": 0.0089,
-      "epss_percentile": 0.5702,
-      "sources": [
-        {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136136"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136136",
-      "date": "2026-11-25T00:17:10.560000+00:00",
-      "origines": [
-        "int"
-      ]
     }
   ],
-  "certfr": [
-    {
-      "source": "CERT-FR",
-      "origine": "fr",
-      "categorie": "avis",
-      "titre": "Multiples vulnérabilités dans SPIP (23 novembre 2026)",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1599/",
-      "date": "2026-11-23T00:00:00+00:00",
-      "resume": "De multiples vulnérabilités ont été découvertes dans SPIP. Elles permettent à un attaquant de provoquer une injection de code indirecte à distance (XSS) et une injection de requêtes illégitimes par rebond (CSRF).",
-      "cves": []
-    },
-    {
-      "source": "CERT-FR",
-      "origine": "fr",
-      "categorie": "avis",
-      "titre": "Multiples vulnérabilités dans les produits Palo Alto Networks (23 novembre 2026)",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1600/",
-      "date": "2026-11-23T00:00:00+00:00",
-      "resume": "De multiples vulnérabilités ont été découvertes dans les produits Palo Alto Networks. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance et un déni de service à distance.",
-      "cves": []
-    },
-    {
-      "source": "CERT-FR",
-      "origine": "fr",
-      "categorie": "avis",
-      "titre": "Vulnérabilité dans Laravel (23 novembre 2026)",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1601/",
-      "date": "2026-11-23T00:00:00+00:00",
-      "resume": "Une vulnérabilité a été découverte dans Laravel. Elle permet à un attaquant de provoquer un déni de service à distance.",
-      "cves": []
-    },
-    {
-      "source": "CERT-FR",
-      "origine": "fr",
-      "categorie": "avis",
-      "titre": "Multiples vulnérabilités dans Roundcube Webmail (23 novembre 2026)",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1602/",
-      "date": "2026-11-23T00:00:00+00:00",
-      "resume": "De multiples vulnérabilités ont été découvertes dans Roundcube Webmail. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données.",
-      "cves": []
-    },
-    {
-      "source": "CERT-FR",
-      "origine": "fr",
-      "categorie": "avis",
-      "titre": "Multiples vulnérabilités dans Microsoft Edge (23 novembre 2026)",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1603/",
-      "date": "2026-11-23T00:00:00+00:00",
-      "resume": "De multiples vulnérabilités ont été découvertes dans Microsoft Edge. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
-      "cves": []
-    },
-    {
-      "source": "CERT-FR",
-      "origine": "fr",
-      "categorie": "avis",
-      "titre": "Vulnérabilité dans Microsoft Office (23 novembre 2026)",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1604/",
-      "date": "2026-11-23T00:00:00+00:00",
-      "resume": "Une vulnérabilité a été découverte dans Microsoft Office. Elle permet à un attaquant de provoquer une exécution de code arbitraire à distance.",
-      "cves": []
-    },
-    {
-      "source": "CERT-FR",
-      "origine": "fr",
-      "categorie": "avis",
-      "titre": "Vulnérabilité dans Mattermost Server (23 novembre 2026)",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1605/",
-      "date": "2026-11-23T00:00:00+00:00",
-      "resume": "Une vulnérabilité a été découverte dans Mattermost Server. Elle permet à un attaquant de provoquer une atteinte à la confidentialité des données.",
-      "cves": []
-    },
-    {
-      "source": "CERT-FR",
-      "origine": "fr",
-      "categorie": "avis",
-      "titre": "Multiples vulnérabilités dans MongoDB (23 novembre 2026)",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1606/",
-      "date": "2026-11-23T00:00:00+00:00",
-      "resume": "De multiples vulnérabilités ont été découvertes dans MongoDB. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",
-      "cves": []
-    },
-    {
-      "source": "CERT-FR",
-      "origine": "fr",
-      "categorie": "avis",
-      "titre": "Multiples vulnérabilités dans les produits Synology (23 novembre 2026)",
-      "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1607/",
-      "date": "2026-11-23T00:00:00+00:00",
-      "resume": "De multiples vulnérabilités ont été découvertes dans les produits Synology. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données.",
-      "cves": []
-    }
-  ],
+  "certfr": [],
   "kev": [
     {
       "source": "CISA KEV",
@@ -1237,32 +1129,6 @@
       "date": "2026-11-24T00:00:00+00:00",
       "ransomware": false,
       "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-132165"
-    },
-    {
-      "source": "CISA KEV",
-      "origine": "int",
-      "cve": "CVE-2026-133968",
-      "titre": "Project MONAI MONAI Label Path Traversal Vulnerability",
-      "editeur": "Project MONAI",
-      "produit": "MONAI Label",
-      "resume": "Project MONAI MONAI Label contains a path traversal vulnerability that allows an unauthenticated remote attacker to write arbitrary files outside the intended datastore directory, potentially resulting in remote code execution.",
-      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triag…",
-      "date": "2026-11-23T00:00:00+00:00",
-      "ransomware": false,
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-133968"
-    },
-    {
-      "source": "CISA KEV",
-      "origine": "int",
-      "cve": "CVE-2026-134624",
-      "titre": "N-able MailAssure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability",
-      "editeur": "N-able",
-      "produit": "MailAssure",
-      "resume": "N-able MailAssure (SpamExperts) contains a server-side request forgery vulnerability in the LDAP synchronization connection check that allows an authenticated API user to connect to arbitrary internal hosts and ports, determine which are reachable, and send crafted data to internal services.",
-      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triag…",
-      "date": "2026-11-23T00:00:00+00:00",
-      "ransomware": false,
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-134624"
     }
   ],
   "nvd": [
@@ -1335,6 +1201,16 @@
       "severite": "CRITICAL",
       "date": "2026-11-25T07:17:18.930000+00:00",
       "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136553"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-136823",
+      "resume": "A vulnerability was found in D-Link R32 1.10B02. This affects an unknown function of the file /usr/bin/httpd of the component flupl self Endpoint. Performing a manipulation of the argument fpath results in os command injection. The attack can be initiated remotely. The exploit has been made public…",
+      "score": 10.0,
+      "severite": "CRITICAL",
+      "date": "2026-11-25T22:17:20.717000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136823"
     },
     {
       "source": "NVD",
@@ -1419,6 +1295,26 @@
     {
       "source": "NVD",
       "origine": "int",
+      "cve": "CVE-2026-136821",
+      "resume": "A flaw has been found in D-Link R32 1.10B02. The affected element is the function SetTimeSettings of the component DHMAPI Action Handler. This manipulation of the argument TZLocation causes os command injection. It is possible to initiate the attack remotely. The exploit has been published and may…",
+      "score": 9.9,
+      "severite": "CRITICAL",
+      "date": "2026-11-25T21:17:19.630000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136821"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-136822",
+      "resume": "A vulnerability has been found in D-Link R32 1.10B02. The impacted element is the function SetDeviceSettings of the file /usr/bin/httpd of the component DHMAPI Action Handler. Such manipulation of the argument TZLocation leads to os command injection. It is possible to launch the attack remotely. T…",
+      "score": 9.9,
+      "severite": "CRITICAL",
+      "date": "2026-11-25T21:17:19.850000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136822"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
       "cve": "CVE-2026-135208",
       "resume": "Kerberos Agent before 3.14.4 contains an authentication bypass vulnerability that allows unauthenticated attackers to forge administrator tokens because JWTMiddleWare() falls back to the hard-coded key TOBECHANGED. Attackers can sign HS256 tokens with arbitrary username and role claims to access /a…",
       "score": 9.8,
@@ -1455,6 +1351,16 @@
       "severite": "CRITICAL",
       "date": "2026-11-25T15:17:52.040000+00:00",
       "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-82489"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
+      "cve": "CVE-2026-137090",
+      "resume": "build-git-clone before 1.0.4 contains an OS command injection vulnerability in the clone() function that allows attackers to execute commands by supplying crafted repository URLs. Attackers can embed shell metacharacters such as ; or $() in the url argument, which is concatenated into a sh -c comma…",
+      "score": 9.8,
+      "severite": "CRITICAL",
+      "date": "2026-11-25T20:18:46.220000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-137090"
     },
     {
       "source": "NVD",
@@ -1538,6 +1444,26 @@
     }
   ],
   "presse": [
+    {
+      "source": "BleepingComputer",
+      "origine": "int",
+      "titre": "Palo Alto Networks warns of Fragnesia flaw exploited in PAN-OS attacks",
+      "lien": "https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-fragnesia-flaw-exploited-in-pan-os-attacks/",
+      "date": "2026-11-25T22:05:09+00:00",
+      "resume": "Threat actors are chaining exploits for the PHP2Shell and Fragnesia vulnerabilities to target Palo Alto Networks devices with management interfaces exposed to the internet. [...]",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "origine": "int",
+      "titre": "1Password customer data stolen after employee GitHub account breach",
+      "lien": "https://www.bleepingcomputer.com/news/security/1password-customer-data-stolen-after-employee-github-account-breach/",
+      "date": "2026-11-25T21:33:33+00:00",
+      "resume": "1Password has disclosed a data breach after a an employee's corporate GitHub account was hacked and used to deploy malicious code to the company's backend services to steal customer data. [...]",
+      "attaque": true,
+      "cves": []
+    },
     {
       "source": "BleepingComputer",
       "origine": "int",
@@ -1965,26 +1891,6 @@
       "lien": "https://www.bleepingcomputer.com/news/security/shinyhunters-resurfaces-after-fbi-arrests-uses-old-pgp-keys-as-proof/",
       "date": "2026-11-24T16:30:19+00:00",
       "resume": "The ShinyHunters extortion gang claims to have returned in posts on a new data leak site after a series of arrests over the past two months targeting alleged members. [...]",
-      "attaque": true,
-      "cves": []
-    },
-    {
-      "source": "BleepingComputer",
-      "origine": "int",
-      "titre": "European Commission confirms data theft in EU Academy breach",
-      "lien": "https://www.bleepingcomputer.com/news/security/european-commission-confirms-data-theft-in-eu-academy-breach/",
-      "date": "2026-11-24T16:22:44+00:00",
-      "resume": "The European Commission, the European Union's main executive body, has confirmed that attackers breached its EU Academy online learning hub and stole the personal data of an undisclosed number of users. [...]",
-      "attaque": true,
-      "cves": []
-    },
-    {
-      "source": "BleepingComputer",
-      "origine": "int",
-      "titre": "Hackers compromise Check Point Servers in 22 organizations",
-      "lien": "https://www.bleepingcomputer.com/news/security/hackers-compromise-check-point-servers-in-22-organizations/",
-      "date": "2026-11-24T16:15:23+00:00",
-      "resume": "Threat actors have exploited multiple vulnerabilities to compromise two dozen Check Point Security management servers in an ongoing campaign targeting 22 organizations. [...]",
       "attaque": true,
       "cves": []
     },
