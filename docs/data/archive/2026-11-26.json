@@ -1,13 +1,13 @@
 {
-  "genere_le": "2026-11-26T16:43:38.631586+00:00",
+  "genere_le": "2026-11-26T19:55:31.322614+00:00",
   "fenetre_jours": 3,
   "stats": {
     "urgentes": 0,
     "alertes_certfr": 0,
     "avis_certfr": 7,
     "kev": 13,
-    "cve_critiques": 44,
-    "attaques": 40
+    "cve_critiques": 43,
+    "attaques": 41
   },
   "priorites": [
     {
@@ -213,44 +213,6 @@
       ]
     },
     {
-      "cle": "CVE-2026-131914",
-      "cve": "CVE-2026-131914",
-      "cves": [],
-      "titre": "Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability",
-      "resume": "Idunno AntiCsrf contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via object injection. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or trans…",
-      "editeur": "Idunno",
-      "produit": "AntiCsrf",
-      "score": 41,
-      "raisons": [
-        {
-          "code": "kev",
-          "label": "Exploitée activement"
-        },
-        {
-          "code": "medias",
-          "label": "Citée par 1 média"
-        }
-      ],
-      "cvss": null,
-      "epss": 0.0429,
-      "epss_percentile": 0.919,
-      "sources": [
-        {
-          "nom": "CISA KEV",
-          "lien": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "nom": "SecurityWeek",
-          "lien": "https://www.securityweek.com/hackers-exploit-unpatched-flaw-in-defunct-idunno-anticsrf-library/"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-131914",
-      "date": "2026-11-25T09:05:13+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
       "cle": "CVE-2026-134624",
       "cve": "CVE-2026-134624",
       "cves": [],
@@ -374,6 +336,36 @@
       ],
       "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-133323",
       "date": "2026-11-25T00:00:00+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-131914",
+      "cve": "CVE-2026-131914",
+      "cves": [],
+      "titre": "Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability",
+      "resume": "Idunno AntiCsrf contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via object injection. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or trans…",
+      "editeur": "Idunno",
+      "produit": "AntiCsrf",
+      "score": 36,
+      "raisons": [
+        {
+          "code": "kev",
+          "label": "Exploitée activement"
+        }
+      ],
+      "cvss": null,
+      "epss": 0.0429,
+      "epss_percentile": 0.919,
+      "sources": [
+        {
+          "nom": "CISA KEV",
+          "lien": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-131914",
+      "date": "2026-11-24T00:00:00+00:00",
       "origines": [
         "int"
       ]
@@ -1314,16 +1306,6 @@
     {
       "source": "NVD",
       "origine": "int",
-      "cve": "CVE-2026-126984",
-      "resume": "A **server-side request forgery** flaw has been found in the get_remote_artifact_url() function in pulp_python/app/models.py of the pull-through caching feature in the **pulp_python** package. The function uses the redirect query parameter from the client request as the URL to download. A network a…",
-      "score": 10.0,
-      "severite": "CRITICAL",
-      "date": "2026-11-26T16:17:50.623000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-126984"
-    },
-    {
-      "source": "NVD",
-      "origine": "int",
       "cve": "CVE-2026-137498",
       "resume": "Budibase Server from 3.39.18 before 4.0.0 contains a prototype pollution vulnerability that allows unauthenticated attackers to erase MongoDB query filters by supplying __proto__ as a dynamic JSON key in PUBLIC queries. Attackers can send a single request to the query execution endpoint, reducing t…",
       "score": 10.0,
@@ -1673,6 +1655,36 @@
     }
   ],
   "presse": [
+    {
+      "source": "BleepingComputer",
+      "origine": "int",
+      "titre": "NordVPN Black Friday Deal: Get 78% off VPN plans in 2026",
+      "lien": "https://www.bleepingcomputer.com/news/security/nordvpn-black-friday-deal-get-78-percent-off-vpn-plans-in-2026/",
+      "date": "2026-11-26T17:58:42+00:00",
+      "resume": "NordVPN's 2026 Black Friday and Cyber Monday deal is now live, offering savings of up to 78% on VPN subscriptions, plus three extra months of protection. [...]",
+      "attaque": false,
+      "cves": []
+    },
+    {
+      "source": "BleepingComputer",
+      "origine": "int",
+      "titre": "Fake paid expert interviews impersonate brands to steal Google logins",
+      "lien": "https://www.bleepingcomputer.com/news/apple/fake-paid-expert-interviews-impersonate-brands-to-steal-google-logins/",
+      "date": "2026-11-26T17:15:27+00:00",
+      "resume": "An ongoing phishing campaign dubbed \"GoodGuys\" impersonates major brands, including Google, Nvidia, Accenture, and SpaceX, to steal corporate Google and Okta credentials using fake invitations to paid expert interviews and webinars. [...]",
+      "attaque": true,
+      "cves": []
+    },
+    {
+      "source": "SecurityWeek",
+      "origine": "int",
+      "titre": "FIFA Says It Has Been Victim of a Cyberattack Accessing ‘Personal and Business Information’",
+      "lien": "https://www.securityweek.com/fifa-says-it-has-been-victim-of-a-cyberattack-accessing-personal-and-business-information/",
+      "date": "2026-11-26T17:06:55+00:00",
+      "resume": "FIFA didn’t say when the cyberattack took place, or the precise nature of the hacked information. The post FIFA Says It Has Been Victim of a Cyberattack Accessing ‘Personal and Business Information’ appeared first on SecurityWeek .",
+      "attaque": true,
+      "cves": []
+    },
     {
       "source": "Le Monde Informatique",
       "origine": "fr",
@@ -2126,18 +2138,6 @@
       "cves": []
     },
     {
-      "source": "SecurityWeek",
-      "origine": "int",
-      "titre": "Hackers Exploit Unpatched Flaw in Defunct Idunno AntiCsrf Library",
-      "lien": "https://www.securityweek.com/hackers-exploit-unpatched-flaw-in-defunct-idunno-anticsrf-library/",
-      "date": "2026-11-25T09:05:13+00:00",
-      "resume": "Attackers can exploit CVE-2026-131914 to achieve remote code execution via a single web request containing specially crafted data. The post Hackers Exploit Unpatched Flaw in Defunct Idunno AntiCsrf Library appeared first on SecurityWeek .",
-      "attaque": true,
-      "cves": [
-        "CVE-2026-131914"
-      ]
-    },
-    {
       "source": "BleepingComputer",
       "origine": "int",
       "titre": "Microsoft confirms authentication issues after November updates",
@@ -2258,26 +2258,6 @@
       "date": "2026-11-24T21:37:30+00:00",
       "resume": "Rackspace is shutting down its Rackspace Spot cloud platform after a security breach allowed hackers to access customer Kubernetes clusters and secrets, giving customers until December 8 to migrate their services and download their data. [...]",
       "attaque": true,
-      "cves": []
-    },
-    {
-      "source": "BleepingComputer",
-      "origine": "int",
-      "titre": "New Inception extortion gang launches large-scale vishing campaign",
-      "lien": "https://www.bleepingcomputer.com/news/security/new-inception-extortion-gang-launches-large-scale-vishing-campaign/",
-      "date": "2026-11-24T20:21:20+00:00",
-      "resume": "A newly formed data extortion group named 'Inception' has been linked to a large-scale campaign that targets single sign-on (SSO) credentials of multiple global brands and firms. [...]",
-      "attaque": false,
-      "cves": []
-    },
-    {
-      "source": "BleepingComputer",
-      "origine": "int",
-      "titre": "Turnitin discloses cyberattack affecting customer-facing systems",
-      "lien": "https://www.bleepingcomputer.com/news/security/turnitin-discloses-cyberattack-affecting-customer-facing-systems/",
-      "date": "2026-11-24T18:59:52+00:00",
-      "resume": "Turnitin disclosed via a statement from its CEO, Chris Caren, that it recently detected unauthorized activity involving certain customer-facing systems. [...]",
-      "attaque": false,
       "cves": []
     },
     {
