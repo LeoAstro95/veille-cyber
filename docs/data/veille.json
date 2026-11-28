@@ -1,13 +1,13 @@
 {
-  "genere_le": "2026-11-28T00:20:56.003365+00:00",
+  "genere_le": "2026-11-28T15:22:53.585105+00:00",
   "fenetre_jours": 3,
   "stats": {
     "urgentes": 0,
     "alertes_certfr": 0,
     "avis_certfr": 3,
     "kev": 3,
-    "cve_critiques": 26,
-    "attaques": 48
+    "cve_critiques": 24,
+    "attaques": 41
   },
   "priorites": [
     {
@@ -18,7 +18,7 @@
       "resume": "Missing Authentication for Critical Function vulnerability in Drupal Drupal core allows Exploiting Incorrectly Configured Access Control Security Levels. This issue affects Drupal core versions: from 0.0.0 to 10.6.22, from 11.0.0 to 11.3.22, from 11.4.0 to 11.4.13.",
       "editeur": null,
       "produit": null,
-      "score": 62,
+      "score": 63,
       "raisons": [
         {
           "code": "kev",
@@ -30,7 +30,7 @@
         },
         {
           "code": "epss",
-          "label": "EPSS 8 %"
+          "label": "EPSS 14 %"
         },
         {
           "code": "medias",
@@ -38,8 +38,8 @@
         }
       ],
       "cvss": 9.8,
-      "epss": 0.0838,
-      "epss_percentile": 0.9574,
+      "epss": 0.1398,
+      "epss_percentile": 0.9722,
       "sources": [
         {
           "nom": "NVD",
@@ -64,7 +64,7 @@
       "resume": "Une vulnérabilité a été découverte dans Drupal. Elle permet à un attaquant de provoquer un contournement de la politique de sécurité. Drupal indique que la vulnérabilité CVE-2026-136716 est activement exploitée.",
       "editeur": "Drupal",
       "produit": "Core",
-      "score": 53,
+      "score": 54,
       "raisons": [
         {
           "code": "kev",
@@ -75,13 +75,17 @@
           "label": "Avis CERT-FR"
         },
         {
+          "code": "epss",
+          "label": "EPSS 5 %"
+        },
+        {
           "code": "medias",
           "label": "Citée par 2 médias"
         }
       ],
       "cvss": null,
-      "epss": 0.0121,
-      "epss_percentile": 0.6845,
+      "epss": 0.0546,
+      "epss_percentile": 0.9353,
       "sources": [
         {
           "nom": "CISA KEV",
@@ -105,48 +109,6 @@
       "origines": [
         "fr",
         "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-123890",
-      "cve": "CVE-2026-123890",
-      "cves": [],
-      "titre": "VMware vCenter et ESX : trois nouvelles failles critiques, cinq jours après la faille zero-day",
-      "resume": "",
-      "editeur": null,
-      "produit": null,
-      "score": 51,
-      "raisons": [
-        {
-          "code": "kev",
-          "label": "Exploitée activement"
-        },
-        {
-          "code": "epss",
-          "label": "EPSS 5 %"
-        },
-        {
-          "code": "repandu",
-          "label": "Produit très répandu"
-        },
-        {
-          "code": "medias",
-          "label": "Citée par 1 média"
-        }
-      ],
-      "cvss": null,
-      "epss": 0.0501,
-      "epss_percentile": 0.9303,
-      "sources": [
-        {
-          "nom": "IT-Connect",
-          "lien": "https://www.it-connect.fr/vmware-vcenter-esx-cve-2026-123903-failles-novembre/"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-123890",
-      "date": "2026-11-25T06:05:00+00:00",
-      "origines": [
-        "fr"
       ]
     },
     {
@@ -174,7 +136,7 @@
       ],
       "cvss": null,
       "epss": 0.0154,
-      "epss_percentile": 0.7518,
+      "epss_percentile": 0.7519,
       "sources": [
         {
           "nom": "SecurityWeek",
@@ -211,8 +173,8 @@
         }
       ],
       "cvss": null,
-      "epss": 0.0077,
-      "epss_percentile": 0.5209,
+      "epss": 0.009,
+      "epss_percentile": 0.5782,
       "sources": [
         {
           "nom": "The Hacker News",
@@ -233,15 +195,11 @@
       "resume": "OsGeo GeoServer contains an XML injection vulnerability that allows an unauthenticated remote attacker to cause the server to read local text files accessible to the GeoServer process or fetch attacker-specified HTTP or HTTPS URLs via a crafted ID parameter in the WFS 2.0 GetFeatureById stored quer…",
       "editeur": "OSGeo",
       "produit": "GeoServer",
-      "score": 40,
+      "score": 35,
       "raisons": [
         {
           "code": "kev",
           "label": "Exploitée activement"
-        },
-        {
-          "code": "medias",
-          "label": "Citée par 1 média"
         }
       ],
       "cvss": null,
@@ -251,10 +209,6 @@
         {
           "nom": "CISA KEV",
           "lien": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "nom": "The Hacker News",
-          "lien": "https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html"
         }
       ],
       "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-120705",
@@ -271,15 +225,11 @@
       "resume": "GeoServer contains an incorrect authorization vulnerability that allows an unauthenticated remote attacker to bypass service-level role checks and invoke operations protected solely by those checks via a request with a prefixed service parameter. This vulnerability can be chained with CVE-2026-1292…",
       "editeur": "OSGeo",
       "produit": "GeoServer",
-      "score": 40,
+      "score": 35,
       "raisons": [
         {
           "code": "kev",
           "label": "Exploitée activement"
-        },
-        {
-          "code": "medias",
-          "label": "Citée par 1 média"
         }
       ],
       "cvss": null,
@@ -289,10 +239,6 @@
         {
           "nom": "CISA KEV",
           "lien": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "nom": "The Hacker News",
-          "lien": "https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html"
         }
       ],
       "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-129243",
@@ -356,7 +302,7 @@
       ],
       "cvss": 9.8,
       "epss": 0.0067,
-      "epss_percentile": 0.4686,
+      "epss_percentile": 0.4687,
       "sources": [
         {
           "nom": "NVD",
@@ -365,6 +311,66 @@
       ],
       "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-137536",
       "date": "2026-11-26T16:18:06.410000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-138005",
+      "cve": "CVE-2026-138005",
+      "cves": [],
+      "titre": "CVE-2026-138005",
+      "resume": "A vulnerability was detected in TRENDnet TEW-751DR 1.03B01. Affected by this vulnerability is the function gena.php::GENA_notify_init of the file htdocs/upnpinc/gena.php of the component UPnP Event Handler. Performing a manipulation of the argument uri results in os command injection. It is possibl…",
+      "editeur": null,
+      "produit": null,
+      "score": 21,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 10.0"
+        }
+      ],
+      "cvss": 10.0,
+      "epss": 0.0325,
+      "epss_percentile": 0.8913,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-138005"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-138005",
+      "date": "2026-11-28T10:17:00.010000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-138004",
+      "cve": "CVE-2026-138004",
+      "cves": [],
+      "titre": "CVE-2026-138004",
+      "resume": "A security vulnerability has been detected in TRENDnet TEW-751DR and TEW-733GR 1.03B01. Affected is the function soapcgi_main of the file /soap.cgi of the component UPnP Igd Control Endpoint. Such manipulation of the argument service leads to os command injection. The attack may be performed from r…",
+      "editeur": null,
+      "produit": null,
+      "score": 21,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 10.0"
+        }
+      ],
+      "cvss": 10.0,
+      "epss": 0.0214,
+      "epss_percentile": 0.8275,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-138004"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-138004",
+      "date": "2026-11-27T23:16:36.390000+00:00",
       "origines": [
         "int"
       ]
@@ -416,7 +422,7 @@
       ],
       "cvss": 9.8,
       "epss": 0.0231,
-      "epss_percentile": 0.841,
+      "epss_percentile": 0.8411,
       "sources": [
         {
           "nom": "NVD",
@@ -425,96 +431,6 @@
       ],
       "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-137090",
       "date": "2026-11-25T20:18:46.220000+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-136550",
-      "cve": "CVE-2026-136550",
-      "cves": [],
-      "titre": "CVE-2026-136550",
-      "resume": "A weakness has been identified in Tenda RX3 16.03.13.11_multi. This affects the function fromAdvSetMacMtuWan of the file /goform/AdvSetMacMtuWan. This manipulation of the argument mac causes command injection. The attack is possible to be carried out remotely. The exploit has been made available to…",
-      "editeur": null,
-      "produit": null,
-      "score": 21,
-      "raisons": [
-        {
-          "code": "cvss",
-          "label": "CVSS 9.1"
-        }
-      ],
-      "cvss": 9.1,
-      "epss": 0.0302,
-      "epss_percentile": 0.882,
-      "sources": [
-        {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136550"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136550",
-      "date": "2026-11-25T06:17:15.807000+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-136549",
-      "cve": "CVE-2026-136549",
-      "cves": [],
-      "titre": "CVE-2026-136549",
-      "resume": "A security flaw has been discovered in Tenda RX3 16.03.13.11_multi. The impacted element is the function formSetSafeWanWebMan of the file /goform/SetRemoteWebCfg. The manipulation of the argument remoteIp results in command injection. The attack can be executed remotely. The exploit has been releas…",
-      "editeur": null,
-      "produit": null,
-      "score": 21,
-      "raisons": [
-        {
-          "code": "cvss",
-          "label": "CVSS 10.0"
-        }
-      ],
-      "cvss": 10.0,
-      "epss": 0.0221,
-      "epss_percentile": 0.8329,
-      "sources": [
-        {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136549"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136549",
-      "date": "2026-11-25T06:17:15.597000+00:00",
-      "origines": [
-        "int"
-      ]
-    },
-    {
-      "cle": "CVE-2026-138004",
-      "cve": "CVE-2026-138004",
-      "cves": [],
-      "titre": "CVE-2026-138004",
-      "resume": "A security vulnerability has been detected in TRENDnet TEW-751DR and TEW-733GR 1.03B01. Affected is the function soapcgi_main of the file /soap.cgi of the component UPnP Igd Control Endpoint. Such manipulation of the argument service leads to os command injection. The attack may be performed from r…",
-      "editeur": null,
-      "produit": null,
-      "score": 20,
-      "raisons": [
-        {
-          "code": "cvss",
-          "label": "CVSS 10.0"
-        }
-      ],
-      "cvss": 10.0,
-      "epss": null,
-      "epss_percentile": null,
-      "sources": [
-        {
-          "nom": "NVD",
-          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-138004"
-        }
-      ],
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-138004",
-      "date": "2026-11-27T23:16:36.390000+00:00",
       "origines": [
         "int"
       ]
@@ -535,8 +451,8 @@
         }
       ],
       "cvss": 9.0,
-      "epss": null,
-      "epss_percentile": null,
+      "epss": 0.0066,
+      "epss_percentile": 0.4657,
       "sources": [
         {
           "nom": "NVD",
@@ -565,8 +481,8 @@
         }
       ],
       "cvss": 9.8,
-      "epss": null,
-      "epss_percentile": null,
+      "epss": 0.0159,
+      "epss_percentile": 0.7607,
       "sources": [
         {
           "nom": "NVD",
@@ -596,7 +512,7 @@
       ],
       "cvss": 9.8,
       "epss": 0.0092,
-      "epss_percentile": 0.5858,
+      "epss_percentile": 0.586,
       "sources": [
         {
           "nom": "NVD",
@@ -626,7 +542,7 @@
       ],
       "cvss": 9.8,
       "epss": 0.0124,
-      "epss_percentile": 0.6911,
+      "epss_percentile": 0.6912,
       "sources": [
         {
           "nom": "NVD",
@@ -686,7 +602,7 @@
       ],
       "cvss": 9.1,
       "epss": 0.0146,
-      "epss_percentile": 0.7388,
+      "epss_percentile": 0.7389,
       "sources": [
         {
           "nom": "NVD",
@@ -716,7 +632,7 @@
       ],
       "cvss": 9.8,
       "epss": 0.0119,
-      "epss_percentile": 0.6785,
+      "epss_percentile": 0.6786,
       "sources": [
         {
           "nom": "NVD",
@@ -746,7 +662,7 @@
       ],
       "cvss": 10.0,
       "epss": 0.011,
-      "epss_percentile": 0.6518,
+      "epss_percentile": 0.6519,
       "sources": [
         {
           "nom": "NVD",
@@ -776,7 +692,7 @@
       ],
       "cvss": 9.9,
       "epss": 0.0064,
-      "epss_percentile": 0.4555,
+      "epss_percentile": 0.4556,
       "sources": [
         {
           "nom": "NVD",
@@ -806,7 +722,7 @@
       ],
       "cvss": 9.3,
       "epss": 0.0104,
-      "epss_percentile": 0.6334,
+      "epss_percentile": 0.6335,
       "sources": [
         {
           "nom": "NVD",
@@ -836,7 +752,7 @@
       ],
       "cvss": 9.1,
       "epss": 0.0105,
-      "epss_percentile": 0.6355,
+      "epss_percentile": 0.6356,
       "sources": [
         {
           "nom": "NVD",
@@ -866,7 +782,7 @@
       ],
       "cvss": 9.1,
       "epss": 0.0089,
-      "epss_percentile": 0.572,
+      "epss_percentile": 0.5722,
       "sources": [
         {
           "nom": "NVD",
@@ -926,7 +842,7 @@
       ],
       "cvss": 9.1,
       "epss": 0.0069,
-      "epss_percentile": 0.48,
+      "epss_percentile": 0.4801,
       "sources": [
         {
           "nom": "NVD",
@@ -956,7 +872,7 @@
       ],
       "cvss": 9.8,
       "epss": 0.0131,
-      "epss_percentile": 0.7071,
+      "epss_percentile": 0.7072,
       "sources": [
         {
           "nom": "NVD",
@@ -986,7 +902,7 @@
       ],
       "cvss": 9.8,
       "epss": 0.008,
-      "epss_percentile": 0.5322,
+      "epss_percentile": 0.5323,
       "sources": [
         {
           "nom": "NVD",
@@ -995,6 +911,70 @@
       ],
       "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-137567",
       "date": "2026-11-26T14:17:24.800000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-136822",
+      "cve": "CVE-2026-136822",
+      "cves": [],
+      "titre": "CVE-2026-136822",
+      "resume": "A vulnerability has been found in D-Link R32 1.10B02. The impacted element is the function SetDeviceSettings of the file /usr/bin/httpd of the component DHMAPI Action Handler. Such manipulation of the argument TZLocation leads to os command injection. It is possible to launch the attack remotely. T…",
+      "editeur": null,
+      "produit": null,
+      "score": 20,
+      "raisons": [
+        {
+          "code": "cvss",
+          "label": "CVSS 9.9"
+        }
+      ],
+      "cvss": 9.9,
+      "epss": 0.018,
+      "epss_percentile": 0.7905,
+      "sources": [
+        {
+          "nom": "NVD",
+          "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136822"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136822",
+      "date": "2026-11-25T21:17:19.850000+00:00",
+      "origines": [
+        "int"
+      ]
+    },
+    {
+      "cle": "CVE-2026-99362",
+      "cve": "CVE-2026-99362",
+      "cves": [],
+      "titre": "New NFS2ROOT Linux flaw can let attackers gain root privileges",
+      "resume": "",
+      "editeur": null,
+      "produit": null,
+      "score": 15,
+      "raisons": [
+        {
+          "code": "repandu",
+          "label": "Produit très répandu"
+        },
+        {
+          "code": "medias",
+          "label": "Citée par 1 média"
+        }
+      ],
+      "cvss": null,
+      "epss": 0.0108,
+      "epss_percentile": 0.6469,
+      "sources": [
+        {
+          "nom": "BleepingComputer",
+          "lien": "https://www.bleepingcomputer.com/news/security/new-nfs2root-linux-flaw-can-let-attackers-gain-root-privileges/"
+        }
+      ],
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-99362",
+      "date": "2026-11-27T08:06:58+00:00",
       "origines": [
         "int"
       ]
@@ -1079,16 +1059,6 @@
     {
       "source": "NVD",
       "origine": "int",
-      "cve": "CVE-2026-136549",
-      "resume": "A security flaw has been discovered in Tenda RX3 16.03.13.11_multi. The impacted element is the function formSetSafeWanWebMan of the file /goform/SetRemoteWebCfg. The manipulation of the argument remoteIp results in command injection. The attack can be executed remotely. The exploit has been releas…",
-      "score": 10.0,
-      "severite": "CRITICAL",
-      "date": "2026-11-25T06:17:15.597000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136549"
-    },
-    {
-      "source": "NVD",
-      "origine": "int",
       "cve": "CVE-2026-136823",
       "resume": "A vulnerability was found in D-Link R32 1.10B02. This affects an unknown function of the file /usr/bin/httpd of the component flupl self Endpoint. Performing a manipulation of the argument fpath results in os command injection. The attack can be initiated remotely. The exploit has been made public…",
       "score": 10.0,
@@ -1119,6 +1089,16 @@
     {
       "source": "NVD",
       "origine": "int",
+      "cve": "CVE-2026-138005",
+      "resume": "A vulnerability was detected in TRENDnet TEW-751DR 1.03B01. Affected by this vulnerability is the function gena.php::GENA_notify_init of the file htdocs/upnpinc/gena.php of the component UPnP Event Handler. Performing a manipulation of the argument uri results in os command injection. It is possibl…",
+      "score": 10.0,
+      "severite": "CRITICAL",
+      "date": "2026-11-28T10:17:00.010000+00:00",
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-138005"
+    },
+    {
+      "source": "NVD",
+      "origine": "int",
       "cve": "CVE-2026-136822",
       "resume": "A vulnerability has been found in D-Link R32 1.10B02. The impacted element is the function SetDeviceSettings of the file /usr/bin/httpd of the component DHMAPI Action Handler. Such manipulation of the argument TZLocation leads to os command injection. It is possible to launch the attack remotely. T…",
       "score": 9.9,
@@ -1145,16 +1125,6 @@
       "severite": "CRITICAL",
       "date": "2026-11-27T03:17:04.263000+00:00",
       "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-137706"
-    },
-    {
-      "source": "NVD",
-      "origine": "int",
-      "cve": "CVE-2026-82489",
-      "resume": "openIMIS before 2026-10 contains an unauthenticated remote code execution vulnerability in the report module (openimis-be-report_py) where the /api/report/reportbro/preview endpoint evaluates printIf expressions server-side using simpleeval with an insufficient name-prefix blocklist. An attacker ca…",
-      "score": 9.8,
-      "severite": "CRITICAL",
-      "date": "2026-11-25T15:17:52.040000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-82489"
     },
     {
       "source": "NVD",
@@ -1269,16 +1239,6 @@
     {
       "source": "NVD",
       "origine": "int",
-      "cve": "CVE-2026-136550",
-      "resume": "A weakness has been identified in Tenda RX3 16.03.13.11_multi. This affects the function fromAdvSetMacMtuWan of the file /goform/AdvSetMacMtuWan. This manipulation of the argument mac causes command injection. The attack is possible to be carried out remotely. The exploit has been made available to…",
-      "score": 9.1,
-      "severite": "CRITICAL",
-      "date": "2026-11-25T06:17:15.807000+00:00",
-      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136550"
-    },
-    {
-      "source": "NVD",
-      "origine": "int",
       "cve": "CVE-2026-133951",
       "resume": "The Simple Membership plugin for WordPress is vulnerable to Privilege Escalation in versions up to, and including, 4.8.9 This is due to the site-wide signing secret `swpm_private_key_one` being generated at install time with PHP's non-cryptographic `uniqid('', true)` function in `SwpmInstallation::…",
       "score": 9.1,
@@ -1338,6 +1298,16 @@
     }
   ],
   "presse": [
+    {
+      "source": "The Hacker News",
+      "origine": "int",
+      "titre": "pCloud Password Manager Hit by Cyber Attack Involving Email Address Exposure and Login Attempts",
+      "lien": "https://thehackernews.com/2026/11/pcloud-password-manager-hit-by-cyber.html",
+      "date": "2026-11-28T08:08:11+00:00",
+      "resume": "Cross-platform password manager pCloud Pass has confirmed it was targeted by a cyber attack after users reported seeing unknown devices being connected to their accounts. \"A cyber attack targeting pCloud Pass occurred, which was promptly contained by the pCloud team,\" the Swiss company said in resp…",
+      "attaque": true,
+      "cves": []
+    },
     {
       "source": "IT-Connect",
       "origine": "fr",
@@ -1938,184 +1908,6 @@
       "resume": "Attackers are probing GeoServer instances for two high-severity flaws that can be chained with other bugs for unauthenticated RCE. The post Two Newly Disclosed GeoServer Vulnerabilities Under Attack appeared first on SecurityWeek .",
       "attaque": true,
       "cves": []
-    },
-    {
-      "source": "The Hacker News",
-      "origine": "int",
-      "titre": "Hackers Exploit Two GeoServer Flaws as Researchers Warn of Unauthenticated RCE Chains",
-      "lien": "https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html",
-      "date": "2026-11-25T12:48:54+00:00",
-      "resume": "Threat actors are actively exploiting two newly patched security flaws in GeoServer, according to watchTowr. The vulnerabilities in question are CVE-2026-120705 and CVE-2026-129243, details of which are below - CVE-2026-120705 (CVSS score: 8.6) - An arbitrary file read vulnerability that could enab…",
-      "attaque": true,
-      "cves": [
-        "CVE-2026-120705",
-        "CVE-2026-129243"
-      ]
-    },
-    {
-      "source": "The Hacker News",
-      "origine": "int",
-      "titre": "U.S. Treasury's Financial Crimes Agency Takes Some Systems Offline After Cyber Intrusion",
-      "lien": "https://thehackernews.com/2026/11/us-treasurys-fincen-takes-some-systems.html",
-      "date": "2026-11-25T12:30:08+00:00",
-      "resume": "The U.S. Treasury Department's Financial Crimes Enforcement Network (FinCEN) has been hit by a cybersecurity incident that resulted in \"unauthorized access to a limited subset of its systems,\" the bureau said on Tuesday. As a precaution, it has taken some systems offline. The bureau collects suspic…",
-      "attaque": false,
-      "cves": []
-    },
-    {
-      "source": "The Hacker News",
-      "origine": "int",
-      "titre": "Credential Remediation Is Slow When You Don’t Know What Will Break",
-      "lien": "https://thehackernews.com/2026/11/credential-remediation-is-slow-when-you.html",
-      "date": "2026-11-25T11:51:48+00:00",
-      "resume": "TL;DR More than 64% still valid after four years: GitGuardian’s State of Secrets Sprawl 2026 found that most valid secrets discovered in 2022 still worked in January 2026, because teams stall on what a revoke will break. Validity-only triage misses 46% of critical secrets: Prioritize by impact inst…",
-      "attaque": true,
-      "cves": []
-    },
-    {
-      "source": "ZATAZ",
-      "origine": "fr",
-      "titre": "Skimming en Alsace, des cartes bancaires piégées à la pompe",
-      "lien": "https://www.zataz.com/skimming-en-alsace-des-cartes-bancaires-piegees-a-la-pompe/",
-      "date": "2026-11-25T11:40:44+00:00",
-      "resume": "Skimming ? En Alsace, des retraits de 500 à 1 000 euros après un plein alertent les gendarmes. Comment réagir face à la fraude.",
-      "attaque": false,
-      "cves": []
-    },
-    {
-      "source": "The Hacker News",
-      "origine": "int",
-      "titre": "Drupal Fail2Install Exploit Details Emerge as Critical RCE Flaw Faces Active Exploitation",
-      "lien": "https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html",
-      "date": "2026-11-25T11:23:26+00:00",
-      "resume": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a critical flaw impacting Drupal to its Known Exploited Vulnerabilities (KEV) catalog, requiring federal agencies to apply the fixes by November 27, 2026. The vulnerability, tracked as CVE-2026-132165 aka Fail2Install…",
-      "attaque": false,
-      "cves": [
-        "CVE-2026-132165"
-      ]
-    },
-    {
-      "source": "ZATAZ",
-      "origine": "fr",
-      "titre": "Faux jeu Ducros sur TikTok, le piège du coffret de Noël",
-      "lien": "https://www.zataz.com/faux-jeu-ducros-sur-tiktok-le-piege-du-coffret-de-noel/",
-      "date": "2026-11-25T10:46:52+00:00",
-      "resume": "ZATAZ retrace le faux jeu Ducros sur TikTok, du coffret d’épices de Noël au formulaire de carte bancaire.",
-      "attaque": false,
-      "cves": []
-    },
-    {
-      "source": "The Hacker News",
-      "origine": "int",
-      "titre": "Ex-OpenAI Employee Accused of Bugging Company Offices Granted $1 Million Bail",
-      "lien": "https://thehackernews.com/2026/11/ex-openai-employee-accused-of-bugging.html",
-      "date": "2026-11-25T10:43:07+00:00",
-      "resume": "A former OpenAI employee accused of concealing a covert recording device at the company's San Francisco offices will be allowed to be released from jail on a $1 million bond, a San Francisco federal court judge ruled Tuesday. Abdulrahman Alfozan, a 35-year-old Saudi national, was arrested on Octobe…",
-      "attaque": false,
-      "cves": []
-    },
-    {
-      "source": "The Hacker News",
-      "origine": "int",
-      "titre": "Hackers Exploited CVSS 10.0 Hex.pm RCE Flaw to Compromise 6 Package Registry Servers",
-      "lien": "https://thehackernews.com/2026/11/hackers-exploited-cvss-100-hexpm-rce.html",
-      "date": "2026-11-25T09:06:59+00:00",
-      "resume": "An attacker ran operating system commands on Monday on six production servers of Hex.pm, the package registry that Elixir and Erlang developers fetch their dependencies from. The flaw used in the attack had been in the registry's code since February 2016, and the team that maintains the service had…",
-      "attaque": true,
-      "cves": []
-    },
-    {
-      "source": "ZATAZ",
-      "origine": "fr",
-      "titre": "CHU de Bordeaux et SIG Sauer ciblés par ScarlettGroup",
-      "lien": "https://www.zataz.com/chu-de-bordeaux-et-sig-sauer-cibles-par-scarlettgroup/",
-      "date": "2026-11-25T07:40:26+00:00",
-      "resume": "Le CHU de Bordeaux confirme une intrusion. ScarlettGroup menace de publier des données et revendique aussi SIG Sauer.",
-      "attaque": false,
-      "cves": []
-    },
-    {
-      "source": "Le Monde Informatique",
-      "origine": "fr",
-      "titre": "Cyberattaques dopées à l’IA : IBM appelle les entreprises à anticiper les défaillances",
-      "lien": "https://www.lemondeinformatique.fr/cybersecurite-conformite/cyberattaques-dopees-a-l-ia-ibm-appelle-les-entreprises-a-anticiper-les-defaillances",
-      "date": "2026-11-25T07:30:00+00:00",
-      "resume": "Face à l’accélération des cyberattaques liée à l’intelligence artificielle, les entreprises doivent revoir leurs stratégies de cybersécurité. Pour Mark Hughes, responsable mondial des services de cybersécurité d’IBM Consulting, les attaquants exploitent désormais les vulnérabilités à une vitesse qu…",
-      "attaque": false,
-      "cves": []
-    },
-    {
-      "source": "Le Monde Informatique",
-      "origine": "fr",
-      "titre": "Cyberattaque contre Ipsos : le groupe Qilin revendique un vol de données sensibles",
-      "lien": "https://www.lemondeinformatique.fr/cybersecurite-conformite/cyberattaque-contre-ipsos-le-groupe-qilin-revendique-un-vol-de-donnees-sensibles",
-      "date": "2026-11-25T07:00:00+00:00",
-      "resume": "Le groupe de cybercriminels Qilin revendique une attaque contre Ipsos et affirme détenir des documents commerciaux appartenant au spécialiste français des études de marché. Plusieurs extraits de fichiers, qui mentionneraient notamment Roblox, KPMG et Ferrero, ont été publiés sur son site de divulga…",
-      "attaque": true,
-      "cves": []
-    },
-    {
-      "source": "Le Monde Informatique",
-      "origine": "fr",
-      "titre": "Collectivités territoriales : la cybersécurité passe par la mutualisation des moyens",
-      "lien": "https://www.lemondeinformatique.fr/cybersecurite-conformite/collectivites-territoriales-la-cybersecurite-passe-par-la-mutualisation-des-moyens",
-      "date": "2026-11-25T07:00:00+00:00",
-      "resume": "Les petites communes peinent encore à disposer des compétences et des ressources nécessaires pour protéger leurs systèmes d'information. Devant une commission du Sénat, l'ANSSI et le GIP ACYMA ont plaidé pour un accompagnement de proximité et une meilleure mise en commun des moyens.",
-      "attaque": false,
-      "cves": []
-    },
-    {
-      "source": "The Hacker News",
-      "origine": "int",
-      "titre": "Hackers Compromise 24 Check Point Management Servers in Suspected AI-Driven Attack Campaign",
-      "lien": "https://thehackernews.com/2026/11/hackers-compromise-24-check-point.html",
-      "date": "2026-11-25T06:50:19+00:00",
-      "resume": "An unknown threat actor has been using artificial intelligence (AI)-driven offensive tooling in a campaign targeting Check Point Security Management servers, impacting 22 distinct organizations across the world. The intrusion activity, tracked by GreyNoise under the moniker GreyNoise Threat 13 (GT1…",
-      "attaque": true,
-      "cves": []
-    },
-    {
-      "source": "The Hacker News",
-      "origine": "int",
-      "titre": "Com-Affiliated Hackers Hijack Cloud Accounts via Vishing for Data Theft and Extortion",
-      "lien": "https://thehackernews.com/2026/11/com-affiliated-hackers-hijack-cloud.html",
-      "date": "2026-11-25T06:37:06+00:00",
-      "resume": "Palo Alto Networks Unit 42 has disclosed that it's tracking and has responded to \"numerous waves of vishing attacks\" orchestrated by Com-affiliated threat actors since August 2026 that have led to data theft and extortion attempts. The attacks have targeted financial services, healthcare, and legal…",
-      "attaque": true,
-      "cves": []
-    },
-    {
-      "source": "IT-Connect",
-      "origine": "fr",
-      "titre": "Cyberattaque Commission européenne : les noms et adresses e-mail des utilisateurs d’EU Academy ont fuité",
-      "lien": "https://www.it-connect.fr/eu-academy-fuite-donnees-cyberattaque-commission-europeenne/",
-      "date": "2026-11-25T06:31:00+00:00",
-      "resume": "La Commission européenne confirme que la cyberattaque assistée par l'IA a touché EU Academy : noms et e-mails des utilisateurs ont fuité. Le post Cyberattaque Commission européenne : les noms et adresses e-mail des utilisateurs d’EU Academy ont fuité a été publié sur IT-Connect .",
-      "attaque": true,
-      "cves": []
-    },
-    {
-      "source": "The Hacker News",
-      "origine": "int",
-      "titre": "WordPress Blocks Six Backdoored WP Connect Plugins Before Malicious Releases Go Live",
-      "lien": "https://thehackernews.com/2026/11/wordpress-blocks-six-backdoored-wp.html",
-      "date": "2026-11-25T06:21:12+00:00",
-      "resume": "WordPress has removed six WordPress plugins developed by WP Connect after they were backdoored on November 22, 2026, to enable arbitrary code execution on sites that have them installed, following a suspected compromise of the developer's account. The WordPress plugins team has proactively detected…",
-      "attaque": true,
-      "cves": []
-    },
-    {
-      "source": "IT-Connect",
-      "origine": "fr",
-      "titre": "VMware vCenter et ESX : trois nouvelles failles critiques, cinq jours après la faille zero-day",
-      "lien": "https://www.it-connect.fr/vmware-vcenter-esx-cve-2026-123903-failles-novembre/",
-      "date": "2026-11-25T06:05:00+00:00",
-      "resume": "Cinq jours après la zero-day CVE-2026-123890, Broadcom corrige 23 failles VMware, dont la CVE-2026-123903 dans vCenter et deux failles critiques dans ESX. Le post VMware vCenter et ESX : trois nouvelles failles critiques, cinq jours après la faille zero-day a été publié sur IT-Connect .",
-      "attaque": false,
-      "cves": [
-        "CVE-2026-123890",
-        "CVE-2026-123903"
-      ]
     }
   ],
   "erreurs": []
